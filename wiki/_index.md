@@ -18,6 +18,11 @@ Narrative canon, character architecture, craft principles, and submission strate
 
 **Articles:**
 - [Novel Structure](craft-fiction/string-theory/novel-structure.md) — chapter architecture, musical forms, narrative signals from titles
+- [Complete Chapter Summaries](craft-fiction/string-theory/chapter-summaries.md) — full plot record, Overture through Chapter 20
+- [Characters](craft-fiction/string-theory/characters.md) — David Lang, Celeste Armitage, Rune Ishikawa, Eleanor Guare, and supporting cast
+- [68.48 Hz Mechanic](craft-fiction/string-theory/68hz-mechanic.md) — the central phenomenon, multigenerational transmission, VCH bridge
+- [Project ARGO](craft-fiction/string-theory/project-argo.md) — the 1971 Cornell classified research project
+- [Themes and Canon](craft-fiction/string-theory/themes-and-canon.md) — the 47 motif, transcendence, Ishikawa's true role, the SolPhi Institute, FIELD PROTOCOL
 
 ---
 

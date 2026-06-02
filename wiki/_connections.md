@@ -16,9 +16,17 @@ Connection: one sentence describing the relationship.
 
 ## Documented Connections
 
-### [String Theory / Novel Structure] ↔ [theory-consciousness/]
+### [String Theory / 68.48 Hz Mechanic] ↔ [theory-consciousness/]
 *Domain: craft-fiction ↔ theory-consciousness*
-Connection: Chapter 9's subtitle ("Spatio-Symbolic Drift in Recursive Harmonic Environments") uses language that maps directly onto VCH harmonic entrainment mechanics, making it the clearest bridge between the novel's fiction and Gabriel's theoretical framework.
+Connection: Chapter 9's subtitle ("Spatio-Symbolic Drift in Recursive Harmonic Environments") uses language that maps directly onto VCH harmonic entrainment mechanics; the 68.48 Hz frequency, its multigenerational transmission, directional intensification, and physical symptoms are the fictional instantiation of VCH's harmonic entrainment theory.
+
+### [String Theory / FIELD PROTOCOL — TONAL ACTIVATION] ↔ [music-performance/]
+*Domain: craft-fiction ↔ music-performance*
+Connection: The SolPhi Institute's foundational 10-point protocol operationalizes harmonic entrainment as a teachable methodology — the fiction extrapolates what applied VCH practice would look like as institutional pedagogy.
+
+### [String Theory / The Solar Maximus Connection] ↔ [theory-consciousness/]
+*Domain: craft-fiction ↔ theory-consciousness*
+Connection: Chapter 7's thesis (major historical geniuses born at solar maxima; Newton born during the Maunder Minimum as an inverse case) is a fictional extension of the VCH proposition that resonant environment shapes consciousness and cognitive capacity. [theoretical]
 
 ---
 
