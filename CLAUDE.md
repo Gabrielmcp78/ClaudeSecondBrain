@@ -13,7 +13,7 @@ This is a self-improving second brain for **Gabriel McPherson** — composer, no
 ## Directory Structure
 
 ```
-starTrekops/
+ClaudeSecondBrain/
 ├── CLAUDE.md                    ← you are here; the master schema
 ├── raw/                         ← unprocessed input; never manually organized
 ├── wiki/
