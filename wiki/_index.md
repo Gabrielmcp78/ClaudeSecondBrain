@@ -16,7 +16,8 @@ Narrative canon, character architecture, craft principles, and submission strate
 - `craft-principles/` — positive-declaration rule, structural frameworks, scene craft
 - `submission-strategy/` — agent research, query letters, market notes
 
-*No articles yet.*
+**Articles:**
+- [Novel Structure](craft-fiction/string-theory/novel-structure.md) — chapter architecture, musical forms, narrative signals from titles
 
 ---
 

@@ -16,7 +16,9 @@ Connection: one sentence describing the relationship.
 
 ## Documented Connections
 
-*No connections yet. Connections are added here whenever a cross-domain link is created during ingestion or wiki editing.*
+### [String Theory / Novel Structure] ↔ [theory-consciousness/]
+*Domain: craft-fiction ↔ theory-consciousness*
+Connection: Chapter 9's subtitle ("Spatio-Symbolic Drift in Recursive Harmonic Environments") uses language that maps directly onto VCH harmonic entrainment mechanics, making it the clearest bridge between the novel's fiction and Gabriel's theoretical framework.
 
 ---
 
