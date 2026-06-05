@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Unity Harmonica — Unified Interactive Map</title>
+  <style>
+    :root{
+      --bg1:#57575c;
+      --bg2:#7a7a81;
+      --panel: rgba(10,10,12,.32);
+      --panel2: rgba(255,255,255,.07);
+      --stroke: rgba(255,255,255,.78);
+      --muted: rgba(255,255,255,.78);
+      --faint: rgba(255,255,255,.16);
+      --fainter: rgba(255,255,255,.09);
+      --focus: rgba(255,255,255,.95);
+      --glow: 0 0 10px rgba(255,255,255,.35);
+      --glow2: 0 0 18px rgba(255,255,255,.25);
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    }
+    html,body{height:100%; overflow-x:hidden;}
+    body{
+      margin:0;
+      font-family:var(--font);
+      color:var(--focus);
+      background:
+        radial-gradient(1200px 600px at 20% 20%, rgba(255,255,255,.18), transparent 60%),
+        radial-gradient(900px 520px at 85% 60%, rgba(255,255,255,.10), transparent 60%),
+        linear-gradient(180deg,var(--bg1),var(--bg2));
+    }
+
+    .wrap{max-width:1100px; margin:0 auto; padding:18px 14px 96px;}
+    .top{display:flex; align-items:flex-end; justify-content:space-between; gap:12px;}
+    h1{margin:0; font-size:20px; letter-spacing:.2px;}
+    .sub{margin:6px 0 0; font-size:12px; color:var(--muted)}
+
+    .tools{display:flex; gap:10px; align-items:center;}
+    .btn{background:var(--panel2); color:var(--focus); border:1px solid rgba(255,255,255,.18); border-radius:10px; padding:8px 10px; font-size:12px; cursor:pointer;}
+    .btn:hover{background:rgba(255,255,255,.10)}
+    .chip{display:inline-flex; gap:8px; align-items:center; font-size:12px; color:var(--muted)}
+    .chip input{accent-color:#fff}
+
+    .stage{margin-top:14px; border-radius:18px; background:var(--panel); border:1px solid rgba(255,255,255,.18); box-shadow: 0 18px 40px rgba(0,0,0,.25); overflow:hidden;}
+    .stage-inner{position:relative; height:min(72vh,640px);}
+
+    svg{width:100%; height:100%; display:block;}
+
+    /* Layers */
+    .grid line{stroke:var(--fainter); stroke-width:1}
+    .axis{stroke:rgba(255,255,255,.35); stroke-width:2}
+    .tick{stroke:rgba(255,255,255,.45); stroke-width:1}
+    .degText{fill:rgba(255,255,255,.88); font-size:11px; filter: drop-shadow(0 0 5px rgba(0,0,0,.65));}
+    .tinyDeg{fill:rgba(255,255,255,.62); font-size:10px; filter: drop-shadow(0 0 4px rgba(0,0,0,.6));}
+
+    .band{opacity:.14}
+    .bandStroke{stroke:rgba(255,255,255,.10); stroke-width:1}
+
+    .circle{fill:none; stroke-width:1.8; opacity:.40}
+    .circleStrong{fill:none; stroke-width:2.6; opacity:.75}
+
+    .arc{fill:none; stroke-width:1.6; opacity:.28}
+    .arcSoft{fill:none; stroke-width:1.2; opacity:.16}
+
+    .markerLine{stroke-width:2.2; opacity:.85}
+    .label{font-size:12px; fill:rgba(255,255,255,.92); filter: drop-shadow(0 0 6px rgba(0,0,0,.6));}
+
+    .dim{opacity:.08 !important}
+    .pop{opacity:1 !important; filter: drop-shadow(0 0 10px rgba(255,255,255,.25)) drop-shadow(0 0 18px rgba(255,255,255,.18));}
+
+    /* Info card */
+    .card{position:absolute; left:14px; top:14px; width:min(360px,calc(100% - 28px));
+      background:rgba(0,0,0,.28); border:1px solid rgba(255,255,255,.16);
+      border-radius:14px; padding:12px 12px 10px;
+      box-shadow: 0 12px 26px rgba(0,0,0,.25);
+      backdrop-filter: blur(8px) saturate(130%);
+      pointer-events:none;
+      opacity:0;
+      transform: translateY(-4px);
+      transition: opacity .28s ease, transform .28s ease;
+    }
+    .card.on{opacity:1; transform: translateY(0);}
+    .card .k{font-size:10px; text-transform:uppercase; letter-spacing:.12em; color:var(--muted)}
+    .card .t{margin-top:6px; font-weight:700; font-size:13px}
+    .card .b{margin-top:6px; font-size:12px; color:rgba(255,255,255,.86); line-height:1.35}
+
+    /* Bottom legend */
+    .legend{position:fixed; left:0; right:0; bottom:12px; display:flex; justify-content:center; pointer-events:none;}
+    .legend .bar{pointer-events:auto; background:rgba(0,0,0,.25); border:1px solid rgba(255,255,255,.16);
+      border-radius:999px; padding:8px 10px; display:flex; flex-wrap:wrap; gap:8px;
+      backdrop-filter: blur(8px) saturate(130%);
+      box-shadow: 0 14px 30px rgba(0,0,0,.25);
+      max-width:min(980px, calc(100% - 24px));
+    }
+    .tag{display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border-radius:999px;
+      background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.12);
+      color:rgba(255,255,255,.92); font-size:12px; cursor:pointer; user-select:none;
+    }
+    .tag:hover{background:rgba(255,255,255,.10)}
+    .dot{width:10px; height:10px; border-radius:999px; box-shadow: var(--glow2)}
+
+    details{margin-top:10px;}
+    details summary{cursor:pointer; color:rgba(255,255,255,.88); font-size:12px}
+    textarea{width:100%; min-height:190px; border-radius:12px; border:1px solid rgba(255,255,255,.18);
+      background:rgba(0,0,0,.20); color:#fff; padding:10px; font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono";
+      font-size:12px; line-height:1.35;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <h1>Unity Harmonica — Unified Interactive Map</h1>
+        <div class="sub">Unified canvas: degrees, notes, ratios, constants, circle lattices, chords and lens geometry. Hover items for definitions. Click legend to isolate.</div>
+      </div>
+      <div class="tools">
+        <button class="btn" id="reset">Reset</button>
+        <label class="chip"><input type="checkbox" id="gridOn" checked /> Grid</label>
+        <label class="chip"><input type="checkbox" id="degOn" checked /> Degrees</label>
+        <label class="chip"><input type="checkbox" id="bandsOn" checked /> Bands</label>
+        <label class="chip"><input type="checkbox" id="latticeOn" checked /> Lattice</label>
+        <label class="chip"><input type="checkbox" id="arcsOn" checked /> Arcs</label>
+        <label class="chip"><input type="checkbox" id="lensOn" checked /> Lens</label>
+        <label class="chip"><input type="checkbox" id="waveOn" checked /> Waves</label>
+        <label class="chip"><input type="checkbox" id="notesOn" checked /> Notes</label>
+        <label class="chip"><input type="checkbox" id="chordsOn" checked /> Chords</label>
+        <label class="chip"><input type="checkbox" id="markersOn" checked /> Markers</label>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="stage-inner">
+        <svg id="svg" aria-label="Unified harmonic map"></svg>
+        <div class="card" id="card" aria-live="polite">
+          <div class="k" id="cardK">Definition</div>
+          <div class="t" id="cardT">Title</div>
+          <div class="b" id="cardB">Body</div>
+        </div>
+      </div>
+    </div>
+
+    <details>
+      <summary>Advanced: edit / extend series data (JSON)</summary>
+      <p class="sub" style="margin:8px 0 8px">This is the mechanism for “all the other series”. Paste more lines from your notes here (degrees/labels/ratios), hit Apply, and the unified canvas updates.</p>
+      <textarea id="dataBox"></textarea>
+      <div style="display:flex; gap:10px; margin-top:10px; flex-wrap:wrap">
+        <button class="btn" id="apply">Apply JSON</button>
+        <button class="btn" id="restore">Restore Defaults</button>
+      </div>
+    </details>
+  </div>
+
+  <div class="legend">
+    <div class="bar" id="legend"></div>
+  </div>
+
+<script>
+(function(){
+  const svg = document.getElementById('svg');
+  const card = document.getElementById('card');
+  const cardT = document.getElementById('cardT');
+  const cardB = document.getElementById('cardB');
+  const legend = document.getElementById('legend');
+
+  const NS = 'http://www.w3.org/2000/svg';
+  const el = (tag, attrs={}, parent=svg) => {
+    const n = document.createElementNS(NS, tag);
+    for (const [k,v] of Object.entries(attrs)) n.setAttribute(k, v);
+    parent.appendChild(n);
+    return n;
+  };
+
+  // -------- Core coordinate system: DEGREES as canonical x-axis (0..360) --------
+  const M = {left:60, right:34, top:44, bottom:66};
+  function dims(){
+    const r = svg.getBoundingClientRect();
+    const w = Math.max(620, r.width);
+    const h = Math.max(420, r.height);
+    return {w,h};
+  }
+  function xFromDeg(deg, W){
+    return M.left + (deg/360) * (W - M.left - M.right);
+  }
+  function yMid(H){ return (H - M.top - M.bottom)/2 + M.top; }
+
+  // Map ratios to degrees by octave position (log2). This is how notes/ratios fold into 0..360.
+  function degFromRatio(r){
+    const a = (Math.log(r)/Math.log(2)) * 360;
+    return ((a % 360) + 360) % 360;
+  }
+
+  // -------- Default data: designed to match the “series” families in your drawings --------
+  const DEFAULT_DATA = {
+    families: {
+      constants: { color:'#ffffff' },
+      music: { color:'#a7f3d0' },
+      geometry: { color:'#93c5fd' },
+      chords: { color:'#fca5a5' }
+    },
+
+    // Degree grid ticks: major (every 45°) + minor (every 9°) matches your axis vibe.
+    degreeTicks: {
+      major: [0,45,90,135,180,225,270,315,360],
+      minorStep: 9
+    },
+
+    // Vertical markers: combine constants, derived musical points, and “named” degree anchors.
+    markers: [
+      {id:'phi', family:'constants', label:'φ', degree: degFromRatio((1+Math.sqrt(5))/2), color:'#fbbf24', body:'Golden ratio projected into octave angle: 360·log2(φ).'},
+      {id:'phiInv', family:'constants', label:'1/φ', degree: degFromRatio(1/((1+Math.sqrt(5))/2)), color:'#fbbf24', body:'Reciprocal of φ. Same structure viewed as contraction (self-similarity in reverse).'},
+      {id:'phi2', family:'constants', label:'φ²', degree: degFromRatio(Math.pow((1+Math.sqrt(5))/2,2)), color:'#fbbf24', body:'φ² = φ + 1. Shows up in recursive growth, pentagon geometry, and tilings.'},
+      {id:'sqrt2', family:'constants', label:'√2', degree: degFromRatio(Math.SQRT2), color:'#60a5fa', body:'Diagonal of unit square projected into octave angle: 360·log2(√2)=180°.'},
+      {id:'sqrt3', family:'constants', label:'√3', degree: degFromRatio(Math.sqrt(3)), color:'#38bdf8', body:'Height of unit equilateral triangle. Three-phase symmetry and hex grids.'},
+      {id:'sqrt5', family:'constants', label:'√5', degree: degFromRatio(Math.sqrt(5)), color:'#22c55e', body:'Appears with φ (since φ = (1+√5)/2). Pentagonal / icosahedral geometry.'},
+      {id:'piHalf', family:'constants', label:'π/2', degree: degFromRatio(Math.PI/2), color:'#fb7185', body:'Quarter-turn constant. 90° on the unit circle and a hinge-point for sine/cosine.'},
+      {id:'pi', family:'constants', label:'π', degree: degFromRatio(Math.PI), color:'#f472b6', body:'π projected into octave angle: 360·log2(π).'},
+      {id:'tau', family:'constants', label:'τ', degree: degFromRatio(2*Math.PI), color:'#06b6d4', body:'τ = 2π. A full turn constant. Emphasises cycles and periodicity.'},
+      {id:'e', family:'constants', label:'e', degree: degFromRatio(Math.E), color:'#a5b4fc', body:'e projected into octave angle: 360·log2(e).'},
+      {id:'ln2', family:'constants', label:'ln 2', degree: degFromRatio(Math.LN2), color:'#34d399', body:'ln(2) projected into octave angle.'},
+      {id:'gamma', family:'constants', label:'γ', degree: degFromRatio(0.5772156649015329), color:'#fb923c', body:'Euler–Mascheroni constant (harmonic series vs ln). Shows up where discrete meets continuous.'},
+
+      // Musical / ratio anchors (Pythagorean & simple just intonation)
+      {id:'octave', family:'music', label:'2/1', degree: degFromRatio(2), color:'#a7f3d0', body:'Octave (2:1). The fold that maps ratios back into 0..360.'},
+      {id:'fifth', family:'music', label:'3/2', degree: degFromRatio(3/2), color:'#a7f3d0', body:'Perfect fifth (3:2). Backbone of the circle of fifths and harmonic series.'},
+      {id:'fourth', family:'music', label:'4/3', degree: degFromRatio(4/3), color:'#a7f3d0', body:'Perfect fourth (4:3). Complement of the fifth inside the octave.'},
+      {id:'M3', family:'music', label:'5/4', degree: degFromRatio(5/4), color:'#a7f3d0', body:'Major third (5:4). Just intonation colour-tone; key to consonant triads.'},
+      {id:'m3', family:'music', label:'6/5', degree: degFromRatio(6/5), color:'#a7f3d0', body:'Minor third (6:5). Triad complement that flips major↔minor quality.'},
+      {id:'M2', family:'music', label:'9/8', degree: degFromRatio(9/8), color:'#a7f3d0', body:'Major second (9:8). Step size used in Pythagorean tuning.'},
+
+      // Frequency anchors (relative ratios)
+      {id:'A440', family:'music', label:'440/432', degree: degFromRatio(440/432), color:'#a7f3d0', body:'Concert pitch drift: 440 Hz vs 432 Hz as a ratio. This is how “frequency debates” land on the same geometric axis.'},
+
+      // Strong polygon / music anchors seen in your pages
+      {id:'deg60', family:'geometry', label:'60°', degree:60, color:'#93c5fd', body:'Hexagonal symmetry / equilateral triangle angle.'},
+      {id:'deg72', family:'geometry', label:'72°', degree:72, color:'#93c5fd', body:'Pentagonal symmetry (360/5).'},
+      {id:'deg90', family:'geometry', label:'90°', degree:90, color:'#93c5fd', body:'Square symmetry (360/4).'},
+      {id:'deg120', family:'geometry', label:'120°', degree:120, color:'#93c5fd', body:'Triangular lattice / hex grid interior angle.'},
+      {id:'deg144', family:'geometry', label:'144°', degree:144, color:'#93c5fd', body:'Pentagram / star polygon angle.'}
+    ],
+
+    // Semi-transparent vertical bands (your colored columns). Set by degree windows.
+    bands: [
+      {id:'band_phi', family:'constants', label:'φ band', from:  degFromRatio((1+Math.sqrt(5))/2) - 6, to: degFromRatio((1+Math.sqrt(5))/2) + 6, color:'#fbbf24', body:'Region around φ.'},
+      {id:'band_pi',  family:'constants', label:'π band', from:  degFromRatio(Math.PI) - 6, to: degFromRatio(Math.PI) + 6, color:'#f472b6', body:'Region around π.'},
+      {id:'band_e',   family:'constants', label:'e band', from:  degFromRatio(Math.E) - 6, to: degFromRatio(Math.E) + 6, color:'#a5b4fc', body:'Region around e.'}
+      ,
+      {id:'band_fifth', family:'music', label:'3/2 band', from: degFromRatio(3/2)-5, to: degFromRatio(3/2)+5, color:'#a7f3d0', body:'Region around the perfect fifth (3:2).'},
+      {id:'band_fourth', family:'music', label:'4/3 band', from: degFromRatio(4/3)-5, to: degFromRatio(4/3)+5, color:'#a7f3d0', body:'Region around the perfect fourth (4:3).'}
+    ],
+
+    // Circle lattice: repeating overlapping circles along the spine.
+    // Inspired by your long chain of overlapping circles.
+    lattice: {
+      stepDeg: 12,          // smaller = denser lattice
+      radiusPx: 26,
+      colors: ['#ffffff','#93c5fd','#fca5a5']
+    },
+
+    // Interwoven arcs: interval-like braids across the field.
+    // Offsets are degree steps (wrap-around). These echo the criss-cross wave bands.
+    arcWeave: {
+      offsets: [12, 24, 36, 48, 60],
+      softness: 0.18
+    },
+
+    // Lens geometry: nested ellipses + focus lines like your “eye” structures.
+    // These are positioned by a center degree and then drawn in screen space.
+    lens: {
+      centerDeg: 300,
+      rings: [1.00, 1.25, 1.55, 1.95, 2.45],
+      tilt: -8,
+      color: 'rgba(255,255,255,.85)',
+      fill: 'rgba(255,255,255,.06)'
+    },
+
+    // Bottom wave cross-sections: a “spectrogram-like” braid layer (your lower strip).
+    waves: {
+      tracks: 6,
+      amplitude: 46,
+      opacity: 0.55
+    },
+
+    // Chords (triads) as triangles, mapped by degree (or by ratio via degFromRatio).
+    // Example: C major and A minor as simple anchor structures.
+    chords: [
+      {id:'Cmaj', family:'chords', label:'C major triad', color:'#fca5a5', points:[
+        {name:'C', deg:0, info:'Root'},
+        {name:'E', deg:120, info:'Major 3rd (approx mapping)'},
+        {name:'G', deg:210, info:'Perfect 5th (approx mapping)'}
+      ], body:'Triangle overlay for chord structure (a scaffold you can refine with exact degrees/ratios).'},
+      {id:'Amin', family:'chords', label:'A minor triad', color:'#fca5a5', points:[
+        {name:'A', deg:270, info:'Root'},
+        {name:'C', deg:0, info:'Minor 3rd'},
+        {name:'E', deg:120, info:'Perfect 5th'}
+      ], body:'Second chord triangle scaffold.'}
+    ],
+
+    // Note labels along the axis (12-tone) as degrees for quick navigation.
+    noteLabels: [
+      {name:'C',deg:0},{name:'C♯',deg:30},{name:'D',deg:60},{name:'D♯',deg:90},{name:'E',deg:120},{name:'F',deg:150},
+      {name:'F♯',deg:180},{name:'G',deg:210},{name:'G♯',deg:240},{name:'A',deg:270},{name:'A♯',deg:300},{name:'B',deg:330}
+    ]
+  };
+
+  // -------- State --------
+  let DATA = structuredClone(DEFAULT_DATA);
+  let activeId = null;
+
+  // -------- Rendering --------
+  function clear(){
+    while(svg.firstChild) svg.removeChild(svg.firstChild);
+  }
+
+  function drawAll(){
+    clear();
+    const {w,h} = dims();
+    svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
+
+    // Root groups
+    const gGrid = el('g', {id:'grid', class:'grid'});
+    const gBands = el('g', {id:'bands'});
+    const gWeave = el('g', {id:'weave'});
+    const gLattice = el('g', {id:'lattice'});
+    const gWave = el('g', {id:'wave'});
+    const gLens = el('g', {id:'lens'});
+    const gMarkers = el('g', {id:'markers'});
+    const gChords = el('g', {id:'chords'});
+    const gNotes = el('g', {id:'notes'});
+
+    // Axis
+    const mid = yMid(h);
+    el('line', {x1:M.left, y1:mid, x2:w-M.right, y2:mid, class:'axis'}, gGrid);
+
+    // Grid verticals
+    if (document.getElementById('gridOn').checked){
+      const step = 9;
+      for (let d=0; d<=360; d+=step){
+        const x = xFromDeg(d,w);
+        el('line', {x1:x, y1:M.top, x2:x, y2:h-M.bottom}, gGrid);
+      }
+    }
+
+    // Degree labels and ticks
+    if (document.getElementById('degOn').checked){
+      const minorStep = DATA.degreeTicks.minorStep;
+      for (let d=0; d<=360; d+=minorStep){
+        const x = xFromDeg(d,w);
+        const isMajor = DATA.degreeTicks.major.includes(d);
+        el('line', {x1:x, y1:mid-8, x2:x, y2:mid+8, class:'tick', opacity: isMajor?0.85:0.35}, gGrid);
+        if (isMajor){
+          el('text', {x:x+3, y:18, class:'degText'}, gGrid).textContent = `${d}°`;
+        } else if (d % 18 === 0) {
+          el('text', {x:x+2, y:18, class:'tinyDeg'}, gGrid).textContent = `${d}`;
+        }
+      }
+    }
+
+    // Bands
+    if (document.getElementById('bandsOn').checked){
+      DATA.bands.forEach(b=>{
+        const x1 = xFromDeg((b.from+360)%360,w);
+        const x2 = xFromDeg((b.to+360)%360,w);
+        const left = Math.min(x1,x2), right=Math.max(x1,x2);
+        const rect = el('rect', {x:left, y:M.top, width: Math.max(6, right-left), height: h-M.top-M.bottom,
+          fill:b.color, class:'band', 'data-id':b.id, 'data-title':b.label, 'data-body':b.body}, gBands);
+        el('rect', {x:left, y:M.top, width: Math.max(6,right-left), height: h-M.top-M.bottom,
+          fill:'none', class:'bandStroke'}, gBands);
+        makeHot(rect);
+      });
+    }
+
+    // Weave arcs (interference / cross-disciplinary “braids”)
+    if (document.getElementById('arcsOn').checked){
+      const baseY = mid;
+      const amp = Math.min(170, (h*0.28));
+      const offsets = DATA.arcWeave.offsets;
+      for (let d=0; d<=360; d+=DATA.lattice.stepDeg){
+        offsets.forEach((off,idx)=>{
+          const d2 = (d + off) % 360;
+          const x1 = xFromDeg(d,w), x2=xFromDeg(d2,w);
+          const cx = (x1+x2)/2;
+          const cy = baseY - amp * (0.35 + 0.10*idx);
+          const path = `M ${x1} ${baseY} Q ${cx} ${cy} ${x2} ${baseY}`;
+          el('path', {d:path, stroke:'rgba(255,255,255,.55)', class: idx%2? 'arc':'arcSoft'}, gWeave);
+        });
+      }
+    }
+
+    // Lens geometry (nested ellipses + focus markers)
+    if (document.getElementById('lensOn').checked){
+      const cx = xFromDeg(DATA.lens.centerDeg, w);
+      const cy = mid;
+      const baseRx = Math.max(90, (w - M.left - M.right) * 0.10);
+      const baseRy = Math.max(44, baseRx * 0.42);
+
+      // subtle centerline
+      const axis = el('line',{x1:M.left, y1:cy, x2:w-M.right, y2:cy, stroke:'rgba(255,255,255,.28)', 'stroke-width':1.2}, gLens);
+
+      // rings
+      DATA.lens.rings.forEach((k, i)=>{
+        const e = el('ellipse',{
+          cx, cy,
+          rx: baseRx * k,
+          ry: baseRy * (0.72 + i*0.05),
+          fill: i===0 ? DATA.lens.fill : 'rgba(255,255,255,0)',
+          stroke: DATA.lens.color,
+          'stroke-width': i===0 ? 2.6 : 1.8,
+          opacity: 0.9 - i*0.12,
+          transform: `rotate(${DATA.lens.tilt} ${cx} ${cy})`,
+          'data-id': `lens_${i}`,
+          'data-title': `Lens ring ${i+1}`,
+          'data-body': 'Nested ellipses model the “eye” / harmonic lens regions in your sketches: overlap zones where series intersect.'
+        }, gLens);
+        makeHot(e);
+      });
+
+      // simple focus points to suggest caustics
+      [-1, 1].forEach((sgn, i)=>{
+        const fx = cx + sgn * baseRx * 0.55;
+        const dot = el('circle',{cx:fx, cy:cy, r:5.5, fill:'rgba(255,255,255,.85)', opacity:0.85,
+          'data-id': `focus_${i}`,
+          'data-title': 'Lens focus',
+          'data-body': 'Focus points: places where geometry “wants” to concentrate. In music/physics these behave like attractors for resonance.'
+        }, gLens);
+        makeHot(dot);
+      });
+    }
+
+    // Bottom wave cross-sections (a second, lower braid)
+    if (document.getElementById('waveOn').checked){
+      const yBase = h - M.bottom + 6;
+      const span = (w - M.left - M.right);
+      const amp = DATA.waves.amplitude;
+      for (let t=0; t<DATA.waves.tracks; t++){
+        const phase = (t / DATA.waves.tracks) * Math.PI;
+        const freq = 1 + (t*0.18);
+        let d = '';
+        const steps = 120;
+        for (let i=0; i<=steps; i++){
+          const x = M.left + (i/steps) * span;
+          const u = (i/steps) * Math.PI * 2 * freq;
+          const y = yBase - 18 - t*10 - Math.sin(u + phase) * amp * 0.22;
+          d += (i===0 ? `M ${x} ${y}` : ` L ${x} ${y}`);
+        }
+        el('path',{d, stroke:'rgba(255,255,255,.75)', 'stroke-width':1.6, fill:'none', opacity: DATA.waves.opacity - t*0.06}, gWave);
+      }
+    }
+
+    // Lattice circles
+    if (document.getElementById('latticeOn').checked){
+      const r = DATA.lattice.radiusPx;
+      const cols = DATA.lattice.colors;
+      let i=0;
+      for (let d=0; d<=360; d+=DATA.lattice.stepDeg){
+        const x = xFromDeg(d,w);
+        const c = cols[i++ % cols.length];
+        const circ = el('circle', {cx:x, cy:mid, r:r, stroke:c, class:'circle', 'data-id':`lat_${d}`, 'data-title':`Lattice node ${d}°`,
+          'data-body':`Overlapping-circle lattice node at ${d}°. In the drawings this is the repeating scaffold that makes the “lens” intersections.`}, gLattice);
+        makeHot(circ);
+      }
+      // A stronger "lens" circle cluster at 180° (like the emphasized overlap zones)
+      const x0 = xFromDeg(180,w);
+      [0,1,2,3].forEach(k=>{
+        el('circle',{cx:x0, cy:mid, r:r*(1.8+k*0.22), stroke:'rgba(255,255,255,.65)', class:'circleStrong'}, gLattice);
+      });
+    }
+
+    // Lens geometry: nested ellipses + focus axis. This echoes the "eye"
+    // structures in your drawings where overlapping families compress into
+    // a focal region.
+    if (document.getElementById('lensOn').checked){
+      const cx = xFromDeg(DATA.lens.centerDeg, w);
+      const cy = mid;
+      const base = Math.min(170, (w - M.left - M.right) * 0.10);
+      const tilt = DATA.lens.tilt || 0;
+
+      // Main axis line
+      const axis = el('line', {x1: cx-base*2.1, y1:cy, x2: cx+base*2.1, y2:cy,
+        stroke:'rgba(255,255,255,.45)', 'stroke-width':2, 'data-id':'lens_axis',
+        'data-title':'Lens axis', 'data-body':'Shared focus line: where multiple series overlap and "agree".'}, gLens);
+      makeHot(axis);
+
+      DATA.lens.rings.forEach((s,idx)=>{
+        const rx = base * (1.15 + s*0.55);
+        const ry = rx * 0.42;
+        const e = el('ellipse', {
+          cx, cy, rx, ry,
+          fill: DATA.lens.fill,
+          stroke: DATA.lens.color,
+          'stroke-width': (idx===0?2.6:2),
+          opacity: 0.72,
+          transform: `rotate(${tilt} ${cx} ${cy})`,
+          'data-id': `lens_${idx}`,
+          'data-title': `Lens ring ${idx+1}`,
+          'data-body': 'Nested ellipse: a compressed view of the same circle families. Think of it as a cross-section of the lattice.'
+        }, gLens);
+        makeHot(e);
+      });
+
+      // Two focus points
+      const f = base * 0.95;
+      ['L','R'].forEach((side,i)=>{
+        const fx = cx + (i? f : -f);
+        const dot = el('circle',{cx:fx, cy:cy, r:5, fill:'rgba(255,255,255,.85)', opacity:0.85,
+          'data-id':`focus_${side}`, 'data-title':`Focus ${side}`, 'data-body':'A focus point of the lens. In many systems, these mark where invariants live.'}, gLens);
+        makeHot(dot);
+      });
+    }
+
+    // Bottom wave cross-sections: a second "strip" like your lower band.
+    // Uses smooth sinusoids to suggest harmonic interference.
+    if (document.getElementById('waveOn').checked){
+      const stripTop = h - M.bottom + 6;
+      const stripMid = h - M.bottom + 24;
+      const A = DATA.waves.amplitude;
+      const tracks = DATA.waves.tracks;
+      for (let k=0; k<tracks; k++){
+        let d='';
+        for (let deg=0; deg<=360; deg+=3){
+          const x = xFromDeg(deg,w);
+          const y = stripMid - Math.sin((deg/360)*Math.PI*2*(1+k*0.25) + k*0.65) * (A*(0.35 + k*0.08));
+          d += (deg===0?`M ${x} ${y}`:` L ${x} ${y}`);
+        }
+        el('path',{d, fill:'none', stroke:'rgba(255,255,255,.55)', 'stroke-width':2,
+          opacity: DATA.waves.opacity,
+          'data-id':`wave_${k}`, 'data-title':`Wave track ${k+1}`,
+          'data-body':'A harmonic cross-section. Select a constant or ratio to see how it lights up multiple tracks.'}, gWave);
+      }
+      el('line',{x1:M.left, y1:stripTop, x2:w-M.right, y2:stripTop, stroke:'rgba(255,255,255,.22)', 'stroke-width':1}, gWave);
+    }
+
+    // Markers (vertical lines + labels)
+    if (document.getElementById('markersOn').checked) DATA.markers.forEach(m=>{
+      const x = xFromDeg(m.degree,w);
+      const line = el('line', {x1:x, y1:M.top, x2:x, y2:h-M.bottom,
+        stroke:m.color || '#fff', class:'markerLine', 'data-id':m.id,
+        'data-title':`${m.label} @ ${m.degree.toFixed(2)}°`,
+        'data-body':m.body || ''}, gMarkers);
+      makeHot(line);
+      const t = el('text', {x:x+4, y:mid-18, class:'label', fill:m.color || '#fff'}, gMarkers);
+      t.textContent = m.label;
+      t.setAttribute('data-id', m.id);
+    });
+
+    // Chord triangles
+    if (document.getElementById('chordsOn').checked) DATA.chords.forEach(ch=>{
+      const pts = ch.points.map(p=>({x:xFromDeg(p.deg,w), y: mid + (p.deg===0? -120: (p.deg<180? -70: 70)) }));
+      // Keep within top/bottom a bit
+      pts.forEach(p=>{ p.y = Math.max(M.top+40, Math.min(h-M.bottom-20, p.y)); });
+      const poly = el('polygon', {points: pts.map(p=>`${p.x},${p.y}`).join(' '), fill:'rgba(0,0,0,0)', stroke: ch.color,
+        'stroke-width':2.2, opacity:0.85,
+        'data-id':ch.id, 'data-title':ch.label, 'data-body':ch.body || ''}, gChords);
+      makeHot(poly);
+      // vertices
+      ch.points.forEach((p,idx)=>{
+        const vx = xFromDeg(p.deg,w);
+        const vy = pts[idx].y;
+        const dot = el('circle',{cx:vx, cy:vy, r:5, fill:ch.color, opacity:0.9,
+          'data-id':`${ch.id}_${p.name}`, 'data-title':`${p.name} (${p.deg}°)`, 'data-body':p.info || ''}, gChords);
+        makeHot(dot);
+        const lab = el('text',{x:vx+8, y:vy+4, class:'label', fill:'rgba(255,255,255,.92)'}, gChords);
+        lab.textContent = p.name;
+      });
+    });
+
+    // Note labels on axis
+    if (document.getElementById('notesOn').checked) DATA.noteLabels.forEach(n=>{
+      const x = xFromDeg(n.deg,w);
+      const t = el('text', {x:x, y:h-26, class:'tinyDeg', 'text-anchor':'middle'}, gNotes);
+      t.textContent = n.name;
+    });
+
+    // Apply active highlighting
+    applyHighlight();
+
+    // Legend
+    drawLegend();
+  }
+
+  function drawLegend(){
+    legend.innerHTML = '';
+    const items = [
+      {id:null, label:'All', color:'#ffffff', body:'Clear selection.'},
+      ...DATA.markers.slice(0,18).map(m=>({id:m.id, label:m.label, color:m.color || '#fff', body:m.body||''})),
+      ...DATA.chords.map(c=>({id:c.id, label:c.label, color:c.color, body:c.body||''}))
+    ];
+    items.forEach(it=>{
+      const b = document.createElement('button');
+      b.className='tag';
+      b.type='button';
+      b.innerHTML = `<span class="dot" style="background:${it.color}"></span><span>${it.label}</span>`;
+      b.addEventListener('click', ()=>{ activeId = it.id; applyHighlight(); showCard(it.label, it.body || ''); });
+      legend.appendChild(b);
+    });
+  }
+
+  function showCard(title, body){
+    if (!title && !body){ card.classList.remove('on'); return; }
+    cardT.textContent = title || '';
+    cardB.textContent = body || '';
+    card.classList.add('on');
+  }
+
+  function makeHot(node){
+    node.style.cursor='pointer';
+    node.addEventListener('mouseenter', ()=>{
+      const t = node.getAttribute('data-title');
+      const b = node.getAttribute('data-body');
+      if (t || b) showCard(t||'Info', b||'');
+    });
+    node.addEventListener('mouseleave', ()=>{
+      // keep card if something is selected
+      if (!activeId) showCard('','');
+    });
+    node.addEventListener('click', (e)=>{
+      e.stopPropagation();
+      const id = node.getAttribute('data-id');
+      activeId = (activeId === id) ? null : id;
+      applyHighlight();
+      const t = node.getAttribute('data-title');
+      const b = node.getAttribute('data-body');
+      showCard(t||'Selected', b||'');
+    });
+  }
+
+  function applyHighlight(){
+    const all = svg.querySelectorAll('[data-id]');
+    if (!activeId){
+      all.forEach(n=>{ n.classList.remove('dim'); n.classList.remove('pop'); });
+      return;
+    }
+    all.forEach(n=>{
+      const id = n.getAttribute('data-id');
+      const on = (id === activeId) || id.startsWith(activeId + '_');
+      n.classList.toggle('dim', !on);
+      n.classList.toggle('pop', on);
+    });
+    // Also pop matching label texts
+    svg.querySelectorAll('text[data-id]').forEach(t=>{
+      t.classList.toggle('dim', t.getAttribute('data-id') !== activeId);
+    });
+  }
+
+  // -------- JSON editing --------
+  const dataBox = document.getElementById('dataBox');
+  function loadBox(){ dataBox.value = JSON.stringify(DATA, null, 2); }
+  function applyBox(){
+    try{
+      const parsed = JSON.parse(dataBox.value);
+      DATA = parsed;
+      activeId = null;
+      drawAll();
+    }catch(err){
+      alert('JSON parse error: ' + err.message);
+    }
+  }
+  function restore(){ DATA = structuredClone(DEFAULT_DATA); activeId=null; loadBox(); drawAll(); }
+
+  document.getElementById('apply').addEventListener('click', applyBox);
+  document.getElementById('restore').addEventListener('click', restore);
+
+  // -------- Layer toggles --------
+  ['gridOn','degOn','bandsOn','latticeOn','arcsOn','lensOn','waveOn','notesOn','chordsOn','markersOn'].forEach(id=>{
+    document.getElementById(id).addEventListener('change', drawAll);
+  });
+
+  // -------- Reset --------
+  document.getElementById('reset').addEventListener('click', ()=>{ activeId=null; showCard('',''); drawAll(); });
+
+  // Clicking empty space clears selection
+  svg.addEventListener('click', ()=>{ activeId=null; showCard('',''); applyHighlight(); });
+
+  // Init
+  loadBox();
+  drawAll();
+  window.addEventListener('resize', ()=> drawAll());
+})();
+</script>
+</body>
+</html>

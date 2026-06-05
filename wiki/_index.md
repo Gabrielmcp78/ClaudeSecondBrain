@@ -11,7 +11,7 @@ Navigation entry point for all organized knowledge. See `CLAUDE.md` for routing 
 Narrative canon, character architecture, craft principles, and submission strategy.
 
 - `string-theory/` — David Lang, Eleanor Guare, Rune, 68.48 Hz entrainment, timeline canon
-- `aegis-cycle/` — Aureth system, Sehrava Clusters
+- `aegis-cycle/` — Aureth system, Erevos Station, Kieran Vale, Raleth Draven
 - `latency-zero/` — project files
 - `craft-principles/` — positive-declaration rule, structural frameworks, scene craft
 - `submission-strategy/` — agent research, query letters, market notes
@@ -23,6 +23,9 @@ Narrative canon, character architecture, craft principles, and submission strate
 - [68.48 Hz Mechanic](craft-fiction/string-theory/68hz-mechanic.md) — the central phenomenon, multigenerational transmission, VCH bridge
 - [Project ARGO](craft-fiction/string-theory/project-argo.md) — the 1971 Cornell classified research project
 - [Themes and Canon](craft-fiction/string-theory/themes-and-canon.md) — the 47 motif, transcendence, Ishikawa's true role, the SolPhi Institute, FIELD PROTOCOL
+- [Formal Resonance Model](craft-fiction/string-theory/resonance-model.md) — the internal scientific white paper; six-rung φ-scaled overtone ladder, involutive nexus boundary, 68.48/86.84 Hz pair, biological keying at age 47
+- [BURNThrough](craft-fiction/aegis-cycle/burnthrough.md) — Draft 2.2 of the Aegis Cycle novel; Kieran Vale, Raleth Draven, Erevos Station, the New Aureth Chain, Celerian Collective
+- [Agent Profiles](craft-fiction/submission-strategy/agent-profiles.md) — 40 literary agents for *String Theory* submission; tier rankings, taste profiles, recommended approaches
 
 ---
 
@@ -30,7 +33,9 @@ Narrative canon, character architecture, craft principles, and submission strate
 
 The VCH framework, its quantum/neuroscience/music bridges, and harmonic entrainment mechanics.
 
-*No articles yet.*
+**Articles:**
+- [VCH Framework](theory-consciousness/vch-framework.md) — Vibrational Consciousness Hypothesis; five pillars; quantum/EM/mathematical foundations; AI implications; Schumann Resonance bridge to String Theory physics
+- [GHRM Framework](theory-consciousness/ghrm-framework.md) — Geometric-Harmonic Resonance Model; the Harmonic Resonance Thesis; λ5D coupling constant; LHC simulation methodology; relationship to Unity Harmonica (Grant)
 
 ---
 
@@ -51,8 +56,10 @@ Architecture decisions and design notes for active builds. Code lives in `/Volum
 - `comtechsuite/`
 - `writetrack/`
 - `prestige-fiction-forge/`
+- `nexus/`
 
-*No articles yet.*
+**Articles:**
+- [Nexus Architecture](dev-projects/nexus/architecture.md) — Nexus System technical proposal; six-pillar architecture (NCID Registry, Dual-Airlock, AI Masking/Delta Transformation, Universal Protocol, Toxic Environment, Shape Nodes); security model; development roadmap
 
 ---
 
@@ -68,7 +75,8 @@ Reusable patterns beneath all projects: MCP server architecture, Neo4j/Mem0, FMo
 
 Meta-knowledge about human-AI workflow: synergy protocols, prompt patterns, workflow discoveries.
 
-*No articles yet.*
+**Articles:**
+- [Gabriel McPherson — Collaboration Profile](ai-collaboration/gabriel-profile.md) — AI-focused profile; how to work with Gabriel; active projects; domain depth for calibrating assistance
 
 ---
 
@@ -76,7 +84,8 @@ Meta-knowledge about human-AI workflow: synergy protocols, prompt patterns, work
 
 Distilled external material — real physics, agent market research, borrowed frameworks. Clearly separated from Gabriel's originated thinking.
 
-*No articles yet.*
+**Articles:**
+- [Gabriel McPherson Profile](reference-external/gabriel-mcpherson-profile.md) — professional background; composer/director/AI researcher career arc; technical skills; creative portfolio; cross-domain relevance map
 
 ---
 
@@ -84,8 +93,8 @@ Distilled external material — real physics, agent market research, borrowed fr
 
 | Metric | Count |
 |--------|-------|
-| Total wiki articles | 0 |
-| Raw files processed | 0 |
+| Total wiki articles | 16 |
+| Raw files processed | 10 (+ 2 PDF unreadable; 2 JSON duplicates marked done) |
 | Outputs generated | 0 |
-| Last ingestion | — |
+| Last ingestion | 2026-06-02 |
 | Last health check | — |

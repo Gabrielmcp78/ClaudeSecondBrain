@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Unified Harmonic Map — Multi‑Rail + Intervals + Chords + Projection + Export</title>
+<style>
+  :root{
+    --bg1:#6f6f6f;
+    --bg2:#8b8b8b;
+    --ink:#ffffff;
+    --muted:rgba(255,255,255,.75);
+    --faint:rgba(255,255,255,.22);
+    --line:rgba(255,255,255,.55);
+    --panel:rgba(0,0,0,.22);
+    --panel2:rgba(0,0,0,.14);
+    --ring:rgba(255,255,255,.32);
+
+    --c-fifth:#60a5fa;
+    --c-fourth:#34d399;
+    --c-octave:#fbbf24;
+    --c-tritone:#f87171;
+    --c-m3:#a78bfa;
+    --c-M3:#fb7185;
+    --c-p4:#22c55e;
+    --c-p5:#38bdf8;
+  }
+
+  html, body{ height:100%; overflow-x:hidden; }
+  body{
+    margin:0;
+    background: linear-gradient(180deg, var(--bg1), var(--bg2));
+    color:var(--ink);
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  #wrap{ max-width: 1200px; margin: 0 auto; padding: 14px 14px 88px; }
+
+  header{
+    display:flex; align-items:flex-end; justify-content:space-between; gap:12px;
+    margin-bottom:10px;
+  }
+  h1{ margin:0; font-size: 16px; letter-spacing:.2px; }
+  .sub{ margin:2px 0 0; font-size: 12px; color: var(--muted); }
+
+  #stage{
+    position:relative;
+    background: rgba(0,0,0,.18);
+    border: 1px solid rgba(255,255,255,.14);
+    border-radius: 12px;
+    overflow:hidden;
+  }
+
+  svg{ width:100%; height: 72vh; display:block; }
+
+  /* lines + labels */
+  .degree-line{ stroke: var(--line); stroke-width: 1.4; }
+  .degree-label{ fill: var(--ink); font-size: 11px; font-weight: 700; text-anchor: middle; }
+
+  .rail-tick{ stroke: rgba(255,255,255,.26); stroke-width:1; }
+  .rail-label{ fill: rgba(255,255,255,.88); font-size: 10px; text-anchor: middle; }
+  .rail-title{ fill: rgba(255,255,255,.9); font-size: 10px; font-weight: 700; letter-spacing:.08em; }
+
+  .circle{ fill:none; stroke: var(--ring); stroke-width:1.2; }
+  .lens{ fill:none; stroke: rgba(255,255,255,.22); stroke-width: 1; }
+
+  .band{ fill-opacity:.14; }
+
+  .interval{ fill:none; stroke-width:2; stroke-opacity:.58; }
+  .interval.fifth{ stroke: var(--c-fifth); }
+  .interval.fourth{ stroke: var(--c-fourth); }
+  .interval.octave{ stroke: var(--c-octave); }
+  .interval.tritone{ stroke: var(--c-tritone); }
+  .interval.m3{ stroke: var(--c-m3); }
+  .interval.M3{ stroke: var(--c-M3); }
+  .interval.p4{ stroke: var(--c-p4); }
+  .interval.p5{ stroke: var(--c-p5); }
+
+  .interval-label{ font-size: 9px; fill: rgba(255,255,255,.92); text-anchor: middle; }
+
+  .chord-edge{ stroke: rgba(255,255,255,.7); stroke-width: 1.8; }
+  .chord-vertex{ fill: rgba(255,255,255,.95); }
+  .chord-label{ font-size: 10px; font-weight: 700; fill: rgba(255,255,255,.95); }
+
+  .active-stroke{ stroke-opacity: 1 !important; stroke-width: 3 !important; }
+  .dim{ opacity: .14; }
+
+  /* info */
+  #info{
+    position:absolute;
+    left: 10px;
+    top: 10px;
+    width: 320px;
+    max-width: calc(100% - 20px);
+    background: rgba(0,0,0,.35);
+    border: 1px solid rgba(255,255,255,.16);
+    border-radius: 10px;
+    padding: 10px 10px;
+    pointer-events:none;
+  }
+  #info .k{ font-size: 10px; color: rgba(255,255,255,.8); letter-spacing:.12em; text-transform: uppercase; }
+  #info .t{ font-size: 13px; font-weight: 800; margin-top:4px; }
+  #info .b{ font-size: 12px; color: rgba(255,255,255,.92); margin-top:6px; line-height:1.35; }
+
+  /* controls */
+  #controls{
+    position:fixed;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    background: var(--panel);
+    border: 1px solid rgba(255,255,255,.16);
+    border-radius: 12px;
+    padding: 10px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px 14px;
+    align-items:center;
+    justify-content:space-between;
+    backdrop-filter: blur(8px) saturate(130%);
+  }
+  .grp{ display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+  .btn{
+    border: 1px solid rgba(255,255,255,.22);
+    background: rgba(255,255,255,.08);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    cursor:pointer;
+  }
+  .btn:hover{ background: rgba(255,255,255,.12); }
+  .toggle{
+    display:inline-flex; align-items:center; gap:6px;
+    font-size: 12px; color: rgba(255,255,255,.95);
+    user-select:none;
+  }
+  .toggle input{ transform: translateY(1px); }
+  select, input[type="range"]{
+    accent-color: #ffffff;
+  }
+  select{
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.18);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .mini{ font-size: 11px; color: rgba(255,255,255,.9); }
+  .meter{ min-width: 110px; }
+
+  @media (max-width: 700px){
+    #info{ width: 280px; }
+    svg{ height: 70vh; }
+  }
+</style>
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <div>
+        <h1>Unified Harmonic Map</h1>
+        <div class="sub">Degrees are always visible. Notes/ratios/frequencies live on separate rails. Intervals + chords cross‑highlight across domains.</div>
+      </div>
+      <div class="mini" id="modeLabel">Projection: Linear</div>
+    </header>
+
+    <div id="stage">
+      <svg id="scene" role="img" aria-label="Unified harmonic map"></svg>
+      <div id="info" aria-live="polite">
+        <div class="k">Selected</div>
+        <div class="t" id="infoTitle">None</div>
+        <div class="b" id="infoBody">Click a degree line, a rail label, an interval arc, or a chord. Use the controls below to toggle interval families, projection, and export.</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="controls">
+    <div class="grp">
+      <button class="btn" id="toggleAnim">▶︎ Play</button>
+      <label class="toggle"><span class="mini">Speed</span>
+        <input id="speed" class="meter" type="range" min="0" max="100" value="18" />
+      </label>
+      <label class="toggle"><span class="mini">Base</span>
+        <select id="baseFreq">
+          <option value="432">432 Hz</option>
+          <option value="440" selected>440 Hz</option>
+        </select>
+      </label>
+      <button class="btn" id="reset">Reset</button>
+    </div>
+
+    <div class="grp">
+      <label class="toggle"><input type="checkbox" class="fam" value="fifth" checked>Fifth</label>
+      <label class="toggle"><input type="checkbox" class="fam" value="fourth" checked>Fourth</label>
+      <label class="toggle"><input type="checkbox" class="fam" value="octave" checked>Octave</label>
+      <label class="toggle"><input type="checkbox" class="fam" value="tritone" checked>Tritone</label>
+      <label class="toggle"><input type="checkbox" class="fam" value="m3" checked>m3</label>
+      <label class="toggle"><input type="checkbox" class="fam" value="M3" checked>M3</label>
+      <button class="btn" id="proj">Toggle Radial</button>
+    </div>
+
+    <div class="grp">
+      <span class="mini">Chord</span>
+      <select id="chordPick">
+        <option value="">(none)</option>
+      </select>
+      <button class="btn" id="exportSVG">Export SVG</button>
+      <button class="btn" id="exportPNG">Export PNG</button>
+    </div>
+  </div>
+
+<script>
+(() => {
+  const svg = document.getElementById('scene');
+  const infoTitle = document.getElementById('infoTitle');
+  const infoBody = document.getElementById('infoBody');
+  const modeLabel = document.getElementById('modeLabel');
+
+  const NS = 'http://www.w3.org/2000/svg';
+  const el = (name, attrs = {}) => {
+    const n = document.createElementNS(NS, name);
+    for (const [k, v] of Object.entries(attrs)) n.setAttribute(k, String(v));
+    return n;
+  };
+
+  // --- Canonical degree spine (from your ruler) ---
+  const degreeSpine = [
+    0,9,18,27,36,45,54,72,90,108,120,135,144,162,
+    180,216,225,240,252,270,288,300,315,324,333,360
+  ];
+
+  // --- Multi-rail data (starter; extend freely) ---
+  // Note rail: circle-of-fifths anchors in your preferred degrees
+  const notes = [
+    { id:'C',  label:'C',  deg:0,   domain:['music'], def:'Tonic anchor (example mapping).', freqRel:1 },
+    { id:'G',  label:'G',  deg:216, domain:['music'], def:'Perfect fifth of C (3/2).', freqRel:3/2 },
+    { id:'D',  label:'D',  deg:72,  domain:['music'], def:'Fifth of G.', freqRel:(3/2)*(3/2) },
+    { id:'A',  label:'A',  deg:288, domain:['music'], def:'Fifth of D.', freqRel:(3/2)**3 },
+    { id:'E',  label:'E',  deg:144, domain:['music'], def:'Fifth of A.', freqRel:(3/2)**4 },
+    { id:'B',  label:'B',  deg:300, domain:['music'], def:'Fifth of E.', freqRel:(3/2)**5 },
+    { id:'F',  label:'F',  deg:180, domain:['music'], def:'Fourth of C (4/3).', freqRel:4/3 },
+  ];
+
+  // Ratio rail: harmonic ratios (these are meanings; degrees can be adjusted as you lock them)
+  const ratios = [
+    { id:'1/1', label:'1/1', deg:0, def:'Unison.', domain:['music','math'] },
+    { id:'2/1', label:'2/1', deg:360, def:'Octave.', domain:['music','math'] },
+    { id:'3/2', label:'3/2', deg:216, def:'Perfect fifth.', domain:['music','math'] },
+    { id:'4/3', label:'4/3', deg:144, def:'Perfect fourth.', domain:['music','math'] },
+    { id:'5/4', label:'5/4', deg:72,  def:'Major third (just).', domain:['music','math'] },
+    { id:'6/5', label:'6/5', deg:288, def:'Minor third (just).', domain:['music','math'] },
+    { id:'9/8', label:'9/8', deg:36,  def:'Major second (Pythagorean).', domain:['music','math'] },
+  ];
+
+  // Frequency rail: absolute anchors (we’ll animate with correct relative speeds)
+  const freqs = [
+    { id:'A4_440', label:'440', deg:9,   hz:440, def:'A4 standard pitch reference.', domain:['frequency'] },
+    { id:'A4_432', label:'432', deg:0,   hz:432, def:'Alternative A4 reference.', domain:['frequency'] },
+    { id:'A5_880', label:'880', deg:180, hz:880, def:'One octave above A4.', domain:['frequency'] },
+    { id:'C4',     label:'C≈261.63', deg:0, hz:261.63, def:'C4 reference (approx).', domain:['frequency'] },
+  ];
+
+  // Constant bands (expand from your pages)
+  const bands = [
+    { id:'phi',   deg:72,  color:'#fbbf24', name:'φ',   def:'Golden ratio family anchor (degree mapping from your system).' },
+    { id:'sqrt2', deg:90,  color:'#60a5fa', name:'√2',  def:'Diagonal-to-side ratio; square symmetry anchor.' },
+    { id:'pi',    deg:180, color:'#fb7185', name:'π',   def:'Half‑turn; circle constant anchor.' },
+    { id:'phi2',  deg:144, color:'#34d399', name:'φ²',  def:'Golden ratio squared; pentagonal symmetry echo.' },
+  ];
+
+  // Interval arcs (starter families; you can add from scans as a dataset)
+  const intervals = [
+    { id:'C_fifth',  from:0,   to:216, type:'fifth',  label:'P5 (3/2)', def:'Perfect fifth: strong harmonic consonance.' },
+    { id:'C_fourth', from:0,   to:144, type:'fourth', label:'P4 (4/3)', def:'Perfect fourth: inversion of the fifth.' },
+    { id:'C_oct',    from:0,   to:360, type:'octave', label:'8ve (2/1)', def:'Octave: doubling frequency.' },
+    { id:'C_tri',    from:0,   to:180, type:'tritone',label:'TT (√2)',  def:'Tritone: symmetry pivot; √2 relation.' },
+    { id:'C_M3',     from:0,   to:72,  type:'M3',     label:'M3 (5/4)', def:'Major third: just 5/4.' },
+    { id:'C_m3',     from:0,   to:288, type:'m3',     label:'m3 (6/5)', def:'Minor third: just 6/5.' },
+  ];
+
+  // Chords spanning arcs (selectable objects)
+  const chords = [
+    {
+      id:'Cmaj',
+      name:'C Major (C–E–G)',
+      verticesDeg:[0,144,216],
+      verticesLabel:['C','E','G'],
+      def:'Major triad: {1, 5/4, 3/2}. Geometry ties thirds + fifth into one object.'
+    },
+    {
+      id:'Amin',
+      name:'A Minor (A–C–E)',
+      verticesDeg:[288,0,144],
+      verticesLabel:['A','C','E'],
+      def:'Minor triad: {1, 6/5, 3/2} (relative). A–C is m3; A–E is P5.'
+    }
+  ];
+
+  // --- Layout coordinates (computed on resize) ---
+  let W = 1000, H = 700;
+  const y = {
+    degTop: 22,
+    railNote: 54,
+    railRatio: 78,
+    railFreq: 102,
+    fieldTop: 130,
+  };
+
+  let projection = 'linear'; // 'linear' | 'radial'
+
+  function resize(){
+    const rect = svg.getBoundingClientRect();
+    W = Math.max(360, Math.floor(rect.width));
+    H = Math.max(380, Math.floor(rect.height));
+    svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+    y.fieldTop = 128;
+  }
+
+  function xFromDegLinear(d){
+    return 44 + (d/360) * (W - 88);
+  }
+
+  function polarFromDeg(d, radius){
+    // 0° at right, increasing CCW (standard unit circle)
+    const a = (d - 90) * Math.PI/180; // put 0° at top if you prefer; here we shift
+    const cx = W * 0.55;
+    const cy = H * 0.58;
+    return {
+      x: cx + Math.cos(a) * radius,
+      y: cy + Math.sin(a) * radius,
+      cx, cy
+    };
+  }
+
+  // --- Rendering layers ---
+  const gBands = el('g', { id:'bands' });
+  const gSpine = el('g', { id:'spine' });
+  const gRails = el('g', { id:'rails' });
+  const gField = el('g', { id:'field' });
+  const gIntervals = el('g', { id:'intervals' });
+  const gChord = el('g', { id:'chords' });
+
+  svg.append(gBands, gSpine, gRails, gField, gIntervals, gChord);
+
+  function clear(){
+    for(const g of [gBands,gSpine,gRails,gField,gIntervals,gChord]) g.innerHTML='';
+  }
+
+  // --- Selection + relationship propagation ---
+  let active = null; // { kind, id, deg, relatedDegs:Set }
+
+  function setInfo(title, body){
+    infoTitle.textContent = title;
+    infoBody.textContent = body;
+  }
+
+  function degreeDistance(a,b){
+    // circular distance on [0,360]
+    const d = Math.abs(a-b);
+    return Math.min(d, 360-d);
+  }
+
+  function computeRelatedDegs(anchorDeg){
+    const tol = 9; // your system’s resolution step
+    const out = new Set();
+    degreeSpine.forEach(d => { if(degreeDistance(d, anchorDeg) <= tol) out.add(d); });
+
+    // Include chord vertices near the anchor
+    chords.forEach(ch => {
+      if(ch.verticesDeg.some(v => degreeDistance(v, anchorDeg) <= tol)) ch.verticesDeg.forEach(v=>out.add(v));
+    });
+
+    // Include band degrees that match
+    bands.forEach(b => { if(degreeDistance(b.deg, anchorDeg) <= tol) out.add(b.deg); });
+
+    // Include interval endpoints near
+    intervals.forEach(iv => {
+      if(degreeDistance(iv.from, anchorDeg) <= tol || degreeDistance(iv.to, anchorDeg) <= tol){
+        out.add(iv.from); out.add(iv.to);
+      }
+    });
+
+    return out;
+  }
+
+  function selectByDegree(kind, id, deg, title, body){
+    active = { kind, id, deg, relatedDegs: computeRelatedDegs(deg) };
+    setInfo(title, body);
+    applyHighlight();
+  }
+
+  function clearSelection(){
+    active = null;
+    setInfo('None', 'Click a degree line, a rail label, an interval arc, or a chord. Use the controls below to toggle interval families, projection, and export.');
+    applyHighlight();
+  }
+
+  function applyHighlight(){
+    const all = svg.querySelectorAll('[data-degree],[data-from],[data-to],[data-chord]');
+    all.forEach(n => n.classList.remove('dim','active-stroke'));
+
+    if(!active) return;
+
+    // dim everything first
+    all.forEach(n => n.classList.add('dim'));
+
+    // undim items that are related by degree
+    const rel = active.relatedDegs;
+    svg.querySelectorAll('[data-degree]').forEach(n => {
+      const d = Number(n.getAttribute('data-degree'));
+      if(rel.has(d)) n.classList.remove('dim');
+    });
+
+    // undim interval arcs that touch related degrees
+    svg.querySelectorAll('path.interval').forEach(p => {
+      const f = Number(p.getAttribute('data-from'));
+      const t = Number(p.getAttribute('data-to'));
+      if(rel.has(f) || rel.has(t)) p.classList.remove('dim');
+    });
+
+    // if chord selected, undim its edges/vertices and emphasize
+    if(active.kind === 'chord'){
+      const chg = svg.querySelectorAll(`[data-chord="${active.id}"]`);
+      chg.forEach(n => { n.classList.remove('dim'); n.classList.add('active-stroke'); });
+    }
+
+    // emphasize spine line at anchor
+    svg.querySelectorAll('.degree-line').forEach(l => {
+      const d = Number(l.getAttribute('data-degree'));
+      if(degreeDistance(d, active.deg) <= 9){ l.classList.remove('dim'); l.classList.add('active-stroke'); }
+    });
+  }
+
+  // --- Renderers ---
+  function renderSpineLinear(){
+    // degree verticals + labels always visible
+    degreeSpine.forEach(d => {
+      const x = xFromDegLinear(d);
+      const line = el('line', { x1:x, x2:x, y1:y.degTop+8, y2:H-26, class:'degree-line', 'data-degree':d });
+      line.style.cursor = 'pointer';
+      line.addEventListener('click', () => selectByDegree('degree', `deg_${d}`, d, `Degree ${d}°`, `Anchor on the canonical ruler. Anything within ±9° lights as a local neighborhood.`));
+      gSpine.appendChild(line);
+
+      const t = el('text', { x, y:y.degTop, class:'degree-label', 'data-degree':d });
+      t.textContent = `${d}°`;
+      t.style.cursor = 'pointer';
+      t.addEventListener('click', () => selectByDegree('degree', `deg_${d}`, d, `Degree ${d}°`, `Top-ruler tick. Use this as the master index for constants, music, and geometry.`));
+      gSpine.appendChild(t);
+    });
+  }
+
+  function renderBandsLinear(){
+    bands.forEach(b => {
+      const x = xFromDegLinear(b.deg);
+      const r = el('rect', { x:x-10, y:y.degTop+10, width:20, height:H-(y.degTop+10)-26, fill:b.color, class:'band', 'data-degree':b.deg });
+      r.style.cursor = 'pointer';
+      r.addEventListener('click', () => selectByDegree('band', b.id, b.deg, `${b.name} band @ ${b.deg}°`, b.def));
+      gBands.appendChild(r);
+
+      const lbl = el('text', { x, y:y.fieldTop-8, class:'rail-label', 'data-degree':b.deg });
+      lbl.textContent = b.name;
+      lbl.style.fontWeight = '800';
+      lbl.style.cursor = 'pointer';
+      lbl.addEventListener('click', () => selectByDegree('band', b.id, b.deg, `${b.name} @ ${b.deg}°`, b.def));
+      gBands.appendChild(lbl);
+    });
+  }
+
+  function renderRailLinear(items, railY, title){
+    // title at left
+    const titleText = el('text', { x: 8, y: railY+4, class:'rail-title' });
+    titleText.textContent = title;
+    gRails.appendChild(titleText);
+
+    items.forEach(it => {
+      const x = xFromDegLinear(it.deg);
+      const tick = el('line', { x1:x, x2:x, y1:railY-7, y2:railY+7, class:'rail-tick', 'data-degree':it.deg });
+      tick.style.cursor = 'pointer';
+      tick.addEventListener('click', () => selectByDegree('rail', it.id, it.deg, `${title}: ${it.label} @ ${it.deg}°`, it.def || '')); 
+      gRails.appendChild(tick);
+
+      const t = el('text', { x, y:railY+22, class:'rail-label', 'data-degree':it.deg });
+      t.textContent = it.label;
+      t.style.cursor='pointer';
+      t.addEventListener('click', () => selectByDegree('rail', it.id, it.deg, `${title}: ${it.label} @ ${it.deg}°`, it.def || ''));
+      gRails.appendChild(t);
+    });
+  }
+
+  function renderFieldLinear(){
+    // circle lattice across spine
+    const cy = Math.max(y.fieldTop+90, H*0.58);
+    degreeSpine.forEach(d => {
+      const c = el('circle', { cx:xFromDegLinear(d), cy, r:36, class:'circle', 'data-degree':d });
+      c.style.cursor='pointer';
+      c.addEventListener('click', () => selectByDegree('circle', `circle_${d}`, d, `Circle node @ ${d}°`, 'Part of the lattice: overlapping circles create lens intersections and spacing cues.'));
+      gField.appendChild(c);
+    });
+
+    // lens clusters
+    const centers = [72,144,216,288,300];
+    centers.forEach(cd => {
+      const cx = xFromDegLinear(cd);
+      [-24,0,24].forEach(off => {
+        const e = el('ellipse', { cx, cy, rx:52+off, ry:82, class:'lens', 'data-degree':cd });
+        e.style.cursor='pointer';
+        e.addEventListener('click', () => selectByDegree('lens', `lens_${cd}`, cd, `Lens cluster @ ${cd}°`, 'Lens geometry evokes vesica intersections: where overlapping circles produce stable proportion windows.'));
+        gField.appendChild(e);
+      });
+    });
+  }
+
+  function arcPathLinear(fromDeg, toDeg){
+    const x1 = xFromDegLinear(fromDeg);
+    const x2 = xFromDegLinear(toDeg);
+    const y0 = Math.max(y.fieldTop+10, H*0.42);
+    const mid = (x1+x2)/2;
+    const span = Math.abs(x2-x1);
+    const lift = Math.min(140, 60 + span*0.22);
+    return { d:`M ${x1} ${y0} Q ${mid} ${y0-lift} ${x2} ${y0}`, labelX: mid, labelY: y0-lift-6 };
+  }
+
+  function renderIntervalsLinear(){
+    const enabled = getEnabledFamilies();
+    intervals.forEach(iv => {
+      if(!enabled.has(iv.type)) return;
+      const p = arcPathLinear(iv.from, iv.to);
+      const path = el('path', { d:p.d, class:`interval ${iv.type}`, 'data-from':iv.from, 'data-to':iv.to });
+      path.style.cursor='pointer';
+      path.addEventListener('click', () => {
+        const deg = iv.from; // anchor on source
+        selectByDegree('interval', iv.id, deg, `Interval: ${iv.label}`, iv.def);
+      });
+      gIntervals.appendChild(path);
+
+      const t = el('text', { x:p.labelX, y:p.labelY, class:'interval-label' });
+      t.textContent = iv.label;
+      t.style.cursor='pointer';
+      t.addEventListener('click', () => {
+        selectByDegree('interval', iv.id, iv.from, `Interval: ${iv.label}`, iv.def);
+      });
+      gIntervals.appendChild(t);
+    });
+  }
+
+  function renderChordsLinear(){
+    // chord dropdown
+    const pick = document.getElementById('chordPick');
+    pick.innerHTML = '<option value="">(none)</option>';
+    chords.forEach(ch => {
+      const opt = document.createElement('option');
+      opt.value = ch.id;
+      opt.textContent = ch.name;
+      pick.appendChild(opt);
+    });
+
+    const cy = Math.max(y.fieldTop+90, H*0.58);
+    const chordY = cy - 120;
+
+    chords.forEach(ch => {
+      const pts = ch.verticesDeg.map(d => ({ x:xFromDegLinear(d), y: chordY }));
+      // spread vertically for readability
+      pts[0].y = chordY + 10;
+      pts[1].y = chordY - 18;
+      pts[2].y = chordY + 10;
+
+      // edges
+      for(let i=0;i<3;i++){
+        const a = pts[i];
+        const b = pts[(i+1)%3];
+        const line = el('line', { x1:a.x, y1:a.y, x2:b.x, y2:b.y, class:'chord-edge', 'data-chord':ch.id });
+        line.style.cursor='pointer';
+        line.addEventListener('click', () => {
+          active = { kind:'chord', id:ch.id, deg: ch.verticesDeg[0], relatedDegs: new Set(ch.verticesDeg) };
+          setInfo(`Chord: ${ch.name}`, ch.def);
+          applyHighlight();
+        });
+        gChord.appendChild(line);
+      }
+
+      // vertices + labels
+      ch.verticesDeg.forEach((d, idx) => {
+        const v = pts[idx];
+        const c = el('circle', { cx:v.x, cy:v.y, r:4.2, class:'chord-vertex', 'data-degree':d, 'data-chord':ch.id });
+        c.style.cursor='pointer';
+        c.addEventListener('click', () => selectByDegree('chord_vertex', `${ch.id}_${idx}`, d, `Chord vertex: ${ch.verticesLabel[idx]} @ ${d}°`, `Vertex of ${ch.name}. ${ch.def}`));
+        gChord.appendChild(c);
+
+        const t = el('text', { x:v.x, y:v.y-10, class:'chord-label', 'data-degree':d, 'data-chord':ch.id });
+        t.textContent = ch.verticesLabel[idx];
+        t.style.cursor='pointer';
+        t.addEventListener('click', () => selectByDegree('chord_vertex', `${ch.id}_${idx}`, d, `Chord vertex: ${ch.verticesLabel[idx]} @ ${d}°`, `Vertex of ${ch.name}. ${ch.def}`));
+        gChord.appendChild(t);
+      });
+
+      // chord name
+      const nameX = (pts[0].x + pts[2].x)/2;
+      const name = el('text', { x:nameX, y: chordY+34, class:'rail-label', 'data-chord':ch.id });
+      name.textContent = ch.name;
+      name.style.fontWeight='800';
+      name.style.cursor='pointer';
+      name.addEventListener('click', () => {
+        active = { kind:'chord', id:ch.id, deg: ch.verticesDeg[0], relatedDegs: new Set(ch.verticesDeg) };
+        setInfo(`Chord: ${ch.name}`, ch.def);
+        applyHighlight();
+      });
+      gChord.appendChild(name);
+    });
+  }
+
+  // --- Radial projection ---
+  function renderSpineRadial(){
+    const outer = Math.min(W,H) * 0.38;
+    const rDeg = outer;
+
+    // circle spine
+    const {cx, cy} = polarFromDeg(0, rDeg);
+    const spineCircle = el('circle', { cx, cy, r:rDeg, fill:'none', stroke:'rgba(255,255,255,.35)', 'stroke-width':1.4 });
+    gSpine.appendChild(spineCircle);
+
+    degreeSpine.forEach(d => {
+      const p = polarFromDeg(d, rDeg);
+      const p2 = polarFromDeg(d, rDeg-18);
+
+      const line = el('line', { x1:p.x, y1:p.y, x2:p2.x, y2:p2.y, class:'degree-line', 'data-degree':d });
+      line.style.cursor='pointer';
+      line.addEventListener('click', () => selectByDegree('degree', `deg_${d}`, d, `Degree ${d}°`, 'Radial projection: same anchor, different view.'));
+      gSpine.appendChild(line);
+
+      const labP = polarFromDeg(d, rDeg+18);
+      const t = el('text', { x:labP.x, y:labP.y+4, class:'degree-label', 'data-degree':d });
+      t.textContent = `${d}°`;
+      t.style.cursor='pointer';
+      t.addEventListener('click', () => selectByDegree('degree', `deg_${d}`, d, `Degree ${d}°`, 'Radial projection label.'));
+      gSpine.appendChild(t);
+    });
+  }
+
+  function renderRailsRadial(){
+    const outer = Math.min(W,H) * 0.38;
+    const rNote = outer + 44;
+    const rRatio = outer + 66;
+    const rFreq = outer + 88;
+
+    const {cx, cy} = polarFromDeg(0, outer);
+
+    // ring outlines
+    [
+      {r:rNote, name:'NOTES'},
+      {r:rRatio, name:'RATIOS'},
+      {r:rFreq, name:'FREQ'}
+    ].forEach((rr, i) => {
+      gRails.appendChild(el('circle', { cx, cy, r: rr.r, fill:'none', stroke:'rgba(255,255,255,.15)', 'stroke-width':1 }));
+      const t = el('text', { x: cx - rr.r + 8, y: cy - rr.r + 16, class:'rail-title' });
+      t.textContent = rr.name;
+      gRails.appendChild(t);
+    });
+
+    const place = (items, r, title) => {
+      items.forEach(it => {
+        const p = polarFromDeg(it.deg, r);
+        const p2 = polarFromDeg(it.deg, r-10);
+        const tick = el('line', { x1:p.x, y1:p.y, x2:p2.x, y2:p2.y, class:'rail-tick', 'data-degree':it.deg });
+        tick.style.cursor='pointer';
+        tick.addEventListener('click', () => selectByDegree('rail', it.id, it.deg, `${title}: ${it.label} @ ${it.deg}°`, it.def || ''));
+        gRails.appendChild(tick);
+
+        const lab = polarFromDeg(it.deg, r+14);
+        const txt = el('text', { x:lab.x, y:lab.y+4, class:'rail-label', 'data-degree':it.deg });
+        txt.textContent = it.label;
+        txt.style.cursor='pointer';
+        txt.addEventListener('click', () => selectByDegree('rail', it.id, it.deg, `${title}: ${it.label} @ ${it.deg}°`, it.def || ''));
+        gRails.appendChild(txt);
+      });
+    };
+
+    place(notes, rNote, 'NOTES');
+    place(ratios, rRatio, 'RATIOS');
+    place(freqs.map(f => ({...f, label:f.label})), rFreq, 'FREQ');
+  }
+
+  function renderBandsRadial(){
+    const outer = Math.min(W,H) * 0.38;
+    const rIn = outer - 22;
+    const rOut = outer + 22;
+    const {cx, cy} = polarFromDeg(0, outer);
+
+    bands.forEach(b => {
+      // arc sector around degree (small wedge)
+      const a = (b.deg - 90) * Math.PI/180;
+      const w = 8 * Math.PI/180;
+      const a1 = a - w;
+      const a2 = a + w;
+
+      const p1 = { x: cx + Math.cos(a1)*rIn,  y: cy + Math.sin(a1)*rIn };
+      const p2 = { x: cx + Math.cos(a2)*rIn,  y: cy + Math.sin(a2)*rIn };
+      const p3 = { x: cx + Math.cos(a2)*rOut, y: cy + Math.sin(a2)*rOut };
+      const p4 = { x: cx + Math.cos(a1)*rOut, y: cy + Math.sin(a1)*rOut };
+
+      const large = 0;
+      const d = [
+        `M ${p1.x} ${p1.y}`,
+        `A ${rIn} ${rIn} 0 ${large} 1 ${p2.x} ${p2.y}`,
+        `L ${p3.x} ${p3.y}`,
+        `A ${rOut} ${rOut} 0 ${large} 0 ${p4.x} ${p4.y}`,
+        'Z'
+      ].join(' ');
+
+      const path = el('path', { d, fill:b.color, class:'band', 'data-degree':b.deg });
+      path.style.cursor='pointer';
+      path.addEventListener('click', () => selectByDegree('band', b.id, b.deg, `${b.name} band @ ${b.deg}°`, b.def));
+      gBands.appendChild(path);
+
+      const lp = polarFromDeg(b.deg, outer-40);
+      const t = el('text', { x:lp.x, y:lp.y, class:'rail-label', 'data-degree':b.deg });
+      t.textContent = b.name;
+      t.style.fontWeight='800';
+      t.style.cursor='pointer';
+      t.addEventListener('click', () => selectByDegree('band', b.id, b.deg, `${b.name} @ ${b.deg}°`, b.def));
+      gBands.appendChild(t);
+    });
+  }
+
+  function renderFieldRadial(){
+    const outer = Math.min(W,H) * 0.38;
+    const rLattice = outer - 70;
+    const {cx, cy} = polarFromDeg(0, outer);
+
+    degreeSpine.forEach(d => {
+      const p = polarFromDeg(d, rLattice);
+      const c = el('circle', { cx:p.x, cy:p.y, r:20, class:'circle', 'data-degree':d });
+      c.style.cursor='pointer';
+      c.addEventListener('click', () => selectByDegree('circle', `circle_${d}`, d, `Circle node @ ${d}°`, 'Radial lattice node.'));
+      gField.appendChild(c);
+    });
+
+    // lenses at selected centers
+    const centers = [72,144,216,288,300];
+    centers.forEach(cd => {
+      const center = polarFromDeg(cd, rLattice);
+      [-14,0,14].forEach(off => {
+        const e = el('ellipse', { cx:center.x, cy:center.y, rx:34+off, ry:52, class:'lens', 'data-degree':cd });
+        e.style.cursor='pointer';
+        e.addEventListener('click', () => selectByDegree('lens', `lens_${cd}`, cd, `Lens cluster @ ${cd}°`, 'Radial lens: overlap window at a degree anchor.'));
+        gField.appendChild(e);
+      });
+    });
+  }
+
+  function arcPathRadial(fromDeg, toDeg){
+    const outer = Math.min(W,H) * 0.38;
+    const {cx, cy} = polarFromDeg(0, outer);
+    const rA = outer - 30;
+    const p1 = polarFromDeg(fromDeg, rA);
+    const p2 = polarFromDeg(toDeg, rA);
+
+    // control point toward center for a bow
+    const midDeg = (fromDeg + toDeg)/2;
+    const pc = polarFromDeg(midDeg, rA - 70);
+    return {
+      d:`M ${p1.x} ${p1.y} Q ${pc.x} ${pc.y} ${p2.x} ${p2.y}`,
+      labelX: pc.x,
+      labelY: pc.y
+    };
+  }
+
+  function renderIntervalsRadial(){
+    const enabled = getEnabledFamilies();
+    intervals.forEach(iv => {
+      if(!enabled.has(iv.type)) return;
+      const p = arcPathRadial(iv.from, iv.to);
+      const path = el('path', { d:p.d, class:`interval ${iv.type}`, 'data-from':iv.from, 'data-to':iv.to });
+      path.style.cursor='pointer';
+      path.addEventListener('click', () => selectByDegree('interval', iv.id, iv.from, `Interval: ${iv.label}`, iv.def));
+      gIntervals.appendChild(path);
+
+      const t = el('text', { x:p.labelX, y:p.labelY-8, class:'interval-label' });
+      t.textContent = iv.label;
+      t.style.cursor='pointer';
+      t.addEventListener('click', () => selectByDegree('interval', iv.id, iv.from, `Interval: ${iv.label}`, iv.def));
+      gIntervals.appendChild(t);
+    });
+  }
+
+  function renderChordsRadial(){
+    const pick = document.getElementById('chordPick');
+    pick.innerHTML = '<option value="">(none)</option>';
+    chords.forEach(ch => {
+      const opt = document.createElement('option');
+      opt.value = ch.id;
+      opt.textContent = ch.name;
+      pick.appendChild(opt);
+    });
+
+    const outer = Math.min(W,H) * 0.38;
+    const rChord = outer - 120;
+
+    chords.forEach(ch => {
+      const pts = ch.verticesDeg.map(d => polarFromDeg(d, rChord));
+
+      // edges
+      for(let i=0;i<3;i++){
+        const a = pts[i];
+        const b = pts[(i+1)%3];
+        const line = el('line', { x1:a.x, y1:a.y, x2:b.x, y2:b.y, class:'chord-edge', 'data-chord':ch.id });
+        line.style.cursor='pointer';
+        line.addEventListener('click', () => {
+          active = { kind:'chord', id:ch.id, deg: ch.verticesDeg[0], relatedDegs: new Set(ch.verticesDeg) };
+          setInfo(`Chord: ${ch.name}`, ch.def);
+          applyHighlight();
+        });
+        gChord.appendChild(line);
+      }
+
+      // vertices
+      ch.verticesDeg.forEach((d, idx) => {
+        const p = pts[idx];
+        const c = el('circle', { cx:p.x, cy:p.y, r:4.2, class:'chord-vertex', 'data-degree':d, 'data-chord':ch.id });
+        c.style.cursor='pointer';
+        c.addEventListener('click', () => selectByDegree('chord_vertex', `${ch.id}_${idx}`, d, `Chord vertex: ${ch.verticesLabel[idx]} @ ${d}°`, `Vertex of ${ch.name}. ${ch.def}`));
+        gChord.appendChild(c);
+
+        const t = el('text', { x:p.x, y:p.y-10, class:'chord-label', 'data-degree':d, 'data-chord':ch.id });
+        t.textContent = ch.verticesLabel[idx];
+        t.style.cursor='pointer';
+        t.addEventListener('click', () => selectByDegree('chord_vertex', `${ch.id}_${idx}`, d, `Chord vertex: ${ch.verticesLabel[idx]} @ ${d}°`, `Vertex of ${ch.name}. ${ch.def}`));
+        gChord.appendChild(t);
+      });
+
+      const mid = pts.reduce((acc,p)=>({x:acc.x+p.x/3,y:acc.y+p.y/3}),{x:0,y:0});
+      const name = el('text', { x:mid.x, y:mid.y+22, class:'rail-label', 'data-chord':ch.id });
+      name.textContent = ch.name;
+      name.style.fontWeight='800';
+      name.style.cursor='pointer';
+      name.addEventListener('click', () => {
+        active = { kind:'chord', id:ch.id, deg: ch.verticesDeg[0], relatedDegs: new Set(ch.verticesDeg) };
+        setInfo(`Chord: ${ch.name}`, ch.def);
+        applyHighlight();
+      });
+      gChord.appendChild(name);
+    });
+  }
+
+  function getEnabledFamilies(){
+    const s = new Set();
+    document.querySelectorAll('input.fam').forEach(cb => { if(cb.checked) s.add(cb.value); });
+    return s;
+  }
+
+  // --- Animation (frequency-accurate relative speeds) ---
+  let running = false;
+  let t0 = performance.now();
+
+  function baseHz(){
+    return Number(document.getElementById('baseFreq').value);
+  }
+
+  function speedFactor(){
+    // map 0..100 to 0.2..2.2 for gentle control
+    const v = Number(document.getElementById('speed').value);
+    return 0.2 + (v/100)*2.0;
+  }
+
+  function hzForDegree(d){
+    // Attach a meaningful frequency to each degree.
+    // Priority: explicit freq rail matches; else note relative; else base.
+    const b = baseHz();
+    const fExplicit = freqs.find(f => Math.abs(f.deg - d) < 0.5);
+    if(fExplicit) return fExplicit.hz;
+
+    const n = notes.find(n => Math.abs(n.deg - d) < 0.5);
+    if(n){
+      // fold within an octave-ish range to keep numbers sane
+      let f = b * n.freqRel;
+      while(f > b*2) f /= 2;
+      while(f < b/2) f *= 2;
+      return f;
+    }
+
+    const r = ratios.find(r => Math.abs(r.deg - d) < 0.5);
+    if(r){
+      const [num,den] = r.id.split('/').map(Number);
+      if(Number.isFinite(num) && Number.isFinite(den)){
+        let f = b * (num/den);
+        while(f > b*2) f /= 2;
+        while(f < b/2) f *= 2;
+        return f;
+      }
+    }
+
+    return b;
+  }
+
+  function animate(now){
+    if(!running) return;
+    const dt = (now - t0) / 1000;
+
+    // animate circles: radius modulation by per-degree frequency phase
+    const circles = svg.querySelectorAll('circle.circle');
+    circles.forEach(c => {
+      const d = Number(c.getAttribute('data-degree'));
+      const hz = hzForDegree(d);
+      const phase = 2*Math.PI*hz*dt*0.002*speedFactor();
+      const amp = 2.2 + Math.sin(phase) * 1.6;
+      c.setAttribute('r', 36 + amp);
+    });
+
+    // animate interval arcs: opacity pulse by the mean frequency of endpoints
+    const arcs = svg.querySelectorAll('path.interval');
+    arcs.forEach(p => {
+      const f = Number(p.getAttribute('data-from'));
+      const t = Number(p.getAttribute('data-to'));
+      const hz = (hzForDegree(f) + hzForDegree(t)) / 2;
+      const phase = 2*Math.PI*hz*dt*0.0016*speedFactor();
+      const op = 0.35 + 0.55 * (0.5 + 0.5*Math.sin(phase));
+      p.style.strokeOpacity = String(op);
+    });
+
+    requestAnimationFrame(animate);
+  }
+
+  // --- Export ---
+  function download(filename, blob){
+    const a = document.createElement('a');
+    const url = URL.createObjectURL(blob);
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
+
+  function exportSVG(){
+    // clone svg with inline CSS
+    const cssText = Array.from(document.styleSheets)
+      .filter(ss => {
+        try { return ss.cssRules && ss.cssRules.length; } catch { return false; }
+      })
+      .map(ss => Array.from(ss.cssRules).map(r => r.cssText).join('\n'))
+      .join('\n');
+
+    const clone = svg.cloneNode(true);
+    clone.setAttribute('xmlns', NS);
+
+    const defs = el('defs');
+    const style = el('style');
+    style.textContent = cssText;
+    defs.appendChild(style);
+    clone.insertBefore(defs, clone.firstChild);
+
+    const xml = new XMLSerializer().serializeToString(clone);
+    const blob = new Blob([xml], { type: 'image/svg+xml;charset=utf-8' });
+    download('harmonic-map.svg', blob);
+  }
+
+  async function exportPNG(){
+    const xml = new XMLSerializer().serializeToString(svg);
+    const svgBlob = new Blob([xml], { type:'image/svg+xml;charset=utf-8' });
+    const url = URL.createObjectURL(svgBlob);
+
+    const img = new Image();
+    await new Promise((res, rej) => {
+      img.onload = res;
+      img.onerror = rej;
+      img.src = url;
+    });
+
+    const canvas = document.createElement('canvas');
+    const scale = 2; // sharper
+    canvas.width = Math.floor(W*scale);
+    canvas.height = Math.floor(H*scale);
+    const ctx = canvas.getContext('2d');
+
+    // background
+    const grad = ctx.createLinearGradient(0,0,0,canvas.height);
+    grad.addColorStop(0, getComputedStyle(document.documentElement).getPropertyValue('--bg1').trim() || '#6f6f6f');
+    grad.addColorStop(1, getComputedStyle(document.documentElement).getPropertyValue('--bg2').trim() || '#8b8b8b');
+    ctx.fillStyle = grad;
+    ctx.fillRect(0,0,canvas.width,canvas.height);
+
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    URL.revokeObjectURL(url);
+
+    canvas.toBlob((blob) => {
+      if(blob) download('harmonic-map.png', blob);
+    }, 'image/png');
+  }
+
+  // --- Build scene ---
+  function render(){
+    clear();
+
+    if(projection === 'linear'){
+      modeLabel.textContent = 'Projection: Linear';
+      renderBandsLinear();
+      renderSpineLinear();
+      renderRailLinear(notes,  y.railNote,  'NOTES');
+      renderRailLinear(ratios, y.railRatio, 'RATIOS');
+      renderRailLinear(freqs.map(f => ({...f, label:f.label})), y.railFreq,  'FREQ');
+      renderFieldLinear();
+      renderIntervalsLinear();
+      renderChordsLinear();
+    } else {
+      modeLabel.textContent = 'Projection: Radial';
+      renderBandsRadial();
+      renderSpineRadial();
+      renderRailsRadial();
+      renderFieldRadial();
+      renderIntervalsRadial();
+      renderChordsRadial();
+    }
+
+    // chord picker select triggers chord highlight
+    const pick = document.getElementById('chordPick');
+    pick.onchange = () => {
+      const id = pick.value;
+      if(!id){ clearSelection(); return; }
+      const ch = chords.find(c => c.id === id);
+      if(!ch) return;
+      active = { kind:'chord', id:ch.id, deg: ch.verticesDeg[0], relatedDegs: new Set(ch.verticesDeg) };
+      setInfo(`Chord: ${ch.name}`, ch.def);
+      applyHighlight();
+    };
+
+    applyHighlight();
+  }
+
+  // --- Wire controls ---
+  document.getElementById('reset').addEventListener('click', () => {
+    clearSelection();
+    // also reset picker
+    const pick = document.getElementById('chordPick');
+    pick.value = '';
+  });
+
+  document.getElementById('proj').addEventListener('click', () => {
+    projection = (projection === 'linear') ? 'radial' : 'linear';
+    render();
+  });
+
+  document.querySelectorAll('input.fam').forEach(cb => cb.addEventListener('change', () => render()));
+
+  document.getElementById('toggleAnim').addEventListener('click', () => {
+    running = !running;
+    const b = document.getElementById('toggleAnim');
+    b.textContent = running ? '⏸ Pause' : '▶︎ Play';
+    if(running){ t0 = performance.now(); requestAnimationFrame(animate); }
+  });
+
+  document.getElementById('baseFreq').addEventListener('change', () => {
+    // keep animation phase stable but frequency mapping changes
+    if(running){ t0 = performance.now(); }
+  });
+
+  document.getElementById('speed').addEventListener('input', () => {
+    if(running){ t0 = performance.now(); }
+  });
+
+  document.getElementById('exportSVG').addEventListener('click', exportSVG);
+  document.getElementById('exportPNG').addEventListener('click', exportPNG);
+
+  // clicking empty space clears
+  svg.addEventListener('click', (e) => {
+    const target = e.target;
+    if(target === svg){
+      clearSelection();
+      document.getElementById('chordPick').value='';
+    }
+  });
+
+  // initial render
+  resize();
+  render();
+
+  // handle resize
+  window.addEventListener('resize', () => {
+    resize();
+    render();
+  });
+
+})();
+</script>
+</body>
+</html>

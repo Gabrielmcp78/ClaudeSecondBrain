@@ -1,0 +1,831 @@
+{
+  "metadata": {
+    "title": "STRING THEORY Agent Match Profiles — Batch 2",
+    "description": "Additional 20 top literary agents who are strong fits for an upmarket literary novel with speculative elements",
+    "total_agents": 20,
+    "batch": 2,
+    "last_updated": "2026-03-12"
+  },
+  
+  "agent_profiles": [
+    {
+      "name": "Angeline Rodriguez",
+      "agency": "William Morris Endeavor (WME)",
+      "tier": 2,
+      "personality_profile": {
+        "archetype": "The First Member of the Book Club",
+        "communication_style": "Enthusiastic, collaborative, editorially-minded",
+        "decision_making": "Draws to high concepts, big swings, and deep dives—stories only that author could tell",
+        "working_style": "Hands-on editorial partner who spends real time with manuscripts",
+        "background": "Former editor at Random House and Hachette; brings editorial rigor to agenting"
+      },
+      "how_they_read": {
+        "first_page_focus": "Line-level storytelling—she reads as an editor first",
+        "what_grabs_them": "Old stories told in new ways or from unexpected perspectives; knowing your references so you can subvert them",
+        "what_loses_them": "Conventional narratives that don't take risks",
+        "reading_philosophy": "Books are the purest way of transmitting a story with as few interventions as possible"
+      },
+      "style_preferences": {
+        "prose": "Literary and upmarket commercial, with attention to craft on a line level",
+        "pacing": "Varies by project, but must be intentional",
+        "genre": "Literary fiction, upmarket commercial fiction, speculative fiction",
+        "voice": "Distinctive, author-specific, irreplicable"
+      },
+      "specifically_loves": [
+        "High concepts that deliver on their promise",
+        "Speculative fiction with literary execution",
+        "Platform-driven narrative nonfiction",
+        "Stories from perspectives traditionally underrepresented in publishing",
+        "Writers who know their references and subvert them effectively"
+      ],
+      "specifically_hates": [
+        "Generic prose",
+        "Stories that feel like they could have been written by anyone",
+        "Concepts that don't deliver on their premise"
+      ],
+      "deal_breakers": [
+        "First pages without line-level craft",
+        "Queries that don't convey why this story could only be told by this author"
+      ],
+      "submission_fit_notes": "Rodriguez brings editorial DNA from Random House and Hachette, so she reads with an editor's eye for craft. Her immigrant background informs her commitment to writers who don't fit the traditional mold. STRING THEORY's blend of literary craft and speculative concept hits her sweet spot.",
+      "recommended_approach": "Lead with voice and line-level craft. Show her you know your references (Einstein's Dreams, Intimacies, Annihilation) and how you're subverting them. Emphasize that this story could only be told by someone with your music/physics background."
+    },
+    {
+      "name": "Aram Fox",
+      "agency": "Massie McQuilkin & Altman",
+      "tier": 2,
+      "personality_profile": {
+        "archetype": "The Scout-Turned-Agent",
+        "communication_style": "Intellectually rigorous, editorial, relationship-focused",
+        "decision_making": "Draws to extraordinary storytelling and laser-sharp writing",
+        "working_style": "Editorial collaborator who sends detailed notes before offering rep",
+        "background": "Ran his own literary scouting agency for 20+ years, representing international publishers and Hollywood"
+      },
+      "how_they_read": {
+        "first_page_focus": "Brilliant writing that could only have been written by that person",
+        "what_grabs_them": "Sophisticated relationship novels—families, couples, friends—that hint at a secret or show an emotional time bomb on the verge of going off",
+        "what_loses_them": "Stories where craft doesn't match ambition",
+        "reading_philosophy": "The agent-author relationship is intensely collaborative, but it's the author's book—they always have complete creative control"
+      },
+      "style_preferences": {
+        "prose": "Laser-sharp, extraordinary, distinctive",
+        "pacing": "Emotional pacing matters as much as plot pacing",
+        "genre": "Literary fiction, upmarket fiction, narrative nonfiction about culture/politics/history/science",
+        "emotional_stakes": "Secrets, tensions, time bombs waiting to detonate"
+      },
+      "specifically_loves": [
+        "Sophisticated relationship novels",
+        "Family sagas with buried tensions",
+        "Stories about couples and friendships with hidden depths",
+        "Narrative nonfiction with scientific or historical depth",
+        "Writing that rewards close reading"
+      ],
+      "specifically_hates": [
+        "Stories where the craft doesn't earn the emotional payoff",
+        "Thrillers or genre novels that lack literary ambition",
+        "Prose that calls attention to itself without purpose"
+      ],
+      "deal_breakers": [
+        "First pages where the writing isn't extraordinary",
+        "Stories without emotional stakes beneath the plot"
+      ],
+      "submission_fit_notes": "Fox spent 20+ years as a book scout for international publishers and Hollywood, so he has an unparalleled understanding of what travels across markets and formats. His interest in 'sophisticated relationship novels' with buried secrets maps directly onto David and Arthur's father-son dynamic, and David and Celeste's twenty-year unresolved chord.",
+      "recommended_approach": "Emphasize the relationship architecture—father-son, David-Celeste, David-Marcus. Frame the frequency and the scientific discovery as the 'emotional time bomb' that forces these relationships to their breaking point. His scouting background means he'll appreciate the global and cinematic potential."
+    },
+    {
+      "name": "Danielle Bukowski",
+      "agency": "Sterling Lord Literistic",
+      "tier": 2,
+      "personality_profile": {
+        "archetype": "The Foreign Rights Veteran",
+        "communication_style": "Championing, advocacy-focused, internationally-minded",
+        "decision_making": "Draws to upmarket, smart book-club, literary, speculative, and genre-bending fiction",
+        "working_style": "Wants to be a writer's champion, advocate, confidante, and support system",
+        "background": "Came to agenting through foreign rights; learned to pitch books to international markets"
+      },
+      "how_they_read": {
+        "first_page_focus": "Voice and market potential simultaneously",
+        "what_grabs_them": "Narratives from writers traditionally excluded from publishing; stories that need to be told",
+        "what_loses_them": "Stories that feel derivative or unnecessary",
+        "reading_philosophy": "Loves the solitary and social aspects equally: reading and matchmaking, editing and negotiating"
+      },
+      "style_preferences": {
+        "prose": "Upmarket, smart, accessible",
+        "genre": "Speculative, genre-bending, literary, book club",
+        "nonfiction": "Grounded in personal experience and incisive research",
+        "voice": "Distinctive, memorable, necessary"
+      },
+      "specifically_loves": [
+        "Upmarket smart book-club fiction",
+        "Speculative and genre-bending work",
+        "Stories from marginalized perspectives",
+        "Nonfiction that combines personal experience with research",
+        "Gina Chung, Edgar Gomez, Nancy Johnson territory"
+      ],
+      "specifically_hates": [
+        "Stories that feel unnecessary",
+        "Prose that's either too dense or too thin",
+        "Work that doesn't know its audience"
+      ],
+      "deal_breakers": [
+        "First 10 pages without a clear sense of why this story matters now"
+      ],
+      "submission_fit_notes": "Bukowski's foreign rights background means she understands how stories travel across borders—literally and metaphorically. Her commitment to 'narratives from writers traditionally excluded' aligns with your novel's themes of suppressed truth and institutional silencing. The speculative elements in an upmarket frame are exactly what she seeks.",
+      "recommended_approach": "Frame the novel's contemporary relevance—suppressed truth, institutional complicity, the cost of silence. Her foreign rights background also means she'll appreciate the universal themes (grief, inheritance, father-son) that translate across cultures."
+    },
+    {
+      "name": "Dana Murphy",
+      "agency": "Trellis Literary Management",
+      "tier": 2,
+      "personality_profile": {
+        "archetype": "The Story-and-Line Agent",
+        "communication_style": "Thoughtful, dual-focused, collaborative",
+        "decision_making": "Falls in love at the story and line-level simultaneously",
+        "working_style": "Seeks language and plot that move in equal measure",
+        "background": "Ten years building her list at The Book Group before joining Trellis"
+      },
+      "how_they_read": {
+        "first_page_focus": "Language and plot moving together in equal measure",
+        "what_grabs_them": "Literary and upmarket fiction where the sentences are as compelling as the story",
+        "what_loses_them": "Beautiful prose without narrative drive, or plot without craft",
+        "reading_philosophy": "The best books work on every level simultaneously"
+      },
+      "style_preferences": {
+        "prose": "Literary, polished, sentence-level craft",
+        "plot": "Compelling, propulsive, well-structured",
+        "balance": "Language and story must serve each other",
+        "audience": "Adult and teen readers"
+      },
+      "specifically_loves": [
+        "Literary fiction",
+        "Upmarket fiction",
+        "Narrative nonfiction",
+        "Essay collections",
+        "Work where craft and story are inseparable"
+      ],
+      "specifically_hates": [
+        "Plot-driven work without literary merit",
+        "Literary work without narrative drive"
+      ],
+      "deal_breakers": [
+        "First 10 pages where either language or story is clearly stronger than the other"
+      ],
+      "submission_fit_notes": "Murphy co-agented the speculative novel Ravishing with Roxane Gay [citation:2], demonstrating her commitment to literary speculative work. Her insistence that 'language and plot move in equal measure' is exactly STRING THEORY's methodology—the speculative concept (plot) and the literary execution (language) are inseparable.",
+      "recommended_approach": "Emphasize the dual nature of the novel—the propulsive plot (solar storm, buried discovery, global broadcast) and the literary craft (musical structure, tempo markings, sentence-level attention). Show her that neither exists without the other."
+    },
+    {
+      "name": "Rachel Beck",
+      "agency": "Liza Dawson Associates",
+      "tier": 3,
+      "personality_profile": {
+        "archetype": "The Editorial Convert",
+        "communication_style": "Advocate-focused, champion-minded",
+        "decision_making": "Draws to book club/upmarket fiction with emotional depth",
+        "working_style": "Transitioned from editing to agenting to be an advocate and champion for authors",
+        "background": "Six years editing romance at Harlequin before moving to agenting"
+      },
+      "how_they_read": {
+        "first_page_focus": "Emotional engagement and commercial potential",
+        "what_grabs_them": "Upmarket/book club women's fiction, speculative fiction/magic realism, retellings of classics",
+        "what_loses_them": "Stories without emotional hooks",
+        "reading_philosophy": "Books should make readers feel deeply"
+      },
+      "style_preferences": {
+        "prose": "Accessible but literary",
+        "genre": "Upmarket/book club fiction, speculative/magic realism, historical fiction, psychological suspense",
+        "emotion": "Central, earned, compelling"
+      },
+      "specifically_loves": [
+        "Upmarket/book club women's fiction",
+        "Smart contemporary romance",
+        "Historical fiction this side of WWII",
+        "Speculative fiction/magic realism",
+        "Psychological and domestic suspense",
+        "Retellings of classics"
+      ],
+      "specifically_hates": [
+        "Stories without emotional stakes",
+        "Genre fiction that doesn't earn its place"
+      ],
+      "deal_breakers": [
+        "First pages without emotional hooks"
+      ],
+      "submission_fit_notes": "Beck's Harlequin editorial background means she understands commercial appeal, but her current list focuses on upmarket fiction with emotional depth. Her interest in 'speculative fiction/magic realism' and 'retellings of classics' aligns with your novel's mythic underpinnings (Orpheus, Faust, Prospero).",
+      "recommended_approach": "Lead with the emotional stakes—the father's death, the twenty-year silence, the failed love. Then introduce the speculative elements as the mechanism that forces these emotions to the surface. Her romance background means she'll also appreciate the David-Celeste arc."
+    },
+    {
+      "name": "Jessica Berg",
+      "agency": "Rosecliff Literary",
+      "tier": 3,
+      "personality_profile": {
+        "archetype": "The Outsider Champion",
+        "communication_style": "Bold, inclusive, boundary-pushing",
+        "decision_making": "Draws to writers who feel like they don't belong elsewhere",
+        "working_style": "Dedicated to championing untold history and underrepresented voices",
+        "background": "MFA graduate, multi-nominated writer herself, member of AALA and EFA"
+      },
+      "how_they_read": {
+        "first_page_focus": "Boldness and authenticity",
+        "what_grabs_them": "Upmarket/book club fiction, gothic, horror, suspense genre blends, historical fiction",
+        "what_loses_them": "Safe, conventional storytelling",
+        "reading_philosophy": "Stories that demand to be told"
+      },
+      "style_preferences": {
+        "prose": "Bold, boundary-pushing",
+        "genre": "Upmarket, literary, historical fiction, supernatural suspense, gothic, horror",
+        "perspective": "Underrepresented, untold"
+      },
+      "specifically_loves": [
+        "Literary and upmarket fiction",
+        "Historical fiction",
+        "Supernatural suspense",
+        "Gothic and horror with literary ambition",
+        "Stories that demand to be told"
+      ],
+      "specifically_hates": [
+        "SFF (she explicitly says she's not a fit)",
+        "Conventional narratives"
+      ],
+      "deal_breakers": [
+        "First pages that feel safe"
+      ],
+      "submission_fit_notes": "Berg founded Rosecliff Literary specifically to champion writers who feel like outsiders. Her interest in 'gothic, horror, suspense genre blends' with literary ambition aligns with your novel's darker elements—the dissolution, the frequency as menace, the beating, the visions. She's explicitly not a fit for SFF, which is perfect because you're literary with speculative elements, not genre SFF.",
+      "recommended_approach": "Emphasize the outsider status—David as a fraud in slow motion, his work buried, his career collapsing. Frame the speculative elements as 'supernatural suspense' or 'gothic' rather than science fiction. The frequency haunting him, the visions, the dissolution—these have gothic resonance."
+    },
+    {
+      "name": "Georgia Bodnar",
+      "agency": "Noyan Agency (formerly UTA)",
+      "tier": 2,
+      "personality_profile": {
+        "archetype": "The Editorial-Agent Hybrid",
+        "communication_style": "Insightful, market-savvy, dual-perspective",
+        "decision_making": "Draws to well-realized characters, fast-paced plots, distinctive voices",
+        "working_style": "Brings rare insight from experience as both editor and agent",
+        "background": "Editor at Viking/Penguin Random House, then agent at United Talent Agency"
+      },
+      "how_they_read": {
+        "first_page_focus": "Characters and voice—are they well-realized and distinctive?",
+        "what_grabs_them": "Literary, upmarket, and genre-bending fiction; novels exploring family dynamics or addressing contemporary issues in engaging ways",
+        "what_loses_them": "Stories where character and plot don't serve each other",
+        "reading_philosophy": "Understands how different industry stakeholders navigate the marketplace"
+      },
+      "style_preferences": {
+        "prose": "Distinctive, voice-driven",
+        "plot": "Fast-paced, engaging",
+        "character": "Well-realized, memorable",
+        "theme": "Family dynamics, contemporary issues"
+      },
+      "specifically_loves": [
+        "Literary fiction",
+        "Upmarket fiction",
+        "Genre-bending fiction",
+        "Translations",
+        "Novels exploring family dynamics",
+        "Work addressing contemporary issues engagingly"
+      ],
+      "specifically_hates": [
+        "Stories where characters feel generic",
+        "Plot without purpose"
+      ],
+      "deal_breakers": [
+        "First pages without distinctive voice"
+      ],
+      "submission_fit_notes": "Bodnar's dual experience as Viking editor and UTA agent gives her rare perspective on both editorial quality and commercial positioning. Her interest in 'family dynamics' and 'contemporary issues' aligns with your father-son arc and the novel's exploration of suppressed truth in institutional settings.",
+      "recommended_approach": "Lead with the family drama—the father's death, the unsigned will, the twenty years of unresolved argument. Frame the speculative elements as the mechanism that forces this family reckoning. Her agency background means she'll also see the commercial potential."
+    },
+    {
+      "name": "Elizabeth Copps",
+      "agency": "Copps Literary Services",
+      "tier": 3,
+      "personality_profile": {
+        "archetype": "The Equity-Focused Agent",
+        "communication_style": "Transparent, equitable, relationship-building",
+        "decision_making": "Draws to thought-provoking commercial fiction that pushes boundaries",
+        "working_style": "Builds equitable, transparent, long-lasting relationships",
+        "background": "15 years industry experience, started in 2010"
+      },
+      "how_they_read": {
+        "first_page_focus": "Boundary-pushing ambition",
+        "what_grabs_them": "Horror and speculative fiction that push boundaries and explore big questions; genre-blending narratives with lush prose and complex characters",
+        "what_loses_them": "Safe, conventional storytelling",
+        "reading_philosophy": "Literature should ask big questions"
+      },
+      "style_preferences": {
+        "prose": "Lush, complex",
+        "character": "Complex, layered",
+        "genre": "Horror, speculative, genre-blending, dark mythology/folklore retellings, family dramas, female friendship stories"
+      },
+      "specifically_loves": [
+        "Horror and speculative fiction that push boundaries",
+        "Genre-blending narratives with lush prose",
+        "Dark mythology and folklore retellings",
+        "Family dramas and female friendship stories",
+        "Works exploring technology's impact on identity",
+        "Historical and contemporary fiction addressing social justice/mental health",
+        "Unconventional romances"
+      ],
+      "specifically_hates": [
+        "Stories that don't ask big questions"
+      ],
+      "deal_breakers": [
+        "First pages without intellectual ambition"
+      ],
+      "submission_fit_notes": "Copps's business philosophy centers on equity and transparency, which aligns with your novel's themes of suppressed truth and institutional complicity. Her interest in 'speculative fiction that pushes boundaries and explores big questions' is exactly your territory—what does it cost to call something true?",
+      "recommended_approach": "Lead with the big questions—the philosophical stakes. Frame the novel as speculative fiction that uses the frequency and solar storm to explore questions about truth, complicity, inheritance, and grief. Her interest in 'family dramas' also aligns with the father-son and David-Celeste arcs."
+    },
+    {
+      "name": "Henry Dunow",
+      "agency": "Dunow, Carlson & Lerner Literary Agency",
+      "tier": 1,
+      "personality_profile": {
+        "archetype": "The Literary Sage",
+        "communication_style": "Direct, kind, editorially brilliant",
+        "decision_making": "Draws to quality fiction—literary, historical, upmarket commercial",
+        "working_style": "Magical combination of forthrightness and thoughtfulness; lays all cards on the table",
+        "background": "Founded his own agency; represents literary heavyweights including Richard Bausch, Aimee Bender, Mary Gaitskill"
+      },
+      "how_they_read": {
+        "first_page_focus": "Smart, entertaining, erudite—but also propulsive",
+        "what_grabs_them": "Literary novels that beautifully straddle the line between literary and commercial; twisty plots, brilliantly drawn characters, propulsive narratives",
+        "what_loses_them": "Novels that are all craft and no story, or all story and no craft",
+        "reading_philosophy": "The rarest thing: a really smart novel that is every bit as entertaining as it is erudite"
+      },
+      "style_preferences": {
+        "prose": "Literary, polished, insightful",
+        "plot": "Twisty, propulsive, engaging",
+        "character": "Brilliantly drawn, memorable",
+        "specialty": "Writing about specialized subjects (like music) with insight, passion, and poetry"
+      },
+      "specifically_loves": [
+        "Literary fiction",
+        "Historical fiction",
+        "Upmarket commercial fiction",
+        "Voice-driven narrative nonfiction",
+        "Writers who write about specialized subjects with authority and poetry"
+      ],
+      "specifically_hates": [
+        "Queries that try to exhaustively summarize rather than seduce",
+        "Too much detail where less would do more"
+      ],
+      "deal_breakers": [
+        "First pages that don't immediately intrigue"
+      ],
+      "submission_fit_notes": "Dunow's successful query for Sarah Landenwich's The Fire Concerto [citation:7] is remarkably instructive—she's a classically trained pianist writing a literary novel about music, just as you're a composer writing about music and physics. Dunow loved her phrase 'plot-forward literary novel' and her ability to write about music 'with such insight, passion and poetry that any reader will appreciate its power.' This is a nearly perfect template for your submission.",
+      "recommended_approach": "Study the Landenwich query closely. Use 'plot-forward literary novel' or similar framing. Emphasize your authority as a composer writing about music and physics. Dunow values directness and kindness—be forthright about what the book is, and let the quality speak. He laid all his cards on the table with Landenwich; you can trust him to do the same."
+    },
+    {
+      "name": "Dylan Haston",
+      "agency": "Donald Maass Literary Agency",
+      "tier": 2,
+      "personality_profile": {
+        "archetype": "The Speculative Literary Scout",
+        "communication_style": "Genre-savvy, intellectually adventurous, inclusive",
+        "decision_making": "Draws to projects engaging with science-fictional, fantastical, speculative, weird, queer, poetic, folkloric, and leftist literary traditions",
+        "working_style": "Newer agent (2025) actively building list; works closely with Cameron McClure",
+        "background": "Promoted from Reader/Assistant in 2025"
+      },
+      "how_they_read": {
+        "first_page_focus": "Strong voice above all",
+        "what_grabs_them": "Stories with a speculative edge that can also be viewed as romance, mystery, or literary",
+        "what_loses_them": "Stories without a strong voice",
+        "reading_philosophy": "Don't self-reject—send it if it's good"
+      },
+      "style_preferences": {
+        "prose": "Strong voice, literary ambition",
+        "genre": "Fantasy, slipstream, sci-fi, weird/new weird, mystery, romance, romantic sci-fi",
+        "traditions": "Queer, poetic, folkloric, leftist literary traditions",
+        "vibe": "Think Terra Ignota, This is How You Lose the Time War, Gideon the Ninth, Rakesfall"
+      },
+      "specifically_loves": [
+        "Science-fictional and fantastical elements in literary contexts",
+        "Slipstream and intergenre work",
+        "Numinous, weird, and genre-blending fiction",
+        "Queer and folkloric literary traditions",
+        "Strong voice above all"
+      ],
+      "specifically_hates": [
+        "Weak voice",
+        "Self-rejection (encourages writers to submit anyway)"
+      ],
+      "deal_breakers": [
+        "First pages without a distinctive voice"
+      ],
+      "submission_fit_notes": "Haston is a new agent at the prestigious Donald Maass agency, actively building their list. Their taste is sophisticated and specific—Terra Ignota, This is How You Lose the Time War, Gideon the Ninth. These are all literary speculative works with strong voices and formal ambition. STRING THEORY's musical structure and literary speculative DNA fit perfectly.",
+      "recommended_approach": "Lead with voice. Haston explicitly says 'I'll be hooked by anything with a strong voice.' Your prose style—the tempo markings, the musical architecture, the literary ambition—is your strongest selling point. Frame the novel as 'literary speculative' and name-drop appropriate comps (This is How You Lose the Time War for poetic speculative; Gideon the Ninth for voice-driven genre-blending)."
+    },
+    {
+      "name": "Cathie Hedrick-Armstrong",
+      "agency": "Marsal Lyon Literary Agency",
+      "tier": 3,
+      "personality_profile": {
+        "archetype": "The Reader's Reader",
+        "communication_style": "Passionate, voracious, reader-first",
+        "decision_making": "Draws to stories that make her devour books",
+        "working_style": "Writer herself, brings author perspective to agenting",
+        "background": "Published two novels before becoming an agent; 9+ years industry experience"
+      },
+      "how_they_read": {
+        "first_page_focus": "Immersion—does she forget she's reading?",
+        "what_grabs_them": "Romance (all categories and spice levels), domestic suspense, non-splatter horror, mystery, historical fiction, commercial fiction, women's/book club",
+        "what_loses_them": "Stories that don't pull her in immediately",
+        "reading_philosophy": "A lifelong reader who remembers the exact day she unlocked reading"
+      },
+      "style_preferences": {
+        "prose": "Engaging, accessible, immersive",
+        "genre": "Romance, suspense, horror (non-splatter), mystery, historical, commercial, women's fiction",
+        "emotion": "Central to the reading experience"
+      },
+      "specifically_loves": [
+        "Romance across all categories and spice levels",
+        "Domestic and psychological suspense",
+        "Non-splatter horror",
+        "Mystery",
+        "Historical fiction",
+        "Commercial and women's/book club fiction"
+      ],
+      "specifically_hates": [
+        "Splatter/gore horror"
+      ],
+      "deal_breakers": [
+        "First pages that don't immediately engage"
+      ],
+      "submission_fit_notes": "Hedrick-Armstrong is a writer herself, so she understands craft from the inside. Her interests span romance, suspense, and commercial fiction—suggesting she appreciates books with emotional stakes and narrative drive. The David-Celeste love story (the 'unresolved chord,' the Wednesday dinners, the catwalk scene) would appeal to her romance sensibility.",
+      "recommended_approach": "Emphasize the emotional stakes—the love story, the grief, the inheritance. Frame the speculative elements as the context for the human drama, not the other way around. Her background as a novelist means she'll read with an author's eye for craft."
+    },
+    {
+      "name": "Mason Rowlee",
+      "agency": "DeFiore & Company",
+      "tier": 3,
+      "personality_profile": {
+        "archetype": "The Literary Scout (Former)",
+        "communication_style": "Internationally-minded, boundary-pushing, inclusive",
+        "decision_making": "Draws to innovative, boundary-pushing literary fiction and underrepresented voices",
+        "working_style": "Developed eye for projects that appeal to international publishers and film",
+        "background": "Former assistant literary scout at Jenny La Plante, Inc."
+      },
+      "how_they_read": {
+        "first_page_focus": "Innovation and boundary-pushing",
+        "what_grabs_them": "Innovative literary fiction, engrossing upmarket fiction, nonfiction amplifying underrepresented voices, especially queer authors",
+        "what_loses_them": "Conventional, safe narratives",
+        "reading_philosophy": "Looks for what will appeal internationally and in film"
+      },
+      "style_preferences": {
+        "prose": "Innovative, boundary-pushing",
+        "genre": "Literary fiction, upmarket fiction",
+        "perspective": "Underrepresented voices, queer authors",
+        "appeal": "International and film potential"
+      },
+      "specifically_loves": [
+        "Innovative literary fiction",
+        "Engrossing upmarket fiction",
+        "Nonfiction amplifying underrepresented voices",
+        "Queer authors and perspectives"
+      ],
+      "specifically_hates": [
+        "Conventional narratives"
+      ],
+      "deal_breakers": [
+        "First pages that don't push boundaries"
+      ],
+      "submission_fit_notes": "Rowlee's scouting background means he understands what appeals internationally and to film—a huge asset for a novel with STRING THEORY's cinematic potential. His interest in 'innovative, boundary-pushing literary fiction' aligns with your musical structure and formal ambition. The 'underrepresented voices' commitment connects to your themes of suppressed truth and institutional silencing.",
+      "recommended_approach": "Emphasize the formal innovation—the musical structure, tempo markings, the novel as symphony. His scouting background means he'll also appreciate the cinematic potential: the solar storm, the global broadcast, the dissolution. Frame the novel as boundary-pushing literary fiction with international appeal."
+    },
+    {
+      "name": "Samantha Fabien",
+      "agency": "Root Literary",
+      "tier": 1,
+      "personality_profile": {
+        "archetype": "The Academia Enthusiast",
+        "communication_style": "Sharp, enthusiastic, stakes-focused",
+        "decision_making": "Draws to high-stakes interpersonal dynamics and buried secrets",
+        "working_style": "Actively seeking diverse, marginalized, underrepresented voices with all-or-nothing stakes",
+        "background": "Specializes in upmarket book club fiction, speculative, and thrillers"
+      },
+      "how_they_read": {
+        "first_page_focus": "Stakes—are they all-or-nothing?",
+        "what_grabs_them": "Buried secrets, revenge, messy characters, unexpected twists, games or puzzles, cults, dark rituals, or academia",
+        "what_loses_them": "Quiet character studies without tension",
+        "reading_philosophy": "Stories must have stakes that matter"
+      },
+      "style_preferences": {
+        "prose": "Commercial but smart",
+        "pacing": "Tight, propulsive, high-stakes",
+        "genre": "Upmarket book club, speculative, thriller, mystery, suspense, nuanced horror",
+        "relationships": "Interpersonal dynamics, generational trauma, family, reunions"
+      },
+      "specifically_loves": [
+        "Upmarket Book Club/Women's Fiction",
+        "Speculative Fiction",
+        "Thrillers/Mysteries/Suspense",
+        "Academia settings",
+        "Buried secrets and revenge",
+        "Messy characters and unexpected twists",
+        "Generational trauma and family dynamics"
+      ],
+      "specifically_hates": [
+        "Low-stakes stories",
+        "Predictable plots"
+      ],
+      "deal_breakers": [
+        "First 10 pages without clear stakes"
+      ],
+      "submission_fit_notes": "Fabien's wishlist is remarkably specific and aligned with STRING THEORY: 'buried secrets, revenge, messy characters, unexpected twists, games or puzzles, cults, dark rituals, or academia will capture her attention.' The academia setting (Cornell physics department), the buried ARGO project, David's messy compromise, the generational trauma with his father—all hit her exact sweet spot.",
+      "recommended_approach": "Lead with the academia setting and the buried secret. Emphasize the stakes—David's life collapsing, the solar storm approaching, the global broadcast. Frame the father-son arc as generational trauma. Her interest in 'speculative fiction' and 'upmarket book club' is exactly your territory."
+    },
+    {
+      "name": "Joanna MacKenzie",
+      "agency": "Nelson Literary Agency",
+      "tier": 2,
+      "personality_profile": {
+        "archetype": "The Voice-and-Stakes Agent",
+        "communication_style": "Direct, voice-focused, stakes-driven",
+        "decision_making": "Draws to vivid, engaging writing with high-stakes premises",
+        "working_style": "Editorially focused; believes you only have one chance to impress an editor",
+        "background": "Senior Agent at Nelson Literary Agency"
+      },
+      "how_they_read": {
+        "first_page_focus": "Voice—does it shine through immediately?",
+        "what_grabs_them": "High-concept thrillers with speculative elements, voicey mysteries, dark academia, genre-straddling work, women's fiction where personal intersects with world at large",
+        "what_loses_them": "Queries that don't clearly outline stakes/plot/question",
+        "reading_philosophy": "Pet peeve: writers who tell her how the story will make her feel instead of showing it"
+      },
+      "style_preferences": {
+        "prose": "Vivid, engaging, voice-driven",
+        "genre": "High-concept thrillers, speculative, mysteries, dark academia, women's fiction",
+        "setting": "Midwest settings a plus",
+        "elements": "Magical realism, time travel, spooky/witches/ghosts"
+      },
+      "specifically_loves": [
+        "High-concept twisty stories with strong voice",
+        "Timely commercial fiction where personal intersects with the world",
+        "Stories exploring complex family dynamics and toxic friendships",
+        "Reinvention and second acts with touches of magic or time slips",
+        "Voicey atmospheric mysteries in close-knit communities"
+      ],
+      "specifically_hates": [
+        "Writers who say 'there has never been a book like this'",
+        "Writers who say their story will appeal to all readers universally",
+        "Queries that don't clearly outline stakes",
+        "Telling instead of showing in the query itself"
+      ],
+      "deal_breakers": [
+        "Querying before the manuscript is polished",
+        "Unclear stakes",
+        "Voice-less queries"
+      ],
+      "submission_fit_notes": "MacKenzie's detailed interview reveals an agent who values voice above all and has specific pet peeves to avoid. Her interest in 'dark academia' is a perfect match for your Cornell setting and the suppressed research. 'Stories that explore complex and challenging family dynamics' aligns with the father-son arc. 'Reinvention and second acts with touches of magic or time slips' describes David's trajectory exactly.",
+      "recommended_approach": "Let the voice of your novel shine through the query itself—MacKenzie expects the query to demonstrate the same wit, voice, and stakes as the manuscript. Clearly outline the stakes (buried discovery, solar storm, dissolution). Avoid any grandiose claims about universality or uniqueness. Be polished—she's explicit that querying before you're ready is the biggest mistake."
+    },
+    {
+      "name": "Stephanie Delman",
+      "agency": "Trellis Literary Management",
+      "tier": 1,
+      "personality_profile": {
+        "archetype": "The Many-Things-at-Once Agent",
+        "communication_style": "Sophisticated, genre-fluid, risk-tolerant",
+        "decision_making": "Draws to stylish writing, high-stakes concepts, and novels that play with genre",
+        "working_style": "Hands-on editorially and as an advocate",
+        "background": "10 years at Sanford J. Greenburger before co-founding Trellis; Johns Hopkins Writing Seminars"
+      },
+      "how_they_read": {
+        "first_page_focus": "Stylish writing and high-stakes concepts simultaneously",
+        "what_grabs_them": "Literary thrillers, upmarket fiction, underrepresented historical fiction, psychologically propulsive suspense, maximalist storytelling, literary novels that play with genre",
+        "what_loses_them": "Fiction that's grounded in reality without any 'tinge of something else'",
+        "reading_philosophy": "Loves books that are 'many things at once'—that span genres and take risks"
+      },
+      "style_preferences": {
+        "prose": "Stylish, literary, polished",
+        "stakes": "High-concept, high-stakes",
+        "genre": "Literary thrillers, upmarket fiction, historical fiction, suspense",
+        "tinge": "A bit of surrealism, a touch of horror, speculative elements"
+      },
+      "specifically_loves": [
+        "Stylish writing with high-stakes concepts",
+        "Literary novels that play with genre",
+        "Fiction grounded in reality but tinged with something else",
+        "Maximalist storytelling in ambition",
+        "Gothic traditions or speculative elements that upend narrative conventions"
+      ],
+      "specifically_hates": [
+        "Children's books, YA, high fantasy, hard sci-fi (doesn't represent)",
+        "Fiction without any speculative or surreal tinge"
+      ],
+      "deal_breakers": [
+        "First pages without stylish writing"
+      ],
+      "submission_fit_notes": "Delman is already in your query history (Tab 1, sent 2-2), so you know she's a strong fit. Her profile confirms why: she loves 'fiction that's grounded in reality but tinged with something else'—exactly STRING THEORY's methodology. Her favorite non-client authors include Emily St. John Mandel, Lauren Groff, and Rebecca Makkai—all literary writers with speculative or expansive tendencies.",
+      "recommended_approach": "Emphasize the 'many things at once' nature of the novel—literary fiction, speculative elements, thriller stakes, family drama. The 'tinge of something else' (the frequency, the visions, the dissolution) is exactly what she seeks. Reference her favorite authors as aspirational touchstones."
+    },
+    {
+      "name": "Nour Sallam",
+      "agency": "The Caldwell Agency",
+      "tier": 2,
+      "personality_profile": {
+        "archetype": "The Haunted Character Agent",
+        "communication_style": "Intense, character-focused, psychologically attuned",
+        "decision_making": "Draws to characters haunted by something—figuratively or literally",
+        "working_style": "Actively seeking underrepresented voices across genres",
+        "background": "The Caldwell Agency"
+      },
+      "how_they_read": {
+        "first_page_focus": "Character—are they haunted? Do they have secrets?",
+        "what_grabs_them": "Voice-driven commercial and upmarket titles, contemporary fiction with fabulist elements, speculative fiction, edgy psychological thrillers, horror, rom-coms with underrepresented characters",
+        "what_loses_them": "Stories where characters aren't compelling",
+        "reading_philosophy": "Characters should haunt you"
+      },
+      "style_preferences": {
+        "prose": "Voice-driven, commercial/upmarket",
+        "character": "Haunted, secret-keeping, obsessive, unreliable",
+        "genre": "Speculative fiction, psychological thrillers, horror, mystery, rom-coms",
+        "themes": "Women in power, unhinged women, female rage, friendship dynamics"
+      },
+      "specifically_loves": [
+        "Voice-driven commercial and upmarket fiction",
+        "Contemporary fiction with fabulist elements",
+        "Speculative fiction",
+        "Edgy psychological thrillers",
+        "Characters haunted by secrets, past, obsession—or literally by ghosts",
+        "Unreliable narrators",
+        "Dysfunctional families silently navigating trauma"
+      ],
+      "specifically_hates": [
+        "Sci-fi and fantasy (not a fit)",
+        "Kidlit, YA, MG",
+        "Traditional memoir (only memoir plus)",
+        "WWI/WWII historical fiction",
+        "Apocalyptic fiction",
+        "Trauma-heavy books centering wars/civil conflicts"
+      ],
+      "deal_breakers": [
+        "First pages without compelling character work"
+      ],
+      "submission_fit_notes": "Sallam's focus on 'characters haunted by something' is a perfect description of David—haunted by the buried discovery, by his father's death, by the frequency, by his failure with Celeste. Her interest in 'dysfunctional families silently navigating trauma' aligns with the Lang family dynamics. 'Contemporary fiction with fabulist elements' is exactly your territory—grounded in contemporary academia but with the frequency as the fabulist element.",
+      "recommended_approach": "Lead with character. David is haunted—by the frequency, by his father's death, by the buried research, by Celeste. Frame the speculative elements (frequency, visions, dissolution) as the manifestation of that haunting. Her interest in underrepresented characters also connects to the novel's themes of suppressed truth and institutional silencing."
+    },
+    {
+      "name": "Sarah Brooks",
+      "agency": "Darley Anderson & Associates",
+      "tier": 1,
+      "personality_profile": {
+        "archetype": "The Musician-Agent",
+        "communication_style": "Articulate, precise, aesthetically attuned",
+        "decision_making": "Responds to harmony and resonance in prose",
+        "working_style": "Supportive but discerning; values authors who understand their own music",
+        "background": "Studied Music at Nottingham University, diploma in piano performance"
+      },
+      "how_they_read": {
+        "first_page_focus": "Listening for rhythm and cadence—prose must sing",
+        "what_grabs_them": "Musicality in language; structure that echoes emotional content",
+        "what_loses_them": "Prose that's merely functional, stories without internal rhythm",
+        "reading_philosophy": "Reads with an inner ear; text must resonate"
+      },
+      "style_preferences": {
+        "prose": "Lyrical, rhythmic, with attention to sound and flow",
+        "pacing": "Tempo matters—understands accelerando, decelerando, rubato in narrative",
+        "structure": "Appreciates formal musical structures applied to fiction",
+        "emotional_register": "Deeply felt, authentic, never performative"
+      },
+      "specifically_loves": [
+        "Stories with musical themes or structures",
+        "Book club fiction with intellectual depth",
+        "Prose that rewards reading aloud",
+        "Emotional truth rendered with precision"
+      ],
+      "specifically_hates": [
+        "Tone-deaf prose",
+        "Emotional manipulation without genuine feeling",
+        "Structure as gimmick rather than necessity"
+      ],
+      "deal_breakers": [
+        "First pages with no sense of rhythm",
+        "Queries that don't convey the book's emotional frequency"
+      ],
+      "submission_fit_notes": "Brooks's music background (Nottingham University, piano diploma) makes her an extraordinary fit. She will understand your tempo markings, the four-movement structure of Chapter 1, the Sarabande climax, the musical architecture of the entire novel on a technical level that few agents can match. This is a rare and valuable alignment of agent expertise with novel content.",
+      "recommended_approach": "Reference the musical structure explicitly. Mention the tempo markings, the four movements, the novel as symphony. She'll recognize immediately that this book was written by someone who understands music from the inside. The title STRING THEORY will resonate on both the physics and music levels."
+    },
+    {
+      "name": "Ernie Chiara",
+      "agency": "Fuse Literary",
+      "tier": 1,
+      "personality_profile": {
+        "archetype": "The Writer-Agent",
+        "communication_style": "Direct, craft-focused, intellectually generous",
+        "decision_making": "Gut-driven with strong editorial instinct",
+        "working_style": "Hands-on editorial partner who understands craft from the inside",
+        "background": "Writer of upmarket speculative fiction himself; selected for Writer's Digest Agent Spotlight"
+      },
+      "how_they_read": {
+        "first_page_focus": "Voice above all—immediate distinctive narrative presence",
+        "what_grabs_them": "The inexplicable rendered in precise, literary prose; a touch of the uncanny grounded in emotional reality",
+        "what_loses_them": "Generic literary prose, predictable structures, speculative elements that feel grafted on",
+        "reading_philosophy": "Reads like a writer—analyzing craft while being swept away by story"
+      },
+      "style_preferences": {
+        "prose": "Lush but controlled, with rhythm and musicality",
+        "pacing": "Deliberate but never static",
+        "dialogue": "Revealing of character, never expository",
+        "structure": "Appreciates formal play when it serves emotional truth"
+      },
+      "specifically_loves": [
+        "David Mitchell's structural ambition",
+        "Claire North's high concepts with literary execution",
+        "Susanna Clarke's unhurried immersive world-building",
+        "The 'touch of the inexplicable' in otherwise realistic fiction",
+        "Character-driven upmarket fiction with speculative elements"
+      ],
+      "specifically_hates": [
+        "Speculative elements that feel like genre tourism",
+        "Plot mechanics that overshadow character",
+        "Stories that explain themselves instead of trusting the reader"
+      ],
+      "deal_breakers": [
+        "First 10 pages without distinctive voice",
+        "Queries that describe plot without conveying atmosphere"
+      ],
+      "submission_fit_notes": "Chiara writes speculative fiction himself, so he'll immediately recognize and appreciate the craft behind your musical architecture. His interest in 'David Mitchell's structural ambition' aligns with your formal aspirations. The 'touch of the inexplicable' (the 68.48 Hz frequency, the visions) grounded in emotional reality (David's grief, his failed relationships) is exactly his sweet spot.",
+      "recommended_approach": "Lead with voice and the 'inexplicable' element—the frequency, the visions. Emphasize that the speculative grows organically from emotional truth, not the other way around. His own writing practice means he'll read with a practitioner's eye for what works."
+    },
+    {
+      "name": "Ashley Lopez",
+      "agency": "Massie McQuilkin & Altman",
+      "tier": 1,
+      "personality_profile": {
+        "archetype": "The MFA Editor",
+        "communication_style": "Thoughtful, precise, literary",
+        "decision_making": "Draws to unforgettable characters and singular experiences rendered universally",
+        "working_style": "Editorial collaborator with strong literary instincts",
+        "background": "MFA in Fiction from Sarah Lawrence, co-founder of Pigeon Pages Literary Journal"
+      },
+      "how_they_read": {
+        "first_page_focus": "Movement on the page—prose that creates its own kinetic energy",
+        "what_grabs_them": "Characters who feel unforgettable, experiences that feel singular but speak universally",
+        "what_loses_them": "Prose that sits still, characters who feel generic",
+        "reading_philosophy": "The sentence itself must generate momentum"
+      },
+      "style_preferences": {
+        "prose": "Active, kinetic, visually and viscerally engaging",
+        "pacing": "Driven by sentence rhythm rather than plot mechanics",
+        "character": "Unforgettable—quirky, damaged, singular",
+        "genre_blending": "Actively seeking grounded speculative"
+      },
+      "specifically_loves": [
+        "Literary fiction",
+        "Book club fiction",
+        "Grounded speculative",
+        "Horror with literary sensibility",
+        "Thrillers with emotional depth"
+      ],
+      "specifically_hates": [
+        "Prose that lacks energy",
+        "Characters who feel like types rather than people",
+        "Speculative elements not rooted in human reality"
+      ],
+      "deal_breakers": [
+        "First 10 pages without forward momentum",
+        "Character introductions that don't create immediate interest"
+      ],
+      "submission_fit_notes": "Lopez co-founded Pigeon Pages Literary Journal, so she has editorial taste developed outside traditional publishing. Her interest in 'grounded speculative' is exactly your territory—speculative elements rooted in the emotional reality of a man grieving his father while cosmic forces converge. The 'singular experiences that speak universally' describes David's journey precisely.",
+      "recommended_approach": "Emphasize the grounded emotional reality first, the speculative second. David's grief, his relationship with his father, his failed relationship with Celeste—these are the anchors that make the 68.48 Hz frequency feel real rather than fanciful. Her MFA background means she'll appreciate sentence-level craft."
+    },
+    {
+      "name": "Samantha Haywood",
+      "agency": "Transatlantic Agency",
+      "tier": 2,
+      "personality_profile": {
+        "archetype": "The Crossover Specialist",
+        "communication_style": "Sophisticated, genre-fluid, market-savvy",
+        "decision_making": "Draws to crossover/hybrid novels with unique lenses",
+        "working_style": "Builds careers across multiple markets (US/Canada/international)",
+        "background": "President of Transatlantic Agency"
+      },
+      "how_they_read": {
+        "first_page_focus": "Unique lens and sophisticated execution",
+        "what_grabs_them": "Crossover/hybrid novels, literary fiction with speculative/horror elements, examinations of identity through unique lenses",
+        "what_loses_them": "Straight genre without literary ambition, straight literary without hook",
+        "reading_philosophy": "The best books defy easy categorization"
+      },
+      "style_preferences": {
+        "prose": "Sophisticated, literary",
+        "lens": "Unique, specific, revelatory",
+        "genre": "Hybrid, crossover, category-defying",
+        "theme": "Identity, class, late capitalism, systemic critique"
+      },
+      "specifically_loves": [
+        "Literary fiction with speculative/horror elements",
+        "Literary thrillers",
+        "Examinations of identity through unique lenses",
+        "Smart contemporary fiction about class and late capitalism",
+        "Crossover/hybrid novels"
+      ],
+      "specifically_hates": [
+        "Genre fiction without literary ambition",
+        "Literary fiction without contemporary relevance"
+      ],
+      "deal_breakers": [
+        "First 10 pages without a unique lens"
+      ],
+      "submission_fit_notes": "Haywood explicitly seeks 'crossover/hybrid style novels'—which is exactly what STRING THEORY is: literary fiction with speculative elements, a thriller engine, and philosophical depth. Her interest in examinations of 'identity through unique lenses' connects to your academic suppression/cowardice theme—David's identity as a fraud, a man who buried the truth, a son who failed his father.",
+      "recommended_approach": "Emphasize the hybrid nature—literary fiction with speculative elements, a thriller structure, philosophical depth. Frame the academic suppression as a critique of how institutions protect themselves by burying inconvenient truths—this connects to her interest in 'smart contemporary fiction about class and late capitalism.'"
+    }
+  ]
+}

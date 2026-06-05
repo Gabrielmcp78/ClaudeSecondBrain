@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Builder's Codex — Gabriel's SDLC Field Guide</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap');
+
+  :root {
+    --ink: #0d0d0f;
+    --paper: #f5f0e8;
+    --amber: #c8860a;
+    --amber-light: #f0b429;
+    --rust: #b84032;
+    --teal: #1a6b6b;
+    --teal-light: #2a9090;
+    --ghost: #e8e2d4;
+    --mid: #8a8070;
+    --phase-1: #1a6b6b;
+    --phase-2: #2d5a8e;
+    --phase-3: #7a3d8e;
+    --phase-4: #c8860a;
+    --phase-5: #b84032;
+    --phase-6: #2e7d46;
+    --phase-7: #4a4a5e;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--ink);
+    color: var(--paper);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--ink);
+    padding: 80px 60px 60px;
+    border-bottom: 1px solid #222;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(200,134,10,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .codex-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: var(--amber);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--paper);
+    max-width: 700px;
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    color: var(--amber-light);
+  }
+
+  .hero-sub {
+    margin-top: 24px;
+    font-size: 1rem;
+    color: var(--mid);
+    max-width: 560px;
+    line-height: 1.6;
+  }
+
+  .hero-meta {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #222;
+  }
+
+  .meta-item {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--mid);
+    text-transform: uppercase;
+  }
+
+  .meta-item span {
+    display: block;
+    color: var(--paper);
+    font-size: 12px;
+    margin-top: 4px;
+  }
+
+  /* ── NAV RAIL ── */
+  .layout {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    min-height: calc(100vh - 300px);
+  }
+
+  .rail {
+    background: #0a0a0c;
+    border-right: 1px solid #1a1a1f;
+    padding: 40px 0;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  .rail-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 3px;
+    color: #3a3a4a;
+    text-transform: uppercase;
+    padding: 0 24px;
+    margin-bottom: 16px;
+  }
+
+  .rail-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 24px;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-decoration: none;
+    color: var(--mid);
+    font-size: 12px;
+    font-weight: 400;
+    border-left: 2px solid transparent;
+  }
+
+  .rail-item:hover {
+    background: #111116;
+    color: var(--paper);
+  }
+
+  .rail-item.active {
+    color: var(--paper);
+    border-left-color: var(--amber);
+  }
+
+  .rail-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* ── CONTENT ── */
+  .content {
+    padding: 60px;
+    max-width: 900px;
+  }
+
+  /* ── PHASE CARD ── */
+  .phase {
+    margin-bottom: 80px;
+    scroll-margin-top: 40px;
+  }
+
+  .phase-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 36px;
+  }
+
+  .phase-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 1;
+    opacity: 0.12;
+    flex-shrink: 0;
+    width: 70px;
+  }
+
+  .phase-title-block { flex: 1; }
+
+  .phase-tag {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    opacity: 0.7;
+  }
+
+  .phase-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--paper);
+  }
+
+  .phase-subtitle {
+    font-size: 0.88rem;
+    color: var(--mid);
+    margin-top: 6px;
+    font-style: italic;
+  }
+
+  /* ── GATE (milestone marker) ── */
+  .gate {
+    background: #0e0e12;
+    border: 1px solid #1e1e26;
+    border-left: 3px solid;
+    padding: 20px 24px;
+    margin-bottom: 28px;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .gate-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .gate-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--paper);
+    margin-bottom: 6px;
+  }
+
+  .gate-desc {
+    font-size: 0.83rem;
+    color: var(--mid);
+    line-height: 1.6;
+  }
+
+  /* ── CHECKLIST ── */
+  .checklist {
+    list-style: none;
+    margin: 20px 0;
+  }
+
+  .checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 8px 0;
+    font-size: 0.88rem;
+    color: #c0b8a8;
+    border-bottom: 1px solid #131318;
+    line-height: 1.5;
+  }
+
+  .checklist li::before {
+    content: '◻';
+    flex-shrink: 0;
+    margin-top: 1px;
+    opacity: 0.4;
+    font-size: 0.8rem;
+  }
+
+  .checklist li strong {
+    color: var(--paper);
+    font-weight: 500;
+  }
+
+  /* ── TOOL STRIP ── */
+  .tool-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px 0;
+  }
+
+  .tool-tag {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    padding: 4px 10px;
+    border-radius: 2px;
+    background: #131318;
+    border: 1px solid #222;
+    color: var(--mid);
+    letter-spacing: 0.5px;
+  }
+
+  .tool-tag.primary {
+    border-color: #333340;
+    color: #a0a0b8;
+  }
+
+  /* ── BODY TEXT ── */
+  .body-text {
+    font-size: 0.92rem;
+    color: #b0a898;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+
+  .body-text strong {
+    color: var(--paper);
+    font-weight: 500;
+  }
+
+  /* ── DIVIDER ── */
+  .phase-divider {
+    height: 1px;
+    background: linear-gradient(90deg, #1a1a22 0%, transparent 100%);
+    margin-bottom: 80px;
+  }
+
+  /* ── TRANSITION CALLOUT ── */
+  .transition-box {
+    background: #080810;
+    border: 1px solid #1e1e2e;
+    border-top: 2px solid;
+    padding: 28px 32px;
+    margin: 40px 0;
+    border-radius: 0 0 4px 4px;
+  }
+
+  .transition-box .t-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .transition-box h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--paper);
+    margin-bottom: 10px;
+  }
+
+  .transition-box p {
+    font-size: 0.85rem;
+    color: var(--mid);
+    line-height: 1.7;
+  }
+
+  /* ── SIGNAL BOX (warning/insight) ── */
+  .signal {
+    padding: 16px 20px;
+    margin: 16px 0;
+    border-radius: 2px;
+    font-size: 0.83rem;
+    line-height: 1.6;
+  }
+
+  .signal.amber {
+    background: rgba(200,134,10,0.08);
+    border-left: 3px solid var(--amber);
+    color: #d4b870;
+  }
+
+  .signal.teal {
+    background: rgba(26,107,107,0.1);
+    border-left: 3px solid var(--teal-light);
+    color: #7ab8b8;
+  }
+
+  .signal.rust {
+    background: rgba(184,64,50,0.08);
+    border-left: 3px solid var(--rust);
+    color: #c88070;
+  }
+
+  /* ── MATRIX TABLE ── */
+  table.matrix {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+    margin: 20px 0;
+  }
+
+  table.matrix th {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--mid);
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid #1e1e26;
+  }
+
+  table.matrix td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #131318;
+    color: #a0988a;
+    vertical-align: top;
+    line-height: 1.5;
+  }
+
+  table.matrix td:first-child {
+    color: var(--paper);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  /* ── PHASE COLORS ── */
+  .p1 { color: var(--phase-1); border-color: var(--phase-1); }
+  .p2 { color: var(--phase-2); border-color: var(--phase-2); }
+  .p3 { color: var(--phase-3); border-color: var(--phase-3); }
+  .p4 { color: var(--phase-4); border-color: var(--phase-4); }
+  .p5 { color: var(--phase-5); border-color: var(--phase-5); }
+  .p6 { color: var(--phase-6); border-color: var(--phase-6); }
+  .p7 { color: var(--phase-7); border-color: var(--phase-7); }
+
+  .p1-bg { background-color: var(--phase-1); }
+  .p2-bg { background-color: var(--phase-2); }
+  .p3-bg { background-color: var(--phase-3); }
+  .p4-bg { background-color: var(--phase-4); }
+  .p5-bg { background-color: var(--phase-5); }
+  .p6-bg { background-color: var(--phase-6); }
+  .p7-bg { background-color: var(--phase-7); }
+
+  /* ── FOOTER ── */
+  footer {
+    padding: 60px;
+    border-top: 1px solid #1a1a22;
+    color: #3a3a4a;
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  /* ── SCROLLBAR ── */
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: #2a2a36; border-radius: 2px; }
+
+  @media (max-width: 900px) {
+    .layout { grid-template-columns: 1fr; }
+    .rail { display: none; }
+    .content { padding: 30px 24px; }
+    .hero { padding: 50px 24px 40px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════ HERO -->
+<header class="hero">
+  <div class="codex-label">Gabriel's Builder Reference · v2025</div>
+  <h1>The Builder's<br><em>Codex</em></h1>
+  <p class="hero-sub">A comprehensive, phase-by-phase action guide to the modern software development lifecycle — calibrated for solo and indie work, AI-augmented tooling, and your personal distribution model.</p>
+  <div class="hero-meta">
+    <div class="meta-item">Environment<span>macOS / AI-Augmented</span></div>
+    <div class="meta-item">Dev Root<span>/Volumes/Ready500/DEV</span></div>
+    <div class="meta-item">Distribution<span>Indie / Direct</span></div>
+    <div class="meta-item">Phases<span>7 + 3 Transitions</span></div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════ LAYOUT -->
+<div class="layout">
+
+  <!-- NAV RAIL -->
+  <nav class="rail">
+    <div class="rail-label">Phases</div>
+    <a href="#p1" class="rail-item p1">
+      <div class="rail-dot p1-bg"></div> 01 · Conception
+    </a>
+    <a href="#p2" class="rail-item p2">
+      <div class="rail-dot p2-bg"></div> 02 · Foundation
+    </a>
+    <a href="#p3" class="rail-item p3">
+      <div class="rail-dot p3-bg"></div> 03 · Development
+    </a>
+    <a href="#t1" class="rail-item" style="color:#2a2a3a; font-size:11px; padding-left:36px;">⟶ Dev → Staging</a>
+    <a href="#p4" class="rail-item p4">
+      <div class="rail-dot p4-bg"></div> 04 · Staging
+    </a>
+    <a href="#t2" class="rail-item" style="color:#2a2a3a; font-size:11px; padding-left:36px;">⟶ Staging → Release</a>
+    <a href="#p5" class="rail-item p5">
+      <div class="rail-dot p5-bg"></div> 05 · Release
+    </a>
+    <a href="#p6" class="rail-item p6">
+      <div class="rail-dot p6-bg"></div> 06 · Post-Launch
+    </a>
+    <a href="#p7" class="rail-item p7">
+      <div class="rail-dot p7-bg"></div> 07 · Iteration
+    </a>
+    <a href="#matrix" class="rail-item" style="margin-top:20px; border-top:1px solid #1a1a22; padding-top:20px;">
+      <div class="rail-dot" style="background:#3a3a4a"></div> Quick Matrix
+    </a>
+  </nav>
+
+  <!-- CONTENT -->
+  <main class="content">
+
+    <!-- ══ PHASE 1: CONCEPTION ══ -->
+    <section class="phase" id="p1">
+      <div class="phase-header">
+        <div class="phase-number p1">01</div>
+        <div class="phase-title-block">
+          <div class="phase-tag p1">Phase One</div>
+          <div class="phase-title">Conception & Clarity</div>
+          <div class="phase-subtitle">Before a single file is created</div>
+        </div>
+      </div>
+
+      <p class="body-text">This is the phase everyone skips and then suffers for. The output isn't code — it's <strong>certainty</strong>. Certainty about what problem you're actually solving, who it's for, what success looks like, and whether it's worth building at all. In an AI-augmented workflow you can use an agent session to rubber-duck this into clarity before committing a directory structure.</p>
+
+      <div class="gate p1">
+        <div class="gate-label p1">Entry Condition</div>
+        <div class="gate-title">You have an idea, a frustration, or a commission.</div>
+        <div class="gate-desc">No code exists. Maybe a napkin note. Maybe a voice memo. The idea is ambient.</div>
+      </div>
+
+      <ul class="checklist">
+        <li><strong>Define the irreducible sentence.</strong> One sentence. What does it do, for whom, and why now?</li>
+        <li><strong>Articulate the core problem, not the solution.</strong> Separate "what I want to build" from "what problem that solves."</li>
+        <li><strong>Map your distribution path.</strong> App Store? Direct download? Web app? CLI? API-only? Decide this now — it determines everything from architecture to naming.</li>
+        <li><strong>Identify the single success metric.</strong> Not 5 metrics. One. What happens if this works?</li>
+        <li><strong>Technology posture decision.</strong> Native macOS? Web? Electron? Node CLI? Python service? This is architecture ground zero.</li>
+        <li><strong>Competitive/prior art scan.</strong> Does this exist? What's the gap you fill?</li>
+        <li><strong>Scope boundary.</strong> Write down what this does NOT do. V1 scope kills more projects than anything.</li>
+        <li><strong>Memory deposit.</strong> Add the project seed to your Neo4j/memory graph before proceeding.</li>
+      </ul>
+
+      <div class="tool-strip">
+        <span class="tool-tag primary">Sequential Thinking MCP</span>
+        <span class="tool-tag primary">Claude (ideation session)</span>
+        <span class="tool-tag">Notion / Notes</span>
+        <span class="tool-tag">Neo4j Memory</span>
+        <span class="tool-tag">Perplexity (prior art)</span>
+      </div>
+
+      <div class="gate p1" style="border-left-style:solid; border-left-width:3px;">
+        <div class="gate-label p1">✓ Exit Gate — Phase 1 Complete When:</div>
+        <div class="gate-title">You can answer in 60 seconds: what it is, who it's for, how it ships, and what "done" looks like.</div>
+        <div class="gate-desc">If you can't do this, do not proceed. This is the most important gate in the entire lifecycle.</div>
+      </div>
+    </section>
+
+    <div class="phase-divider"></div>
+
+    <!-- ══ PHASE 2: FOUNDATION ══ -->
+    <section class="phase" id="p2">
+      <div class="phase-header">
+        <div class="phase-number p2">02</div>
+        <div class="phase-title-block">
+          <div class="phase-tag p2">Phase Two</div>
+          <div class="phase-title">Foundation & Architecture</div>
+          <div class="phase-subtitle">The skeleton that everything else hangs from</div>
+        </div>
+      </div>
+
+      <p class="body-text">Foundation is where your decisions ossify. A bad architecture decision here costs 10x to fix in Phase 3 and 100x in Phase 4. Spend real time here. The modern AI-augmented workflow means you can spin up scaffolds instantly — but that speed is a trap. <strong>Think before you scaffold.</strong></p>
+
+      <div class="gate p2">
+        <div class="gate-label p2">Entry Condition</div>
+        <div class="gate-title">Phase 1 exit gate passed. Problem defined. Distribution path chosen.</div>
+      </div>
+
+      <ul class="checklist">
+        <li><strong>Directory scaffold at <code>/Volumes/Ready500/DEVELOPMENT/[project-name]</code>.</strong> Conventional structure from day one.</li>
+        <li><strong>Version control initialized.</strong> <code>git init</code>, <code>.gitignore</code> configured, initial commit. Remote (GitHub/GitLab) created immediately.</li>
+        <li><strong>Environment strategy.</strong> <code>.env.example</code>, secrets management, no hard-coded credentials ever.</li>
+        <li><strong>Dependency selection.</strong> Only officially maintained, production-level libraries. Each dependency is a contract — evaluate it as one.</li>
+        <li><strong>Architecture Decision Records (ADRs).</strong> One markdown file per major structural decision. Why this, not that. Future you will thank present you.</li>
+        <li><strong>README skeleton.</strong> Write the README before the code. It forces architectural clarity.</li>
+        <li><strong>Data model first-pass.</strong> Even rough — what are the core entities and their relationships?</li>
+        <li><strong>Authentication/security posture.</strong> If any user data, credentials, or network calls exist, decide your security model now.</li>
+        <li><strong>Testing strategy declaration.</strong> What will you test? Unit? Integration? E2E? Decide the level, even if minimal.</li>
+        <li><strong>CI skeleton.</strong> Even a stub GitHub Actions workflow. The habit matters more than the completeness.</li>
+      </ul>
+
+      <div class="signal teal">
+        <strong>For AI-augmented builds:</strong> Use Context7 MCP to fetch current SDK docs before writing any integration code. Your training data has a cutoff. The SDK doesn't care.
+      </div>
+
+      <div class="tool-strip">
+        <span class="tool-tag primary">Desktop Commander MCP</span>
+        <span class="tool-tag primary">Context7 MCP</span>
+        <span class="tool-tag">Git + GitHub</span>
+        <span class="tool-tag">1Password / Secrets</span>
+        <span class="tool-tag">Xcode (if native)</span>
+      </div>
+
+      <div class="gate p2" style="border-left-style:solid; border-left-width:3px;">
+        <div class="gate-label p2">✓ Exit Gate — Phase 2 Complete When:</div>
+        <div class="gate-title">The repo exists, the architecture is documented, the data model is sketched, dependencies are declared, and you could hand this skeleton to another developer and they'd understand it.</div>
+      </div>
+    </section>
+
+    <div class="phase-divider"></div>
+
+    <!-- ══ PHASE 3: DEVELOPMENT ══ -->
+    <section class="phase" id="p3">
+      <div class="phase-header">
+        <div class="phase-number p3">03</div>
+        <div class="phase-title-block">
+          <div class="phase-tag p3">Phase Three</div>
+          <div class="phase-title">Active Development</div>
+          <div class="phase-subtitle">Where the actual work lives</div>
+        </div>
+      </div>
+
+      <p class="body-text">Development is not linear. It's iterative spirals. You build, you discover, you adjust. The discipline isn't in following a waterfall — it's in <strong>never letting debt accumulate silently.</strong> In an AI-augmented workflow you can generate code at extraordinary speed, which means your quality enforcement must be equally aggressive.</p>
+
+      <div class="gate p3">
+        <div class="gate-label p3">Entry Condition</div>
+        <div class="gate-title">Foundation complete. Architecture documented. Repo initialized.</div>
+      </div>
+
+      <p class="body-text"><strong>The Development Loop</strong> — run this cycle continuously:</p>
+
+      <ul class="checklist">
+        <li><strong>Feature branch per unit of work.</strong> <code>git checkout -b feature/[name]</code>. Never commit to main directly during active development.</li>
+        <li><strong>Write tests before or alongside code</strong>, not after. Even basic assertions count.</li>
+        <li><strong>Commit atomically and with intention.</strong> Each commit is one logical change with a descriptive message. Your git log is documentation.</li>
+        <li><strong>No placeholder logic.</strong> If a function exists, it works completely. TODOs in shipping code are technical debt invoices.</li>
+        <li><strong>Inline documentation as you go.</strong> Every function: purpose, parameters, failure conditions. Don't save this for later — later doesn't come.</li>
+        <li><strong>Dependency audit at each new addition.</strong> Do you actually need this? Is it maintained? Does it bring transitive vulnerabilities?</li>
+        <li><strong>Daily or per-session memory deposits.</strong> Add architectural decisions and significant insights to Neo4j. Cross-reference between projects when patterns emerge.</li>
+        <li><strong>Regular integration testing.</strong> Don't mock your integrations indefinitely. Wire the real service early and let reality correct your assumptions.</li>
+        <li><strong>Error handling is not optional.</strong> Every external call, every file operation, every parse — wrapped and handled.</li>
+        <li><strong>Feature flags for anything experimental.</strong> Keeps main stable while you explore.</li>
+      </ul>
+
+      <div class="signal amber">
+        <strong>The AI-Augmentation Trap:</strong> Generated code feels complete but often isn't. Every AI-generated function needs the same scrutiny you'd give to code you wrote yourself. Speed of generation ≠ quality of output. Review like an adversary.
+      </div>
+
+      <div class="signal teal">
+        <strong>Gabriel's Rule:</strong> If you're writing code you don't understand, stop. Understand it first. The speed cost is 20 minutes. The debt cost is 20 hours.
+      </div>
+
+      <div class="tool-strip">
+        <span class="tool-tag primary">Desktop Commander MCP</span>
+        <span class="tool-tag primary">Context7 MCP</span>
+        <span class="tool-tag primary">Claude (pair programming)</span>
+        <span class="tool-tag">Cursor / VS Code</span>
+        <span class="tool-tag">Git branches</span>
+        <span class="tool-tag">Postman / Insomnia</span>
+        <span class="tool-tag">Charles Proxy</span>
+      </div>
+
+      <!-- THE CRITICAL TRANSITION -->
+      <div class="transition-box p3" id="t1" style="border-top-color: var(--phase-4);">
+        <div class="t-label p4">⟶ The Most Important Transition in the SDLC</div>
+        <h4>Development → Staging</h4>
+        <p>This is the line most solo developers blur, and it costs them enormously. Development is where you <em>build</em>. Staging is where you <em>verify</em>. The moment you say "this feature is done," you are not in Development anymore — you are making a claim that must be tested.</p>
+      </div>
+
+      <div class="gate p3" style="border-left-style:solid; border-left-width:3px; margin-top:20px;">
+        <div class="gate-label p3">✓ Exit Gate — Development → Staging When:</div>
+        <div class="gate-title">All planned V1 features are implemented (not nearly implemented). No known broken paths. Tests pass. No uncommitted changes. Documentation reflects actual code.</div>
+        <div class="gate-desc">The single most common mistake: entering staging with "just one more thing to fix." That way lies infinite staging loops. If it's not done, it's not done. Stay in Development.</div>
+      </div>
+    </section>
+
+    <div class="phase-divider"></div>
+
+    <!-- ══ PHASE 4: STAGING ══ -->
+    <section class="phase" id="p4">
+      <div class="phase-header">
+        <div class="phase-number p4">04</div>
+        <div class="phase-title-block">
+          <div class="phase-tag p4">Phase Four</div>
+          <div class="phase-title">Staging & Verification</div>
+          <div class="phase-subtitle">You're not developing anymore. You're proving it works.</div>
+        </div>
+      </div>
+
+      <p class="body-text">Staging is where your development claims meet reality. The environment should mirror production as closely as possible. The mindset should shift from <em>builder</em> to <em>adversary</em>. You are no longer adding — you are testing and hardening. Any code written in staging that isn't a bug fix means you exited Development too early.</p>
+
+      <div class="gate p4">
+        <div class="gate-label p4">Entry Condition</div>
+        <div class="gate-title">All V1 features complete. Tests pass. Clean git state. Merged to a <code>staging</code> or <code>release-candidate</code> branch.</div>
+      </div>
+
+      <ul class="checklist">
+        <li><strong>Deploy to a staging environment</strong> that matches production. For web: a real server/CDN, not localhost. For macOS app: a notarized or ad-hoc signed build on a clean machine.</li>
+        <li><strong>Full happy-path run-through.</strong> Execute every core user flow as if you're a new user. No shortcuts.</li>
+        <li><strong>Edge case and error path testing.</strong> What happens with bad input? Network failure? Empty states? Invalid credentials?</li>
+        <li><strong>Performance profiling.</strong> Does it actually perform at acceptable speed with real data volumes?</li>
+        <li><strong>Security review.</strong> Check exposed endpoints. Validate auth. Review secrets handling. Scan for obvious vulnerabilities.</li>
+        <li><strong>Beta cohort (even 2-3 people).</strong> External eyes catch things your familiarity blinds you to. For indie work, a trusted inner circle suffices.</li>
+        <li><strong>Documentation accuracy audit.</strong> Does the README accurately describe the current state? Does the API reference match actual behavior?</li>
+        <li><strong>Accessibility and compatibility check.</strong> Target OS versions, screen sizes, input methods — whatever your distribution context requires.</li>
+        <li><strong>Crash and error monitoring setup.</strong> Before launch, not after. Sentry, Crashlytics, or equivalent — wired and verified.</li>
+        <li><strong>Rollback plan documented.</strong> If the release breaks something, how do you revert? The plan should exist before you need it.</li>
+        <li><strong>Release notes drafted.</strong> What changed? What's new? What's known? Write this during staging when the details are fresh.</li>
+      </ul>
+
+      <div class="signal rust">
+        <strong>Bug triage discipline:</strong> In staging, every bug found gets severity-classified before being fixed. P0 (blocks launch), P1 (degrades experience significantly), P2 (minor, can defer). Only P0s and P1s block a release. This prevents perfectionism from trapping you in staging forever.
+      </div>
+
+      <div class="tool-strip">
+        <span class="tool-tag primary">Sentry / Crashlytics</span>
+        <span class="tool-tag primary">TestFlight (iOS/macOS)</span>
+        <span class="tool-tag">Vercel Preview / Railway</span>
+        <span class="tool-tag">Charles Proxy</span>
+        <span class="tool-tag">Instruments (Xcode)</span>
+        <span class="tool-tag">Claude (adversarial review)</span>
+      </div>
+
+      <div class="transition-box p4" id="t2" style="border-top-color: var(--phase-5);">
+        <div class="t-label p5">⟶ The Gate That Protects Your Reputation</div>
+        <h4>Staging → Release</h4>
+        <p>The question is not "is this perfect?" It is "does this do what I said it would do, without breaking things it shouldn't break, for the people I said it's for?" If yes: ship. Perfection is a staging trap. Users need the thing that mostly works today more than the perfect thing that never arrives.</p>
+      </div>
+
+      <div class="gate p4" style="border-left-style:solid; border-left-width:3px; margin-top:20px;">
+        <div class="gate-label p4">✓ Exit Gate — Staging → Release When:</div>
+        <div class="gate-title">Zero P0 bugs. All P1 bugs fixed or explicitly deferred with documentation. Beta feedback addressed or triaged. Monitoring wired. Rollback plan exists. Release notes written.</div>
+      </div>
+    </section>
+
+    <div class="phase-divider"></div>
+
+    <!-- ══ PHASE 5: RELEASE ══ -->
+    <section class="phase" id="p5">
+      <div class="phase-header">
+        <div class="phase-number p5">05</div>
+        <div class="phase-title-block">
+          <div class="phase-tag p5">Phase Five</div>
+          <div class="phase-title">Release & Distribution</div>
+          <div class="phase-subtitle">The ship leaves the harbor</div>
+        </div>
+      </div>
+
+      <p class="body-text">Release is an operation, not a moment. The actual deployment is the smallest part. The distribution infrastructure, the announcement, the support readiness — that's what determines whether anyone actually uses what you built. For your indie/direct distribution model, you own this entire stack.</p>
+
+      <div class="gate p5">
+        <div class="gate-label p5">Entry Condition</div>
+        <div class="gate-title">Staging exit gate passed. All release assets prepared. Distribution channel ready.</div>
+      </div>
+
+      <ul class="checklist">
+        <li><strong>Tag the release in git.</strong> <code>git tag -a v1.0.0 -m "Release: [description]"</code>. Every release gets a tag. Non-negotiable.</li>
+        <li><strong>Build release artifacts.</strong> Production build, signed and notarized (macOS), or minified/bundled (web), or packaged (CLI/Python).</li>
+        <li><strong>Staged rollout where possible.</strong> Even 10% → 50% → 100%. Lets you catch problems before they're universal.</li>
+        <li><strong>Distribution channel deployment.</strong> GitHub Releases, App Store submission, Gumroad, direct download, npm publish — whatever your path.</li>
+        <li><strong>Monitoring confirmation.</strong> Verify Sentry/monitoring is receiving events in production before announcing.</li>
+        <li><strong>Announcement / launch communication.</strong> Prepare the story: what it is, who it's for, how to get it, what comes next.</li>
+        <li><strong>Support channel ready.</strong> Email, GitHub Issues, Discord — however you receive feedback. It must exist before launch.</li>
+        <li><strong>CHANGELOG.md updated.</strong> The public record of what changed. Linked from the README.</li>
+        <li><strong>Documentation published.</strong> Not just written — published, accessible, findable.</li>
+      </ul>
+
+      <div class="signal teal">
+        <strong>For macOS distribution:</strong> Notarization via <code>xcrun notarytool</code> is required for Gatekeeper approval. Budget 2–15 minutes per build. Test the notarized build on a machine where you've never installed the app.
+      </div>
+
+      <div class="tool-strip">
+        <span class="tool-tag primary">GitHub Releases</span>
+        <span class="tool-tag primary">Xcode Archive / notarytool</span>
+        <span class="tool-tag">Gumroad / Lemon Squeezy</span>
+        <span class="tool-tag">Netlify / Vercel</span>
+        <span class="tool-tag">Homebrew (CLI tools)</span>
+        <span class="tool-tag">Sentry (confirm live)</span>
+      </div>
+
+      <div class="gate p5" style="border-left-style:solid; border-left-width:3px;">
+        <div class="gate-label p5">✓ Release Complete When:</div>
+        <div class="gate-title">Artifact is publicly accessible. Git tag exists. Monitoring is confirmed live. CHANGELOG updated. Announcement made. Support channel exists.</div>
+      </div>
+    </section>
+
+    <div class="phase-divider"></div>
+
+    <!-- ══ PHASE 6: POST-LAUNCH ══ -->
+    <section class="phase" id="p6">
+      <div class="phase-header">
+        <div class="phase-number p6">06</div>
+        <div class="phase-title-block">
+          <div class="phase-tag p6">Phase Six</div>
+          <div class="phase-title">Post-Launch Operations</div>
+          <div class="phase-subtitle">The work that makes the work matter</div>
+        </div>
+      </div>
+
+      <p class="body-text">Most indie projects die here. Not from technical failure — from abandonment. The post-launch phase is where you transition from builder to operator. The discipline is <strong>responding without thrashing</strong>: staying engaged with users and feedback without letting every bug report become an emergency redirect.</p>
+
+      <ul class="checklist">
+        <li><strong>48-hour monitoring watch.</strong> After any significant release, actively monitor crash reports, error rates, and user feedback for the first 48 hours.</li>
+        <li><strong>P0 patch protocol.</strong> If a critical bug surfaces post-launch, patch within 24 hours. Document the post-mortem. Update the process to prevent the class of error.</li>
+        <li><strong>User feedback aggregation.</strong> Collect everything. Tag by theme. Don't triage in real-time — batch it. Weekly is fine.</li>
+        <li><strong>Analytics review (first 2 weeks).</strong> Are people using what you thought they'd use? Where are they dropping off? What's actually getting used?</li>
+        <li><strong>Known issues log maintained publicly.</strong> GitHub Issues or equivalent. Users who can see you know about a problem forgive much faster.</li>
+        <li><strong>Dependencies audit (monthly).</strong> Security updates, deprecations, breaking changes in upstream packages.</li>
+        <li><strong>Memory graph update.</strong> What did you learn from this release? Add it as institutional knowledge. Future projects benefit.</li>
+      </ul>
+
+      <div class="signal amber">
+        <strong>The Solo Operator's Trap:</strong> You will want to immediately start the next big feature. Resist for 2 weeks. Let the release breathe. The feedback that comes in the first fortnight is the most valuable data you'll ever have about V1.
+      </div>
+
+      <div class="gate p6" style="border-left-style:solid; border-left-width:3px;">
+        <div class="gate-label p6">✓ Post-Launch Stable When:</div>
+        <div class="gate-title">No open P0s. Error rate is stable or declining. Feedback is aggregated and triaged. You have a clear picture of what users actually need versus what you built.</div>
+      </div>
+    </section>
+
+    <div class="phase-divider"></div>
+
+    <!-- ══ PHASE 7: ITERATION ══ -->
+    <section class="phase" id="p7">
+      <div class="phase-header">
+        <div class="phase-number p7">07</div>
+        <div class="phase-title-block">
+          <div class="phase-tag p7">Phase Seven</div>
+          <div class="phase-title">Iteration & Evolution</div>
+          <div class="phase-subtitle">The spiral continues — but with better inputs</div>
+        </div>
+      </div>
+
+      <p class="body-text">Iteration is not a restart. It's Phase 3 with better information. The architecture exists. The foundation holds. Now you build on reality instead of assumptions. The discipline of iteration is <strong>prioritizing ruthlessly</strong> and <strong>scoping each cycle tightly</strong> — because the temptation to add everything users asked for is how products become unmaintainable.</p>
+
+      <ul class="checklist">
+        <li><strong>Iteration planning from feedback data.</strong> What did users actually ask for most? What causes the most friction? Let the data drive V1.1 priorities, not your instincts alone.</li>
+        <li><strong>Maintain the Phase 3 loop.</strong> Feature branch → implement → test → review → merge. Discipline doesn't diminish in later cycles.</li>
+        <li><strong>Refactor debts addressed explicitly.</strong> Schedule technical debt like a feature. If it doesn't go on the board it doesn't get done.</li>
+        <li><strong>Architecture evolution documented.</strong> When the architecture needs to change (and it will), write an ADR. "We changed X because Y, and it means Z."</li>
+        <li><strong>Breaking changes handled with versioning.</strong> Semantic versioning is a promise to your users. Keep it.</li>
+        <li><strong>Deprecation notices before removal.</strong> If you remove a feature or API, announce it one version before it disappears.</li>
+        <li><strong>Each iteration cycle ends with a release.</strong> Even minor releases. The discipline of the full cycle compounds over time.</li>
+      </ul>
+
+      <div class="signal teal">
+        <strong>The compound effect:</strong> Each completed cycle — Conception → Release → Post-Launch → Iteration — leaves the codebase stronger, the documentation richer, and your intuition sharper. This is why experienced builders ship faster, not because they skip steps.
+      </div>
+    </section>
+
+    <div class="phase-divider"></div>
+
+    <!-- ══ QUICK REFERENCE MATRIX ══ -->
+    <section class="phase" id="matrix">
+      <div class="phase-header">
+        <div class="phase-title-block">
+          <div class="phase-tag" style="color:var(--mid)">Quick Reference</div>
+          <div class="phase-title">Phase Decision Matrix</div>
+          <div class="phase-subtitle">At a glance — what phase are you in?</div>
+        </div>
+      </div>
+
+      <table class="matrix">
+        <tr>
+          <th>Phase</th>
+          <th>Primary Output</th>
+          <th>You're Done When</th>
+          <th>Common Trap</th>
+        </tr>
+        <tr>
+          <td style="color:var(--phase-1)">01 Conception</td>
+          <td>Clarity document, irreducible sentence</td>
+          <td>60-second pitch is airtight</td>
+          <td>Starting to code before the problem is defined</td>
+        </tr>
+        <tr>
+          <td style="color:var(--phase-2)">02 Foundation</td>
+          <td>Repo, architecture, data model, README skeleton</td>
+          <td>Another dev could orient from the structure</td>
+          <td>Skipping ADRs, no gitignore, no secrets plan</td>
+        </tr>
+        <tr>
+          <td style="color:var(--phase-3)">03 Development</td>
+          <td>Working, tested, documented features</td>
+          <td>All V1 features complete, tests pass, no known broken paths</td>
+          <td>Entering staging with "just one more thing"</td>
+        </tr>
+        <tr>
+          <td style="color:var(--phase-4)">04 Staging</td>
+          <td>Verified build, beta feedback, release notes</td>
+          <td>Zero P0s, monitoring live, rollback plan exists</td>
+          <td>Infinite perfectionism loop; writing new features</td>
+        </tr>
+        <tr>
+          <td style="color:var(--phase-5)">05 Release</td>
+          <td>Live artifact, git tag, announcement</td>
+          <td>Publicly accessible, monitored, communicated</td>
+          <td>Releasing without monitoring active</td>
+        </tr>
+        <tr>
+          <td style="color:var(--phase-6)">06 Post-Launch</td>
+          <td>Feedback aggregation, stability confirmation</td>
+          <td>No P0s, error rate stable, user picture is clear</td>
+          <td>Immediately starting new features before listening</td>
+        </tr>
+        <tr>
+          <td style="color:var(--phase-7)">07 Iteration</td>
+          <td>Prioritized improvements, clean new cycle</td>
+          <td>Each cycle ends in a release</td>
+          <td>Feature accumulation without scope discipline</td>
+        </tr>
+      </table>
+
+      <div class="signal amber" style="margin-top:32px;">
+        <strong>The meta-rule for solo/indie development:</strong> Every phase has exactly one job. The moment you're doing the next phase's job inside the current phase, you've broken the cycle. Development writes code. Staging breaks it. Release ships it. Post-launch listens. Iteration responds. These are not suggestions — they are the load-bearing walls.
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  <div>THE BUILDER'S CODEX &nbsp;·&nbsp; GABRIEL MCPHERSON &nbsp;·&nbsp; /VOLUMES/READY500/DEVELOPMENT &nbsp;·&nbsp; v2025.05</div>
+</footer>
+
+<script>
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  // Active rail highlighting
+  const phases = document.querySelectorAll('.phase, .transition-box');
+  const railItems = document.querySelectorAll('.rail-item');
+
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        railItems.forEach(item => {
+          item.classList.toggle('active', item.getAttribute('href') === `#${id}`);
+        });
+      }
+    });
+  }, { threshold: 0.3 });
+
+  phases.forEach(p => { if (p.id) obs.observe(p); });
+</script>
+</body>
+</html>

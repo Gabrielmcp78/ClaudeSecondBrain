@@ -1,26 +1,28 @@
 # Change Log
 
-*Newest entries at top. Every ingestion, wiki edit, and output generated is recorded here.*
+*Append-only. One entry per processing action.*
 
 ---
 
-## Format
+## 2026-06-05 — Session: Infrastructure Buildout (Claude, Cowork)
 
-| Date | Action | Source File(s) | Destination Article(s) |
-|------|--------|----------------|------------------------|
-| YYYY-MM-DD | ingest / create / update / output | raw/filename or outputs/filename | wiki/path/article.md |
+**Actions taken:**
+- Renamed repo reference in CLAUDE.md from `starTrekops/` to `ClaudeSecondBrain/`
+- Created `Gemini.md` — parallel librarian schema for Gemini
+- Created `ingest.sh` — launchd-triggered ingestion script
+- Created `wiki/ai-collaboration/secondbrain-mcp-infrastructure.md` — MCP infrastructure documentation
+- Created `outputs/2026-06-05_session-infrastructure-buildout.md` — full session log
 
----
+**Raw files detected for ingestion (processing status: running at session close):**
+- `A FORMAL RESONANCE MODEL FOR STRING THEORY.md` → `wiki/theory-consciousness/`
+- `Burnthrough_Draft_2.2.txt` → `wiki/craft-fiction/` (novel draft)
+- `GHRM-LHC Monograph: Validation of the Fundamental λ5D Coupling Constant via High-Coherence Resonance.md` → `wiki/theory-consciousness/`
+- `Gabriel McPherson_Resume.pdf` → `wiki/reference-external/`
+- `gabriel_comprehensive_resume_creaive_profile_8_2025_v1.md` → `wiki/reference-external/`
+- `Nexus_collector1.md` → routing TBD on content review
+- `Top 20 Agent Profiles (1).json` + duplicate → `wiki/ai-collaboration/`
+- `Top 21-40 agents for string theory (1).json` + duplicate → `wiki/ai-collaboration/`
+- `claude and gabe cconvo on LOTS.pdf` → `wiki/ai-collaboration/`
+- `Vibrational Consciousness Hypothesis.md` → `wiki/theory-consciousness/`
 
-## Log
-
-| Date | Action | Source File(s) | Destination Article(s) |
-|------|--------|----------------|------------------------|
-| 2026-06-02 | ingest | raw/string-theory-chapters-17-20.md | wiki/craft-fiction/string-theory/chapter-summaries.md, themes-and-canon.md |
-| 2026-06-02 | ingest | raw/string-theory-chapters-13-16.md | wiki/craft-fiction/string-theory/chapter-summaries.md, characters.md |
-| 2026-06-02 | ingest | raw/string-theory-chapters-09-12.md | wiki/craft-fiction/string-theory/chapter-summaries.md, themes-and-canon.md |
-| 2026-06-02 | ingest | raw/string-theory-chapters-05-08.md | wiki/craft-fiction/string-theory/chapter-summaries.md, project-argo.md |
-| 2026-06-02 | ingest | raw/string-theory-chapter-0{1-4}.md + overture | wiki/craft-fiction/string-theory/characters.md, 68hz-mechanic.md, project-argo.md |
-| 2026-06-02 | ingest | raw/string-theory-chapter-index.md | wiki/craft-fiction/string-theory/novel-structure.md |
-| 2026-06-02 | schema rebuild | — | CLAUDE.md, wiki/_index.md, wiki/_connections.md |
-| 2026-06-02 | initial setup | — | CLAUDE.md, wiki/index.md |
+**Next session:** Claude Code — GeminiChatter cleanup and MCP tool integration

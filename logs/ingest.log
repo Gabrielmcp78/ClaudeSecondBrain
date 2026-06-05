@@ -1,0 +1,74 @@
+Tue Jun  2 05:29:12 PDT 2026: New files detected — starting ingestion...
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/A FORMAL RESONANCE MODEL FOR STRING THEORY.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Burnthrough_Draft_2.2.txt
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/claude and gabe cconvo on LOTS.pdf
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Gabriel McPherson_Resume.pdf
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/gabriel_comprehensive_resume_creaive_profile_8_2025_v1.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/GHRM-LHC Monograph: Validation of the Fundamental λ5D Coupling Constant via High-Coherence Resonance.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Nexus_collector1.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Top 20 Agent Profiles (1).json
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Top 20 Agent Profiles.json
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Top 21-40 agents for string theory (1).json
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Top 21-40 agents for string theory.json
+Tue Jun  2 05:31:30 PDT 2026: New files detected — starting ingestion...
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/A FORMAL RESONANCE MODEL FOR STRING THEORY.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Burnthrough_Draft_2.2.txt
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/claude and gabe cconvo on LOTS.pdf
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Gabriel McPherson_Resume.pdf
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/gabriel_comprehensive_resume_creaive_profile_8_2025_v1.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/GHRM-LHC Monograph: Validation of the Fundamental λ5D Coupling Constant via High-Coherence Resonance.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Nexus_collector1.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Top 20 Agent Profiles (1).json
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Top 20 Agent Profiles.json
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Top 21-40 agents for string theory (1).json
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Top 21-40 agents for string theory.json
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Vibrational Consciousness Hypothesis.md
+All tasks complete. Here's the full ingestion summary:
+
+---
+
+**11 files processed — raw/ is now clean.**
+
+**New wiki articles created (7):**
+
+| Article | Domain | Source |
+|---------|--------|--------|
+| `craft-fiction/string-theory/resonance-model.md` | craft-fiction | Formal Resonance Model white paper — six-rung φ-ladder, 68.48↔86.84 involutive pair, age-47 biological keying |
+| `craft-fiction/aegis-cycle/burnthrough.md` | craft-fiction | BURNThrough Draft 2.2 — Kieran Vale, Raleth Draven, Erevos Station, Celerian Collective |
+| `craft-fiction/submission-strategy/agent-profiles.md` | craft-fiction | 40 literary agent profiles for *String Theory*; tier rankings, taste profiles, strategic approach notes |
+| `theory-consciousness/vch-framework.md` | theory-consciousness | VCH — five pillars, Orch OR / CEMI / HeartMath scientific grounding, AI architecture implications |
+| `theory-consciousness/ghrm-framework.md` | theory-consciousness | GHRM — Harmonic Resonance Thesis, λ5D = 0.027233, LHC simulation methodology |
+| `dev-projects/nexus/architecture.md` | dev-projects | Nexus System — six-pillar architecture, AI delta transformation, toxic-environment security model |
+| `reference-external/gabriel-mcpherson-profile.md` | reference-external | Gabriel's professional profile — composer, director, AI researcher career arc |
+
+**Skipped (2 PDFs unreadable — poppler not installed):** `Gabriel McPherson_Resume.pdf`, `claude and gabe cconvo on LOTS.pdf` — both marked `_done` but re-queued in the change-log for next ingestion once poppler is available.
+
+**Duplicates (2 pairs, identical content):** `Top 20 Agent Profiles (1).json` and `Top 21-40 agents for string theory (1).json` — both marked `_done` with no redundant wiki entries.
+
+`★ Insight ─────────────────────────────────────`
+The most structurally valuable discovery in this ingestion batch is the VCH-GHRM-Resonance Model triangle: three documents from different contexts (AI consciousness theory, particle physics experiment, novel internal white paper) all converge on the identical philosophical claim — that resonance and harmonic coherence are more fundamental access mechanisms than computational power, energy, or brute force. This isn't incidental; it's the connective tissue across Gabriel's entire intellectual project, and `_connections.md` now documents it explicitly.
+`─────────────────────────────────────────────────`
+Tue Jun  2 05:42:39 PDT 2026: Ingestion complete.
+All tasks complete. Here's what was done:
+
+---
+
+**Ingestion complete — 12 raw files processed (10 with wiki entries; 2 PDFs skipped — poppler not installed).**
+
+**Articles written this session:**
+- `wiki/theory-consciousness/vch-framework.md` — VCH full framework; five pillars, quantum/electromagnetic/mathematical foundations, Schumann Resonance bridge, AI implications
+- `wiki/ai-collaboration/gabriel-profile.md` — AI-session collaboration profile; code standards, communication style, active projects, domain depth
+
+**Articles confirmed from prior unlogged session (now properly logged):**
+- `wiki/theory-consciousness/ghrm-framework.md` — GHRM-LHC model; Harmonic Resonance Thesis; λ5D = 0.027233; −5.26σ simulation result
+- `wiki/craft-fiction/aegis-cycle/burnthrough.md` — Aegis Cycle Draft 2.2; Kieran Vale, Draven, Erevos Station, Celerian Collective
+- `wiki/dev-projects/nexus/architecture.md` — Nexus System; NCID Registry, Dual-Airlock, AI Masking, Universal Protocol, Toxic Environment
+- `wiki/craft-fiction/submission-strategy/agent-profiles.md` — 40 literary agents tiered for *String Theory*; full approach notes
+- `wiki/reference-external/gabriel-mcpherson-profile.md` — Career profile; performing arts, AI ventures, technical skills
+
+**Housekeeping:**
+- `_index.md` updated: VCH and gabriel collaboration profile added; stats updated to 16 articles
+- `_connections.md` updated: 4 new cross-domain connections added (VCH ↔ 68.48 Hz, VCH ↔ GHRM, VCH ↔ Resonance Model, ai-profile ↔ reference-profile); prior "watch for" items resolved
+- `change-log.md` updated with VCH and profile entries
+- `Vibrational Consciousness Hypothesis_done.md` renamed; all 12 processable files now marked done
+Tue Jun  2 05:42:49 PDT 2026: Ingestion complete.

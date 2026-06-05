@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Unified Harmonic Map — Multi‑Rail + Intervals + Dual‑Wave + Coherence</title>
+<style>
+  :root{
+    --bg1:#6f6f6f;
+    --bg2:#8b8b8b;
+    --ink:#ffffff;
+    --muted:rgba(255,255,255,.78);
+    --faint:rgba(255,255,255,.20);
+
+    --grid:rgba(255,255,255,.30);
+
+    --c-fifth:#60a5fa;
+    --c-fourth:#34d399;
+    --c-octave:#fbbf24;
+    --c-tritone:#f87171;
+    --c-m3:#a78bfa;
+    --c-M3:#fb7185;
+
+    --wave432: rgba(96,165,250,.9);
+    --wave528: rgba(52,211,153,.9);
+    --interf:  rgba(251,191,36,.9);
+  }
+
+  html, body{ height:100%; overflow-x:hidden; }
+  body{
+    margin:0;
+    background: linear-gradient(180deg, var(--bg1), var(--bg2));
+    color:var(--ink);
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  #wrap{ max-width: 1280px; margin: 0 auto; padding: 14px 14px 92px; }
+
+  header{
+    display:flex; align-items:flex-end; justify-content:space-between; gap:12px;
+    margin-bottom:10px;
+  }
+  h1{ margin:0; font-size: 16px; letter-spacing:.2px; }
+  .sub{ margin:2px 0 0; font-size: 12px; color: var(--muted); }
+  #modeLabel{ font-size: 11px; color: var(--muted); }
+
+  /* Main layout: stage + side panel */
+  #layout{
+    display:flex;
+    gap: 12px;
+    align-items:stretch;
+  }
+  #stage{
+    flex: 1 1 auto;
+    position:relative;
+    background: rgba(0,0,0,.16);
+    border: 1px solid rgba(255,255,255,.14);
+    border-radius: 12px;
+    overflow:hidden;
+    min-width: 0;
+  }
+  svg{ width:100%; height: 72vh; display:block; }
+
+  #panel{
+    width: 360px;
+    flex: 0 0 360px;
+    background: rgba(0,0,0,.22);
+    border: 1px solid rgba(255,255,255,.16);
+    border-radius: 12px;
+    padding: 12px 12px;
+    overflow:auto;
+    max-height: 72vh;
+  }
+  #panel .k{ font-size: 10px; color: rgba(255,255,255,.8); letter-spacing:.12em; text-transform: uppercase; }
+  #panel .t{ font-size: 14px; font-weight: 850; margin-top:4px; }
+  #panel .b{ font-size: 12px; color: rgba(255,255,255,.92); margin-top:8px; line-height:1.4; }
+  #panel .sec{ margin-top: 12px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,.12); }
+  #panel .pill{
+    display:inline-flex; align-items:center; gap:6px;
+    padding: 3px 8px; border-radius: 999px;
+    border: 1px solid rgba(255,255,255,.18);
+    background: rgba(255,255,255,.06);
+    font-size: 11px; color: rgba(255,255,255,.95);
+    margin: 4px 6px 0 0;
+  }
+
+  /* SVG styling */
+  .degree-line{ stroke: var(--grid); stroke-width: 1; }
+  .degree-label{ fill: var(--ink); font-size: 11px; font-weight: 700; text-anchor: middle; }
+
+  .rail-tick{ stroke: rgba(255,255,255,.22); stroke-width:1; }
+  .rail-label{ fill: rgba(255,255,255,.90); font-size: 10px; text-anchor: middle; }
+  .rail-title{ fill: rgba(255,255,255,.92); font-size: 10px; font-weight: 750; letter-spacing:.10em; }
+
+  .circle{ fill:none; stroke: rgba(255,255,255,0.48); stroke-width:1.5; }
+  .lens{ fill:none; stroke: rgba(255,255,255,0.38); stroke-width: 1.1; }
+  .band{ fill-opacity:.12; }
+
+  .interval{ fill:none; stroke-width:2; stroke-opacity:.60; }
+  .interval.fifth{ stroke: var(--c-fifth); }
+  .interval.fourth{ stroke: var(--c-fourth); }
+  .interval.octave{ stroke: var(--c-octave); }
+  .interval.tritone{ stroke: var(--c-tritone); }
+  .interval.m3{ stroke: var(--c-m3); }
+  .interval.M3{ stroke: var(--c-M3); }
+
+  .interval-label{ font-size: 9px; fill: rgba(255,255,255,.92); text-anchor: middle; }
+
+  .chord-edge{ stroke: rgba(255,255,255,.75); stroke-width: 1.8; }
+  .chord-vertex{ fill: rgba(255,255,255,.95); }
+  .chord-label{ font-size: 10px; font-weight: 750; fill: rgba(255,255,255,.95); }
+
+  .waveA{ fill:none; stroke: var(--wave432); stroke-width: 1.8; stroke-opacity:.85; }
+  .waveB{ fill:none; stroke: var(--wave528); stroke-width: 1.8; stroke-opacity:.85; }
+  .waveI{ fill:none; stroke: var(--interf);  stroke-width: 2.2; stroke-opacity:.9; }
+
+  .active-stroke{ stroke-opacity: 1 !important; stroke-width: 3.2 !important; }
+  .active-fill{ opacity: .95 !important; }
+  .dim{ opacity: .12; }
+
+  /* Controls */
+  #controls{
+    position:fixed;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    background: rgba(0,0,0,.22);
+    border: 1px solid rgba(255,255,255,.16);
+    border-radius: 12px;
+    padding: 10px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px 14px;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .grp{ display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+  .btn{
+    border: 1px solid rgba(255,255,255,.22);
+    background: rgba(255,255,255,.08);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    cursor:pointer;
+  }
+  .btn:hover{ background: rgba(255,255,255,.12); }
+  .toggle{
+    display:inline-flex; align-items:center; gap:6px;
+    font-size: 12px; color: rgba(255,255,255,.95);
+    user-select:none;
+  }
+  .toggle input{ transform: translateY(1px); }
+  select, input[type="range"]{ accent-color: #ffffff; }
+  select{
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.18);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+  .mini{ font-size: 11px; color: rgba(255,255,255,.9); }
+  .meter{ min-width: 120px; }
+
+  @media (max-width: 980px){
+    #layout{ flex-direction: column; }
+    #panel{ width: auto; flex: 0 0 auto; max-height: none; }
+    svg{ height: 68vh; }
+  }
+</style>
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <div>
+        <h1>Unified Harmonic Map</h1>
+        <div class="sub">Degrees are always visible. Notes (sharps + flats), ratios, and frequency anchors live on separate rails. Every line/shape/connection provides coherence explanation in the side panel.</div>
+      </div>
+      <div id="modeLabel">Projection: Linear</div>
+    </header>
+
+    <div id="layout">
+      <div id="stage">
+        <svg id="scene" role="img" aria-label="Unified harmonic map with rails, intervals, and dual-wave coherence"></svg>
+      </div>
+
+      <aside id="panel" aria-live="polite">
+        <div class="k">Focus</div>
+        <div class="t" id="infoTitle">Nothing selected</div>
+        <div class="b" id="infoBody">Hover any element to preview meaning. Click to pin it. Use toggles to filter interval families and switch projection. The dual-wave animation shows where 432 and 528 align (constructive interference) versus drift (phase tension).</div>
+
+        <div class="sec">
+          <div class="k">Coherence</div>
+          <div class="b" id="infoCoherence">Coherence is computed from ratio simplicity (small integers), phase alignment between 432 & 528 at this degree, and whether the relationship closes under octave folding.</div>
+        </div>
+
+        <div class="sec">
+          <div class="k">Tags</div>
+          <div id="infoTags"></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <div id="controls">
+    <div class="grp">
+      <button class="btn" id="toggleAnim">▶︎ Play</button>
+
+      <label class="toggle"><span class="mini">Speed</span>
+        <input id="speed" class="meter" type="range" min="0" max="100" value="14" />
+      </label>
+
+      <label class="toggle"><span class="mini">Base</span>
+        <select id="baseFreq">
+          <option value="432" selected>432 Hz</option>
+          <option value="440">440 Hz</option>
+        </select>
+      </label>
+
+      <label class="toggle"><span class="mini">Second</span>
+        <select id="secondFreq">
+          <option value="528" selected>528 Hz</option>
+          <option value="440">440 Hz</option>
+          <option value="432">432 Hz</option>
+        </select>
+      </label>
+
+      <button class="btn" id="reset">Reset</button>
+    </div>
+
+    <div class="grp">
+      <label class="toggle"><input type="checkbox" class="fam" value="fifth" checked>Fifth (3/2)</label>
+      <label class="toggle"><input type="checkbox" class="fam" value="fourth" checked>Fourth (4/3)</label>
+      <label class="toggle"><input type="checkbox" class="fam" value="octave" checked>Octave (2/1)</label>
+      <label class="toggle"><input type="checkbox" class="fam" value="tritone" checked>Tritone (√2)</label>
+      <label class="toggle"><input type="checkbox" class="fam" value="m3" checked>m3 (6/5)</label>
+      <label class="toggle"><input type="checkbox" class="fam" value="M3" checked>M3 (5/4)</label>
+      <button class="btn" id="proj">Toggle Radial</button>
+    </div>
+
+    <div class="grp">
+      <span class="mini">Chord</span>
+      <select id="chordPick">
+        <option value="">(none)</option>
+      </select>
+      <button class="btn" id="exportSVG">Export SVG</button>
+      <button class="btn" id="exportPNG">Export PNG</button>
+    </div>
+  </div>
+
+<script>
+(() => {
+  const svg = document.getElementById('scene');
+  const infoTitle = document.getElementById('infoTitle');
+  const infoBody = document.getElementById('infoBody');
+  const infoCoherence = document.getElementById('infoCoherence');
+  const infoTags = document.getElementById('infoTags');
+  const modeLabel = document.getElementById('modeLabel');
+
+  const NS = 'http://www.w3.org/2000/svg';
+  const el = (name, attrs = {}) => {
+    const n = document.createElementNS(NS, name);
+    for (const [k, v] of Object.entries(attrs)) n.setAttribute(k, String(v));
+    return n;
+  };
+
+  // ------- Canonical degree spine (your ruler) -------
+  const degreeSpine = [
+    0,9,18,27,36,45,54,72,90,108,120,135,144,162,
+    180,216,225,240,252,270,288,300,315,324,333,360
+  ];
+
+  // ------- 12 notes with 24 labels (Sharps rail + Flats rail) -------
+  // We map chromatic steps evenly to degrees for the note rails (30° per semitone).
+  // Your deeper mapping can override per-note degrees later by editing NOTE_MAP.
+  const NOTE_SHARP = ["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"];
+  const NOTE_FLAT  = ["C","Db","D","Eb","E","F","Gb","G","Ab","A","Bb","B"];
+  const NOTE_MAP = NOTE_SHARP.map((n, i) => ({ step:i, deg:i*30 }));
+
+  const notesSharp = NOTE_SHARP.map((n,i)=>({
+    id:`N#_${n}`, label:n, deg: NOTE_MAP[i].deg,
+    domain:["music","note"],
+    def:`Chromatic pitch class (sharp spelling): ${n}. This rail is a label layer over the degree spine.`,
+  }));
+  const notesFlat = NOTE_FLAT.map((n,i)=>({
+    id:`Nb_${n}`, label:n, deg: NOTE_MAP[i].deg,
+    domain:["music","note"],
+    def:`Chromatic pitch class (flat spelling): ${n}. Same phase position as its sharp/enharmonic partner.`,
+  }));
+
+  // ------- Ratios rail (coherence is ratio simplicity) -------
+  const ratios = [
+    { id:'1/1', label:'1/1', deg:0,   ratio:1,     def:'Unison. Maximum coherence (identity).', domain:['music','math','ratio'] },
+    { id:'2/1', label:'2/1', deg:360, ratio:2,     def:'Octave. Closure under doubling.', domain:['music','math','ratio'] },
+    { id:'3/2', label:'3/2', deg:216, ratio:1.5,   def:'Perfect fifth. Strong low-integer consonance.', domain:['music','math','ratio'] },
+    { id:'4/3', label:'4/3', deg:144, ratio:1.333, def:'Perfect fourth. Complement to the fifth.', domain:['music','math','ratio'] },
+    { id:'5/4', label:'5/4', deg:72,  ratio:1.25,  def:'Major third (just). Sweet consonance.', domain:['music','math','ratio'] },
+    { id:'6/5', label:'6/5', deg:288, ratio:1.2,   def:'Minor third (just). Dark consonance.', domain:['music','math','ratio'] },
+    { id:'9/8', label:'9/8', deg:36,  ratio:1.125, def:'Major second (Pythagorean). A gentle step.', domain:['music','math','ratio'] },
+    { id:'11/9',label:'11/9',deg:120, ratio:11/9,  def:'Approx ratio between 528 and 432 (528/432 = 11/9). This is the “meld” target.', domain:['music','math','ratio'] },
+  ];
+
+  // ------- Frequency rail (absolute anchors) -------
+  const freqs = [
+    { id:'F_432', label:'432', deg:0,   hz:432, def:'Base reference. Often framed as 2^4 * 3^3.', domain:['frequency'] },
+    { id:'F_528', label:'528', deg:120, hz:528, def:'Second reference. Often paired with 432 in your wave braids (ratio 11/9).', domain:['frequency'] },
+    { id:'F_440', label:'440', deg:9,   hz:440, def:'Modern A4 standard. Useful comparison.', domain:['frequency'] },
+    { id:'F_864', label:'864', deg:180, hz:864, def:'One octave above 432.', domain:['frequency'] },
+    { id:'F_1056',label:'1056',deg:240,hz:1056,def:'One octave above 528.', domain:['frequency'] },
+  ];
+
+  // ------- Constants bands (starter; extend) -------
+  const bands = [
+    { id:'phi', deg:72,  w:20, color:'#fbbf24', name:'φ', def:'Golden ratio anchor zone (starter).', domain:['math','constant'] },
+    { id:'sqrt2',deg:90, w:20, color:'#60a5fa', name:'√2', def:'Square diagonal anchor (starter).', domain:['math','constant'] },
+    { id:'pi',  deg:180, w:20, color:'#fb7185', name:'π', def:'Half-turn. Structural symmetry pivot.', domain:['math','constant'] },
+    { id:'phi2',deg:144, w:20, color:'#34d399', name:'φ²', def:'Second golden power (starter).', domain:['math','constant'] },
+  ];
+
+  // ------- Interval arcs (family toggles) -------
+  // NOTE: degrees here are on the spine; you can add many more.
+  const intervals = [
+    { id:'iv_p5_CG', from:0,   to:216, fam:'fifth',  label:'5th (3/2)', ratio:'3/2', def:'C→G: simplest strong consonance.' },
+    { id:'iv_p4_CF', from:0,   to:144, fam:'fourth', label:'4th (4/3)', ratio:'4/3', def:'C→F: complement of the fifth.' },
+    { id:'iv_8ve',   from:0,   to:360, fam:'octave', label:'8ve (2/1)', ratio:'2/1', def:'Closure under doubling.' },
+    { id:'iv_tt',    from:0,   to:180, fam:'tritone',label:'TT (√2)',   ratio:'√2',  def:'Symmetry divider; tension axis.' },
+    { id:'iv_M3',    from:0,   to:72,  fam:'M3',     label:'M3 (5/4)',  ratio:'5/4', def:'Bright consonance.' },
+    { id:'iv_m3',    from:0,   to:288, fam:'m3',     label:'m3 (6/5)',  ratio:'6/5', def:'Dark consonance.' },
+  ];
+
+  // ------- Chords (starter) -------
+  const chords = [
+    { id:'Cmaj', name:'C Major (C–E–G)', degs:[0,120,216], def:'A triad built from 1, 5/4, 3/2.', domain:['music','chord'] },
+    { id:'Amin', name:'A Minor (A–C–E)', degs:[270,0,120], def:'Minor triad: 1, 6/5, 3/2 (relative).', domain:['music','chord'] },
+  ];
+
+  // ------- Projection state -------
+  const state = {
+    projection: 'linear', // or 'radial'
+    pinnedId: null,
+    running: false,
+    t: 0,
+    speed: 0.14,
+    baseHz: 432,
+    secondHz: 528,
+    visibleFamilies: new Set(['fifth','fourth','octave','tritone','m3','M3']),
+    phaseTol: 0.14, // coherence threshold (radians)
+  };
+
+  // ------- Geometry + layout constants (computed on render) -------
+  let VB = { w: 1200, h: 700 };
+  const RAILS = {
+    deg:  26,
+    ns:   60,   // notes sharps
+    nf:   86,   // notes flats
+    ratio:112,
+    freq: 138,
+    wave: 176,
+  };
+  let FIELD_Y = 420;
+
+  const makeGroup = (id) => el('g', { id });
+  const clear = () => { while(svg.firstChild) svg.removeChild(svg.firstChild); };
+
+  const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+  const normDeg = (d) => ((d % 360) + 360) % 360;
+
+  function xFromDeg(d){
+    // linear x coordinate
+    const pad = 40;
+    return pad + (d/360) * (VB.w - pad*2);
+  }
+
+  function polarFromDeg(d, r){
+    // radial projection: degrees -> angle around circle
+    const cx = VB.w * 0.5;
+    const cy = FIELD_Y;
+    const ang = (d-90) * Math.PI/180; // -90 so 0° is up
+    return { x: cx + Math.cos(ang)*r, y: cy + Math.sin(ang)*r };
+  }
+
+  // ---------- Coherence scoring ----------
+  // 1) ratio simplicity: smaller numerator/denominator => higher
+  // 2) phase alignment between baseHz and secondHz at the selected degree
+  // 3) octave closure: near 0°/360° or exact octave relation
+  function ratioSimplicity(ratioLabel){
+    // crude: map known labels; unknown -> medium
+    const map = {'1/1':1.0,'2/1':0.95,'3/2':0.92,'4/3':0.90,'5/4':0.88,'6/5':0.86,'9/8':0.82,'11/9':0.78,'√2':0.55};
+    return map[ratioLabel] ?? 0.65;
+  }
+
+  function phaseDeltaAtDeg(deg){
+    const a = (deg*Math.PI/180);
+    // We model phase as angle + time*omega, omega proportional to frequency
+    const omegaA = state.baseHz / 432;   // normalized
+    const omegaB = state.secondHz / 432; // normalized
+    const pA = a + state.t*omegaA;
+    const pB = a + state.t*omegaB;
+    // wrapped difference
+    let d = Math.atan2(Math.sin(pA-pB), Math.cos(pA-pB));
+    return d; // [-pi,pi]
+  }
+
+  function coherenceAtDeg(deg, ratioLabel=null){
+    const pd = Math.abs(phaseDeltaAtDeg(deg));
+    const phaseScore = 1 - clamp(pd / Math.PI, 0, 1); // 1 aligned, 0 opposite
+    const ratioScore = ratioLabel ? ratioSimplicity(ratioLabel) : 0.7;
+    const octaveScore = (deg === 0 || deg === 360) ? 1.0 : (Math.abs(deg-360) < 1e-6 ? 1.0 : 0.7);
+    // weighted blend
+    const score = 0.45*phaseScore + 0.40*ratioScore + 0.15*octaveScore;
+    return { score, phaseScore, ratioScore, octaveScore, pd };
+  }
+
+  // ---------- Info panel ----------
+  function setTags(tags){
+    infoTags.innerHTML = '';
+    (tags||[]).forEach(t => {
+      const s = document.createElement('span');
+      s.className = 'pill';
+      s.textContent = t;
+      infoTags.appendChild(s);
+    });
+  }
+
+  function describeCoherence(meta){
+    const deg = meta?.deg ?? null;
+    const ratioLabel = meta?.ratioLabel ?? null;
+    if (deg === null){
+      infoCoherence.textContent = 'Coherence: hover or select an element to compute local alignment.';
+      return;
+    }
+    const c = coherenceAtDeg(deg, ratioLabel);
+    const pct = Math.round(c.score*100);
+    const phase = Math.round(c.phaseScore*100);
+    const rat = Math.round(c.ratioScore*100);
+    const oct = Math.round(c.octaveScore*100);
+    const pdDeg = Math.round((c.pd*180/Math.PI)*10)/10;
+
+    infoCoherence.textContent =
+      `Coherence ${pct}%. Phase alignment (432↔${state.secondHz}) ${phase}%, ratio simplicity ${rat}%, octave-closure ${oct}%. Phase offset at ${deg}°: ~${pdDeg}°.`;
+  }
+
+  function showMeta(meta, pinned=false){
+    if(!meta) return;
+    const title = meta.title || meta.label || meta.id || 'Item';
+    infoTitle.textContent = pinned ? `Pinned: ${title}` : title;
+    infoBody.textContent = meta.body || meta.def || '—';
+    setTags(meta.tags || meta.domain || []);
+    describeCoherence(meta);
+  }
+
+  // ---------- Meta attachment ----------
+  function attachMeta(node, meta){
+    node.dataset.meta = JSON.stringify(meta);
+    node.style.cursor = 'pointer';
+  }
+  function getMetaFromTarget(t){
+    const raw = t?.dataset?.meta;
+    if(!raw) return null;
+    try { return JSON.parse(raw); } catch { return null; }
+  }
+
+  // ---------- Rendering ----------
+  function render(){
+    // Set viewBox based on current client size
+    const w = svg.clientWidth || 1200;
+    const h = svg.clientHeight || 700;
+    VB = { w, h };
+    svg.setAttribute('viewBox', `0 0 ${w} ${h}`);
+    FIELD_Y = h * 0.60;
+
+    clear();
+
+    // Layers (draw order matters)
+    const gridLayer     = makeGroup('gridLayer');
+    const bandLayer     = makeGroup('bandLayer');
+    const railLayer     = makeGroup('railLayer');
+    const waveLayer     = makeGroup('waveLayer');
+    const intervalLayer = makeGroup('intervalLayer');
+    const geoLayer      = makeGroup('geoLayer');
+    const chordLayer    = makeGroup('chordLayer');
+
+    svg.append(gridLayer);
+    svg.append(bandLayer);
+    svg.append(railLayer);
+    svg.append(waveLayer);
+    svg.append(intervalLayer);
+    svg.append(geoLayer);
+    svg.append(chordLayer);
+
+    // --- Grid / degree spine ---
+    degreeSpine.forEach(d => {
+      const x = xFromDeg(d);
+      const line = el('line', { x1:x, y1: RAILS.deg+8, x2:x, y2: h-26, class:'degree-line' });
+      attachMeta(line, {
+        id:`deg_${d}`,
+        title:`${d}°`,
+        deg:d,
+        tags:['degrees','spine'],
+        body:`Degree spine marker. This is the shared coordinate system used by notes, ratios, frequencies, intervals, lenses, and chords.`,
+      });
+      gridLayer.appendChild(line);
+
+      const t = el('text', { x, y: RAILS.deg, class:'degree-label' });
+      t.textContent = `${d}°`;
+      attachMeta(t, {
+        id:`degLabel_${d}`,
+        title:`${d}° label`,
+        deg:d,
+        tags:['degrees','label'],
+        body:`Always-visible ruler label. Use it to compare positions across all rails.`,
+      });
+      gridLayer.appendChild(t);
+    });
+
+    // --- Constant bands ---
+    bands.forEach(b => {
+      const x = xFromDeg(b.deg) - b.w/2;
+      const r = el('rect', { x, y: RAILS.deg+8, width: b.w, height: (h-26)-(RAILS.deg+8), fill:b.color, class:'band' });
+      attachMeta(r, {
+        id:`band_${b.id}`,
+        title:`Band: ${b.name}`,
+        deg:b.deg,
+        tags:['band','constant'].concat(b.domain||[]),
+        body:`Semi-transparent region marking a constant “anchor zone”. Here: ${b.name}. ${b.def || ''} Selecting it highlights nearby degrees and connected intervals.`,
+      });
+      bandLayer.appendChild(r);
+    });
+
+    // --- Rails helper ---
+    function railTitle(y, label){
+      const t = el('text', { x: 16, y: y-10, class:'rail-title' });
+      t.textContent = label;
+      railLayer.appendChild(t);
+    }
+    function railTick(obj, y){
+      const x = xFromDeg(normDeg(obj.deg));
+      const tick = el('line', { x1:x, y1:y-7, x2:x, y2:y+7, class:'rail-tick' });
+      attachMeta(tick, {
+        id: obj.id,
+        title: obj.label,
+        deg: normDeg(obj.deg),
+        tags: obj.domain || [],
+        ratioLabel: obj.id, // for ratios rail; harmless otherwise
+        body: obj.def || '—'
+      });
+      railLayer.appendChild(tick);
+
+      const lab = el('text', { x, y: y+18, class:'rail-label' });
+      lab.textContent = obj.label;
+      attachMeta(lab, {
+        id: obj.id + '_label',
+        title: obj.label,
+        deg: normDeg(obj.deg),
+        tags: (obj.domain || []).concat(['label']),
+        ratioLabel: obj.id,
+        body: obj.def || '—'
+      });
+      railLayer.appendChild(lab);
+    }
+
+    railTitle(RAILS.ns,  'NOTES (SHARPS)');
+    notesSharp.forEach(n => railTick(n, RAILS.ns));
+
+    railTitle(RAILS.nf,  'NOTES (FLATS)');
+    notesFlat.forEach(n => railTick(n, RAILS.nf));
+
+    railTitle(RAILS.ratio, 'RATIOS');
+    ratios.forEach(r => railTick(r, RAILS.ratio));
+
+    railTitle(RAILS.freq,  'FREQUENCIES (ANCHORS)');
+    freqs.forEach(f => railTick(f, RAILS.freq));
+
+    // --- Dual-wave rail (432 vs 528) ---
+    // We draw 3 curves: waveA, waveB, and interference.
+    function wavePath(freqNorm, y0, amp){
+      // freqNorm is relative to base 432 (so 1.0 = base)
+      const steps = 360; // 1 degree per sample for smoothness
+      let d = '';
+      for(let i=0;i<=steps;i++){
+        const deg = i;
+        const x = xFromDeg(deg);
+        const a = deg*Math.PI/180;
+        const y = y0 + Math.sin(a + state.t*freqNorm)*amp;
+        d += (i===0 ? `M ${x} ${y}` : ` L ${x} ${y}`);
+      }
+      return d;
+    }
+    const yWave = RAILS.wave;
+    const amp = 14;
+
+    const baseNorm = state.baseHz/432;
+    const secondNorm = state.secondHz/432;
+
+    const pA = el('path', { d: wavePath(baseNorm, yWave, amp), class:'waveA' });
+    attachMeta(pA, {
+      id:'wave_432',
+      title:`Wave A: ${state.baseHz} Hz`,
+      deg: 0,
+      tags:['wave','frequency'],
+      body:`This curve is the phase field for the base frequency. It is drawn over the degree axis. Where it aligns with Wave B, coherence increases.`,
+    });
+    waveLayer.appendChild(pA);
+
+    const pB = el('path', { d: wavePath(secondNorm, yWave, amp), class:'waveB' });
+    attachMeta(pB, {
+      id:'wave_2',
+      title:`Wave B: ${state.secondHz} Hz`,
+      deg: 0,
+      tags:['wave','frequency'],
+      body:`Second phase field (default 528 Hz). The “meld” is the pattern of repeating alignments with Wave A.`,
+    });
+    waveLayer.appendChild(pB);
+
+    // interference curve = average
+    function wavePathInterf(y0, amp){
+      const steps = 360;
+      let d = '';
+      for(let i=0;i<=steps;i++){
+        const deg = i;
+        const x = xFromDeg(deg);
+        const a = deg*Math.PI/180;
+        const y = y0 + (Math.sin(a + state.t*baseNorm) + Math.sin(a + state.t*secondNorm))*0.5*amp;
+        d += (i===0 ? `M ${x} ${y}` : ` L ${x} ${y}`);
+      }
+      return d;
+    }
+    const pI = el('path', { d: wavePathInterf(yWave, amp+2), class:'waveI' });
+    attachMeta(pI, {
+      id:'wave_interf',
+      title:`Interference (A+B)/2`,
+      deg: 0,
+      tags:['wave','coherence'],
+      body:`Constructive interference (peaks together) corresponds to higher coherence zones. This is how 432 and 528 “braid”: they drift, then re-lock.`,
+    });
+    waveLayer.appendChild(pI);
+
+    // --- Geometry field: circle lattice + lenses ---
+    // Circles: neighborhood windows around each degree spine marker
+    degreeSpine.forEach(d => {
+      const cx = xFromDeg(d);
+      const c = el('circle', { cx, cy: FIELD_Y, r: 34, class:'circle' });
+      attachMeta(c, {
+        id:`nbhd_${d}`,
+        title:`Neighborhood at ${d}°`,
+        deg:d,
+        tags:['geometry','neighborhood'],
+        body:`A neighborhood circle: “influence window” around ${d}°. Overlaps indicate shared harmonic territory (interference compatibility).`,
+      });
+      geoLayer.appendChild(c);
+    });
+
+    // Lenses: interval-space between certain anchors (starter centers)
+    [72,144,216,288].forEach(center => {
+      [-24,0,24].forEach(off => {
+        const e = el('ellipse', { cx:xFromDeg(center), cy:FIELD_Y, rx:52+off, ry:82, class:'lens' });
+        attachMeta(e, {
+          id:`lens_${center}_${off}`,
+          title:`Lens field near ${center}°`,
+          deg:center,
+          tags:['geometry','lens','interval-space'],
+          body:`Lens/vesica field: relationship space around ${center}°. In your drawings, these represent resonance corridors between anchors (where structure “lives” between points).`,
+        });
+        geoLayer.appendChild(e);
+      });
+    });
+
+    // --- Interval arcs ---
+    function arcPath(d1, d2, y, height){
+      const x1 = xFromDeg(d1);
+      const x2 = xFromDeg(d2);
+      const mx = (x1+x2)/2;
+      return `M ${x1} ${y} Q ${mx} ${y-height} ${x2} ${y}`;
+    }
+    const arcY = FIELD_Y - 140;
+
+    intervals.forEach(iv => {
+      if(!state.visibleFamilies.has(iv.fam)) return;
+      const a = el('path', { d: arcPath(iv.from, iv.to, arcY, 90), class:`interval ${iv.fam}` });
+      attachMeta(a, {
+        id: iv.id,
+        title: `Interval: ${iv.label}`,
+        deg: iv.from,
+        ratioLabel: iv.ratio,
+        tags: ['interval', iv.fam, 'relationship'],
+        body: `${iv.def} Coherence comes from (1) low-integer ratio (${iv.ratio}), (2) repeated phase alignment between 432 and ${state.secondHz}, (3) closure under octave folding.`,
+      });
+      intervalLayer.appendChild(a);
+
+      const mid = (iv.from+iv.to)/2;
+      const tx = xFromDeg(mid);
+      const ty = arcY-10;
+      const lbl = el('text', { x:tx, y:ty, class:'interval-label' });
+      lbl.textContent = iv.label;
+      attachMeta(lbl, {
+        id: iv.id+'_label',
+        title: `Interval label: ${iv.label}`,
+        deg: mid,
+        ratioLabel: iv.ratio,
+        tags: ['interval','label',iv.fam],
+        body: `Label for ${iv.label}. Click the arc or label to highlight the connected domain objects.`,
+      });
+      intervalLayer.appendChild(lbl);
+    });
+
+    // --- Chords ---
+    // Draw as vertices on FIELD_Y-65, connected edges
+    const chordY = FIELD_Y - 65;
+
+    function drawChord(ch){
+      const pts = ch.degs.map(d => ({ deg:normDeg(d), x:xFromDeg(normDeg(d)), y:chordY }));
+      // edges
+      for(let i=0;i<pts.length;i++){
+        const p1 = pts[i];
+        const p2 = pts[(i+1)%pts.length];
+        const ln = el('line', { x1:p1.x, y1:p1.y, x2:p2.x, y2:p2.y, class:'chord-edge' });
+        attachMeta(ln, {
+          id:`chEdge_${ch.id}_${i}`,
+          title:`Chord edge (${ch.name})`,
+          deg:p1.deg,
+          tags:['chord','edge'],
+          body:`Edge in ${ch.name}. Coherence depends on the intervals between vertices: simpler ratios produce stronger stability.`,
+        });
+        chordLayer.appendChild(ln);
+      }
+      // vertices
+      pts.forEach((p, i) => {
+        const v = el('circle', { cx:p.x, cy:p.y, r:4.2, class:'chord-vertex' });
+        attachMeta(v, {
+          id:`chV_${ch.id}_${i}`,
+          title:`Chord vertex ${i+1}: ${p.deg}°`,
+          deg:p.deg,
+          tags:['chord','vertex'],
+          body:`One chord vertex at ${p.deg}°. This point simultaneously corresponds to a degree, a note label, and a phase position in the 432/528 braid.`,
+        });
+        chordLayer.appendChild(v);
+      });
+
+      // label
+      const lx = pts.reduce((s,p)=>s+p.x,0)/pts.length;
+      const lab = el('text', { x:lx, y:chordY-12, class:'chord-label' });
+      lab.textContent = ch.name;
+      attachMeta(lab, {
+        id:`ch_${ch.id}_label`,
+        title:`Chord: ${ch.name}`,
+        deg: pts[0].deg,
+        tags:['chord','label'],
+        body: `${ch.def} Click to highlight its vertices, associated intervals, and coherence at each vertex.`,
+      });
+      chordLayer.appendChild(lab);
+    }
+
+    const pick = document.getElementById('chordPick').value;
+    if(pick){
+      const ch = chords.find(c=>c.id===pick);
+      if(ch) drawChord(ch);
+    } else {
+      // show both lightly (as context)
+      chords.forEach(drawChord);
+      // dim them slightly so they don't dominate
+      chordLayer.style.opacity = '0.85';
+    }
+
+    // --- Radial projection (optional): convert key layers to polar
+    if(state.projection === 'radial'){
+      modeLabel.textContent = 'Projection: Radial';
+      // In radial mode, we keep degree labels at top but move rails to rings.
+      // Strategy: apply a transform to selected groups by recomputing their positions.
+      // For clarity + stability, we re-render in radial coords (lightweight approach):
+      // Re-render everything with polar coords.
+      clear();
+      const radial = makeGroup('radialRoot');
+      svg.append(radial);
+
+      const cx = VB.w*0.5;
+      const cy = VB.h*0.52;
+
+      // helper: ring positions
+      const rings = {
+        deg:  Math.min(VB.w, VB.h)*0.36,
+        ns:   Math.min(VB.w, VB.h)*0.33,
+        nf:   Math.min(VB.w, VB.h)*0.30,
+        ratio:Math.min(VB.w, VB.h)*0.27,
+        freq: Math.min(VB.w, VB.h)*0.24,
+        wave: Math.min(VB.w, VB.h)*0.20,
+      };
+
+      // degree spokes + labels
+      degreeSpine.forEach(d=>{
+        const p1 = polarFromDeg(d, rings.wave-10);
+        const p2 = polarFromDeg(d, rings.deg+10);
+        const ln = el('line', { x1:p1.x, y1:p1.y, x2:p2.x, y2:p2.y, class:'degree-line' });
+        attachMeta(ln, { id:`deg_${d}`, title:`${d}°`, deg:d, tags:['degrees','spine'],
+          body:`Degree spine marker in radial projection.` });
+        radial.appendChild(ln);
+
+        const pt = polarFromDeg(d, rings.deg+22);
+        const t = el('text', { x:pt.x, y:pt.y, class:'degree-label' });
+        t.textContent = `${d}°`;
+        attachMeta(t, { id:`degLabel_${d}`, title:`${d}° label`, deg:d, tags:['degrees','label'],
+          body:`Ruler label (radial).` });
+        radial.appendChild(t);
+      });
+
+      // draw rings helper
+      function ringCircle(r){
+        radial.appendChild(el('circle', { cx, cy, r, fill:'none', stroke:'rgba(255,255,255,.10)', 'stroke-width':1 }));
+      }
+      Object.values(rings).forEach(ringCircle);
+
+      function placeOnRing(obj, r, title){
+        const p = polarFromDeg(obj.deg, r);
+        const tick = el('circle', { cx:p.x, cy:p.y, r:2.2, fill:'rgba(255,255,255,.75)' });
+        attachMeta(tick, { id:obj.id, title:obj.label, deg:obj.deg, tags: obj.domain||[],
+          ratioLabel: obj.id, body: obj.def||'—' });
+        radial.appendChild(tick);
+
+        const labP = polarFromDeg(obj.deg, r+14);
+        const txt = el('text', { x:labP.x, y:labP.y, class:'rail-label' });
+        txt.textContent = obj.label;
+        attachMeta(txt, { id:obj.id+'_label', title:obj.label, deg:obj.deg, tags:(obj.domain||[]).concat(['label']),
+          ratioLabel: obj.id, body: obj.def||'—' });
+        radial.appendChild(txt);
+      }
+
+      notesSharp.forEach(n=>placeOnRing(n, rings.ns, 'NOTES (SHARPS)'));
+      notesFlat.forEach(n=>placeOnRing(n, rings.nf, 'NOTES (FLATS)'));
+      ratios.forEach(r=>placeOnRing(r, rings.ratio, 'RATIOS'));
+      freqs.forEach(f=>placeOnRing(f, rings.freq, 'FREQUENCIES'));
+
+      // waves on inner ring: draw as polar radial modulation
+      function wavePolarPath(freqNorm, r0, amp){
+        const steps = 360;
+        let d = '';
+        for(let i=0;i<=steps;i++){
+          const deg = i;
+          const a = deg*Math.PI/180;
+          const rr = r0 + Math.sin(a + state.t*freqNorm)*amp;
+          const p = polarFromDeg(deg, rr);
+          d += (i===0 ? `M ${p.x} ${p.y}` : ` L ${p.x} ${p.y}`);
+        }
+        return d;
+      }
+      const ampR = 8;
+      const baseNorm2 = state.baseHz/432;
+      const secondNorm2 = state.secondHz/432;
+      const wA = el('path', { d: wavePolarPath(baseNorm2, rings.wave, ampR), class:'waveA' });
+      attachMeta(wA, { id:'wave_432', title:`Wave A: ${state.baseHz} Hz`, deg:0, tags:['wave','frequency'],
+        body:`Base phase field in radial mode.` });
+      radial.appendChild(wA);
+
+      const wB = el('path', { d: wavePolarPath(secondNorm2, rings.wave, ampR), class:'waveB' });
+      attachMeta(wB, { id:'wave_2', title:`Wave B: ${state.secondHz} Hz`, deg:0, tags:['wave','frequency'],
+        body:`Second phase field in radial mode.` });
+      radial.appendChild(wB);
+
+      const wI = el('path', { d: wavePolarPath((baseNorm2+secondNorm2)/2, rings.wave, ampR+1), class:'waveI' });
+      attachMeta(wI, { id:'wave_interf', title:`Interference`, deg:0, tags:['wave','coherence'],
+        body:`Where these curves locally overlap, coherence rises.` });
+      radial.appendChild(wI);
+
+      // intervals as arcs around ring: simple quadratic in screen is messy; use SVG arc command between points
+      intervals.forEach(iv=>{
+        if(!state.visibleFamilies.has(iv.fam)) return;
+        const p1 = polarFromDeg(iv.from, rings.ns-6);
+        const p2 = polarFromDeg(iv.to, rings.ns-6);
+        const largeArc = (Math.abs(iv.to-iv.from) > 180) ? 1 : 0;
+        const sweep = 1;
+        const path = `M ${p1.x} ${p1.y} A ${rings.ns-6} ${rings.ns-6} 0 ${largeArc} ${sweep} ${p2.x} ${p2.y}`;
+        const a = el('path', { d: path, class:`interval ${iv.fam}` });
+        attachMeta(a, { id:iv.id, title:`Interval: ${iv.label}`, deg:iv.from, ratioLabel:iv.ratio,
+          tags:['interval',iv.fam,'relationship'],
+          body:`${iv.def} (radial view).` });
+        radial.appendChild(a);
+      });
+
+      // chords: connect ring points (use polyline)
+      function drawChordRad(ch){
+        const pts = ch.degs.map(d => polarFromDeg(normDeg(d), rings.ns-18));
+        const pl = el('polyline', { points: pts.map(p=>`${p.x},${p.y}`).join(' ') + ` ${pts[0].x},${pts[0].y}`, fill:'none', class:'chord-edge' });
+        attachMeta(pl, { id:`ch_${ch.id}`, title:`Chord: ${ch.name}`, deg:normDeg(ch.degs[0]), tags:['chord'],
+          body:ch.def });
+        radial.appendChild(pl);
+        pts.forEach((p,i)=>{
+          const v = el('circle',{cx:p.x, cy:p.y, r:4.2, class:'chord-vertex'});
+          attachMeta(v,{id:`chV_${ch.id}_${i}`, title:`Chord vertex`, deg:normDeg(ch.degs[i]), tags:['chord','vertex'],
+            body:`Chord vertex at ${normDeg(ch.degs[i])}°.`});
+          radial.appendChild(v);
+        });
+      }
+      const pick2 = document.getElementById('chordPick').value;
+      if(pick2){
+        const ch = chords.find(c=>c.id===pick2);
+        if(ch) drawChordRad(ch);
+      } else {
+        chords.forEach(drawChordRad);
+      }
+    } else {
+      modeLabel.textContent = 'Projection: Linear';
+    }
+
+    // Update chord picker options (once)
+    const chordPick = document.getElementById('chordPick');
+    if(chordPick.options.length <= 1){
+      chords.forEach(ch=>{
+        const o = document.createElement('option');
+        o.value = ch.id; o.textContent = ch.name;
+        chordPick.appendChild(o);
+      });
+    }
+  }
+
+  // ---------- Highlight propagation ----------
+  function clearHighlights(){
+    svg.querySelectorAll('.active-stroke').forEach(n => n.classList.remove('active-stroke'));
+    svg.querySelectorAll('.dim').forEach(n => n.classList.remove('dim'));
+  }
+
+  function highlightByDegree(deg, radiusDeg=9){
+    const nodes = svg.querySelectorAll('[data-meta]');
+    nodes.forEach(n=>{
+      const meta = getMetaFromTarget(n);
+      if(!meta || meta.deg==null) return;
+      const d = Math.abs(normDeg(meta.deg) - normDeg(deg));
+      const dist = Math.min(d, 360-d);
+      if(dist <= radiusDeg){
+        if(n.tagName === 'line' || n.tagName === 'path' || n.tagName === 'circle' || n.tagName === 'ellipse' || n.tagName === 'polyline'){
+          n.classList.add('active-stroke');
+        }
+      } else {
+        // keep background present but quieter
+        n.classList.add('dim');
+      }
+    });
+  }
+
+  // ---------- Event handling: hover preview + click pin ----------
+  let pinned = false;
+
+  svg.addEventListener('mousemove', (e)=>{
+    if(pinned) return;
+    const meta = getMetaFromTarget(e.target);
+    if(meta) showMeta(meta, false);
+  });
+
+  svg.addEventListener('mouseleave', ()=>{
+    if(pinned) return;
+    infoTitle.textContent = 'Nothing selected';
+    infoBody.textContent = 'Hover any element to preview meaning. Click to pin it. Use toggles to filter interval families and switch projection. The dual-wave animation shows where 432 and 528 align (constructive interference) versus drift (phase tension).';
+    setTags([]);
+    describeCoherence(null);
+    clearHighlights();
+  });
+
+  svg.addEventListener('click', (e)=>{
+    const meta = getMetaFromTarget(e.target);
+    if(!meta) return;
+    pinned = true;
+    state.pinnedId = meta.id || null;
+    clearHighlights();
+    highlightByDegree(meta.deg ?? 0, 12);
+    showMeta(meta, true);
+  });
+
+  // click outside svg to unpin
+  document.addEventListener('click', (e)=>{
+    if(e.target.closest('#scene')) return;
+    if(e.target.closest('#controls')) return;
+    pinned = false;
+    state.pinnedId = null;
+    clearHighlights();
+  });
+
+  // ---------- Controls ----------
+  const toggleAnim = document.getElementById('toggleAnim');
+  const speed = document.getElementById('speed');
+  const baseFreq = document.getElementById('baseFreq');
+  const secondFreq = document.getElementById('secondFreq');
+  const reset = document.getElementById('reset');
+  const proj = document.getElementById('proj');
+  const chordPick = document.getElementById('chordPick');
+
+  toggleAnim.addEventListener('click', ()=>{
+    state.running = !state.running;
+    toggleAnim.textContent = state.running ? '⏸ Pause' : '▶︎ Play';
+    if(state.running) tick();
+  });
+
+  speed.addEventListener('input', ()=>{
+    // slower by default: map 0..100 -> 0.02..0.30
+    state.speed = 0.02 + (Number(speed.value)/100) * 0.28;
+  });
+
+  baseFreq.addEventListener('change', ()=>{
+    state.baseHz = Number(baseFreq.value);
+    render();
+  });
+
+  secondFreq.addEventListener('change', ()=>{
+    state.secondHz = Number(secondFreq.value);
+    render();
+  });
+
+  document.querySelectorAll('.fam').forEach(cb=>{
+    cb.addEventListener('change', ()=>{
+      if(cb.checked) state.visibleFamilies.add(cb.value);
+      else state.visibleFamilies.delete(cb.value);
+      render();
+    });
+  });
+
+  proj.addEventListener('click', ()=>{
+    state.projection = (state.projection === 'linear') ? 'radial' : 'linear';
+    render();
+  });
+
+  chordPick.addEventListener('change', ()=>{
+    render();
+  });
+
+  reset.addEventListener('click', ()=>{
+    pinned = false;
+    state.pinnedId = null;
+    clearHighlights();
+    state.t = 0;
+    render();
+  });
+
+  // Export helpers
+  function downloadBlob(blob, filename){
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(()=>URL.revokeObjectURL(a.href), 500);
+  }
+
+  document.getElementById('exportSVG').addEventListener('click', ()=>{
+    const xml = new XMLSerializer().serializeToString(svg);
+    downloadBlob(new Blob([xml], {type:'image/svg+xml'}), 'unified_harmonic_map.svg');
+  });
+
+  document.getElementById('exportPNG').addEventListener('click', async ()=>{
+    const xml = new XMLSerializer().serializeToString(svg);
+    const svg64 = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(xml);
+    const img = new Image();
+    img.onload = () => {
+      const canvas = document.createElement('canvas');
+      canvas.width = 1800;
+      canvas.height = Math.round(1800 * (VB.h/VB.w));
+      const ctx = canvas.getContext('2d');
+      ctx.fillStyle = '#777';
+      ctx.fillRect(0,0,canvas.width,canvas.height);
+      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+      canvas.toBlob(b => downloadBlob(b, 'unified_harmonic_map.png'));
+    };
+    img.src = svg64;
+  });
+
+  // ---------- Animation loop ----------
+  function tick(){
+    if(!state.running) return;
+
+    // advance time
+    state.t += state.speed;
+
+    // update wave paths and coherence highlighting
+    render();
+
+    // If something is pinned, keep highlighting by its degree
+    if(pinned){
+      // re-find pinned meta in DOM (best effort)
+      const nodes = svg.querySelectorAll('[data-meta]');
+      for(const n of nodes){
+        const m = getMetaFromTarget(n);
+        if(m && m.id === state.pinnedId){
+          clearHighlights();
+          highlightByDegree(m.deg ?? 0, 12);
+          showMeta(m, true);
+          break;
+        }
+      }
+    } else {
+      // optionally boost coherence zones along the spine: brighten degree lines where phase is aligned
+      svg.querySelectorAll('.degree-line').forEach(ln=>{
+        const m = getMetaFromTarget(ln);
+        if(!m) return;
+        const pd = Math.abs(phaseDeltaAtDeg(m.deg));
+        const aligned = pd < state.phaseTol;
+        ln.style.strokeOpacity = aligned ? '0.55' : '0.30';
+        ln.style.strokeWidth = aligned ? '1.6' : '1.0';
+      });
+    }
+
+    requestAnimationFrame(tick);
+  }
+
+  // Initial render
+  render();
+  // Initialize speed
+  state.speed = 0.02 + (Number(speed.value)/100) * 0.28;
+})();
+</script>
+</body>
+</html>

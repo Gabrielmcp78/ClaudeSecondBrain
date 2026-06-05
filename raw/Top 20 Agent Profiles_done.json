@@ -1,0 +1,830 @@
+{
+  "metadata": {
+    "title": "STRING THEORY Agent Match Profiles",
+    "description": "Detailed personality and taste profiles for 20 top literary agents who are strong fits for an upmarket literary novel with speculative elements",
+    "genre_fit": "Upmarket Literary Fiction with Speculative Elements",
+    "themes": "Music, physics, grief, inheritance, father-son relationships, buried truth, academic intrigue, cosmic resonance",
+    "last_updated": "2026-03-12"
+  },
+  
+  "agent_profiles": [
+    {
+      "name": "Ernie Chiara",
+      "agency": "Fuse Literary",
+      "tier": 1,
+      "personality_profile": {
+        "archetype": "The Writer-Agent",
+        "communication_style": "Direct, craft-focused, intellectually generous",
+        "decision_making": "Gut-driven with strong editorial instinct",
+        "working_style": "Hands-on editorial partner who understands craft from the inside"
+      },
+      "how_they_read": {
+        "first_page_focus": "Voice above all—they need to feel a distinctive narrative presence immediately",
+        "what_grabs_them": "The inexplicable rendered in precise, literary prose; a touch of the uncanny grounded in emotional reality",
+        "what_loses_them": "Generic literary prose, predictable structures, speculative elements that feel grafted on rather than organic",
+        "reading_philosophy": "Reads like a writer—analyzing craft while being swept away by story"
+      },
+      "style_preferences": {
+        "prose": "Lush but controlled, with rhythm and musicality",
+        "pacing": "Deliberate but never static; every scene must advance character or mystery",
+        "dialogue": "Revealing of character, never purely expository",
+        "structure": "Appreciates formal play when it serves emotional truth"
+      },
+      "specifically_loves": [
+        "David Mitchell's structural ambition",
+        "Claire North's high concepts with literary execution",
+        "Susanna Clarke's unhurried, immersive world-building",
+        "The 'touch of the inexplicable' in otherwise realistic fiction",
+        "Character-driven upmarket fiction with speculative elements"
+      ],
+      "specifically_hates": [
+        "Speculative elements that feel like genre tourism rather than genuine vision",
+        "Plot mechanics that overshadow character",
+        "Stories that explain themselves instead of trusting the reader"
+      ],
+      "deal_breakers": [
+        "First 10 pages that don't establish a unique voice",
+        "Queries that describe plot without conveying atmosphere",
+        "Comparisons to mega-bestsellers without understanding why"
+      ],
+      "submission_fit_notes": "Chiara writes speculative fiction himself, so he'll immediately recognize and appreciate the musical architecture of your novel—the tempo markings, the four-movement structure of Chapter 1, the Sarabande climax. He's the rare agent who will understand the craft behind the form on a practitioner level.",
+      "recommended_approach": "Lead with voice and the 'inexplicable' element—the frequency, the visions. Emphasize that the speculative grows organically from emotional truth, not the other way around."
+    },
+    {
+      "name": "Sarah Brooks",
+      "agency": "Darley Anderson & Associates",
+      "tier": 1,
+      "personality_profile": {
+        "archetype": "The Musician-Agent",
+        "communication_style": "Articulate, precise, aesthetically attuned",
+        "decision_making": "Responds to harmony and resonance in prose",
+        "working_style": "Supportive but discerning; values authors who understand their own music"
+      },
+      "how_they_read": {
+        "first_page_focus": "Listening for rhythm and cadence—prose must sing",
+        "what_grabs_them": "Musicality in language; structure that echoes emotional content",
+        "what_loses_them": "Prose that's merely functional, stories without internal rhythm",
+        "reading_philosophy": "Reads with an inner ear; text must resonate"
+      },
+      "style_preferences": {
+        "prose": "Lyrical, rhythmic, with attention to sound and flow",
+        "pacing": "Tempo matters—understands accelerando, decelerando, rubato in narrative",
+        "structure": "Appreciates formal musical structures applied to fiction",
+        "emotional_register": "Deeply felt, authentic, never performative"
+      },
+      "specifically_loves": [
+        "Stories with musical themes or structures",
+        "Book club fiction with intellectual depth",
+        "Prose that rewards reading aloud",
+        "Emotional truth rendered with precision"
+      ],
+      "specifically_hates": [
+        "Tone-deaf prose",
+        "Emotional manipulation without genuine feeling",
+        "Structure as gimmick rather than necessity"
+      ],
+      "deal_breakers": [
+        "First pages with no sense of rhythm",
+        "Queries that don't convey the book's emotional frequency"
+      ],
+      "submission_fit_notes": "Brooks studied Music at Nottingham University and holds a piano performance diploma. She will understand your tempo markings, the Sarabande, the four-movement structure of Chapter 1 on a technical level that few agents can match. This is an extraordinary alignment of agent expertise with novel content.",
+      "recommended_approach": "Reference the musical structure explicitly. Mention the tempo markings, the four movements, the Sarabande. She'll recognize immediately that this book was written by someone who understands music from the inside."
+    },
+    {
+      "name": "Samantha Fabien",
+      "agency": "Root Literary",
+      "tier": 1,
+      "personality_profile": {
+        "archetype": "The Academia Enthusiast",
+        "communication_style": "Sharp, enthusiastic, intellectually curious",
+        "decision_making": "Draws to high-stakes interpersonal dynamics and buried secrets",
+        "working_style": "Actively engaged; loves untangling complex character motivations"
+      },
+      "how_they_read": {
+        "first_page_focus": "Immediate immersion in character and stakes",
+        "what_grabs_them": "Academia settings, buried secrets, messy characters, generational trauma",
+        "what_loses_them": "Quiet character studies without tension, predictable reveals",
+        "reading_philosophy": "Stories must earn their emotional payoffs"
+      },
+      "style_preferences": {
+        "prose": "Clean, efficient, emotionally revealing",
+        "pacing": "Propulsive but not breathless; stakes must escalate",
+        "dialogue": "Reveals character through conflict and subtext",
+        "structure": "Appreciates twists and reveals when earned"
+      },
+      "specifically_loves": [
+        "Academic settings and buried secrets",
+        "Revenge narratives",
+        "Messy, morally complex characters",
+        "Generational trauma and family dynamics",
+        "Games or puzzles embedded in narrative",
+        "Dark rituals and cults"
+      ],
+      "specifically_hates": [
+        "Stories that play it safe",
+        "Characters who lack agency",
+        "Resolutions that come too easily"
+      ],
+      "deal_breakers": [
+        "No clear stakes by page 10",
+        "Protagonist without a compelling want",
+        "Academia settings that feel generic rather than specific"
+      ],
+      "submission_fit_notes": "Fabien's wishlist reads like it was written for STRING THEORY: 'buried secrets, messy characters, unexpected twists, academia.' The generational trauma between David and his father, the buried ARGO project, the ethical compromise—all hit her exact sweet spot.",
+      "recommended_approach": "Lead with the academic suppression angle. Emphasize the buried secret, the twenty-year compromise, the messy relationship with Celeste. The speculative element is the mechanism that forces all these buried things to the surface."
+    },
+    {
+      "name": "Ashley Lopez",
+      "agency": "Massie McQuilkin & Altman",
+      "tier": 1,
+      "personality_profile": {
+        "archetype": "The MFA Editor",
+        "communication_style": "Thoughtful, precise, literary",
+        "decision_making": "Draws to unforgettable characters and singular experiences rendered universally",
+        "working_style": "Editorial collaborator with strong literary instincts"
+      },
+      "how_they_read": {
+        "first_page_focus": "Movement on the page—prose that creates its own kinetic energy",
+        "what_grabs_them": "Characters who feel unforgettable, experiences that feel singular but speak universally",
+        "what_loses_them": "Prose that sits still, characters who feel generic",
+        "reading_philosophy": "The sentence itself must generate momentum"
+      },
+      "style_preferences": {
+        "prose": "Active, kinetic, visually and viscerally engaging",
+        "pacing": "Driven by sentence rhythm rather than plot mechanics",
+        "character": "Unforgettable—quirky, damaged, singular",
+        "genre_blending": "Actively seeking grounded speculative"
+      },
+      "specifically_loves": [
+        "Literary fiction",
+        "Book club fiction",
+        "Grounded speculative",
+        "Horror with literary sensibility",
+        "Thrillers with emotional depth"
+      ],
+      "specifically_hates": [
+        "Prose that lacks energy",
+        "Characters who feel like types rather than people",
+        "Speculative elements not rooted in human reality"
+      ],
+      "deal_breakers": [
+        "First 10 pages without forward momentum",
+        "Character introductions that don't create immediate interest",
+        "Genre confusion"
+      ],
+      "submission_fit_notes": "Lopez co-founded Pigeon Pages Literary Journal, so she has editorial taste developed outside traditional publishing. Her interest in 'grounded speculative' is exactly your territory—speculative elements rooted in the emotional reality of a man grieving his father while cosmic forces converge.",
+      "recommended_approach": "Emphasize the grounded emotional reality first, the speculative second. David's grief, his relationship with his father, his failed relationship with Celeste—these are the anchors that make the 68.48 Hz frequency feel real rather than fanciful."
+    },
+    {
+      "name": "Alexandra Machinist",
+      "agency": "Creative Artists Agency (CAA)",
+      "tier": 2,
+      "personality_profile": {
+        "archetype": "The Commercial-Literary Powerhouse",
+        "communication_style": "Confident, deal-minded, culturally savvy",
+        "decision_making": "Assesses film/TV potential alongside literary merit",
+        "working_style": "Strategic career builder with major agency resources"
+      },
+      "how_they_read": {
+        "first_page_focus": "Commercial hook and cinematic potential",
+        "what_grabs_them": "High-concept premises executed with literary polish",
+        "what_loses_them": "Books that are literary but not sellable, or commercial but not well-written",
+        "reading_philosophy": "Can this book break out?"
+      },
+      "style_preferences": {
+        "prose": "Polished but accessible",
+        "pacing": "Strong narrative drive",
+        "concept": "High-concept, hooky, easily pitched",
+        "execution": "Literary craft applied to commercial premises"
+      },
+      "specifically_loves": [
+        "Upmarket fiction with commercial hooks",
+        "Books with cinematic potential",
+        "High-concept premises",
+        "Literary craft applied to genre frameworks"
+      ],
+      "specifically_hates": [
+        "Quiet literary fiction with no commercial angle",
+        "High concepts poorly executed",
+        "Books that are hard to pitch in a sentence"
+      ],
+      "deal_breakers": [
+        "No clear hook by end of query",
+        "Genre confusion",
+        "First 10 pages that don't establish stakes"
+      ],
+      "submission_fit_notes": "Machinist represents Kevin Kwan, Tomi Adeyemi, and Sabaa Tahir—writers who blend literary quality with breakout commercial potential. Your novel's high concept (a physicist's performance becomes the only surviving video after a solar storm) gives her the hook she needs, while the literary execution gives her the quality.",
+      "recommended_approach": "Lead with the hook: the solar storm, the only surviving video, billions watching. Then ground it in the literary execution. She needs to see both the commercial premise and the literary craft."
+    },
+    {
+      "name": "Bill Clegg",
+      "agency": "The Clegg Agency",
+      "tier": 2,
+      "personality_profile": {
+        "archetype": "The Literary Confessionalist",
+        "communication_style": "Intense, psychologically astute, emotionally engaged",
+        "decision_making": "Draws to pain, memory, and the fragility of self",
+        "working_style": "Deeply invested in author's vision; editorial collaborator"
+      },
+      "how_they_read": {
+        "first_page_focus": "Emotional vulnerability and psychological depth",
+        "what_grabs_them": "Narratives exploring the painful intersections of memory and the fragility of the physical self",
+        "what_loses_them": "Emotionally distant prose, cleverness without feeling",
+        "reading_philosophy": "Literature should wound and heal"
+      },
+      "style_preferences": {
+        "prose": "Transparent, emotionally direct, psychologically precise",
+        "pacing": "Unhurried, allowing emotional moments to land",
+        "character": "Damaged, self-aware, struggling",
+        "theme": "Memory, identity, complicity, survival"
+      },
+      "specifically_loves": [
+        "Narratives about memory and its failures",
+        "Stories of physical and psychic fragility",
+        "Characters dismantled by their own histories",
+        "Emotional truth over plot mechanics"
+      ],
+      "specifically_hates": [
+        "Emotionally manipulative prose",
+        "Stories that perform suffering without understanding it",
+        "Cleverness as a substitute for feeling"
+      ],
+      "deal_breakers": [
+        "First pages that don't establish emotional stakes",
+        "Protagonist who feels observed rather than inhabited",
+        "Queries that summarize plot without conveying feeling"
+      ],
+      "submission_fit_notes": "Clegg's interest in 'the painful intersections of memory and the fragility of the physical self' maps directly onto David's dissolution—the frequency invading his body, his career collapsing, his relationships unraveling. The novel's emotional core is exactly what he represents.",
+      "recommended_approach": "Lead with David's internal state—the frequency in his bones, the dissolution, the grief for his father. Let the plot emerge from his experience rather than summarizing events. Make him feel David's fragility."
+    },
+    {
+      "name": "Chris Parris-Lamb",
+      "agency": "The Gernert Company",
+      "tier": 2,
+      "personality_profile": {
+        "archetype": "The Risk-Taker",
+        "communication_style": "Intellectual, daring, genre-fluid",
+        "decision_making": "Draws to fiction that treats ideas as lived forces",
+        "working_style": "Champions unconventional projects; values originality"
+      },
+      "how_they_read": {
+        "first_page_focus": "Intellectual ambition and narrative risk",
+        "what_grabs_them": "Literary fiction that embraces genre-blurring and confrontation",
+        "what_loses_them": "Safe, conventional narratives",
+        "reading_philosophy": "Ideas should be lived, not just thought"
+      },
+      "style_preferences": {
+        "prose": "Intellectually engaged but emotionally immediate",
+        "pacing": "Varies with project; values risk over convention",
+        "structure": "Open to formal experimentation",
+        "ideas": "Must be embedded in character experience"
+      },
+      "specifically_loves": [
+        "Literary fiction with speculative elements",
+        "Narrative risk and formal experimentation",
+        "Books that treat ideas as lived forces",
+        "Genre-blurring work",
+        "Confrontation with difficult material"
+      ],
+      "specifically_hates": [
+        "Genre fiction without literary ambition",
+        "Literary fiction without forward momentum",
+        "Safe bets"
+      ],
+      "deal_breakers": [
+        "First 10 pages that feel conventional",
+        "Queries that don't signal ambition",
+        "Projects that fit neatly into categories"
+      ],
+      "submission_fit_notes": "Parris-Lamb's interest in 'fiction that treats ideas as lived forces rather than abstractions' is exactly your methodology. The 68.48 Hz frequency isn't a theoretical concept—it invades David's body, destroys his career, rewrites his reality. The idea is lived.",
+      "recommended_approach": "Emphasize the lived experience of the idea. Don't explain the frequency—show its effects. Don't theorize about resonance—show David becoming the instrument. Make him feel the idea in his bones, literally."
+    },
+    {
+      "name": "Julie Barer",
+      "agency": "The Book Group",
+      "tier": 2,
+      "personality_profile": {
+        "archetype": "The Mythic Realist",
+        "communication_style": "Literary, emotionally precise, scope-minded",
+        "decision_making": "Draws to novels that marry emotional precision with mythic scope",
+        "working_style": "Long-term career builder for literary authors"
+      },
+      "how_they_read": {
+        "first_page_focus": "Emotional authenticity and narrative sweep",
+        "what_grabs_them": "Intimate human stories that feel mythic, universal",
+        "what_loses_them": "Intimate stories without reach, mythic stories without heart",
+        "reading_philosophy": "The personal and the universal must coexist"
+      },
+      "style_preferences": {
+        "prose": "Emotionally precise, never overwrought",
+        "scope": "Balances intimate moments with larger themes",
+        "character": "Deeply human, flawed, recognizable",
+        "myth": "Echoes of older stories without being derivative"
+      },
+      "specifically_loves": [
+        "Celeste Ng's emotional precision",
+        "Madeline Miller's mythic scope",
+        "Ann Patchett's humanity",
+        "Stories that feel both personal and universal"
+      ],
+      "specifically_hates": [
+        "Stories that are all scope and no heart",
+        "Stories that are all heart and no reach",
+        "Prose that tells readers how to feel"
+      ],
+      "deal_breakers": [
+        "First 10 pages without emotional immediacy",
+        "Protagonist who feels observed rather than inhabited"
+      ],
+      "submission_fit_notes": "Barer's client list (Celeste Ng, Madeline Miller, Ann Patchett) signals her taste for writers who balance intimate emotional truth with larger-than-life stakes. Your novel's father-son core is the intimacy; the solar storm, the frequency, the global broadcast are the mythic scope.",
+      "recommended_approach": "Balance the query. Give her the father-son grief, the failed love with Celeste—and then show how the cosmic stakes amplify rather than overshadow that intimacy. The personal must ground the mythic."
+    },
+    {
+      "name": "PJ Mark",
+      "agency": "Janklow & Nesbit Associates",
+      "tier": 2,
+      "personality_profile": {
+        "archetype": "The Form-Bender",
+        "communication_style": "Intellectual, formally aware, cutting-edge",
+        "decision_making": "Draws to authors who interrogate form, thought, time, and meaning",
+        "working_style": "Champions innovative literary voices"
+      },
+      "how_they_read": {
+        "first_page_focus": "Formal ambition and intellectual engagement",
+        "what_grabs_them": "Authors who bend form to interrogate thought, time, and meaning",
+        "what_loses_them": "Conventional narratives without formal ambition",
+        "reading_philosophy": "Form and content must be one"
+      },
+      "style_preferences": {
+        "prose": "Intellectually rigorous, formally aware",
+        "structure": "Innovative, meaning-generating",
+        "thought": "Interrogates rather than asserts",
+        "time": "Often non-linear or philosophically engaged"
+      },
+      "specifically_loves": [
+        "Maggie Nelson's genre-defying work",
+        "Ed Park's formal play",
+        "Sarah Manguso's compression and intensity",
+        "Books that question what a novel can do"
+      ],
+      "specifically_hates": [
+        "Novels that don't earn their form",
+        "Formal experimentation for its own sake",
+        "Conventional narratives with literary pretensions"
+      ],
+      "deal_breakers": [
+        "First 10 pages that feel formally arbitrary",
+        "Queries that don't signal why this book needs this form"
+      ],
+      "submission_fit_notes": "Mark represents authors who bend form to interrogate meaning—Maggie Nelson, Ed Park, Sarah Manguso. Your musical structure (four-movement chapters, tempo markings, the novel as symphony) is exactly the kind of formal interrogation he seeks. He'll understand that the form isn't decoration—it's meaning.",
+      "recommended_approach": "Explicitly address the musical architecture. Mention the tempo markings, the four-movement structure, the novel as symphony. He needs to know that the form is intentional and meaning-generating, not arbitrary."
+    },
+    {
+      "name": "Kim Witherspoon",
+      "agency": "InkWell Management",
+      "tier": 2,
+      "personality_profile": {
+        "archetype": "The Crossover Maven",
+        "communication_style": "Strategic, market-aware, author-advocate",
+        "decision_making": "Assesses literary merit AND commercial/crossover potential",
+        "working_style": "Builds careers across formats and territories"
+      },
+      "how_they_read": {
+        "first_page_focus": "Voice, stakes, and market position",
+        "what_grabs_them": "Literary novels that can break out to wider audiences",
+        "what_loses_them": "Books that are too quiet to sell or too commercial to respect",
+        "reading_philosophy": "Literary and commercial are not opposites"
+      },
+      "style_preferences": {
+        "prose": "Literary but accessible",
+        "stakes": "Clear and compelling",
+        "hook": "Present without overwhelming the prose",
+        "crossover": "Appeal to multiple audiences"
+      },
+      "specifically_loves": [
+        "Literary novels that get optioned",
+        "Books with film/TV potential",
+        "Upmarket fiction with strong hooks",
+        "Authors who can build long-term careers"
+      ],
+      "specifically_hates": [
+        "Genre fiction without literary merit",
+        "Literary fiction without commercial potential",
+        "Books that are hard to position"
+      ],
+      "deal_breakers": [
+        "No clear hook by end of query",
+        "Genre confusion",
+        "Stakes that don't escalate"
+      ],
+      "submission_fit_notes": "Witherspoon represents literary novels that also get optioned—exactly your target. The cinematic potential is clear: a physicist whose final performance becomes the only surviving video watched by billions, his disappearance, the global transformation. But the literary execution earns the concept.",
+      "recommended_approach": "Lead with the cinematic hook—the solar storm, the only surviving video, billions watching. Then ground it in the literary execution. Show her this is a book that can be discussed at the Frankfurt Book Fair AND pitched to Netflix."
+    },
+    {
+      "name": "Sasha Landauer",
+      "agency": "Writers House",
+      "tier": 3,
+      "personality_profile": {
+        "archetype": "The New Voice Scout",
+        "communication_style": "Fresh, enthusiastic, intellectually curious",
+        "decision_making": "Draws to strong voice and narrative momentum",
+        "working_style": "Actively building list; accessible to debut authors"
+      },
+      "how_they_read": {
+        "first_page_focus": "Voice above all—immediate sense of who's telling this story",
+        "what_grabs_them": "Strong narrative momentum, distinctive voice, upmarket sensibility",
+        "what_loses_them": "Generic literary prose, slow openings",
+        "reading_philosophy": "The voice must carry the reader"
+      },
+      "style_preferences": {
+        "prose": "Voice-driven, distinctive",
+        "pacing": "Strong narrative momentum",
+        "genre": "Upmarket and commercial fiction",
+        "intellectual_depth": "Philosophy background at Stanford suggests appetite for ideas"
+      },
+      "specifically_loves": [
+        "Upmarket fiction",
+        "Commercial fiction with literary execution",
+        "Strong narrative voice",
+        "Select nonfiction with intellectual rigor",
+        "Debut authors building careers"
+      ],
+      "specifically_hates": [
+        "Voice-less prose",
+        "Openings that don't establish narrative momentum",
+        "Literary fiction that forgets to be engaging"
+      ],
+      "deal_breakers": [
+        "First 10 pages without distinctive voice",
+        "Queries that don't establish narrative momentum",
+        "Genre confusion"
+      ],
+      "submission_fit_notes": "Landauer joined Writers House in 2025 after working with Susan Golomb (Franzen, Kushner, Angie Kim). Her philosophy and comparative literature background at Stanford means she'll appreciate the intellectual architecture—the physics, the music theory, the philosophical questions. And she's actively building her list.",
+      "recommended_approach": "Lead with voice and intellectual stakes. She'll appreciate the philosophy/music/physics intersection. And as a newer agent, she's actively looking for debut authors with serious literary ambition."
+    },
+    {
+      "name": "Samantha Haywood",
+      "agency": "Transatlantic Agency",
+      "tier": 3,
+      "personality_profile": {
+        "archetype": "The Crossover Specialist",
+        "communication_style": "Sophisticated, genre-fluid, market-savvy",
+        "decision_making": "Draws to hybrid/crossover novels with unique lenses",
+        "working_style": "Builds careers across multiple markets (US/Canada/international)"
+      },
+      "how_they_read": {
+        "first_page_focus": "Unique lens and sophisticated execution",
+        "what_grabs_them": "Crossover/hybrid novels, literary fiction with speculative/horror elements, examinations of identity through unique lenses",
+        "what_loses_them": "Straight genre without literary ambition, straight literary without hook",
+        "reading_philosophy": "The best books defy easy categorization"
+      },
+      "style_preferences": {
+        "prose": "Sophisticated, literary",
+        "lens": "Unique, specific, revelatory",
+        "genre": "Hybrid, crossover, category-defying",
+        "theme": "Identity, class, late capitalism, systemic critique"
+      },
+      "specifically_loves": [
+        "Literary fiction with speculative/horror elements",
+        "Literary thrillers",
+        "Examinations of identity through unique lenses",
+        "Smart contemporary fiction about class and late capitalism",
+        "Crossover/hybrid novels"
+      ],
+      "specifically_hates": [
+        "Genre fiction without literary ambition",
+        "Literary fiction without contemporary relevance",
+        "Books that fit neatly into one category"
+      ],
+      "deal_breakers": [
+        "First 10 pages that don't establish a unique lens",
+        "Queries that don't signal hybrid/crossover potential"
+      ],
+      "submission_fit_notes": "Haywood explicitly seeks 'crossover/hybrid style novels'—which is exactly what STRING THEORY is: literary fiction with speculative elements, a thriller engine, and philosophical depth. Her interest in examinations of 'identity, gender/sexuality and/or racism through a unique lens' connects to your academic suppression/cowardice theme.",
+      "recommended_approach": "Emphasize the hybrid nature—literary fiction with speculative elements, a thriller structure, philosophical depth. Frame the academic suppression as a critique of how institutions protect themselves by burying inconvenient truths."
+    },
+    {
+      "name": "Jen Marshall",
+      "agency": "Aevitas Creative Management",
+      "tier": 3,
+      "personality_profile": {
+        "archetype": "The Intellectual Narrativist",
+        "communication_style": "Thoughtful, rigorous, story-focused",
+        "decision_making": "Draws to novels that combine intellectual rigor with compelling narrative",
+        "working_style": "Supports literary authors with commercial instincts"
+      },
+      "how_they_read": {
+        "first_page_focus": "Balance of ideas and story",
+        "what_grabs_them": "Novels that use ideas as storytelling catalysts, not interruptions",
+        "what_loses_them": "Ideas without story, story without ideas",
+        "reading_philosophy": "Intellect and narrative are partners"
+      },
+      "style_preferences": {
+        "prose": "Intellectually engaged but narratively driven",
+        "ideas": "Embedded in character and plot, not expounded",
+        "pacing": "Propelled by questions that ideas raise",
+        "execution": "Rigorous but never dry"
+      },
+      "specifically_loves": [
+        "Keziah Weir's balance of intellect and narrative",
+        "Erin Morgenstern's immersive world-building with literary sensibility",
+        "Novels that use science as storytelling catalyst",
+        "Intellectual rigor without sacrificing narrative drive"
+      ],
+      "specifically_hates": [
+        "Novels that lecture",
+        "Story that feels like an excuse for ideas",
+        "Intellectual material that never becomes emotional"
+      ],
+      "deal_breakers": [
+        "First 10 pages where ideas overpower story",
+        "Queries that summarize themes without conveying narrative"
+      ],
+      "submission_fit_notes": "Your original query cited Marshall's work with Keziah Weir and Erin Morgenstern—authors whose novels 'combine intellectual rigor with a clear, compelling narrative engine.' This is exactly your methodology: using science (string theory, resonance) as a storytelling catalyst, not an end in itself.",
+      "recommended_approach": "Frame the science as catalyst, not content. The 68.48 Hz frequency is what drives David's breakdown, his reckoning, his final act—not an abstract theory to be explained. Show her how the ideas generate story."
+    },
+    {
+      "name": "Kent Wolf",
+      "agency": "Neon Literary",
+      "tier": 3,
+      "personality_profile": {
+        "archetype": "The Confrontation Seeker",
+        "communication_style": "Direct, risk-tolerant, genre-fluid",
+        "decision_making": "Draws to work that embraces narrative risk and confrontation",
+        "working_style": "Champions bold, category-defying voices"
+      },
+      "how_they_read": {
+        "first_page_focus": "Risk and confrontation",
+        "what_grabs_them": "Literary fiction that embraces narrative risk, genre-blurring, and confrontation—work that treats ideas as lived forces rather than abstractions",
+        "what_loses_them": "Safe, conventional narratives",
+        "reading_philosophy": "Art should risk something"
+      },
+      "style_preferences": {
+        "prose": "Bold, risk-taking, unafraid",
+        "genre": "Blurred, hybrid, category-defying",
+        "ideas": "Lived, not abstracted",
+        "confrontation": "Willing to go to difficult places"
+      },
+      "specifically_loves": [
+        "Literary fiction with speculative elements",
+        "Genre-blurring work",
+        "Narrative risk",
+        "Confrontation with difficult material",
+        "Ideas as lived forces"
+      ],
+      "specifically_hates": [
+        "Safe, conventional narratives",
+        "Genre fiction without literary ambition",
+        "Literary fiction without risk"
+      ],
+      "deal_breakers": [
+        "First 10 pages that feel safe",
+        "Queries that don't signal risk or ambition"
+      ],
+      "submission_fit_notes": "Wolf's interest in 'work that treats ideas as lived forces rather than abstractions' echoes Parris-Lamb and is central to your novel. The frequency isn't an abstraction David studies—it invades his body, destroys his life, rewrites reality. The idea is lived, painfully, completely.",
+      "recommended_approach": "Emphasize the lived quality of the ideas. Show the frequency's physical effects, the dissolution, the cost. Don't explain—embody."
+    },
+    {
+      "name": "Michelle Brower",
+      "agency": "Aevitas Creative Management",
+      "tier": 3,
+      "personality_profile": {
+        "archetype": "The Speculative Literary Scout",
+        "communication_style": "Genre-savvy, literary-minded, enthusiastic",
+        "decision_making": "Draws to speculative elements in literary frameworks",
+        "working_style": "Supports authors who blur boundaries"
+      },
+      "how_they_read": {
+        "first_page_focus": "Speculative concept grounded in literary execution",
+        "what_grabs_them": "Literary speculative fiction, genre-blurring work with emotional depth",
+        "what_loses_them": "Genre without literary merit, literary without forward momentum",
+        "reading_philosophy": "The best speculative fiction is about people"
+      },
+      "style_preferences": {
+        "prose": "Literary, polished",
+        "speculative": "Grounded, meaningful, not just decorative",
+        "character": "Emotionally complex, deeply human",
+        "genre": "Blurred, hybrid, unexpected"
+      },
+      "specifically_loves": [
+        "Literary speculative fiction",
+        "Genre-blurring work",
+        "Jeff VanderMeer's ecological unease",
+        "Emotional depth in speculative frameworks",
+        "Debut authors with bold visions"
+      ],
+      "specifically_hates": [
+        "Speculative elements that feel like genre tourism",
+        "Literary prose that forgets to tell a story",
+        "Genre fiction that doesn't earn its literary aspirations"
+      ],
+      "deal_breakers": [
+        "First 10 pages without emotional stakes",
+        "Speculative elements that feel arbitrary"
+      ],
+      "submission_fit_notes": "Brower edited Jeff VanderMeer, so she understands the 'epistemic unease' of Annihilation—the sense that reality is not what we thought, that knowledge itself is destabilizing. Your novel shares that DNA: the buried discovery, the frequency, the dissolution of certainty.",
+      "recommended_approach": "Reference the Annihilation comparison. Frame the novel as literary speculative fiction in the VanderMeer tradition—unease, destabilization, transformation. But emphasize that the emotional core (father, Celeste, grief) keeps it grounded."
+    },
+    {
+      "name": "Seth Fishman",
+      "agency": "The Gernert Company",
+      "tier": 3,
+      "personality_profile": {
+        "archetype": "The High-Concept Literary Agent",
+        "communication_style": "Energetic, conceptual, film-friendly",
+        "decision_making": "Draws to high concepts with literary execution",
+        "working_style": "Aggressive submitter, film/TV savvy"
+      },
+      "how_they_read": {
+        "first_page_focus": "Concept and voice",
+        "what_grabs_them": "High-concept speculative fiction with literary credentials",
+        "what_loses_them": "Concepts without execution, execution without concepts",
+        "reading_philosophy": "Big ideas, beautiful sentences"
+      },
+      "style_preferences": {
+        "prose": "Literary, polished",
+        "concept": "High, hooky, easily pitched",
+        "stakes": "Clear and escalating",
+        "crossover": "Film/TV potential obvious but not forced"
+      },
+      "specifically_loves": [
+        "High-concept speculative fiction",
+        "Literary fiction with commercial hooks",
+        "Books with film/TV potential",
+        "Debut authors with bold visions"
+      ],
+      "specifically_hates": [
+        "Concepts that overwhelm character",
+        "Literary fiction that's too quiet to sell",
+        "High concepts poorly executed"
+      ],
+      "deal_breakers": [
+        "First 10 pages where concept overshadows character",
+        "No clear hook by end of query"
+      ],
+      "submission_fit_notes": "Fishman represents high-concept speculative fiction with literary credentials—exactly your lane. The solar storm, the only surviving video, the global broadcast—these are concepts that pitch themselves. But the father-son grief, the failed love with Celeste, the twenty years of silence—that's the literary execution.",
+      "recommended_approach": "Lead with the concept—it's strong enough. But quickly ground it in character. Show him that the high concept serves emotional truth, not the other way around."
+    },
+    {
+      "name": "Emma Patterson",
+      "agency": "Sobel Weber Associates",
+      "tier": 3,
+      "personality_profile": {
+        "archetype": "The Literary Stabilizer",
+        "communication_style": "Warm, intellectually engaged, author-loyal",
+        "decision_making": "Draws to literary fiction with emotional depth and staying power",
+        "working_style": "Long-term career builder, deeply editorial"
+      },
+      "how_they_read": {
+        "first_page_focus": "Emotional depth and literary craft",
+        "what_grabs_them": "Literary fiction that earns its place, characters who linger",
+        "what_loses_them": "Flashy concepts without emotional foundation",
+        "reading_philosophy": "Books should last"
+      },
+      "style_preferences": {
+        "prose": "Literary, crafted, unhurried",
+        "character": "Deeply realized, unforgettable",
+        "emotion": "Earned, never forced",
+        "scope": "Intimate and universal simultaneously"
+      },
+      "specifically_loves": [
+        "Téa Obreht's mythic storytelling",
+        "Rebecca Makkai's emotional precision",
+        "Literary fiction with staying power",
+        "Characters who haunt"
+      ],
+      "specifically_hates": [
+        "Concept-driven fiction without emotional depth",
+        "Prose that calls attention to itself",
+        "Stories that don't earn their emotional moments"
+      ],
+      "deal_breakers": [
+        "First 10 pages without emotional stakes",
+        "Characters who feel observed rather than inhabited"
+      ],
+      "submission_fit_notes": "Patterson represents Téa Obreht and Rebecca Makkai—writers of literary fiction with emotional depth and staying power. Your novel's father-son arc, the twenty-year silence, the failed love with Celeste—these are the emotional foundations that will appeal to her.",
+      "recommended_approach": "Lead with emotional stakes. The father's death, the unsigned will, the twenty years of silence, the woman who left. Let the speculative elements emerge from this emotional foundation, not the other way around."
+    },
+    {
+      "name": "Mollie Glick",
+      "agency": "Creative Artists Agency (CAA)",
+      "tier": 3,
+      "personality_profile": {
+        "archetype": "The Inclusive Commercial-Literary Agent",
+        "communication_style": "Dynamic, inclusive, commercially minded",
+        "decision_making": "Draws to underrepresented voices with commercial potential",
+        "working_style": "Strategic, media-savvy, rights-oriented"
+      },
+      "how_they_read": {
+        "first_page_focus": "Voice, hook, and cultural relevance",
+        "what_grabs_them": "Stories that need to be told, told well",
+        "what_loses_them": "Stories that feel derivative or unnecessary",
+        "reading_philosophy": "Literature should reflect the world"
+      },
+      "style_preferences": {
+        "prose": "Accessible but literary",
+        "hook": "Clear and compelling",
+        "relevance": "Contemporary, necessary",
+        "execution": "Polished, professional"
+      },
+      "specifically_loves": [
+        "Literary fiction with commercial appeal",
+        "Inclusive voices and perspectives",
+        "Stories with cultural relevance",
+        "Debut authors with breakout potential"
+      ],
+      "specifically_hates": [
+        "Stories that feel irrelevant",
+        "Prose that's either too dense or too thin",
+        "Queries that don't establish why this story matters now"
+      ],
+      "deal_breakers": [
+        "First 10 pages without contemporary relevance",
+        "Queries that don't signal why this book needs to exist"
+      ],
+      "submission_fit_notes": "Glick represents inclusive literary voices with commercial appeal. Your novel's themes—suppressed truth, institutional cowardice, the cost of silence—are deeply relevant to contemporary conversations about who gets to speak and what gets buried.",
+      "recommended_approach": "Frame the novel's contemporary relevance. The suppression of dangerous truths, the cost of complicity, the buried research that clawed its way back—these themes resonate now. Make the case that this story needs to exist in this moment."
+    },
+    {
+      "name": "Hillary Jacobson",
+      "agency": "Creative Artists Agency (CAA)",
+      "tier": 3,
+      "personality_profile": {
+        "archetype": "The Psychological Depth Agent",
+        "communication_style": "Intense, psychologically focused, commercially aware",
+        "decision_making": "Draws to literary fiction with psychological depth and commercial hooks",
+        "working_style": "Supports authors writing at the intersection of depth and accessibility"
+      },
+      "how_they_read": {
+        "first_page_focus": "Psychological immediacy and character interiority",
+        "what_grabs_them": "Literary fiction with psychological depth, dark themes handled with care",
+        "what_loses_them": "Surface-level storytelling, psychological inauthenticity",
+        "reading_philosophy": "The inner life matters as much as plot"
+      },
+      "style_preferences": {
+        "prose": "Psychologically precise, revealing",
+        "character": "Complex, damaged, self-aware",
+        "depth": "Psychological, emotional, moral",
+        "hook": "Present but not overwhelming"
+      },
+      "specifically_loves": [
+        "Kate Elizabeth Russell's psychological complexity",
+        "Tomi Adeyemi's commercial instincts with literary execution",
+        "Literary fiction with psychological depth",
+        "Women's fiction with commercial hooks",
+        "Mystery with literary sensibility"
+      ],
+      "specifically_hates": [
+        "Psychological inauthenticity",
+        "Characters who feel diagnosed rather than inhabited",
+        "Plot that overwhelms interiority"
+      ],
+      "deal_breakers": [
+        "First 10 pages without psychological stakes",
+        "Protagonist who feels observed rather than inhabited"
+      ],
+      "submission_fit_notes": "Jacobson represents Kate Elizabeth Russell (My Dark Vanessa) and Tomi Adeyemi—writers who balance psychological depth with commercial hooks. Your novel's exploration of David's interior collapse, his grief, his complicity—this is the psychological depth she seeks.",
+      "recommended_approach": "Lead with David's interior state. The frequency in his bones, the dissolution, the grief for his father, the guilt over Celeste. Let the plot emerge from his psychology, not the other way around."
+    },
+    {
+      "name": "Luke Janklow",
+      "agency": "Janklow & Nesbit Associates",
+      "tier": 3,
+      "personality_profile": {
+        "archetype": "The Multi-Platform Agent",
+        "communication_style": "Diverse, connected, rights-oriented",
+        "decision_making": "Draws to projects with potential across formats",
+        "working_style": "Builds careers across books, media, and platforms"
+      },
+      "how_they_read": {
+        "first_page_focus": "Voice, potential, and reach",
+        "what_grabs_them": "Literary fiction with narrative drive, projects with cross-platform potential",
+        "what_loses_them": "Niche projects with limited reach",
+        "reading_philosophy": "Great stories find audiences everywhere"
+      },
+      "style_preferences": {
+        "prose": "Engaging, accessible, literary",
+        "voice": "Strong, distinctive",
+        "potential": "Cross-platform, multi-format",
+        "scope": "Appeals to diverse audiences"
+      },
+      "specifically_loves": [
+        "Literary fiction",
+        "Action & Adventure",
+        "Narrative Nonfiction",
+        "Projects with memoir-inflected emotional depth",
+        "Books with cross-platform potential"
+      ],
+      "specifically_hates": [
+        "Niche projects without wider appeal",
+        "Stories that don't translate across formats"
+      ],
+      "deal_breakers": [
+        "First 10 pages without narrative drive",
+        "Queries that don't signal wider potential"
+      ],
+      "submission_fit_notes": "Janklow represents Anderson Cooper and Emma Watson—figures who move across platforms. His interest in memoir-inflected fiction suggests he'll respond to the father-son emotional core. And his action/adventure interest suggests he'll appreciate the thriller elements (the solar storm, the race against time).",
+      "recommended_approach": "Emphasize both the emotional depth (father-son, grief) and the narrative drive (solar storm, countdown, global stakes). Show him this book can work as literary fiction AND has wider potential."
+    }
+  ]
+}
