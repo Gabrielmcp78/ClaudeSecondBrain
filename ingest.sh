@@ -22,9 +22,9 @@ echo "$PENDING" >> "$LOG"
 
 cd "$REPO"
 
-# Run Claude Code non-interactively with ingestion prompt
+# Run Claude Code non-interactively. < /dev/null prevents stdin hang in background/launchd context.
 $CLAUDE --dangerously-skip-permissions -p \
 "Read CLAUDE.md in full. Then process all unprocessed files in raw/ (files without '_done' in the name, excluding README). For each file: 1) Write a wiki entry per the schema in CLAUDE.md, 2) Update wiki/_index.md and wiki/_connections.md, 3) Log the change in wiki/_meta/change-log.md, 4) Rename the source file by appending '_done' to its basename. Work through all pending files before stopping." \
->> "$LOG" 2>&1
+< /dev/null >> "$LOG" 2>&1
 
 echo "$(date): Ingestion complete." >> "$LOG"
