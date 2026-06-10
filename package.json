@@ -1,0 +1,11 @@
+{
+  "name": "claude-second-brain-kb",
+  "private": true,
+  "description": "Knowledge-base workspace wrapper for the ClaudeSecondBrain desktop app.",
+  "scripts": {
+    "dev": "npm --prefix ../ClaudeSecondBrainApp run dev",
+    "app": "npm --prefix ../ClaudeSecondBrainApp run dev",
+    "sync": "./sync.sh",
+    "ingest": "./ingest.sh"
+  }
+}

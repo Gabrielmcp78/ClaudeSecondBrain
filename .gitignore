@@ -1,0 +1,27 @@
+# macOS metadata
+.DS_Store
+**/.DS_Store
+
+# Runtime logs
+logs/
+*.log
+
+# Generated ambient context snapshots
+raw/flowscape_context_*.md
+raw/flowscape_session_*.md
+
+# Local npm/cache artifacts from wrapper scripts or accidental npm runs
+npm-cache/
+node_modules/
+package-lock.json
+
+# Python runtime/cache artifacts
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Generated local build output
+dist/
+build/
+release/
