@@ -464,7 +464,13 @@ export function parseConnections(sbRoot: string): Connection[] {
       //     concept_bridges output from live embedding-similarity mining;
       //     see SecondBrainCommandCenter/sbcc/graph.py). Brackets are
       //     optional below so either shape is recognized.
-      const headerMatch = block.match(/^\[?(.+?)\]?\s+↔\s+\[?(.+?)\]?\s*$/m);
+      // No /m flag here deliberately: the heading must be the very first
+      // line of the block (immediately after the split), not just any
+      // line anywhere inside it. An earlier version of this regex used
+      // /m and matched the "**[Source Article] ↔ [Target Article]**"
+      // example line inside the "How to read this file" instructions
+      // block, producing a fake "[Source Article" node on the graph.
+      const headerMatch = block.match(/^\[?(.+?)\]?\s+↔\s+\[?(.+?)\]?\s*(?:\n|$)/);
       if (!headerMatch) return null;
 
       const source = headerMatch[1].trim();
