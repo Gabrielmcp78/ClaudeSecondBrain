@@ -92,6 +92,66 @@ Connection: The cross-language semantic tag vocabulary (@type, @mem, @flow, @sta
 
 ---
 
+## Reconstructed Connections (post-2026-07-23 data-loss incident)
+
+*On 2026-07-23 the SBCC synthesis job's daily overwrite (now fixed — see `AUTO_START`/`AUTO_END` markers below and `sbcc/synthesize.py`) was found to have been silently destroying every connection added to this file since the last git commit. No backup of the destroyed content existed (checked: git history, Time Machine, stray `.bak` files — all negative). The entries below are rebuilt from the surviving evidence trail in `wiki/_meta/change-log.md`, which recorded what was added even though the file itself didn't survive. Repeated FlowScape log entries for the same pair (logged once per ambient-session capture) are consolidated into one entry each. Marked `[reconstructed]` rather than claimed as original.*
+
+### [dev-infrastructure/flowscape-ambient-sessions] ↔ [craft-fiction/string-theory]
+*Domain: dev-infrastructure ↔ craft-fiction*
+Connection: FlowScape's ambient session captures repeatedly surfaced blocking-resolution context tied directly to String Theory manuscript work, re-confirmed across sessions from 2026-07-18 through 2026-07-23. [reconstructed]
+
+### [dev-infrastructure/flowscape-ambient-sessions] ↔ [craft-fiction/string-theory/current-manuscript-state]
+*Domain: dev-infrastructure ↔ craft-fiction/string-theory*
+Connection: A 2026-07-18 FlowScape session captured a blocking issue concurrent with a cross-domain reference to the String Theory manuscript's live control-center article. [reconstructed]
+
+### [dev-infrastructure/flowscape-ambient-sessions] ↔ [craft-fiction/fiction-studio]
+*Domain: dev-infrastructure ↔ craft-fiction*
+Connection: FlowScape ambient captures repeatedly tied background session activity to Fiction Studio editorial work, logged across at least eight separate sessions between 2026-07-20 and 2026-07-22. [reconstructed]
+
+### [dev-infrastructure/flowscape-ambient-sessions] ↔ [dev-projects/happy-oppenheimer]
+*Domain: dev-infrastructure ↔ dev-projects*
+Connection: FlowScape ambient sessions (2026-07-21 through 07-22) repeatedly captured context connecting background activity to the happy-oppenheimer project. [reconstructed]
+
+### [dev-infrastructure/flowscape-ambient-sessions] ↔ [craft-fiction/aegis-cycle/burnthrough]
+*Domain: dev-infrastructure ↔ craft-fiction/aegis-cycle*
+Connection: A 2026-07-20 FlowScape ambient session tied background activity to BURNThrough (Aegis Cycle Book 1) work. [reconstructed]
+
+### [dev-infrastructure/flowscape-ambient-sessions] ↔ [dev-projects/nextstage]
+*Domain: dev-infrastructure ↔ dev-projects*
+Connection: A 2026-07-20 FlowScape ambient session tied background activity to the NextStage project. [reconstructed]
+
+### [dev-infrastructure/flowscape-ambient-sessions] ↔ [dev-projects/shakespearience]
+*Domain: dev-infrastructure ↔ dev-projects*
+Connection: A 2026-07-18 FlowScape session captured a Shakespearience-specific blocker during ambient monitoring. [reconstructed]
+
+### [ai-collaboration/chatgpt-librarian-session-2026-06-08] ↔ [dev-infrastructure/]
+*Domain: ai-collaboration ↔ dev-infrastructure*
+Connection: The ChatGPT librarian intake note's infrastructure implications were cross-linked to dev-infrastructure and re-verified twice (2026-07-18) after a duplicate-file cleanup during ingestion. [reconstructed]
+
+### [craft-fiction/submission-strategy/editorial-board] ↔ [craft-fiction/fiction-studio]
+*Domain: craft-fiction/submission-strategy ↔ craft-fiction*
+Connection: Editorial Board and Fiction Studio are both AI-simulated manuscript judgment systems built four days apart with no prior cross-reference — one operating at query/agent-response evaluation, the other at prose-editing lifecycle stage. Identified during the 2026-07-18 Monthly Health Check. [reconstructed]
+
+### [ai-collaboration/agent-mail-carrier] ↔ [ai-collaboration/agent-operating-model]
+*Domain: ai-collaboration ↔ ai-collaboration*
+Connection: The Agent Mail Carrier is the mechanism; the Agent Operating Model is the policy layer governing how and when agents should use it. Identified during the 2026-07-18 Monthly Health Check as a previously-orphaned pair. [reconstructed]
+
+### [dev-projects/nextstage] ↔ [dev-infrastructure/]
+*Domain: dev-projects ↔ dev-infrastructure*
+Connection: NextStage OS's governance frameworks were linked to the KB's dev-infrastructure best-practices articles during the 2026-07-20 NextStage Capital and Concept Package ingestion. [reconstructed]
+
+### [dev-infrastructure/manuscript-export-pipeline] ↔ [craft-fiction/string-theory]
+*Domain: dev-infrastructure ↔ craft-fiction*
+Connection: The manuscript export pipeline (Pages → Drive → GitHub Pages, documented 2026-07-09) is the live technical mechanism behind String Theory's published chapter site; this ingestion also flagged string-theory.md's chapter/word count as stale against the pipeline's Draft 6.7 source. [reconstructed]
+
+### [music-performance/directing-practice] ↔ [dev-projects/shakespearience]
+*Domain: music-performance ↔ dev-projects*
+Connection: Gabriel's 60+ production directing career (BCPA residency, Bellarmine, TSOTA) is cross-linked to Shakespearience as the direct practical lineage behind the show's production style — Shakespeare has been the recurrent center of gravity across his directing work. [reconstructed]
+
+**Not reconstructable:** the 2026-07-16 Chapter 13 ingestion added "three new cross-domain links" per its task-ledger entry, but neither the ledger nor change-log record which specific pairs — that detail did not survive and would need Gabriel or a fresh pass over `chapter-13-visions-and-burdens.md` to re-derive rather than guess.
+
+---
+
 ## High-Value Connections to Watch For
 
 These adjacencies are predicted to emerge as the knowledge base grows:
@@ -106,3 +166,184 @@ These adjacencies are predicted to emerge as the knowledge base grows:
 ### [String Theory / String Theory] ↔ [VCH / The Vibrational Universe]
 *Domain: craft-fiction/string-theory ↔ theory-consciousness*
 Connection: Conversation history confirms ongoing development of the VCH-to-fiction bridge: the 68.48 Hz mechanic and harmonic entrainment are narratively deployed VCH propositions.
+
+
+<!-- SBCC:AUTO-BRIDGES:START (regenerated daily — do not hand-edit below; add manual connections above this marker) -->
+
+> Auto-generated by SBCC `concept_bridges` · 2026-07-23
+> Source: 103,331 DocChunks
+> Method: stored 384-dim embeddings, cosine ≥ 0.74, min 2 connections per pair
+
+## Strong Bridges (≥ 0.90)
+
+### Literary_Manuscript_David_Lang  ↔  claude_conversations
+`score 0.927 · 27 connections`
+
+> *ic principle, incarnate.
+Later, scientists would find that the flare's waveform, translated to audio, matched David's performance exactly. He had not played during the storm; he ha…*
+
+### ChatGPT Archive (Top)  ↔  Literary_Manuscript_David_Lang
+`score 0.918 · 25 connections`
+
+> * an unmuted phone—found its way to the front and roosted behind the podium like a squatter. The chalkboard, an uninterrupted expanse of matte green, bore this morning the layered r…*
+
+### ChatGPT Archive (Top)  ↔  claude_conversations
+`score 0.956 · 17 connections`
+
+> *s._request(`/entities/${entityId}/relationships${query}`);
+  }
+
+  // Graph operations
+
+  /**
+   * Traverse the graph starting from an entity
+   * @param {string} startEntityId - St…*
+
+## Medium Bridges (0.80 – 0.89)
+
+### AI_Skills_Development  ↔  claude_conversations
+`score 0.889 · 29 connections`
+
+> *ial depth
+   - Artifacts for all documents and code
+
+4. **Project Standards**
+   - Development location: /Volumes/Ready500/DEVELOPMENT
+   - Apple-level design quality expectations
+…*
+
+### The Vibrational Universe  ↔  claude_conversations
+`score 0.873 · 20 connections`
+
+> *RACTERISTICS OF FIGURE:
+- Moves without sound, traces arcs "like bow across unseen string"
+- Light cascades in filaments that dissolve
+- Aurora trails, chromatic whispers
+- Scent: …*
+
+### ChatGPT Archive (Top)  ↔  The Vibrational Universe
+`score 0.866 · 18 connections`
+
+> *nduring vibration
+- "To be face = scrutiny, distraction, diminution"
+- "To be sound = embody infinite, untraceable force binding existence"
+- Profound loneliness tempered by unassa…*
+
+### ChatGPT Archive (Top)  ↔  String Theory
+`score 0.846 · 17 connections`
+
+> *m wait."
+"Universe could hold note longer than any man."
+
+SECTION 2: THE COMPOSITION
+
+DAVID'S CREATIVE PROCESS:
+- World recedes "like tide withdrawing threat"
+- Gathers implements:…*
+
+### Canvas-Design-Masterworks  ↔  claude_conversations
+`score 0.829 · 14 connections`
+
+> *d with surgical precision
+- Result feels like archaeological artifact documenting consciousness
+
+This exemplifies Gabriel's Vibrational Consciousness Hypothesis through visual lang…*
+
+### ChatGPT Archive (Top)  ↔  Shakespearience
+`score 0.810 · 11 connections`
+
+> *n team active
+
+### Database
+- **Supabase** (managed PostgreSQL) + **Prisma ORM**
+- Free tier → $25/month Pro
+- Core tables: members, subscriptions, school_licenses, license_seats, …*
+
+### String Theory  ↔  claude_conversations
+`score 0.842 · 10 connections`
+
+> *m wait."
+"Universe could hold note longer than any man."
+
+SECTION 2: THE COMPOSITION
+
+DAVID'S CREATIVE PROCESS:
+- World recedes "like tide withdrawing threat"
+- Gathers implements:…*
+
+### Shakespearience  ↔  claude_conversations
+`score 0.808 · 7 connections`
+
+> *n team active
+
+### Database
+- **Supabase** (managed PostgreSQL) + **Prisma ORM**
+- Free tier → $25/month Pro
+- Core tables: members, subscriptions, school_licenses, license_seats, …*
+
+### String Theory  ↔  The Vibrational Universe
+`score 0.818 · 4 connections`
+
+> *-up'"
+"Each discipline = octave in spectrum"
+"Every act—calculation, melody, harvest, lesson—ripples outward in resonance with whole"
+
+DAVID LANG'S LEGACY:
+"On this new Earth, no m…*
+
+### AI_Skills_Development  ↔  ChatGPT Archive (Top)
+`score 0.812 · 4 connections`
+
+> *## Gabriel Synergy Protocol Skill Creation
+
+**Date**: October 28, 2025
+**Project**: Custom Claude Skill Development
+**Purpose**: Codify collaborative workflow patterns with Gabriel…*
+
+### Canvas-Design-Masterworks  ↔  ChatGPT Archive (Top)
+`score 0.839 · 2 connections`
+
+> *Created "Resonant Emergence" - a museum-quality visual artwork using the canvas-design skill.
+
+**Design Philosophy**: Resonant Emergence
+- Visual philosophy where consciousness mat…*
+
+## Ambient Bridges (< 0.80)
+
+### Gabriel Workflow Rules  ↔  claude_conversations
+`score 0.797 · 17 connections`
+
+> *AUTOMATION RULE — established March 28 2026: When building any automation for Gabriel, always try macOS Shortcuts FIRST before writing shell scripts, LaunchAgents, or daemons. Shor…*
+
+### ChatGPT Archive (Bottom)  ↔  Shakespearience
+`score 0.800 · 6 connections`
+
+> *n team active
+
+### Database
+- **Supabase** (managed PostgreSQL) + **Prisma ORM**
+- Free tier → $25/month Pro
+- Core tables: members, subscriptions, school_licenses, license_seats, …*
+
+### Shakespearience  ↔  String Theory
+`score 0.764 · 5 connections`
+
+> *# CORRECTION / SUPERSEDES prior labeling (2026-07-10)
+
+This note corrects the status labels in `Shakespearience_Characters_and_Monetization_Canon_2026-07-10`.
+
+## STATUS OF TODAY'S…*
+
+### ChatGPT Archive (Top)  ↔  Gabriel Workflow Rules
+`score 0.764 · 4 connections`
+
+> *AUTOMATION RULE — established March 28 2026: When building any automation for Gabriel, always try macOS Shortcuts FIRST before writing shell scripts, LaunchAgents, or daemons. Shor…*
+
+### ChatGPT Archive (Bottom)  ↔  ChatGPT Archive (Top)
+`score 0.774 · 2 connections`
+
+> *ose features in your application.
+
+If there's anything more specific you'd like to know about working with Git, Firebase, React, or if there are other tasks you need help with, fee…*
+
+<!-- SBCC:AUTO-BRIDGES:END -->
