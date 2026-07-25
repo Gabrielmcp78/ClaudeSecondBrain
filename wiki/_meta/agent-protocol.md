@@ -161,3 +161,30 @@ Write via `POST /api/agents/<agent>/status` on the running dashboard (`http://lo
 For every charged source image, agents must privately map **source carrier → emotional / formal function → quieter retained carrier** before drafting. Preservation of plot information alone does not satisfy the Fiction Studio conservation map.
 
 Newly introduced *thought*, *felt*, *remembered*, *realized*, *noticed*, *seemed*, and *began* language must have a source-based reason. It may not replace embodied, relational, temporal, or sonic interior pressure.
+
+---
+
+## Daily Keeper Protocol (Mandatory Amendment — 2026-07-25)
+
+**Why this exists:** an audit on 2026-07-25 found 272 uncommitted files sitting in git (some going back multiple sessions), a stale zero-byte `.git/index.lock` silently blocking every commit attempt, five raw files marked `_done` that were never actually ingested, and a recurring factual error (Mem0 cited as live infrastructure) that had apparently been corrected by Gabriel multiple times without ever sticking. All four are the same failure: corrections and state changes were happening in conversation but not reliably landing in a durable, binding place. This amendment closes that loop structurally instead of relying on any single agent remembering to.
+
+### 1. Git is the safety net — commit every session, not just when convenient
+
+Every agent session that writes to `wiki/`, `_meta/`, or any ops-playbook must end with a real git commit (`git add -A && git commit -m "..."`) before the session closes, not merely a file save. A scheduled daily task (`sb-daily-keeper`, ~5:00 AM local) provides a backstop that commits any drift left uncommitted from the day, so the worst case is losing hours, not the unrecoverable weeks the 2026-07-23 `_connections.md` incident lost. If a commit fails on a stale `index.lock`, check for an actual running git process before removing it (`ps aux | grep git`) — a zero-byte lock with no owning process is safe to delete.
+
+### 2. Corrections are ingestion events, not answers
+
+When Gabriel corrects a factual claim about the system's own architecture (a tool, a provider, an infrastructure component that's been added, removed, or renamed), the agent must, in the same turn:
+1. Fix the claim at its actual source — the wiki article, skill file, or `_meta/` doc currently asserting it — not just note it and move on.
+2. Grep the rest of the KB (and, where reachable, other agents' operating-schema files: `Gemini.md`, `CHATGPT_SYSTEM_PROMPT.md`) for the same stale fact, since it rarely lives in exactly one place.
+3. Save it to the correcting agent's own persistent memory if that agent has one, so it doesn't have to be re-explained to that agent in a future session either.
+
+A correction that only lives in that session's conversation has fixed nothing — it will be re-asserted by the next agent that reads the still-stale source.
+
+### 3. Declare source of truth per project, don't imply it
+
+Any active-build project article (`dev-projects/*/architecture.md`) must state, near the top, whether it is the canonical record or a synced mirror of a live external system (Trello board, Drive folder, code repo) — and if a mirror, the date of last live sync. Shakespearience's architecture.md is the reference pattern: Trello is authoritative for task/decision state, the wiki is authoritative for cross-domain synthesis and anything with no external system of record. Don't leave agents to guess this per session.
+
+### 4. The Daily Keeper scheduled task
+
+`sb-daily-keeper` runs once daily and performs, in order: (a) commits any uncommitted KB changes; (b) re-runs the raw-ingestion integrity check (cross-references `raw/*_done*` filenames against `_meta/change-log.md` and wiki citations, flagging anything with zero trace); (c) for every project with a declared live external source of truth, pulls current state and diffs it against that project's last-sync date, flagging drift; (d) writes findings to `wiki/_agents/claude/inbox.md` as a dated entry, not a standalone output file waiting for promotion; (e) updates `wiki/_agents/claude/status.md`. This exists so drift is caught within 24 hours by default, instead of accumulating until someone happens to run a full manual audit.
