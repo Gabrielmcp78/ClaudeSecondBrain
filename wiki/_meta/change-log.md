@@ -1,3 +1,21 @@
+## 2026-07-25 — Reconciled Undocumented Parallel Taxonomy (Claude, Cowork)
+
+Gabriel pasted a claim (from an apparently different agent/session, dated 2026-07-23) listing 10 new wiki files and asked "do these things exist?" Verified via filesystem: all 15 files across `wiki/agent-control/` (7), `wiki/projects/string-theory/`, `wiki/projects/burnthrough/`, `wiki/projects/fiction-studio/` (5 total), and `wiki/ingestion/` (5) were genuine and substantive — but none were linked from `_index.md` in the canonical way, and `_index.md` itself had a malformed duplicate-header section (lines ~246-276) from whatever process wrote them. They also duplicated/fragmented content already covered, in some cases more thoroughly, in the canonical `craft-fiction/string-theory/` and `craft-fiction/aegis-cycle/` articles. Gabriel authorized reconciliation with "reconcile them now."
+
+**Actions taken:**
+- Consolidated 8 agent-governance files into one new canonical article: [`craft-fiction/fiction-studio/source-control-protocol.md`](../craft-fiction/fiction-studio/source-control-protocol.md) (artifact classification, drift controls, latest/current verification protocol, rewrite authorization levels, artifact status ledger template, agent startup checklist, Drive/Docs/Sheets tooling knowledge, shared editorial posture).
+- Merged the two genuinely-new String Theory facts (Chapter 9 rhythm-pass word counts, protected-strengths/integration-targets list) into the existing canonical `craft-fiction/string-theory/current-manuscript-state.md` rather than keeping a duplicate control file. Also added a Known Drive File IDs table there.
+- Confirmed `wiki/projects/burnthrough/*` (2 files) was pure redundant restatement of the already far more detailed `craft-fiction/aegis-cycle/burnthrough-current-state.md` — identical locked terminology, identical next-operation language — and retired it without merging, since there was nothing to merge.
+- Moved `wiki-page-schema.md` to `_meta/` as a general KB-wide convention (not fiction-specific).
+- Folded `search-index-diagnostics.md`'s finding into `_meta/open-questions.md` as a dated open question under a new Infrastructure/Search Tooling section.
+- Folded `knowledge-ingestion-runbook.md`'s one genuinely new step ("verify discoverability") into `CLAUDE.md`'s own Ingestion Procedure as step 6.5; retired the runbook as otherwise redundant with CLAUDE.md's existing procedure.
+- Closed out `fiction-studio-knowledge-base-expansion.md`'s backlog in `task-ledger.md` (TASK-2026-07-25-002) — the above supersedes its "open work for future ingestion" list.
+- Fixed `_index.md`'s malformed duplicate-header section; replaced with correct pointers to the reconciled files.
+- Added 2 new cross-domain entries to `_connections.md`.
+- Removed the now-empty `wiki/agent-control/`, `wiki/projects/`, `wiki/ingestion/` directories.
+
+**Files affected:** `wiki/craft-fiction/fiction-studio/source-control-protocol.md` (new), `wiki/craft-fiction/string-theory/current-manuscript-state.md`, `wiki/_meta/wiki-page-schema.md` (new, moved), `wiki/_meta/open-questions.md`, `wiki/_meta/task-ledger.md`, `wiki/_index.md`, `wiki/_connections.md`, `CLAUDE.md`. Deleted: `wiki/agent-control/*` (7 files), `wiki/projects/**/*` (5 files), `wiki/ingestion/*` (5 files, one moved not deleted).
+
 ## 2026-07-24 — Shakespearience Made a Major Node: Full Live Trello Re-Sync (Claude, Cowork)
 
 Gabriel asked for all detailed Shakespearience knowledge gathered and the project made a major node in the SB. Pulled full card content from all 9 lists on the live Trello board (Big Biz Picture, The Creative Vision, The Tech Guts, Tech Production, Marketing, Curricula, Bonus Content, Group Curricula & Licensing, Ops & Setup) via `get_board_cards`, then reconciled against the existing wiki node.

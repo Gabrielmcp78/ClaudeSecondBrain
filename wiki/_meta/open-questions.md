@@ -93,3 +93,14 @@ Current lean: initialization is always required; continuity is a quality of the 
 
 **At what point does an AI's contribution to a creative work constitute co-authorship vs. tool use?**
 Not resolved. No current lean. Watching for emerging legal/artistic precedent.
+
+---
+
+## Infrastructure / Search Tooling
+
+**Why does local SecondBrain workspace search return no hits for terms that demonstrably exist in the wiki, while Drive search finds the same material?**
+*(source: `wiki/ingestion/search-index-diagnostics.md`, captured 2026-07-23, folded in here 2026-07-25)*
+Observed during the 2026-07-23 control-system and knowledge-ingestion pass: `SecondBrain._secondbrain_append_note` reported successful appends for new wiki pages, but local `secondbrain` workspace search returned no hits for several obvious new and existing terms. Drive search surfaced the same markdown files (`_index.md`, `_connections.md`, `change-log.md`, `agent-protocol.md`, `handoffs.md`, `inbox.md`, `task-ledger.md`) correctly, though it was uneven on compound/OR-style queries.
+Competing explanations: local workspace search points at a stale or different root than the wiki-append tool writes to; or an index-refresh process is missing/broken.
+Resolving evidence: determine whether local `secondbrain` workspace search points to the same root as the wiki append tool; check for an index-refresh job.
+Current lean: not yet diagnosed. Practical workaround in force — when a workspace search returns no hits, do not assume the knowledge does not exist; fall back to Drive search, exact file names, simpler terms, or known IDs/paths before concluding a gap is real. Confidence in workaround (not root cause): 70.

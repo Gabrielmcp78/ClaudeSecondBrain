@@ -147,6 +147,7 @@ When asked to ingest `raw/` and build or update the wiki:
 4. Add cross-links in related articles; update `wiki/_connections.md` for every cross-domain link.
 5. Update `wiki/_index.md`.
 6. Append each processed file to `wiki/_meta/change-log.md` with date and destination article.
+6.5. Verify discoverability: search for a distinctive phrase from the new article. If search returns no hit, log the indexing gap in `wiki/_meta/open-questions.md` rather than assuming the write failed — see the Infrastructure/Search Tooling entry there for a known local-search-vs-Drive-search discrepancy. *(Added 2026-07-25, folded in from a since-retired standalone ingestion runbook.)*
 7. Mark processed files `_done` in `raw/`; do not rename or delete them.
 
 ---
@@ -196,6 +197,7 @@ When asked to perform a health check:
 |------|--------|----------------|
 | 2026-06-02 | Taxonomy rebuilt around Gabriel's actual domains | CLAUDE.md, wiki/_index.md |
 | 2026-06-02 | Initial schema created | CLAUDE.md, wiki/index.md |
+| 2026-07-25 | Reconciled an undocumented parallel taxonomy (`wiki/agent-control/`, `wiki/projects/`, `wiki/ingestion/`, 15 files from 2026-07-23) back into the canonical structure; added Ingestion Procedure step 6.5 (verify discoverability) | CLAUDE.md, wiki/_index.md, wiki/craft-fiction/fiction-studio/source-control-protocol.md, wiki/_meta/task-ledger.md |
 
 ## Session Initialization (Non-Negotiable Hard Gate)
 

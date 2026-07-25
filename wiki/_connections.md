@@ -16,6 +16,14 @@ Connection: one sentence describing the relationship.
 
 ## Documented Connections
 
+### [craft-fiction/fiction-studio/source-control-protocol] ↔ [_meta/agent-protocol]
+*Domain: craft-fiction ↔ _meta*
+Connection: The Fiction Studio source-control protocol (artifact classification, rewrite authorization levels, drift controls) is the manuscript-specific instantiation of `agent-protocol.md`'s general write-permission and conflict-resolution rules — read `agent-protocol.md` first for the KB-wide contract, then this protocol for anything touching STRING THEORY or BURNThrough prose.
+
+### [craft-fiction/fiction-studio/source-control-protocol] ↔ [_meta/wiki-page-schema]
+*Domain: craft-fiction ↔ _meta*
+Connection: The source-control protocol's artifact status ledger and source-authority labels are a specialization of the general `wiki-page-schema.md` fields (Source authority, Last verified, Verification method) applied specifically to manuscript objects rather than knowledge pages.
+
 ### [dev-projects/shakespearience/architecture] ↔ [dev-projects/shakespearience/ops-playbooks/]
 *Domain: dev-projects/shakespearience ↔ dev-projects/shakespearience*
 Connection: The 2026-07-22 stack decisions (Sanity CMS cut, Plausible cut, Bitwarden replacing 1Password, Google Workspace replacing Fastmail) are documented once in architecture.md's Technical Implementation section and once more operationally in Playbooks 01 and 04 — both re-synced 2026-07-24 against the same live Trello cards so neither drifts from the other going forward.

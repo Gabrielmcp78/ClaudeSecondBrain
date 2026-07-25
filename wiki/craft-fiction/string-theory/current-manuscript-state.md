@@ -118,3 +118,35 @@
 
 ## Experimental Draft Boundary — 2026-07-17
 Gabriel clarified that `String Theory 7` and `String Theory 7.1` are experimental working versions, not replacements for the current full-manuscript canon. `StringTheory_7.2_options` is also experimental, has not been ingested into SecondBrain, and extends only through Chapter 4. For Chapter 5 onward, including the current Chapter 9 work, Draft 6.7 remains the controlling full-manuscript source unless Gabriel explicitly supplies or designates a later replacement. Experimental opening revisions may inform Chapters 1–4 only and must not be projected forward into later-chapter continuity.
+
+## Chapter 9 Rhythm-Pass Experiment — Tracking
+
+*Merged 2026-07-25 from a since-superseded `wiki/projects/string-theory/` note; see [Fiction Studio Source Control Protocol](../fiction-studio/source-control-protocol.md) for the classification rules governing this section.*
+
+An experimental Chapter 9 rhythm-pass compilation exists from prior work. It is a draft experiment only unless explicitly approved — do not treat it as canonical manuscript. Remembered section order for that compilation:
+
+9.1 "Wednesday Dinner" · 9.2 "The Tuning" · 9.3 "Break-through" · 9.4 "The Guillotine" · 9.5 "Into the Storm" · 9.6 "It Takes a Beating" · 9.7 "You Can Hear It, Yes?" · 9.8 "Up From the Depths"
+
+Like-for-like word counts from prior work (recalculate before delivering any new artifact rather than trusting these as current):
+
+| Pass | Word count |
+|---|---|
+| Full 9.1–9.8 experimental compilation | ~14,201 |
+| Revised 9.5–9.8 | ~7,877 |
+| Supplied 9.5–9.8 | ~8,852 |
+
+**Protected strengths** (remembered from prior diagnosis, do not flatten in any pass): David's comic intelligence and bodily anomaly; music/physics fusion; institutional counterweight; Celeste's agency; Cassandra's voice; the annotated tuning book.
+
+**Known integration targets** (remembered from prior diagnosis): Chapter 5 thesis-in-dialogue; Chapter 7 Rune explanatory/mythic exposition; Chapter 9.1 David/Celeste over-explanation; Part Two beat-by-beat integration map.
+
+## Known Drive File IDs
+
+| File | Drive id | Modified | Notes |
+|---|---|---|---|
+| `String Theory - Draft 6.7.docx` | `15wE9pYq9f-ExrXA3GZ-oJPETfP-WyVtO` | 2026-07-21T01:47:54Z | Canonical manuscript layer; reverify before use |
+| `String Theory - Draft 6.7.txt` | `1oMsjIAiUsQDipDXgzv0K0b5JGrdVuK03` | 2026-07-21T01:47:51Z | Canonical manuscript layer; reverify before use |
+| `String Theory.epub` | `1Y7FOTr29u5gLksLt_nDxxpNylCDp-PCJ` | 2026-07-07T18:01:30Z | Distribution/reading artifact, not source authority |
+| `STRING_THEORY__8.0_READING_DRAFT_COMPLETE__2026-07-20` (Google Doc) | `1qlr23KamLarDJBXTroUH0K2UG-6w-2sUSDk6UsgRiIs` | 2026-07-23T10:04:59Z | Reading/submission artifact; not automatically canon |
+| "String theory - full plot summmary***" (Google Doc) | `1oT6gJtQ-bM2cwTol9JQnc4VPwEnp6MRtaPGe1JhgTXs` | 2026-03-23T14:15:37Z | Secondary summary, not prose source |
+
+*IDs are memory-derived from a single 2026-07-23 Drive search pass; reverify before a live write operation.*

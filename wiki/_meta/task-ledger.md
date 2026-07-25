@@ -6,6 +6,12 @@
 
 ## Active Tasks
 
+### TASK-2026-07-25-002 — Reconcile agent-control/projects/ingestion sprawl into canonical taxonomy
+**Status:** CLOSED
+**Owner:** Claude
+**Resolution:** A prior session (2026-07-23, apparently a different agent/pass) had written 15 files into an undocumented parallel taxonomy — `wiki/agent-control/` (7 files), `wiki/projects/string-theory/`, `wiki/projects/burnthrough/`, `wiki/projects/fiction-studio/` (5 files total), `wiki/ingestion/` (5 files) — none of it linked from `_index.md` in the canonical way, duplicating or fragmenting content that belonged in `wiki/craft-fiction/`. Reconciled per Gabriel's explicit "reconcile them now": (1) consolidated the 8 agent-governance files (startup checklist, source-authority-and-drift-control, artifact-status-ledger, canon-status-decision-tree, latest-current-verification-protocol, rewrite-authorization-protocol, drive-docs-and-sheets-tooling-knowledge, shared-editorial-operating-knowledge) into one new article, `wiki/craft-fiction/fiction-studio/source-control-protocol.md`; (2) merged the two genuinely-new String Theory facts (Chapter 9 rhythm-pass word counts, protected-strengths/integration-targets list) into the existing canonical `current-manuscript-state.md` rather than keeping a second String Theory control file; (3) confirmed `wiki/projects/burnthrough/*` was pure redundant restatement of the already-far-more-detailed `burnthrough-current-state.md` (identical locked terminology, identical next-operation) and deleted it without merging — nothing there wasn't already covered better; (4) moved `wiki-page-schema.md` to `wiki/_meta/` as a general KB-wide convention; (5) folded `search-index-diagnostics.md` into `_meta/open-questions.md` as a dated open question; (6) folded the "verify discoverability" step from `knowledge-ingestion-runbook.md` into CLAUDE.md's own Ingestion Procedure (step 6.5) and deleted the runbook as otherwise redundant with CLAUDE.md; (7) this entry closes out `fiction-studio-knowledge-base-expansion.md`'s backlog, which the above supersedes. Fixed a malformed duplicate-header section in `_index.md` (lines ~246-276) left over from the original ungoverned writes. Updated `_connections.md` and `change-log.md`; removed the now-empty `wiki/agent-control/`, `wiki/projects/`, `wiki/ingestion/` directories.
+**Closed:** 2026-07-25
+
 ### TASK-2026-07-18-001 — Ingestion loop launchd bug fixed + provider migrated off dead gemini-cli
 **Status:** CLOSED
 **Owner:** Claude (diagnosis + fix + live verification, via Desktop Commander)

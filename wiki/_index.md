@@ -243,33 +243,12 @@ Dynamic log files, open items, and inbox logs for tracking platform health and c
 - [Fiction Studio Pilot 001 — Chapter 9 Provisional Full Studio Review](craft-fiction/fiction-studio/pilots/2026-07-18-chapter-9-provisional-full-studio-review.md) — First live institutional pilot. Preserves the chapter’s secular-passion architecture, identifies the dinner/tuning hinge as the governing review target, records continuity and character risks, and documents a Source Control hold after filename-based chapter identity proved unreliable.
 
 
-## Agent Control and Knowledge Base Expansion - 2026-07-23
-## Agent Control and Knowledge Base Expansion
+## Fiction Studio Source Control — 2026-07-25 (reconciled)
 
-New control-system and ingestion notes added:
+- [Fiction Studio — Source Control Protocol](craft-fiction/fiction-studio/source-control-protocol.md) — artifact classification, drift controls, latest/current verification protocol, rewrite authorization levels, artifact status ledger template, agent startup checklist, and Drive/Docs/Sheets tooling caveats for all manuscript work. Consolidated 2026-07-25 from eight standalone notes written 2026-07-23 into `wiki/agent-control/` and `wiki/projects/fiction-studio/`, which were never linked from this index and are now superseded.
 
-- `wiki/agent-control/agent-startup-checklist.md` - required startup sequence for agents working with Fiction Studio, manuscripts, file control, or project status.
-- `wiki/agent-control/source-authority-and-drift-control.md` - source classes, drift controls, and minimum verification requirements.
-- `wiki/agent-control/artifact-status-ledger.md` - reusable ledger fields and status vocabulary.
-- `wiki/projects/string-theory/source-authority-map.md` - STRING THEORY source layers and recurring risks.
-- `wiki/projects/burnthrough/source-authority-map.md` - BURNThrough / Aegis Cycle source layers, locked terminology, and next-operation guardrails.
-- `wiki/ingestion/fiction-studio-knowledge-base-expansion.md` - prioritized ingestion sets and metadata model for expanding the wiki/documentation library.
+Genuinely new facts from that 2026-07-23 pass (Chapter 9 rhythm-pass word counts, protected-strengths list) were merged into [String Theory — Current Manuscript State](craft-fiction/string-theory/current-manuscript-state.md) rather than kept as a separate control file; the BURNThrough equivalent (`wiki/projects/burnthrough/*`) was found to be pure restatement of the already more detailed [BURNThrough Current State](craft-fiction/aegis-cycle/burnthrough-current-state.md) and was retired without merge. See `task-ledger.md` TASK-2026-07-25-002 for the full reconciliation record.
 
-Use these notes before substantive work on STRING THEORY, BURNThrough, source-control state, readiness assessment, manuscript editing, or knowledge-base expansion.
+## Meta / KB Convention Pages
 
-
-## Operational Knowledge Pages - 2026-07-23
-## Operational Knowledge Pages
-
-Additional knowledge pages added after the control-system scaffolding:
-
-- `wiki/agent-control/canon-status-decision-tree.md` - decision tree for classifying canon, experiments, working artifacts, critique, and unknowns.
-- `wiki/agent-control/latest-current-verification-protocol.md` - how to answer latest/current/approved/canonical requests without relying on stale memory.
-- `wiki/agent-control/rewrite-authorization-protocol.md` - authorization levels and stop conditions before drafting, revising, or assembling prose.
-- `wiki/agent-control/drive-docs-and-sheets-tooling-knowledge.md` - Google Docs/Drive/Sheets capability versus permission guidance.
-- `wiki/projects/string-theory/operating-knowledge.md` - durable operating knowledge for STRING THEORY.
-- `wiki/projects/burnthrough/operating-knowledge.md` - durable operating knowledge for BURNThrough / Aegis Cycle.
-- `wiki/projects/fiction-studio/shared-editorial-operating-knowledge.md` - shared editorial process rules across fiction projects.
-- `wiki/ingestion/wiki-page-schema.md` - schema for future wiki pages.
-- `wiki/ingestion/knowledge-ingestion-runbook.md` - repeatable ingestion workflow.
-- `wiki/ingestion/search-index-diagnostics.md` - notes on current SecondBrain/Drive search behavior and index gaps.
+- [`_meta/wiki-page-schema.md`](_meta/wiki-page-schema.md) — required fields and structure for new substantive knowledge pages; use alongside the core rules in `CLAUDE.md`.
