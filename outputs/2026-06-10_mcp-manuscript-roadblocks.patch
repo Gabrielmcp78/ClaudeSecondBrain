@@ -1,0 +1,77 @@
+*** Begin Patch
+*** Update File: mcp-server/index.js
+@@
+ const MAX_READ_BYTES = Number.parseInt(process.env.SECONDBRAIN_MAX_READ_BYTES || '200000', 10);
+-const MAX_SEARCH_READ_BYTES = Number.parseInt(process.env.WORKSPACE_SEARCH_MAX_READ_BYTES || '500000', 10);
++const MAX_SEARCH_READ_BYTES = Number.parseInt(process.env.WORKSPACE_SEARCH_MAX_READ_BYTES || '2000000', 10);
+ const MAX_WORKSPACE_RESULTS = Number.parseInt(process.env.WORKSPACE_SEARCH_MAX_RESULTS || '50', 10);
+@@
+   secondbrain: ROOT,
+   google_drive: path.join(process.env.HOME, 'Library/CloudStorage/GoogleDrive-gabemcpherson@gmail.com'),
+   development: '/Volumes/Ready500/DEVELOPMENT',
+-  manuscripts: path.join(process.env.HOME, 'Library/CloudStorage/GoogleDrive-gabemcpherson@gmail.com/My Drive/Manuscripts'),
++  manuscripts: path.join(process.env.HOME, 'Library/CloudStorage/GoogleDrive-gabemcpherson@gmail.com/My Drive/Manuscript Masters'),
+ };
+@@
+   server.registerTool(
+     'workspace.read_file',
+@@
+     }
+   );
++
++  server.registerTool(
++    'workspace.read_file_range',
++    {
++      title: 'Read Safe Workspace File Range',
++      description: 'Read a bounded range from a supported text-like file in a configured safe root. Intended for large manuscript exports that exceed full-file read limits.',
++      inputSchema: {
++        root: z.enum(SAFE_ROOT_NAMES).describe(`Safe root to read from: ${SAFE_ROOT_NAMES.join(', ')}`),
++        path: z.string().describe('Relative file path inside the safe root'),
++        start_line: z.number().int().min(1).default(1).describe('1-based first line to return'),
++        line_count: z.number().int().min(1).max(1000).default(120).describe('Maximum number of lines to return'),
++      },
++      outputSchema: {
++        root: z.string(),
++        path: z.string(),
++        start_line: z.number(),
++        end_line: z.number(),
++        total_lines: z.number(),
++        text: z.string(),
++      },
++      annotations: { readOnlyHint: true, openWorldHint: false, destructiveHint: false },
++    },
++    async ({ root, path: filePath, start_line, line_count }) => {
++      const abs = safeWorkspacePath(root, filePath);
++      const stat = await fs.stat(abs);
++      if (!stat.isFile()) {
++        throw new Error(`${filePath} is not a file`);
++      }
++
++      const ext = path.extname(abs).toLowerCase();
++      if (ext === '.docx') {
++        throw new Error('workspace.read_file_range currently supports text-like files only. Use the .txt manuscript export for line-range access.');
++      }
++      if (!isTextPath(abs)) {
++        throw new Error(`${filePath} is not a supported text-like file`);
++      }
++
++      const content = await fs.readFile(abs, 'utf8');
++      const lines = content.split(/\r?\n/);
++      const startIndex = Math.max(0, start_line - 1);
++      const endIndex = Math.min(lines.length, startIndex + line_count);
++      const selected = lines.slice(startIndex, endIndex).join('\n');
++      const structured = {
++        root,
++        path: filePath,
++        start_line,
++        end_line: endIndex,
++        total_lines: lines.length,
++        text: selected,
++      };
++      return textResult(selected, structured);
++    }
++  );
+ 
+   server.registerTool(
+     'workspace.get_file_info',
+*** End Patch

@@ -1,0 +1,1 @@
+Yes. The two JSON files (`Top 20 Agent Profiles.json`, `Top 21-40 agents for string theory.json`) and their duplicates were processed. The compiled data on 40 literary agents is available in the wiki article `craft-fiction/submission-strategy/agent-profiles.md`.

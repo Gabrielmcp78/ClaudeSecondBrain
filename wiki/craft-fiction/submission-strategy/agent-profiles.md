@@ -130,3 +130,57 @@ Three consistent patterns emerge from the full agent set:
 - [Novel Structure](../string-theory/novel-structure.md) — the four-movement structure and tempo markings that differentiate this submission
 - [Characters](../string-theory/characters.md) — David Lang's emotional architecture, which drives the character-first pitches
 - [Themes and Canon](../string-theory/themes-and-canon.md) — the academic suppression and institutional complicity themes referenced by multiple agents
+
+---
+
+## Batch 3 — Literary Speculative / Independent Press Focus
+
+*Added 2026-06-06. Research source: live MSWL, agency websites, QueryTracker, manuscriptwishlist.com. These agents were identified based on the Fall 2026 market intelligence noting Angry Robot and Tachyon as active independent press targets for literary speculative fiction. Publisher note: both Angry Robot (UK-based, distributed through PRH) and Tachyon Publications (San Francisco, agent-only submissions) require agented proposals. The agents below are strong conduits to these imprints as well as to Tor, Orbit, FSG, Doubleday, and Penguin Press.*
+
+### Tier 1
+
+**Chandler Wickers** | Stuart Krichevsky Literary Agency
+Archetype: The Elevated Genre Gatekeeper. Seeks literary and upmarket fiction, story collections, and "elevated genre fiction" — the exact category *String Theory* occupies. Draws to novels with distinct voices, family sagas, protagonists grappling with questions of faith and desire, and setting-as-character. SKLA is known for rigorous literary standards (Stuart Krichevsky himself has four decades of experience and an emphasis on narrative non-fiction and commercial fiction that endures). Columbia Publishing Course background; California native, NYC transplant. *Approach:* The family saga element (three generations of Lang men, each shaped by the same phenomenon) maps cleanly onto her stated interest. Lead with David's grief and the multigenerational inheritance, frame the speculative as "elevated genre." The faith/desire axis applies — what David believes about science functions exactly as belief, and the novel dismantles it accordingly.
+
+**Melissa Danaczko** | Stuart Krichevsky Literary Agency
+Archetype: The Knopf Eye. Joined SKLA after more than a decade as Senior Editor with Knopf Doubleday Publishing Group — she reads and evaluates fiction with an acquiring editor's precision, not just an agent's taste. Seeks high-concept novels with fresh perspective, energetic writing, deep emotional connection, and immersive sense of place. Speculative fiction is explicitly at the top of her fiction wish-list alongside horror and historical fiction. Looks for books "you can get lost in and then when you finally resurface, want to discuss with others" — this is the book-club speculative definition exactly. Her clients have won/been nominated for Pulitzer, Edgar, Shirley Jackson, Lambda. *Approach:* Lead with the high concept (physicist who suppressed his own discovery; solar storm; billions watching) and ground it immediately in the emotional architecture. Her Knopf background means she values prose at the sentence level — the query's voice must earn her confidence before she reads page one. Frame *String Theory* as "book club speculative fiction" in the cover note.
+
+**Sophie Pugh-Sellers** | The Gernert Company
+Archetype: The Speculative-Lit Crossover Agent. Gernert is already on the radar (Chris Parris-Lamb is Tier 2 in Batch 1). Sophie, who joined in 2019, explicitly seeks "commercial and literary fiction, particularly with sci-fi, folk tale, or speculative elements" — a direct description of *String Theory*'s register. Barnard Women's, Gender and Sexuality Studies background gives her a lens on institutional power and suppression that is directly thematically relevant. Being at Gernert means she operates within one of the most literary-minded agencies in the country. *Approach:* Frame the institutional suppression angle prominently — the academic bargain David made, the buried research, the twenty years of professional silence. Her speculative interest is specifically "elements," not genre — confirm this by emphasizing the novel as literary fiction first.
+
+### Tier 2
+
+**Nina Richner** | Howard Morhaim Literary Agency
+Archetype: The Weird Realist. Joined HMLA 2023 after Columbia Publishing Course; represents literary fiction, horror/thriller, magical realism, and "the weird." Drawn to emotionally complex characters, voice-driven novels, family sagas, and "unsettling and strange stories that aim to move the cultural needle." Reference books include *Bunny* (Mona Awad), *All Fours* (Miranda July), *I'm Thinking of Ending Things* (Iain Reid) — all literary fiction with uncanny or destabilizing qualities. Open to queries via QueryManager. *Approach:* The uncanny quality of *String Theory* — watches losing minutes, equations drifting into musical notation, David unable to trust his own perception of time — aligns with her *I'm Thinking of Ending Things* reference. Lead with the psychological dissolution rather than the speculative premise. The multigenerational family saga element (Lang grandfather → Arthur → David → David's son) also directly hits her stated family saga interest.
+
+**Mackenzie Brady Watson** | Stuart Krichevsky Literary Agency
+Archetype: The Idea-Driven Upmarket Agent. Actively seeking "emotionally evocative and voice-driven upmarket and literary fiction with a surprising hook." The surprise hook language is telling — she needs the premise to catch her before the emotional execution carries her. INKLUDED board member; strong equity commitment. NYT bestseller track record. *Approach:* Lead with the hook — the physicist who buried his own discovery now cannot escape it. Her "surprising hook" requirement means the query opening matters more than usual. The scientific/physics angle combined with literary execution will read as unexpected from this agency (primarily known for narrative nonfiction).
+
+**Rach Crawford** | Wolf Literary Services
+Archetype: The Intergenerational Literary Speculative Agent. Based in Australia; represents US and ANZ authors. March 2026 MSWL explicitly lists "sprawling intergenerational stories" and "speculative fiction" — and she categorizes herself as "Upmarket Speculative" in her fiction tags. Draws to "literary and upmarket fiction that flirts with genre" and stories that are "seriously funny" when serious. Open to queries via QueryManager. **Important caveat:** Her MSWL explicitly states she is "a better fit for stories that unfurl on an intimate, 'micro' scale, rather than big, systems novels with lots of complex worldbuilding." *String Theory* is not a systems novel — the speculative element is physically and emotionally intimate (a frequency in one man's body, a lineage in his bloodline). The global stakes exist but are gestural, not foregrounded. This distinction matters; the query as written is defensible. *Approach:* Frame the novel's scale as internal and familial, not as a global event story. The solar storm and billions of viewers exist in the novel; they must remain gestural in the query. Lead with the father-son grief, the multigenerational inheritance, and David's psychological dissolution. Do not mention the solar storm until she has asked for pages.
+
+### Tier 3
+
+**Katherine Odom-Tomchin** | Folio Literary Management
+Audio Rights Director and literary agent. Represents horror, sci-fi, thriller, memoir, and narrative nonfiction — she "connects most with dark literature that makes you re-evaluate your life, priorities, and privilege." Her recent deals include audio originals; audio rights are a strong secondary play for *String Theory* given the novel's sonic subject matter. More genre-focused than Tier 1–2 above; better suited as an Angry Robot/Tachyon placement agent than a Doubleday/FSG one. *Approach:* Frame the novel as literary science fiction with strong audio commercial potential (a physicist's cello performance, sound as the central medium, the 68.48 Hz frequency as the antagonist). If Folio queries go in, she's the right contact over other Folio agents.
+
+**DongWon Song** | Howard Morhaim Literary Agency
+*Currently closed to queries (as of HMLA website, 2026).* Former Orbit editor; represents Arkady Martine (*A Memory Called Empire*, Tor), Amal El-Mohtar (*This is How You Lose the Time War*, Tor), and other literary-adjacent speculative authors. This is the Tor Books pipeline. **Check QueryManager every 60–90 days** for when they reopen. When they do: they are a Tier 1 target. The Arkady Martine connection (literary, political, prize-winning) is the closest analog to *String Theory*'s positioning. *Approach when open:* Lead with voice and the literary speculative register. Reference Arkady Martine and the Tor literary SF space directly in the query note. Emphasize that this is not genre science fiction — it is literary fiction with a speculative premise.
+
+---
+
+## Batch 3 — Publisher Direct Notes (No Agent Required)
+
+*Angry Robot and Tachyon are agent-only for most submissions, but the following notes apply:*
+
+**Angry Robot** runs periodic "Open Door" submission windows (typically once per year) when unagented authors may submit directly. They currently accept unagented submissions from Black authors on a rolling basis. Angry Robot is UK-based, distributed through Penguin Random House, and actively acquires "agile, modern" speculative fiction. Monitor their website and social media for Open Door announcements. For *String Theory*, this is a secondary option — the novel's literary register and word count (96,000) are well within Angry Robot's acquisition range.
+
+**Tachyon Publications** (San Francisco) accepts agent-only submissions via their submissions portal. JABberwocky Literary Agency (Joshua Bilmes, Lisa Rodgers) has placed multiple authors at Tachyon and is an established conduit to the press. If *String Theory* finds a home at Tachyon, it would sit alongside their literary speculative catalog including titles from Kelly Link, Jeffrey Ford, and Ursula K. Le Guin's backlist.
+
+---
+
+## Cross-References
+
+- [Market Intelligence — Fall 2026](market-intelligence-fall-2026.md) — the market context that identified Angry Robot and Tachyon as active independent press targets
+- [Query Letter](query-letter.md) — the base query letter applicable to all agents above, with Cluster modifications
+- [Novel Structure](../string-theory/novel-structure.md) — the musical architecture referenced in Cluster A for musical architecture agents

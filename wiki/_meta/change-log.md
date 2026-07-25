@@ -1,3 +1,66 @@
+## 2026-07-24 — Shakespearience Made a Major Node: Full Live Trello Re-Sync (Claude, Cowork)
+
+Gabriel asked for all detailed Shakespearience knowledge gathered and the project made a major node in the SB. Pulled full card content from all 9 lists on the live Trello board (Big Biz Picture, The Creative Vision, The Tech Guts, Tech Production, Marketing, Curricula, Bonus Content, Group Curricula & Licensing, Ops & Setup) via `get_board_cards`, then reconciled against the existing wiki node.
+
+**Corrected stale facts (both dated 2026-07-22, previously undocumented in the wiki):** Sanity CMS is cut — editorial content now lives in Supabase's `episodes` table via the in-house admin panel. Plausible is cut in favor of the already-paid-for Cloudflare Web Analytics. Password manager is Bitwarden, not 1Password. Email host is Google Workspace, not Fastmail.
+
+**Flagged a real open conflict, not previously surfaced anywhere in the wiki:** Model A (Stephanie's original curriculum-first pricing doc) and Model B (subscription-first, actually seeded in Stripe code) coexist unreconciled — the live Trello card explicitly blocks activating real Stripe products until this is resolved. Added a prominent flag at the top of `architecture.md` and a `_connections.md` entry pointing at the conflict-resolution protocol in `agent-protocol.md`.
+
+**Added previously undocumented content:** the Command Center live-operations dashboard (Trello-reading admin panel with a consent-gated AI advisor layer), the five-state delivery-governance framework (Planned → Code-built → Configured → Verified → Live) now used across every Tech Guts/Ops card, the granular Tech Production pipeline (recording/editing/mastering specs, metadata, release-calendar-via-Trello-Power-Up decision), the Big Biz Picture funding strategy (6 ranked options), the locked 2026-07-23 Google Drive folder structure, the three open Big Biz Picture gaps (SOPs/Role delegation/Timeline), and the locked 2026-07-14 Co-op Multi-Seat QR Licensing decision (previously undocumented anywhere in the wiki).
+
+**Confirmed empty (not a wiki lag — verified against the board itself):** all 7 Creative Vision cards, all 8 Marketing cards, most of Curricula/Bonus Content/Group Curricula & Licensing.
+
+**Files touched:**
+- `wiki/dev-projects/shakespearience/architecture.md` — pricing conflict flag, corrected stack, Command Center, delivery-state framework, new Tech Production and Business Operations sections, Board Status Snapshot, Co-op licensing
+- `wiki/dev-projects/shakespearience/creative-bible.md` — confirmed board-level Creative Vision gap
+- `wiki/dev-projects/shakespearience/ops-playbooks/01-accounts-and-access.md` — rewritten for Bitwarden/Workspace
+- `wiki/dev-projects/shakespearience/ops-playbooks/04-domain-dns-email.md` — rewritten for Workspace
+- `wiki/dev-projects/shakespearience/ops-playbooks/_index.md` — locked-decisions section updated
+- `wiki/decision-records/0005-shakespearience-two-dependency-chains.md` — addendum noting provider names superseded, chain logic unchanged
+- `wiki/_index.md` — Shakespearience entries marked as major node, ADR 0005 pointer updated
+- `wiki/_connections.md` — 4 new manually-curated cross-domain entries
+
+## 2026-07-24 — Raw Inbox Ingestion Audit (Claude, Cowork)
+
+Gabriel requested a full audit of `raw/`, worried the 2026-07-23 `_connections.md` incident meant `_done`-marked files weren't actually ingested. Checked all 163 raw files against change-log entries, wiki citations, and (for unmatched files) direct content via `pdftotext`/`md5sum`.
+
+**Result:** 5 confirmed gaps — `monologues_done.pdf`, `Yup cuz then the lock takes a unified greater mega....pdf`, `claude and gabe cconvo on LOTS_done.pdf`, `Gabriel McPherson_Resume_done.pdf`, `Gm resume Colect_done.pdf` — marked `_done` with no corresponding wiki content anywhere. Also resurfaced a pre-existing self-flagged gap in `agent-profiles.md` (agents 16–20, 34–40 never extracted from source JSON).
+
+Cleared as false positives: ~44 FlowScape ambient dumps (by-design triage, documented in `flowscape-ambient-sessions.md`), two byte-identical duplicate JSON uploads, and `string-theory-chapter-index_done.md` (superseded by the current `novel-structure.md`). Confirmed the 2026-07-23 connections-map loss is unrelated to raw-ingestion state.
+
+**Report:** `outputs/2026-07-24_raw-ingestion-audit.md`. No fixes executed — awaiting Gabriel's go-ahead on the five recommended ingestion actions listed in the report.
+
+## 2026-07-24 — FlowScape July 24 (14:35-15:10) File Organization Ingestion (Gemini)
+
+**wiki/dev-infrastructure/flowscape-ambient-sessions.md** — Appended FlowScape ambient session from 2026-07-24 14:35-15:10 capturing file organization and renaming activity related to Gabriel's transcript archive.
+**wiki/_connections.md** — Added cross-domain link connecting `dev-infrastructure/flowscape-ambient-sessions` and `reference-external/Gabriel McPherson Profile`.
+**wiki/_index.md** — Updated Stats block to reflect the new processed raw files and new ingestion date.
+**raw/flowscape_resolved_2026-07-24_15-10-54.md** → `_done.md`
+**raw/flowscape_session_2026-07-24.md** → `_done.md`
+
+## 2026-07-24 — String Theory Chapter 4 Ingestion (Gemini)
+
+**wiki/craft-fiction/string-theory/chapter-04-the-apartment.md** — New article created from the 8.0 working draft of Chapter 4 ("The Apartment"), detailing the 68.48 Hz aftermath and temporal anomalies.
+**wiki/_connections.md** — Added cross-domain link connecting `craft-fiction/string-theory/chapter-04-the-apartment.md` to `theory-consciousness/` regarding temporal anomalies.
+**wiki/_index.md** — Updated String Theory index and Stats block to reflect the new processed raw file and new article.
+**raw/string-theory-chapter-04-working-tab-check.md** → `_done.md`
+
+## 2026-07-24 — FlowScape July 23-24 Blocking Resolution Ingestion (Gemini)
+
+**wiki/dev-infrastructure/flowscape-ambient-sessions.md** — Appended FlowScape ambient session from 2026-07-24 01:46 capturing a blocking issue with `string-theory-into-the-storm-through-watch-inscription-working-draft.md`. (Noted entries for 2026-07-23 23:31 and 2026-07-24 01:16 were already present but source files were unprocessed).
+**wiki/_connections.md** — Updated cross-domain link connecting `dev-infrastructure/flowscape-ambient-sessions` and `craft-fiction/string-theory` to span through 2026-07-24.
+**wiki/_index.md** — Updated Stats block to reflect the new processed raw files and new ingestion date.
+**raw/flowscape_resolved_2026-07-23_23-31-15.md** → `_done.md`
+**raw/flowscape_resolved_2026-07-24_01-16-19.md** → `_done.md`
+**raw/flowscape_resolved_2026-07-24_01-46-20.md** → `_done.md`
+
+## 2026-07-23 — FlowScape July 23 (19:36) Blocking Resolution Ingestion (Gemini)
+
+**wiki/dev-infrastructure/flowscape-ambient-sessions.md** — Appended FlowScape ambient session from 2026-07-23 19:36 capturing a blocking issue with `main.py` in the fiction-studio-verification-backend and a cross-domain reference to a String Theory Chapter 9 draft.
+**wiki/_connections.md** — Updated cross-domain link connecting `dev-infrastructure/flowscape-ambient-sessions` and `craft-fiction/fiction-studio` to span through 2026-07-23.
+**wiki/_index.md** — Updated Stats block to reflect the new processed raw file and new ingestion date.
+**raw/flowscape_resolved_2026-07-23_19-36-22.md** → `_done.md`
+
 ## 2026-07-23 — _connections.md data-loss incident: root cause fixed, manual content recovered (Claude, Cowork)
 
 Gabriel reported the SecondBrain dashboard's knowledge graph had collapsed to 11 coarse nodes. Root cause: `sbcc/synthesize.py`'s `_refresh_connections()` was calling `CONN_FILE.write_text(...)` unconditionally on every daily 6am run (`com.gabrielmcp.sbcc.synthesis` launchd job), wholesale-replacing `wiki/_connections.md` with only its own ~10-20 coarse project-level embedding bridges and destroying every manually-curated per-article connection in the process.
@@ -251,6 +314,23 @@ Gabriel reported the SecondBrain dashboard's knowledge graph had collapsed to 11
 **wiki/_index.md** — Added NextStage OS to the active projects list and stats updated.
 **wiki/_connections.md** — Linked NextStage OS governance frameworks to dev-infrastructure best practices.
 **raw/NextStage_Comprehensive_Capital_and_Concept_Package_Revised_July_2026.zip** → `_done`
+
+## 2026-07-23 (later) — Fixed dashboard "Last Ingest" date bug + stale graph note (Claude, Cowork)
+
+Gabriel noticed the Command & Control dashboard (localhost:10888) showed 103 articles / 51 connections / Last Ingest 2026-07-21, contradicting the live wiki state (144 files, 54 documented connections, ingest activity as recent as today 13:26–13:29). Traced the real cause in `dashboard/server/parsers.ts`'s `parseSystemStats()`:
+- **Articles (103):** correct behavior, not a bug — it counts links actually present in `wiki/_index.md`, not raw files on disk. The gap to 144 real files matches this morning's own health check flagging that 4 domain folders haven't been individually orphan-checked; some real files likely aren't indexed yet.
+- **Connections (51 vs 54):** minor regex/formatting mismatch on a few `_connections.md` entries, not investigated further — low priority.
+- **Last Ingest (2026-07-21) — genuine bug, fixed:** the code took `changeLogContent.match(/## (\d{4}-\d{2}-\d{2})/g)` and used the *last regex match in raw file order* as "most recent," assuming change-log.md is strictly oldest-at-bottom. It isn't — most sessions (including this one) prepend new entries near the top. Confirmed live: the file's actual bottom-most line was a 2026-07-21 entry even though multiple 2026-07-22 and 2026-07-23 entries existed earlier in the file. Fixed to take the actual maximum date across all matches instead of the last one in file order. Rebuilt (`pnpm run build:server`) and restarted the live dashboard server (killed PID 65194; the parent native app — `com.gabrielmcp.sbbrain.dashboard`, an Xcode Debug build — auto-respawned it as PID 29053 running the new bundle within seconds, no manual relaunch needed).
+
+Dead end worth recording so it isn't re-chased: initially suspected `graphify-out/` (a separate third-party code-graph tool's cache, last built 2026-07-17) was the dashboard's data source and ran `graphify update . --force` to refresh it (1773 nodes, 3002 edges, 204 communities, backed up prior curated labels first — harmless, but confirmed afterward via `grep` on `dashboard/dist-server/index.cjs` that the dashboard doesn't read `graphify-out/` at all). That update is fine to leave in place but did not fix, and was never the cause of, the reported discrepancy.
+
+## 2026-07-23 — Full-system sweep of SecondBrain infrastructure (Claude, Cowork)
+
+Gabriel asked for a look at "the entire system" after the Jul 18 popup-loop saga. Cross-referenced against the autonomous health check already run this morning (`outputs/2026-07-23_health-check.md`, 04:03, confirmed the ingest loop clean through Jul 21-22) and added live process-level checks that report couldn't do from inside a session.
+
+**New finding, fixed:** `com.gabrielmcp.secondbrain.ingest.plist` — a legacy duplicate of `ingest-watcher`, dated 2026-06-02, never decommissioned when `ingest-watcher` was created/fixed on 2026-07-18. Same `WatchPaths` (`raw/`), same script, but still carrying the pre-fix `StandardOutPath`/`StandardErrorPath` pointed at the external volume — last recorded exit status 78 (the exact EX_CONFIG bug fixed on Jul 18). Two jobs watching the same directory meant every `raw/` change could fire both concurrently. Booted out and renamed to `com.gabrielmcp.secondbrain.ingest.plist.disabled-2026-07-18-legacy-duplicate` (kept on disk, not deleted, for inspection).
+**Confirmed healthy:** no lingering agy/ingest/sync/rclone processes; today's ingest.log shows one clean 3-minute run (13:26–13:29, no retries, no errors); today's sync.log has zero ERROR lines; gdrive rclone auth (the invalid_grant issue referenced in `sync.sh`'s own comments) is confirmed working — last failure logged was 2026-07-18 11:06, `rclone about gdrive:` returns clean data now; raw/ scanned for other instances of the done/duplicate pattern — none found; `reconcile_done_files()` leg confirmed present and correct in both the repo copy and the cached runner copy.
+**Not touched, flagged only (Gabriel's call):** `sync.log` has grown to 9.0MB with no rotation configured — not urgent, worth a `--max-age` trim or logrotate at some point. `mcp-server` process (PID stable since before this session) hasn't logged a fresh Drive call since this morning's last invalid_grant at 11:06 — token is proven valid at the CLI level, but the long-lived mcp-server process itself hasn't exercised that code path since, so it's unverified whether it needs a restart to shed a stale failure state. The five stuck `outputs_review.py` candidates and two stale articles (`novel-structure.md`, `chapter-summaries.md`) from this morning's health check remain open — no new action taken pending Gabriel's review per the report's own recommendation. ChatGPT's inbox note about `NODE_ENV=production` being set globally in Gabriel's shell (silently skipping devDependencies on every `npm install` across all dev projects) is still open and outside SecondBrain's scope — flagged here for visibility only.
 
 ## 2026-07-18 (evening) — Root-caused and fixed the agy permission-popup loop (Claude, Cowork)
 

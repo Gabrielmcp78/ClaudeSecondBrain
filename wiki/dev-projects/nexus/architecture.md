@@ -2,6 +2,9 @@
 
 *Nexus is Gabriel McPherson's proposed software architecture paradigm for eliminating API fragility, dependency hell, and conventional attack surfaces through AI-driven semantic transformation and an environmentally enforced security model. The full technical proposal and code snippets are documented in Nexus_collector1.md.* (source: Nexus_collector1.md)
 
+<!-- kb-status: level=planning | phase="Research / Technical Proposal" | updated=2026-06-10 -->
+**Status:** 🟣 Research / Planning — technical proposal + phased roadmap documented, feasibility challenges open
+
 ---
 
 ## Problem Statement

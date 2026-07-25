@@ -534,10 +534,22 @@ export function parseSystemStats(sbRoot: string): SystemStats {
   const connectionsContent = readFile(path.join(sbRoot, 'wiki/_connections.md'));
   const connectionCount = (connectionsContent.match(/^#{2,3}\s+\[?.+?\]?\s+↔\s+\[?.+?\]?\s*$/gm) || []).length;
 
-  // Last ingest date from change-log
-  const lastIngestMatch = changeLogContent.match(/## (\d{4}-\d{2}-\d{2})/g);
-  const lastIngest = lastIngestMatch
-    ? lastIngestMatch[lastIngestMatch.length - 1].replace('## ', '')
+  // Last ingest date from change-log.
+  //
+  // change-log.md is NOT reliably oldest-at-bottom — different agents/
+  // sessions prepend new entries near the top rather than appending at the
+  // end, so the file's raw top-to-bottom order does not track chronology.
+  // Taking the last regex match in file order (the old approach) picked up
+  // whatever date header happened to be physically closest to the bottom,
+  // which is coincidental, not "most recent." Confirmed live 2026-07-23:
+  // the file's true last line was a 2026-07-21 entry even though multiple
+  // 2026-07-22 and 2026-07-23 entries existed earlier in the file. Fixed by
+  // parsing every date header found and taking the actual maximum.
+  const lastIngestMatches = changeLogContent.match(/## (\d{4}-\d{2}-\d{2})/g) || [];
+  const lastIngest = lastIngestMatches.length
+    ? lastIngestMatches
+        .map(m => m.replace('## ', ''))
+        .reduce((latest, current) => (current > latest ? current : latest))
     : '—';
 
   return { articleCount, rawQueueSize, processedCount, connectionCount, lastIngest };

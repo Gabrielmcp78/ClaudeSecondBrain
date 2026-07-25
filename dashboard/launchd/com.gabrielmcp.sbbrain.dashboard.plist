@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.gabrielmcp.sbbrain.dashboard</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/sh</string>
+        <string>-c</string>
+        <string>exec /opt/homebrew/bin/node /Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/dashboard/dist-server/index.cjs</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/dashboard</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>NODE_ENV</key>
+        <string>production</string>
+        <key>PORT</key>
+        <string>10888</string>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <dict>
+        <key>SuccessfulExit</key>
+        <false/>
+    </dict>
+
+    <key>ThrottleInterval</key>
+    <integer>10</integer>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/sbbrain-dashboard.log</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/sbbrain-dashboard.error.log</string>
+</dict>
+</plist>

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "claude",
+    "label": "Claude",
+    "color": "#f97316",
+    "kind": "native",
+    "focusTarget": "claude-app://focus",
+    "active": true,
+    "createdAt": "2026-07-07T21:29:50.472Z",
+    "createdBy": "system"
+  },
+  {
+    "id": "chatgpt",
+    "label": "ChatGPT",
+    "color": "#10b981",
+    "kind": "web",
+    "focusTarget": "https://chat.openai.com",
+    "active": true,
+    "createdAt": "2026-07-07T21:29:50.472Z",
+    "createdBy": "system"
+  },
+  {
+    "id": "gemini",
+    "label": "Gemini",
+    "color": "#6366f1",
+    "kind": "web",
+    "focusTarget": "https://gemini.google.com",
+    "active": true,
+    "createdAt": "2026-07-07T21:29:50.472Z",
+    "createdBy": "system"
+  }
+]

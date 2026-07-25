@@ -1,0 +1,1392 @@
+{
+  "check-version.js": {
+    "mtime": 1780933065.0,
+    "ast_hash": "9c7040f1542086fc82a5cc705629a7d9",
+    "semantic_hash": "9c7040f1542086fc82a5cc705629a7d9"
+  },
+  "dashboard-native/SecondBrainDashboard/AppDelegate.swift": {
+    "mtime": 1781134580.0,
+    "ast_hash": "8e748c8bf21f6d82c4e4ee097edd9195",
+    "semantic_hash": "8e748c8bf21f6d82c4e4ee097edd9195"
+  },
+  "dashboard-native/SecondBrainDashboard/Assets.xcassets/AppIcon.appiconset/Contents.json": {
+    "mtime": 1781134659.0,
+    "ast_hash": "7db1baec9057259587fba64e9c187fc8",
+    "semantic_hash": "7db1baec9057259587fba64e9c187fc8"
+  },
+  "dashboard-native/SecondBrainDashboard/Assets.xcassets/Contents.json": {
+    "mtime": 1781134654.0,
+    "ast_hash": "9deb2ada1cc834bbebf8bbad9c8978a1",
+    "semantic_hash": "9deb2ada1cc834bbebf8bbad9c8978a1"
+  },
+  "dashboard-native/SecondBrainDashboard/SecondBrainApp.swift": {
+    "mtime": 1781134565.0,
+    "ast_hash": "ae5dc93552e266814bd367dab30a920c",
+    "semantic_hash": "ae5dc93552e266814bd367dab30a920c"
+  },
+  "dashboard-native/SecondBrainDashboard/WebViewController.swift": {
+    "mtime": 1781134615.0,
+    "ast_hash": "3b63ae9f5b4e308b808eaaa37324438c",
+    "semantic_hash": "3b63ae9f5b4e308b808eaaa37324438c"
+  },
+  "dashboard/package.json": {
+    "mtime": 1783459163.0,
+    "ast_hash": "a5c64b1243e79b841ccf51d6fc59e9c5",
+    "semantic_hash": "a5c64b1243e79b841ccf51d6fc59e9c5"
+  },
+  "dashboard/server/agentRegistry.ts": {
+    "mtime": 1783458509.0,
+    "ast_hash": "1dde6ffcf4e5f783e77d803c295bb17d",
+    "semantic_hash": "1dde6ffcf4e5f783e77d803c295bb17d"
+  },
+  "dashboard/server/auth.ts": {
+    "mtime": 1783458481.0,
+    "ast_hash": "509dbd24cf755cb4e7669d719f1f7eac",
+    "semantic_hash": "509dbd24cf755cb4e7669d719f1f7eac"
+  },
+  "dashboard/server/index.ts": {
+    "mtime": 1784238856.0,
+    "ast_hash": "de9686e79e6f8957aa2f2d9b770ad3ca",
+    "semantic_hash": "de9686e79e6f8957aa2f2d9b770ad3ca"
+  },
+  "dashboard/server/parsers.ts": {
+    "mtime": 1784238841.0,
+    "ast_hash": "c33cab789660efa79c79df361427b97b",
+    "semantic_hash": "c33cab789660efa79c79df361427b97b"
+  },
+  "dashboard/server/permissions.ts": {
+    "mtime": 1783458387.0,
+    "ast_hash": "81eb9d312273d16c1ad4564c111108a8",
+    "semantic_hash": "81eb9d312273d16c1ad4564c111108a8"
+  },
+  "dashboard/server/store.ts": {
+    "mtime": 1783458396.0,
+    "ast_hash": "08bb76f0a6cefbc76d7693797d0dd59b",
+    "semantic_hash": "08bb76f0a6cefbc76d7693797d0dd59b"
+  },
+  "dashboard/src/App.tsx": {
+    "mtime": 1784238918.0,
+    "ast_hash": "de0f8d8c7ca65c00676a57de77c112a7",
+    "semantic_hash": "de0f8d8c7ca65c00676a57de77c112a7"
+  },
+  "dashboard/src/components/AgentHub.tsx": {
+    "mtime": 1784239088.0,
+    "ast_hash": "e968eff6036d116913f7155e5bae31ce",
+    "semantic_hash": "e968eff6036d116913f7155e5bae31ce"
+  },
+  "dashboard/src/components/CommandRail.tsx": {
+    "mtime": 1781134450.0,
+    "ast_hash": "66fd56abc4e5546c152f70bea5e72a4a",
+    "semantic_hash": "66fd56abc4e5546c152f70bea5e72a4a"
+  },
+  "dashboard/src/components/InviteRedeem.tsx": {
+    "mtime": 1783458721.0,
+    "ast_hash": "4e1a60995ef5b3ed9b7dbbb83859b15c",
+    "semantic_hash": "4e1a60995ef5b3ed9b7dbbb83859b15c"
+  },
+  "dashboard/src/components/Login.tsx": {
+    "mtime": 1783458695.0,
+    "ast_hash": "50a62a508b12f4ee7a85ed165e8fea4a",
+    "semantic_hash": "50a62a508b12f4ee7a85ed165e8fea4a"
+  },
+  "dashboard/src/components/NetworkGraph.tsx": {
+    "mtime": 1783465570.0,
+    "ast_hash": "c50448067b597ecc150106aaa88ba863",
+    "semantic_hash": "c50448067b597ecc150106aaa88ba863"
+  },
+  "dashboard/src/components/NetworkSidebar.tsx": {
+    "mtime": 1783465510.0,
+    "ast_hash": "f7eec3655e50bc5a400a7769e148b5d3",
+    "semantic_hash": "f7eec3655e50bc5a400a7769e148b5d3"
+  },
+  "dashboard/src/components/SetupHub.tsx": {
+    "mtime": 1783458850.0,
+    "ast_hash": "4e04f06eeb8a95c302393a5e8f58eb1b",
+    "semantic_hash": "4e04f06eeb8a95c302393a5e8f58eb1b"
+  },
+  "dashboard/src/components/SystemPulse.tsx": {
+    "mtime": 1784238914.0,
+    "ast_hash": "335e4c861d2995917bd91b778ac155e0",
+    "semantic_hash": "335e4c861d2995917bd91b778ac155e0"
+  },
+  "dashboard/src/components/TaskBoard.tsx": {
+    "mtime": 1781134481.0,
+    "ast_hash": "40b528ec6f308c06879ffdfce19987cf",
+    "semantic_hash": "40b528ec6f308c06879ffdfce19987cf"
+  },
+  "dashboard/src/components/setup/AgentsPanel.tsx": {
+    "mtime": 1783458761.0,
+    "ast_hash": "c99ef49291ba44a4ccb91eaa2ec75899",
+    "semantic_hash": "c99ef49291ba44a4ccb91eaa2ec75899"
+  },
+  "dashboard/src/components/setup/MembersPanel.tsx": {
+    "mtime": 1783458811.0,
+    "ast_hash": "c89a72296eeccb2301bb38bc520ecf85",
+    "semantic_hash": "c89a72296eeccb2301bb38bc520ecf85"
+  },
+  "dashboard/src/components/setup/RolesPanel.tsx": {
+    "mtime": 1783458837.0,
+    "ast_hash": "fb23fe85ea1c3b9cbb6d1bb603c6e8cc",
+    "semantic_hash": "fb23fe85ea1c3b9cbb6d1bb603c6e8cc"
+  },
+  "dashboard/src/context/AuthContext.tsx": {
+    "mtime": 1783458679.0,
+    "ast_hash": "8d1e3156ae180220dccc9091ddc41ed5",
+    "semantic_hash": "8d1e3156ae180220dccc9091ddc41ed5"
+  },
+  "dashboard/src/lib/api.ts": {
+    "mtime": 1783458666.0,
+    "ast_hash": "7cb50b30ed0c4e105c820d28c91357f0",
+    "semantic_hash": "7cb50b30ed0c4e105c820d28c91357f0"
+  },
+  "dashboard/src/main.tsx": {
+    "mtime": 1781129272.0,
+    "ast_hash": "e7f0b28d6fafc62b3bcdb6e3b779ed6a",
+    "semantic_hash": "e7f0b28d6fafc62b3bcdb6e3b779ed6a"
+  },
+  "dashboard/src/types.ts": {
+    "mtime": 1784238864.0,
+    "ast_hash": "cfe94017ed3e58a34bad9ab2a9699e69",
+    "semantic_hash": "cfe94017ed3e58a34bad9ab2a9699e69"
+  },
+  "dashboard/tsconfig.json": {
+    "mtime": 1781129186.0,
+    "ast_hash": "5d53f87e6ead1de39cea790ee56fd8bf",
+    "semantic_hash": "5d53f87e6ead1de39cea790ee56fd8bf"
+  },
+  "dashboard/vite.config.ts": {
+    "mtime": 1781129188.0,
+    "ast_hash": "3d58452c1dc5baf73b54b1be98eea5a3",
+    "semantic_hash": "3d58452c1dc5baf73b54b1be98eea5a3"
+  },
+  "ingest.sh": {
+    "mtime": 1780731383.0,
+    "ast_hash": "cde92d8f7575aa2620b56e9b3eb8b698",
+    "semantic_hash": "cde92d8f7575aa2620b56e9b3eb8b698"
+  },
+  "mcp-server/index.js": {
+    "mtime": 1783552810.0,
+    "ast_hash": "897f734b795a602b66bc248419febe6a",
+    "semantic_hash": "897f734b795a602b66bc248419febe6a"
+  },
+  "neo4j_sync_bridge.py": {
+    "mtime": 1780760300.0,
+    "ast_hash": "89c22e65fdde69ef9c15b1a35fb11b33",
+    "semantic_hash": "89c22e65fdde69ef9c15b1a35fb11b33"
+  },
+  "package.json": {
+    "mtime": 1780908459.0,
+    "ast_hash": "9d36119b41d8f56aba667bb0d4990d8b",
+    "semantic_hash": "9d36119b41d8f56aba667bb0d4990d8b"
+  },
+  "raw/Harmonic_Resonance_SDK_PRD_done.json": {
+    "mtime": 1751914359.0,
+    "ast_hash": "a5909d9bd6df09f2bcce11b2a2b8a035",
+    "semantic_hash": "a5909d9bd6df09f2bcce11b2a2b8a035"
+  },
+  "raw/Top 20 Agent Profiles (1)_done.json": {
+    "mtime": 1774944216.0,
+    "ast_hash": "666355b0516cbc6b56460afeef46a713",
+    "semantic_hash": "666355b0516cbc6b56460afeef46a713"
+  },
+  "raw/Top 20 Agent Profiles_done.json": {
+    "mtime": 1773274190.0,
+    "ast_hash": "666355b0516cbc6b56460afeef46a713",
+    "semantic_hash": "666355b0516cbc6b56460afeef46a713"
+  },
+  "raw/Top 21-40 agents for string theory (1)_done.json": {
+    "mtime": 1774944373.0,
+    "ast_hash": "abb8f0f19dfe2b98863036b44e37a7f5",
+    "semantic_hash": "abb8f0f19dfe2b98863036b44e37a7f5"
+  },
+  "raw/Top 21-40 agents for string theory_done.json": {
+    "mtime": 1773275042.0,
+    "ast_hash": "abb8f0f19dfe2b98863036b44e37a7f5",
+    "semantic_hash": "abb8f0f19dfe2b98863036b44e37a7f5"
+  },
+  "scripts/mail_carrier_loop.py": {
+    "mtime": 1783611299.0,
+    "ast_hash": "3127d7d2123cc0ed69ec501a3d848d99",
+    "semantic_hash": "3127d7d2123cc0ed69ec501a3d848d99"
+  },
+  "scripts/notify_format.py": {
+    "mtime": 1783613778.0,
+    "ast_hash": "3a04d99fc870d67a07c9324677d8b969",
+    "semantic_hash": "3a04d99fc870d67a07c9324677d8b969"
+  },
+  "scripts/outputs_review.py": {
+    "mtime": 1784320421.0,
+    "ast_hash": "eb6a7569ea0f51e53d5c20e693407d5f",
+    "semantic_hash": "eb6a7569ea0f51e53d5c20e693407d5f"
+  },
+  "startup-kit.sh": {
+    "mtime": 1780669607.0,
+    "ast_hash": "cfecf35e17614bad6c77d7d49d5eaed8",
+    "semantic_hash": "cfecf35e17614bad6c77d7d49d5eaed8"
+  },
+  "sync.sh": {
+    "mtime": 1780667281.0,
+    "ast_hash": "0a66ef6d68cfb9f4fb385b370f5100d4",
+    "semantic_hash": "0a66ef6d68cfb9f4fb385b370f5100d4"
+  },
+  "test-server.js": {
+    "mtime": 1780932717.0,
+    "ast_hash": "4fdad8549c44bc74614583e43dfea26b",
+    "semantic_hash": "4fdad8549c44bc74614583e43dfea26b"
+  },
+  "wiki/_meta/agents.json": {
+    "mtime": 1784240382.0,
+    "ast_hash": "b84e44a1770ea9372a7d9dd0d6e68f7f",
+    "semantic_hash": "b84e44a1770ea9372a7d9dd0d6e68f7f"
+  },
+  "wiki/_meta/mail-carrier-ledger.json": {
+    "mtime": 1784221561.0,
+    "ast_hash": "d67f6660cad2c0b12771aed2521ae69d",
+    "semantic_hash": "d67f6660cad2c0b12771aed2521ae69d"
+  },
+  "wiki/_meta/roles.json": {
+    "mtime": 1783459790.0,
+    "ast_hash": "f795e0582721ffda0199acb1137a2621",
+    "semantic_hash": "f795e0582721ffda0199acb1137a2621"
+  },
+  "CHATGPT_SYSTEM_PROMPT.md": {
+    "mtime": 1781167898.0,
+    "ast_hash": "8bb262793cab734c300028c145c2f104",
+    "semantic_hash": "8bb262793cab734c300028c145c2f104"
+  },
+  "CLAUDE.md": {
+    "mtime": 1784320363.0,
+    "ast_hash": "16133f8813c3af72c7b6f822fe186e4e",
+    "semantic_hash": "16133f8813c3af72c7b6f822fe186e4e"
+  },
+  "GEMINI_SYSTEM_PROMPT.md": {
+    "mtime": 1781150264.0,
+    "ast_hash": "ae6d74ffb64e342c24854dcca4bedf4d",
+    "semantic_hash": "ae6d74ffb64e342c24854dcca4bedf4d"
+  },
+  "Gemini.md": {
+    "mtime": 1784241014.0,
+    "ast_hash": "894ec46eb3fbb9c0f7575e7d8192372d",
+    "semantic_hash": "894ec46eb3fbb9c0f7575e7d8192372d"
+  },
+  "SYNC_BRIDGE_README.md": {
+    "mtime": 1780432418.0,
+    "ast_hash": "f796f74d36b7f9f4571f51e50c745baa",
+    "semantic_hash": "f796f74d36b7f9f4571f51e50c745baa"
+  },
+  "dashboard-native/README.md": {
+    "mtime": 1781134676.0,
+    "ast_hash": "d441a43b3c8b88bce78d172497b0bb0e",
+    "semantic_hash": "d441a43b3c8b88bce78d172497b0bb0e"
+  },
+  "dashboard/README.md": {
+    "mtime": 1783459211.0,
+    "ast_hash": "d5fb637c8ec3b13c7353cf04288c5134",
+    "semantic_hash": "d5fb637c8ec3b13c7353cf04288c5134"
+  },
+  "dashboard/index.html": {
+    "mtime": 1781129190.0,
+    "ast_hash": "1490408381fcc6ff97142e2c23414fc7",
+    "semantic_hash": "1490408381fcc6ff97142e2c23414fc7"
+  },
+  "handoff/2026-06-05_06-50_claude.md": {
+    "mtime": 1780670400.0,
+    "ast_hash": "6cf9e6bb4c6e5f892c83fe0b7c80aa11",
+    "semantic_hash": "6cf9e6bb4c6e5f892c83fe0b7c80aa11"
+  },
+  "handoff/2026-06-08_02-37_gemini.md": {
+    "mtime": 1780911440.0,
+    "ast_hash": "c7e759b716f4493abfd4b971958e0e49",
+    "semantic_hash": "c7e759b716f4493abfd4b971958e0e49"
+  },
+  "handoff/2026-06-08_09-15_gemini.md": {
+    "mtime": 1780937457.0,
+    "ast_hash": "794958dda4c7972c01a0523c4970a230",
+    "semantic_hash": "794958dda4c7972c01a0523c4970a230"
+  },
+  "handoff/2026-06-10_14-30_claude.md": {
+    "mtime": 1781127205.0,
+    "ast_hash": "ab90d9e421cfeb36a6f204b30766a68f",
+    "semantic_hash": "ab90d9e421cfeb36a6f204b30766a68f"
+  },
+  "handoff/HANDOFF_PROTOCOL.md": {
+    "mtime": 1780670375.0,
+    "ast_hash": "b1851f740e6ecabd3a1118584a4e299a",
+    "semantic_hash": "b1851f740e6ecabd3a1118584a4e299a"
+  },
+  "mcp-server/README.md": {
+    "mtime": 1781150889.0,
+    "ast_hash": "b2d2f763c596db8b67ec7adbd7291027",
+    "semantic_hash": "b2d2f763c596db8b67ec7adbd7291027"
+  },
+  "outputs/2026-06-02_ch1-movement-I-clean-pass.md": {
+    "mtime": 1780411427.0,
+    "ast_hash": "b7b386713de48def740c048ed6f27d2a",
+    "semantic_hash": "b7b386713de48def740c048ed6f27d2a"
+  },
+  "outputs/2026-06-02_ch1-movement-I-singlespaced.md": {
+    "mtime": 1780411870.0,
+    "ast_hash": "86da6d62c6e45e1586c64cc8fccea233",
+    "semantic_hash": "86da6d62c6e45e1586c64cc8fccea233"
+  },
+  "outputs/2026-06-02_neo4j-sync.md": {
+    "mtime": 1780434448.0,
+    "ast_hash": "919b6a073968bbcea55d5d719154d474",
+    "semantic_hash": "919b6a073968bbcea55d5d719154d474"
+  },
+  "outputs/2026-06-05_session-infrastructure-buildout.md": {
+    "mtime": 1780654286.0,
+    "ast_hash": "c02782fe0cf34f75cf9dc6e34c2841fe",
+    "semantic_hash": "c02782fe0cf34f75cf9dc6e34c2841fe"
+  },
+  "outputs/2026-06-06_agent-profile-ingestion-status.md": {
+    "mtime": 1780732027.0,
+    "ast_hash": "fa6dbeda8978ca1804c4207f747ce29b",
+    "semantic_hash": "fa6dbeda8978ca1804c4207f747ce29b"
+  },
+  "outputs/2026-06-06_librarian-test-response.md": {
+    "mtime": 1780731852.0,
+    "ast_hash": "6bc138e2bfef352ba2fd027f6bd0a7a1",
+    "semantic_hash": "6bc138e2bfef352ba2fd027f6bd0a7a1"
+  },
+  "outputs/2026-06-06_string-theory-inciting-incident.md": {
+    "mtime": 1780756690.0,
+    "ast_hash": "c40226df6c2e50983dfec332aa61fb75",
+    "semantic_hash": "c40226df6c2e50983dfec332aa61fb75"
+  },
+  "outputs/2026-06-08_agentic-autonomous-comms-architecture.md": {
+    "mtime": 1780955588.0,
+    "ast_hash": "7738b73258510c10b28d49a336e299f5",
+    "semantic_hash": "7738b73258510c10b28d49a336e299f5"
+  },
+  "outputs/2026-06-08_gpt-architecture-evaluation.md": {
+    "mtime": 1780935332.0,
+    "ast_hash": "7783148ae3896752a96b1bf6c34b231e",
+    "semantic_hash": "7783148ae3896752a96b1bf6c34b231e"
+  },
+  "outputs/2026-06-08_project-codebases-analysis.md": {
+    "mtime": 1780937694.0,
+    "ast_hash": "d70667f94361243db75bb6dd0bb58fb5",
+    "semantic_hash": "d70667f94361243db75bb6dd0bb58fb5"
+  },
+  "outputs/2026-07-07_system-work-shakespearience-update.md": {
+    "mtime": 1783485147.0,
+    "ast_hash": "66143ee98523db4a452554f95d872ee5",
+    "semantic_hash": "66143ee98523db4a452554f95d872ee5"
+  },
+  "outputs/2026-07-08_second-brain-structural-audit.md": {
+    "mtime": 1783547691.0,
+    "ast_hash": "5272d22fad2bedc40b1ed6bec61de2f7",
+    "semantic_hash": "5272d22fad2bedc40b1ed6bec61de2f7"
+  },
+  "outputs/2026-07-08_shakespearience-full-integration.md": {
+    "mtime": 1783489124.0,
+    "ast_hash": "9b469f3fccbea487364a240bf5de59fd",
+    "semantic_hash": "9b469f3fccbea487364a240bf5de59fd"
+  },
+  "outputs/2026-07-12_flowscape-hang-diagnosis.md": {
+    "mtime": 1783888302.0,
+    "ast_hash": "4258c5ecad31ae5f73f9d274ab1bed80",
+    "semantic_hash": "4258c5ecad31ae5f73f9d274ab1bed80"
+  },
+  "outputs/2026-07-13_shakespearience-account-and-email-strategy.md": {
+    "mtime": 1783982051.0,
+    "ast_hash": "dc129640603420e35807c94f7c86aab5",
+    "semantic_hash": "dc129640603420e35807c94f7c86aab5"
+  },
+  "outputs/2026-07-13_shakespearience-tech-buildout-status.md": {
+    "mtime": 1783979977.0,
+    "ast_hash": "1b94bfe97621a6d8ca6b12ec6bde7b3d",
+    "semantic_hash": "1b94bfe97621a6d8ca6b12ec6bde7b3d"
+  },
+  "outputs/2026-07-14_ops-sequencing-cloudflare.md": {
+    "mtime": 1784061502.0,
+    "ast_hash": "ab774b3a0f19e40cacca9908d62a89bc",
+    "semantic_hash": "ab774b3a0f19e40cacca9908d62a89bc"
+  },
+  "outputs/2026-07-16_chapter-13-fiction-studio-diagnosis.md": {
+    "mtime": 1784223658.0,
+    "ast_hash": "2fc14a8572948bee83dca54173a60b22",
+    "semantic_hash": "2fc14a8572948bee83dca54173a60b22"
+  },
+  "outputs/2026-07-16_shakespearience-fiscal-sponsorship.md": {
+    "mtime": 1784258665.0,
+    "ast_hash": "bb440c683a1b094b169dea0852ca2d5a",
+    "semantic_hash": "bb440c683a1b094b169dea0852ca2d5a"
+  },
+  "outputs/2026-07-16_shakespearience-platform-audit.md": {
+    "mtime": 1784221676.0,
+    "ast_hash": "c558bdf0f1b4cb45ecbd49b36b0bdb65",
+    "semantic_hash": "c558bdf0f1b4cb45ecbd49b36b0bdb65"
+  },
+  "outputs/README.md": {
+    "mtime": 1780402067.0,
+    "ast_hash": "677a3bc50e8b969198ec127233a157d3",
+    "semantic_hash": "677a3bc50e8b969198ec127233a157d3"
+  },
+  "raw/ **The Resonant Path YouTube Series_done.md": {
+    "mtime": 1748648700.0,
+    "ast_hash": "0cd534fb6251fabf17f05cdaadeda69a",
+    "semantic_hash": "0cd534fb6251fabf17f05cdaadeda69a"
+  },
+  "raw/A FORMAL RESONANCE MODEL FOR STRING THEORY_done.md": {
+    "mtime": 1769813971.0,
+    "ast_hash": "54fb06d0686d84f6245dc1f6e5834a87",
+    "semantic_hash": "54fb06d0686d84f6245dc1f6e5834a87"
+  },
+  "raw/A Letter to Humanity_Claude_ChatGPT_done.md": {
+    "mtime": 1749718061.0,
+    "ast_hash": "6d99124013172584e506894dfc046535",
+    "semantic_hash": "6d99124013172584e506894dfc046535"
+  },
+  "raw/A Letter to Humanity_Claude_Opus48_2026_done.md": {
+    "mtime": 1780864723.0,
+    "ast_hash": "079830957a4fc1742c0084426a65a155",
+    "semantic_hash": "079830957a4fc1742c0084426a65a155"
+  },
+  "raw/Best Practice Briefing_Code Development_done.md": {
+    "mtime": 1741783940.0,
+    "ast_hash": "d867356ebfb305f3b1952b993f734aef",
+    "semantic_hash": "d867356ebfb305f3b1952b993f734aef"
+  },
+  "raw/Burnthrough_Draft_2.2_done.txt": {
+    "mtime": 1776188909.0,
+    "ast_hash": "03ce2e28aea28b340834b39ec4f7b846",
+    "semantic_hash": "03ce2e28aea28b340834b39ec4f7b846"
+  },
+  "raw/Digital_breathing_architecture_done.md": {
+    "mtime": 1751913077.0,
+    "ast_hash": "8afcf73abbe556775599730aeaeeb4fb",
+    "semantic_hash": "8afcf73abbe556775599730aeaeeb4fb"
+  },
+  "raw/GHRM-LHC Monograph: Validation of the Fundamental \u03bb5D Coupling Constant via High-Coherence Resonance_done.md": {
+    "mtime": 1761607738.0,
+    "ast_hash": "b52f27ac388740ebe958e90c62f97a47",
+    "semantic_hash": "b52f27ac388740ebe958e90c62f97a47"
+  },
+  "raw/HARMONIC_FOUNDATIONS_done.md": {
+    "mtime": 1764183411.0,
+    "ast_hash": "d1fe82af2c450224d4d4c49209cc6d6e",
+    "semantic_hash": "d1fe82af2c450224d4d4c49209cc6d6e"
+  },
+  "raw/HRIF_AI_Specific_Protocol_done.md": {
+    "mtime": 1751916752.0,
+    "ast_hash": "40c1d16be798cef0510ee479ec82440a",
+    "semantic_hash": "40c1d16be798cef0510ee479ec82440a"
+  },
+  "raw/Nexus_collector1_done.md": {
+    "mtime": 1745344048.0,
+    "ast_hash": "064b447d9c5871b0d38316c0e415900d",
+    "semantic_hash": "064b447d9c5871b0d38316c0e415900d"
+  },
+  "raw/PHYSICS_APPENDIX_B_TOY_MODEL_done.md": {
+    "mtime": 1764115722.0,
+    "ast_hash": "d65952374c2cc0610935480929ffc0a7",
+    "semantic_hash": "d65952374c2cc0610935480929ffc0a7"
+  },
+  "raw/PHYSICS_COMPLETE_SUMMARY_done.md": {
+    "mtime": 1764115976.0,
+    "ast_hash": "d1131311f5a00666829ff800f1cb5b8f",
+    "semantic_hash": "d1131311f5a00666829ff800f1cb5b8f"
+  },
+  "raw/PHYSICS_FIGURES_DIAGRAMS_done.md": {
+    "mtime": 1764115836.0,
+    "ast_hash": "401f41c30628d22adee38e3761358f8d",
+    "semantic_hash": "401f41c30628d22adee38e3761358f8d"
+  },
+  "raw/PHYSICS_GEOMETRIC_FOUNDATIONS_done.md": {
+    "mtime": 1764115610.0,
+    "ast_hash": "ea63fc63dd7d18496d90ab81863adb35",
+    "semantic_hash": "ea63fc63dd7d18496d90ab81863adb35"
+  },
+  "raw/PHYSICS_INTEGRATION_GUIDE_done.md": {
+    "mtime": 1764116077.0,
+    "ast_hash": "1988431908129d57991213fddaf2efcd",
+    "semantic_hash": "1988431908129d57991213fddaf2efcd"
+  },
+  "raw/README_done.md": {
+    "mtime": 1780402067.0,
+    "ast_hash": "49486a20895cf95e6304674626fa4f3a",
+    "semantic_hash": "49486a20895cf95e6304674626fa4f3a"
+  },
+  "raw/Vibrational Consciousness Hypothesis_done.md": {
+    "mtime": 1752100740.0,
+    "ast_hash": "ef449a8006f4990f373b46da42625ff8",
+    "semantic_hash": "ef449a8006f4990f373b46da42625ff8"
+  },
+  "raw/codex_harmonic_master_system_prompt_v_2_done.md": {
+    "mtime": 1751920992.0,
+    "ast_hash": "bfea9a0f32688dc508dc3ffeb0f2ccd4",
+    "semantic_hash": "bfea9a0f32688dc508dc3ffeb0f2ccd4"
+  },
+  "raw/codex_lexicon_draft_done.md": {
+    "mtime": 1751940323.0,
+    "ast_hash": "b879595bd540682995328cc4de8afa72",
+    "semantic_hash": "b879595bd540682995328cc4de8afa72"
+  },
+  "raw/flowscape_resolved_2026-07-12_18-48-17.md": {
+    "mtime": 1783900097.0,
+    "ast_hash": "5cf8cf906e50a03e79fcd46d1baebbda",
+    "semantic_hash": "5cf8cf906e50a03e79fcd46d1baebbda"
+  },
+  "raw/flowscape_resolved_2026-07-14_16-18-28.md": {
+    "mtime": 1784063908.0,
+    "ast_hash": "66206d9679b2417b153a7cd038eda442",
+    "semantic_hash": "66206d9679b2417b153a7cd038eda442"
+  },
+  "raw/flowscape_resolved_2026-07-14_19-18-27.md": {
+    "mtime": 1784074707.0,
+    "ast_hash": "4cf3883505cccf786b8e73126368a51a",
+    "semantic_hash": "4cf3883505cccf786b8e73126368a51a"
+  },
+  "raw/flowscape_resolved_2026-07-14_19-53-28.md": {
+    "mtime": 1784076808.0,
+    "ast_hash": "feb95419519a5d3e6a51ebe7d9eb2516",
+    "semantic_hash": "feb95419519a5d3e6a51ebe7d9eb2516"
+  },
+  "raw/flowscape_resolved_2026-07-14_20-28-23.md": {
+    "mtime": 1784078903.0,
+    "ast_hash": "01b402d12611509609d7cbdb3bab7de1",
+    "semantic_hash": "01b402d12611509609d7cbdb3bab7de1"
+  },
+  "raw/flowscape_resolved_2026-07-16_09-53-30.md": {
+    "mtime": 1784213610.0,
+    "ast_hash": "95ce83ab1dc477923023deab23cbb20e",
+    "semantic_hash": "95ce83ab1dc477923023deab23cbb20e"
+  },
+  "raw/flowscape_resolved_2026-07-16_11-48-30.md": {
+    "mtime": 1784220510.0,
+    "ast_hash": "eab03015c3599867f008e26524449048",
+    "semantic_hash": "eab03015c3599867f008e26524449048"
+  },
+  "raw/gabriel-sdlc-guide_done.html": {
+    "mtime": 1779779541.0,
+    "ast_hash": "9c21a998f0fed06bd946fd9471907daa",
+    "semantic_hash": "9c21a998f0fed06bd946fd9471907daa"
+  },
+  "raw/gabriel_comprehensive_resume_creaive_profile_8_2025_v1_done.md": {
+    "mtime": 1755160046.0,
+    "ast_hash": "b4d5079e2e568d0574425bb6f2c149a9",
+    "semantic_hash": "b4d5079e2e568d0574425bb6f2c149a9"
+  },
+  "raw/harmonic_response_framework_done.md": {
+    "mtime": 1751913174.0,
+    "ast_hash": "2a6b967eaaa3bcc76cba2b88c9bce646",
+    "semantic_hash": "2a6b967eaaa3bcc76cba2b88c9bce646"
+  },
+  "raw/harmonic_unified_full_done.html": {
+    "mtime": 1768022453.0,
+    "ast_hash": "81b11858236a777bdb4cc09e35749a6f",
+    "semantic_hash": "81b11858236a777bdb4cc09e35749a6f"
+  },
+  "raw/harmonic_unified_full_fixed_done.html": {
+    "mtime": 1768023211.0,
+    "ast_hash": "60bc6a6ea35768c2f5753c3073bcc6be",
+    "semantic_hash": "60bc6a6ea35768c2f5753c3073bcc6be"
+  },
+  "raw/harmonic_unified_full_informative_done.html": {
+    "mtime": 1768025300.0,
+    "ast_hash": "fe713db84775866b1e63c9a716f65ca8",
+    "semantic_hash": "fe713db84775866b1e63c9a716f65ca8"
+  },
+  "raw/interactive_unified_done.html": {
+    "mtime": 1768013511.0,
+    "ast_hash": "761ff09a610ae5e1222626822da0b4e4",
+    "semantic_hash": "761ff09a610ae5e1222626822da0b4e4"
+  },
+  "raw/master_components_done.md": {
+    "mtime": 1780439449.0,
+    "ast_hash": "c26e8e5b5b242c7135cbb1cb7b8eb16a",
+    "semantic_hash": "c26e8e5b5b242c7135cbb1cb7b8eb16a"
+  },
+  "raw/master_connections_done.md": {
+    "mtime": 1780439449.0,
+    "ast_hash": "697efe109eb4b6bf88580df3c302a800",
+    "semantic_hash": "697efe109eb4b6bf88580df3c302a800"
+  },
+  "raw/master_performance_done.md": {
+    "mtime": 1780439449.0,
+    "ast_hash": "e66b15920b94b411a7cafc7e6e254689",
+    "semantic_hash": "e66b15920b94b411a7cafc7e6e254689"
+  },
+  "raw/master_semantics_done.md": {
+    "mtime": 1780439449.0,
+    "ast_hash": "afa97bde6db3395b2448a2ddd373b883",
+    "semantic_hash": "afa97bde6db3395b2448a2ddd373b883"
+  },
+  "raw/master_versions_done.md": {
+    "mtime": 1780439449.0,
+    "ast_hash": "ba44fa28c16cbf776932f835b403b7f1",
+    "semantic_hash": "ba44fa28c16cbf776932f835b403b7f1"
+  },
+  "raw/nine_chambers_of_vibrational_intelligence_v2_done.md": {
+    "mtime": 1756816802.0,
+    "ast_hash": "a831a159fbb006625748d6c4a48bdc9c",
+    "semantic_hash": "a831a159fbb006625748d6c4a48bdc9c"
+  },
+  "raw/string-theory-chapter-01_done.md": {
+    "mtime": 1780402067.0,
+    "ast_hash": "d7a922c0d9e4fba1262def33bb9bf7f5",
+    "semantic_hash": "d7a922c0d9e4fba1262def33bb9bf7f5"
+  },
+  "raw/string-theory-chapter-02_done.md": {
+    "mtime": 1780402067.0,
+    "ast_hash": "5472c7ab5d002e6c29e389a196eaff3c",
+    "semantic_hash": "5472c7ab5d002e6c29e389a196eaff3c"
+  },
+  "raw/string-theory-chapter-03_done.md": {
+    "mtime": 1780402067.0,
+    "ast_hash": "38016f2e27fa53f038d9e570e8c0faa0",
+    "semantic_hash": "38016f2e27fa53f038d9e570e8c0faa0"
+  },
+  "raw/string-theory-chapter-04_done.md": {
+    "mtime": 1780402067.0,
+    "ast_hash": "2fdc6274ba7bb3200ec39c7e1d1823d9",
+    "semantic_hash": "2fdc6274ba7bb3200ec39c7e1d1823d9"
+  },
+  "raw/string-theory-chapter-index_done.md": {
+    "mtime": 1780402067.0,
+    "ast_hash": "01a2e67c094c44e90d0ae07de8b4a65d",
+    "semantic_hash": "01a2e67c094c44e90d0ae07de8b4a65d"
+  },
+  "raw/string-theory-chapters-05-08_done.md": {
+    "mtime": 1780402067.0,
+    "ast_hash": "6f4ea3d96bdddaac9097abf03a4e14f3",
+    "semantic_hash": "6f4ea3d96bdddaac9097abf03a4e14f3"
+  },
+  "raw/string-theory-chapters-09-12_done.md": {
+    "mtime": 1780402067.0,
+    "ast_hash": "235f6951bdbff1508126b5d5971ab1a7",
+    "semantic_hash": "235f6951bdbff1508126b5d5971ab1a7"
+  },
+  "raw/string-theory-chapters-13-16_done.md": {
+    "mtime": 1780402067.0,
+    "ast_hash": "4cd6949b2755b4f581f9ee70921d6a2e",
+    "semantic_hash": "4cd6949b2755b4f581f9ee70921d6a2e"
+  },
+  "raw/string-theory-chapters-17-20_done.md": {
+    "mtime": 1780402067.0,
+    "ast_hash": "3dfbc831852585c6d1f1437f6f8c2e00",
+    "semantic_hash": "3dfbc831852585c6d1f1437f6f8c2e00"
+  },
+  "raw/string-theory-overture_done.md": {
+    "mtime": 1780402067.0,
+    "ast_hash": "d2967b378a1dd220e16ff04e3ac1f203",
+    "semantic_hash": "d2967b378a1dd220e16ff04e3ac1f203"
+  },
+  "raw/ted-talk-script_done.md": {
+    "mtime": 1751913211.0,
+    "ast_hash": "74ce2a02908e038acc17d3bda81c8dc9",
+    "semantic_hash": "74ce2a02908e038acc17d3bda81c8dc9"
+  },
+  "raw/tedtalk-exploration1_done.md": {
+    "mtime": 1748648955.0,
+    "ast_hash": "ddb04163818dcd01278baa7fa7b85a6a",
+    "semantic_hash": "ddb04163818dcd01278baa7fa7b85a6a"
+  },
+  "raw/vibrational-consciousness-paper_done.md": {
+    "mtime": 1764117898.0,
+    "ast_hash": "b91f9c3da4e90d6814bf553d8d8252c9",
+    "semantic_hash": "b91f9c3da4e90d6814bf553d8d8252c9"
+  },
+  "raw/vibrational-consciousness-whitepaper_done.md": {
+    "mtime": 1764117807.0,
+    "ast_hash": "a4541af96526e6989e29113822e5a7a7",
+    "semantic_hash": "a4541af96526e6989e29113822e5a7a7"
+  },
+  "wiki/_agents/chatgpt/inbox.md": {
+    "mtime": 1784221769.0,
+    "ast_hash": "4d0a73cb045cf6aac771866aff26d603",
+    "semantic_hash": "4d0a73cb045cf6aac771866aff26d603"
+  },
+  "wiki/_agents/chatgpt/outbox.md": {
+    "mtime": 1784221141.0,
+    "ast_hash": "9d605a3002f34d14d65b5537fa97cc06",
+    "semantic_hash": "9d605a3002f34d14d65b5537fa97cc06"
+  },
+  "wiki/_agents/chatgpt/status.md": {
+    "mtime": 1784213255.0,
+    "ast_hash": "ddd6ac357ff29efc4cec3253295a7717",
+    "semantic_hash": "ddd6ac357ff29efc4cec3253295a7717"
+  },
+  "wiki/_agents/claude/inbox.md": {
+    "mtime": 1784320441.0,
+    "ast_hash": "f3137d90dabc6596760fd7f200171a81",
+    "semantic_hash": "f3137d90dabc6596760fd7f200171a81"
+  },
+  "wiki/_agents/claude/outbox.md": {
+    "mtime": 1783613825.0,
+    "ast_hash": "00358983ee9073cd37486358d79a90ce",
+    "semantic_hash": "00358983ee9073cd37486358d79a90ce"
+  },
+  "wiki/_agents/claude/status.md": {
+    "mtime": 1784320477.0,
+    "ast_hash": "f2d8bf84a52cccd16cee95c5449c41c1",
+    "semantic_hash": "f2d8bf84a52cccd16cee95c5449c41c1"
+  },
+  "wiki/_agents/cursor/inbox.md": {
+    "mtime": 1781128332.0,
+    "ast_hash": "218431f7e39c4367940d731c4e4b8040",
+    "semantic_hash": "218431f7e39c4367940d731c4e4b8040"
+  },
+  "wiki/_agents/cursor/outbox.md": {
+    "mtime": 1781128332.0,
+    "ast_hash": "b73dfe8a7e7902f1cd3504e1174f9032",
+    "semantic_hash": "b73dfe8a7e7902f1cd3504e1174f9032"
+  },
+  "wiki/_agents/cursor/status.md": {
+    "mtime": 1781128332.0,
+    "ast_hash": "11cb1837163ca69e22fd7ae9698c84a7",
+    "semantic_hash": "11cb1837163ca69e22fd7ae9698c84a7"
+  },
+  "wiki/_agents/gemini/inbox.md": {
+    "mtime": 1784239003.0,
+    "ast_hash": "58c510b713d76079f8350110fc704bd8",
+    "semantic_hash": "58c510b713d76079f8350110fc704bd8"
+  },
+  "wiki/_agents/gemini/outbox.md": {
+    "mtime": 1781128332.0,
+    "ast_hash": "3bba70d3916bb1a93c1d4ac3b0fb1465",
+    "semantic_hash": "3bba70d3916bb1a93c1d4ac3b0fb1465"
+  },
+  "wiki/_agents/gemini/status.md": {
+    "mtime": 1784323383.0,
+    "ast_hash": "54e5235b4a432f6f09310e4c66d74516",
+    "semantic_hash": "54e5235b4a432f6f09310e4c66d74516"
+  },
+  "wiki/_connections.md": {
+    "mtime": 1784222743.0,
+    "ast_hash": "68c7efec30394683c72e9c208b365c80",
+    "semantic_hash": "68c7efec30394683c72e9c208b365c80"
+  },
+  "wiki/_index.md": {
+    "mtime": 1784222778.0,
+    "ast_hash": "bd7c4858bc532eeffb7bca091da53c8d",
+    "semantic_hash": "bd7c4858bc532eeffb7bca091da53c8d"
+  },
+  "wiki/_meta/active-portfolio.md": {
+    "mtime": 1784211274.0,
+    "ast_hash": "b319fc9e281fc5cfe98b831e7962af80",
+    "semantic_hash": "b319fc9e281fc5cfe98b831e7962af80"
+  },
+  "wiki/_meta/agent-protocol.md": {
+    "mtime": 1784238955.0,
+    "ast_hash": "3046956df6a9b2509cdd5bf47531b514",
+    "semantic_hash": "3046956df6a9b2509cdd5bf47531b514"
+  },
+  "wiki/_meta/change-log.md": {
+    "mtime": 1784320461.0,
+    "ast_hash": "1cd549968ee74969a1a697b34daacf41",
+    "semantic_hash": "1cd549968ee74969a1a697b34daacf41"
+  },
+  "wiki/_meta/decision-registry.md": {
+    "mtime": 1784213282.0,
+    "ast_hash": "d7c6be156280c3c4c2d1ffee27e77ef0",
+    "semantic_hash": "d7c6be156280c3c4c2d1ffee27e77ef0"
+  },
+  "wiki/_meta/handoffs.md": {
+    "mtime": 1784223666.0,
+    "ast_hash": "1e33fb934c36f1ffd6908a7621b8fd15",
+    "semantic_hash": "1e33fb934c36f1ffd6908a7621b8fd15"
+  },
+  "wiki/_meta/knowledge-governance.md": {
+    "mtime": 1784211321.0,
+    "ast_hash": "1044a32d079f53aca139bf30862929a8",
+    "semantic_hash": "1044a32d079f53aca139bf30862929a8"
+  },
+  "wiki/_meta/mail-carrier-log.md": {
+    "mtime": 1784221561.0,
+    "ast_hash": "6d08705c2c394ee1ab3116253df62e8b",
+    "semantic_hash": "6d08705c2c394ee1ab3116253df62e8b"
+  },
+  "wiki/_meta/open-questions.md": {
+    "mtime": 1780670358.0,
+    "ast_hash": "7a425d95faddb17f620b041cd53ba233",
+    "semantic_hash": "7a425d95faddb17f620b041cd53ba233"
+  },
+  "wiki/_meta/task-ledger.md": {
+    "mtime": 1784320470.0,
+    "ast_hash": "1c1e01b587dd11fcce5361138e6355f9",
+    "semantic_hash": "1c1e01b587dd11fcce5361138e6355f9"
+  },
+  "wiki/ai-collaboration/agent-mail-carrier.md": {
+    "mtime": 1783555100.0,
+    "ast_hash": "64c73fa34af7b755459965c2ff30c4d7",
+    "semantic_hash": "64c73fa34af7b755459965c2ff30c4d7"
+  },
+  "wiki/ai-collaboration/agent-operating-model.md": {
+    "mtime": 1784211427.0,
+    "ast_hash": "b009d3b02b729071d4c3baea18372376",
+    "semantic_hash": "b009d3b02b729071d4c3baea18372376"
+  },
+  "wiki/ai-collaboration/claude-conversations.md": {
+    "mtime": 1780938972.0,
+    "ast_hash": "1dc6e7b36511358ef26c6fd913350970",
+    "semantic_hash": "1dc6e7b36511358ef26c6fd913350970"
+  },
+  "wiki/ai-collaboration/digital-breathing-architecture.md": {
+    "mtime": 1781126702.0,
+    "ast_hash": "dc4d3d001986471a3bd9e3494416f636",
+    "semantic_hash": "dc4d3d001986471a3bd9e3494416f636"
+  },
+  "wiki/ai-collaboration/gabriel-profile.md": {
+    "mtime": 1783417779.0,
+    "ast_hash": "795fc97ea2267d633961ec3f2019054d",
+    "semantic_hash": "795fc97ea2267d633961ec3f2019054d"
+  },
+  "wiki/ai-collaboration/gabriel-workflow-rules.md": {
+    "mtime": 1780938985.0,
+    "ast_hash": "50a0d3f81a021eaee85c07ae46a2012f",
+    "semantic_hash": "50a0d3f81a021eaee85c07ae46a2012f"
+  },
+  "wiki/ai-collaboration/letter-to-humanity.md": {
+    "mtime": 1780956043.0,
+    "ast_hash": "8d8ab10845de44da0a06e7b05f2baaea",
+    "semantic_hash": "8d8ab10845de44da0a06e7b05f2baaea"
+  },
+  "wiki/ai-collaboration/secondbrain-mcp-infrastructure.md": {
+    "mtime": 1780731401.0,
+    "ast_hash": "ecadef28904de6f80c9482a8f8c9b8bf",
+    "semantic_hash": "ecadef28904de6f80c9482a8f8c9b8bf"
+  },
+  "wiki/ai-collaboration/ted-talk-consciousness-screaming.md": {
+    "mtime": 1780857305.0,
+    "ast_hash": "6b971626c4f4c25db4802ac8c07a54ad",
+    "semantic_hash": "6b971626c4f4c25db4802ac8c07a54ad"
+  },
+  "wiki/ai-collaboration/ted-talk-empathy-ai.md": {
+    "mtime": 1783445096.0,
+    "ast_hash": "7ca817880803ad030b823a0c1f09978b",
+    "semantic_hash": "7ca817880803ad030b823a0c1f09978b"
+  },
+  "wiki/core-principles/emergence.md": {
+    "mtime": 1780937435.0,
+    "ast_hash": "0dd2d6227f295f46ac66218dbdd4387c",
+    "semantic_hash": "0dd2d6227f295f46ac66218dbdd4387c"
+  },
+  "wiki/core-principles/resonance.md": {
+    "mtime": 1780937422.0,
+    "ast_hash": "572fb7e98e1bb3a3f7aa70ac57f9a010",
+    "semantic_hash": "572fb7e98e1bb3a3f7aa70ac57f9a010"
+  },
+  "wiki/core-principles/translation.md": {
+    "mtime": 1780937429.0,
+    "ast_hash": "6d6f6de0cd3544dfb7f7963e81077618",
+    "semantic_hash": "6d6f6de0cd3544dfb7f7963e81077618"
+  },
+  "wiki/craft-fiction/aegis-cycle/burnthrough.md": {
+    "mtime": 1780403646.0,
+    "ast_hash": "5719084a81139af1528ea91c970ed8e6",
+    "semantic_hash": "5719084a81139af1528ea91c970ed8e6"
+  },
+  "wiki/craft-fiction/craft-principles/writing-principles.md": {
+    "mtime": 1780938959.0,
+    "ast_hash": "31f5254e7d74a9a6657b740a6bb09065",
+    "semantic_hash": "31f5254e7d74a9a6657b740a6bb09065"
+  },
+  "wiki/craft-fiction/fiction-studio/master-system.md": {
+    "mtime": 1784213181.0,
+    "ast_hash": "bffb641066d6f53fed0ff2d0c2948e79",
+    "semantic_hash": "bffb641066d6f53fed0ff2d0c2948e79"
+  },
+  "wiki/craft-fiction/string-theory/68hz-mechanic.md": {
+    "mtime": 1780402067.0,
+    "ast_hash": "b39ef210fd0b9648b635eec5f1a9e1a5",
+    "semantic_hash": "b39ef210fd0b9648b635eec5f1a9e1a5"
+  },
+  "wiki/craft-fiction/string-theory/chapter-13-visions-and-burdens.md": {
+    "mtime": 1784222660.0,
+    "ast_hash": "1cf8603fcf57959389b3c40c74c20e84",
+    "semantic_hash": "1cf8603fcf57959389b3c40c74c20e84"
+  },
+  "wiki/craft-fiction/string-theory/chapter-summaries.md": {
+    "mtime": 1784222721.0,
+    "ast_hash": "2a10578fd83cf6ad150a7ea5b61cc3ca",
+    "semantic_hash": "2a10578fd83cf6ad150a7ea5b61cc3ca"
+  },
+  "wiki/craft-fiction/string-theory/characters.md": {
+    "mtime": 1784223051.0,
+    "ast_hash": "3e8977dae7ecaa62852f133af1d86d1e",
+    "semantic_hash": "3e8977dae7ecaa62852f133af1d86d1e"
+  },
+  "wiki/craft-fiction/string-theory/current-manuscript-state.md": {
+    "mtime": 1784223091.0,
+    "ast_hash": "a5c421e27fd9cb68a13db4146b7cb6b0",
+    "semantic_hash": "a5c421e27fd9cb68a13db4146b7cb6b0"
+  },
+  "wiki/craft-fiction/string-theory/literary-manuscript-david-lang.md": {
+    "mtime": 1780735476.0,
+    "ast_hash": "5b447192901b8e524b43b80838fe5933",
+    "semantic_hash": "5b447192901b8e524b43b80838fe5933"
+  },
+  "wiki/craft-fiction/string-theory/manuscript-manifest.md": {
+    "mtime": 1784223071.0,
+    "ast_hash": "c5b2d44aaf7119a642952b5d3af55eb2",
+    "semantic_hash": "c5b2d44aaf7119a642952b5d3af55eb2"
+  },
+  "wiki/craft-fiction/string-theory/novel-structure.md": {
+    "mtime": 1784222968.0,
+    "ast_hash": "2edbf51a074d4e08e2b56482d558e44a",
+    "semantic_hash": "2edbf51a074d4e08e2b56482d558e44a"
+  },
+  "wiki/craft-fiction/string-theory/project-argo.md": {
+    "mtime": 1780402067.0,
+    "ast_hash": "d41e9e09082b7eea56b2942734ab6a88",
+    "semantic_hash": "d41e9e09082b7eea56b2942734ab6a88"
+  },
+  "wiki/craft-fiction/string-theory/resonance-model.md": {
+    "mtime": 1780403556.0,
+    "ast_hash": "7d56540d33313af75ce99e9ee7f6eb8f",
+    "semantic_hash": "7d56540d33313af75ce99e9ee7f6eb8f"
+  },
+  "wiki/craft-fiction/string-theory/string-theory.md": {
+    "mtime": 1784223055.0,
+    "ast_hash": "c1c508cb7127c379ccbf57665d8d8705",
+    "semantic_hash": "c1c508cb7127c379ccbf57665d8d8705"
+  },
+  "wiki/craft-fiction/string-theory/themes-and-canon.md": {
+    "mtime": 1784223019.0,
+    "ast_hash": "165658d0b54f0b7bb4a51408b337bb91",
+    "semantic_hash": "165658d0b54f0b7bb4a51408b337bb91"
+  },
+  "wiki/craft-fiction/submission-strategy/_index.md": {
+    "mtime": 1784067192.0,
+    "ast_hash": "dcc65609aa8c6bafba409e85b4629986",
+    "semantic_hash": "dcc65609aa8c6bafba409e85b4629986"
+  },
+  "wiki/craft-fiction/submission-strategy/agent-profiles.md": {
+    "mtime": 1780741739.0,
+    "ast_hash": "85d041e8d0681413992eba128f9e5896",
+    "semantic_hash": "85d041e8d0681413992eba128f9e5896"
+  },
+  "wiki/craft-fiction/submission-strategy/editor-agent-research-standard.md": {
+    "mtime": 1784065653.0,
+    "ast_hash": "d1e883583b57c1270e1f86785b73bca9",
+    "semantic_hash": "d1e883583b57c1270e1f86785b73bca9"
+  },
+  "wiki/craft-fiction/submission-strategy/editorial-board-model-registry.md": {
+    "mtime": 1784065683.0,
+    "ast_hash": "1f009a41bd70b55f24c0adaef9e3d12d",
+    "semantic_hash": "1f009a41bd70b55f24c0adaef9e3d12d"
+  },
+  "wiki/craft-fiction/submission-strategy/editorial-board-simulation-protocol.md": {
+    "mtime": 1784065619.0,
+    "ast_hash": "5af765be0eedad874cec73a24b4aaf00",
+    "semantic_hash": "5af765be0eedad874cec73a24b4aaf00"
+  },
+  "wiki/craft-fiction/submission-strategy/market-intelligence-fall-2026.md": {
+    "mtime": 1780736480.0,
+    "ast_hash": "b177fb546b565dbe127b2ba408a93401",
+    "semantic_hash": "b177fb546b565dbe127b2ba408a93401"
+  },
+  "wiki/craft-fiction/submission-strategy/query-letter.md": {
+    "mtime": 1780735409.0,
+    "ast_hash": "2732e8cc4fb589e62b993440986ec678",
+    "semantic_hash": "2732e8cc4fb589e62b993440986ec678"
+  },
+  "wiki/craft-fiction/submission-strategy/run-editorial-board.md": {
+    "mtime": 1784067185.0,
+    "ast_hash": "d5e1a6d1ac5ffca32ba0e28e2b7af5c9",
+    "semantic_hash": "d5e1a6d1ac5ffca32ba0e28e2b7af5c9"
+  },
+  "wiki/decision-records/0001-unified-mcp-server.md": {
+    "mtime": 1780935565.0,
+    "ast_hash": "fb743e01a9dfe573380ec897f7fa16e3",
+    "semantic_hash": "fb743e01a9dfe573380ec897f7fa16e3"
+  },
+  "wiki/decision-records/0002-nexus-boundary.md": {
+    "mtime": 1784211164.0,
+    "ast_hash": "050044934e2a7249e2f0e26708a7a5a4",
+    "semantic_hash": "050044934e2a7249e2f0e26708a7a5a4"
+  },
+  "wiki/decision-records/0003-manuscript-read-only.md": {
+    "mtime": 1784211177.0,
+    "ast_hash": "83075f37a52065315dae92bf8479211b",
+    "semantic_hash": "83075f37a52065315dae92bf8479211b"
+  },
+  "wiki/decision-records/0004-shakespearience-master-domain.md": {
+    "mtime": 1784211193.0,
+    "ast_hash": "1e6ac7049f4709dd3cb1af7051ff0afb",
+    "semantic_hash": "1e6ac7049f4709dd3cb1af7051ff0afb"
+  },
+  "wiki/decision-records/0005-shakespearience-two-dependency-chains.md": {
+    "mtime": 1784211208.0,
+    "ast_hash": "4557107f94e2ead45cc8b6658db27c19",
+    "semantic_hash": "4557107f94e2ead45cc8b6658db27c19"
+  },
+  "wiki/dev-infrastructure/code-best-practices.md": {
+    "mtime": 1783417716.0,
+    "ast_hash": "406272cd365093ad93464b1c4b0f71dd",
+    "semantic_hash": "406272cd365093ad93464b1c4b0f71dd"
+  },
+  "wiki/dev-infrastructure/flowscape-ambient-sessions.md": {
+    "mtime": 1783888245.0,
+    "ast_hash": "66e7ce9dc886fbe3c8aece4718bb004b",
+    "semantic_hash": "66e7ce9dc886fbe3c8aece4718bb004b"
+  },
+  "wiki/dev-infrastructure/flowscape-engine.md": {
+    "mtime": 1780857928.0,
+    "ast_hash": "f88377ce8b4bc2403b2786545f5c60f1",
+    "semantic_hash": "f88377ce8b4bc2403b2786545f5c60f1"
+  },
+  "wiki/dev-infrastructure/manuscript-export-pipeline.md": {
+    "mtime": 1783609121.0,
+    "ast_hash": "f300b4dd2f9efc89213b6ac49f98aff5",
+    "semantic_hash": "f300b4dd2f9efc89213b6ac49f98aff5"
+  },
+  "wiki/dev-infrastructure/nexus.md": {
+    "mtime": 1781127934.0,
+    "ast_hash": "66268564f40aa46e7b4b881cb7ef2838",
+    "semantic_hash": "66268564f40aa46e7b4b881cb7ef2838"
+  },
+  "wiki/dev-infrastructure/sdlc-guide.md": {
+    "mtime": 1780857245.0,
+    "ast_hash": "863785158040e1d96dae13603bdfab74",
+    "semantic_hash": "863785158040e1d96dae13603bdfab74"
+  },
+  "wiki/dev-projects/codex-guardian/architecture.md": {
+    "mtime": 1783488737.0,
+    "ast_hash": "8c0ff2d5fd550cf627b85b34333498e8",
+    "semantic_hash": "8c0ff2d5fd550cf627b85b34333498e8"
+  },
+  "wiki/dev-projects/comtechsuite/architecture.md": {
+    "mtime": 1783488737.0,
+    "ast_hash": "b522cdd8248217976160fb9128eb76be",
+    "semantic_hash": "b522cdd8248217976160fb9128eb76be"
+  },
+  "wiki/dev-projects/flowscape/architecture.md": {
+    "mtime": 1783488739.0,
+    "ast_hash": "a4083ce99b58cb7a32273bc3cc2c9be2",
+    "semantic_hash": "a4083ce99b58cb7a32273bc3cc2c9be2"
+  },
+  "wiki/dev-projects/nexus/architecture.md": {
+    "mtime": 1783488743.0,
+    "ast_hash": "3c272749c18f819b6dc914c7e6c4a7b7",
+    "semantic_hash": "3c272749c18f819b6dc914c7e6c4a7b7"
+  },
+  "wiki/dev-projects/nexus/harmonic-unified-maps.md": {
+    "mtime": 1780857336.0,
+    "ast_hash": "8ae6a18901f57ea60b2f07d99ecb5cb3",
+    "semantic_hash": "8ae6a18901f57ea60b2f07d99ecb5cb3"
+  },
+  "wiki/dev-projects/nexus/nexus-research-synthesis.md": {
+    "mtime": 1780439617.0,
+    "ast_hash": "d1beb5ac5aeceb78136bd57dc1622482",
+    "semantic_hash": "d1beb5ac5aeceb78136bd57dc1622482"
+  },
+  "wiki/dev-projects/prestige-fiction-forge/architecture.md": {
+    "mtime": 1783488745.0,
+    "ast_hash": "390560e0c7acd31658802da77ee6b332",
+    "semantic_hash": "390560e0c7acd31658802da77ee6b332"
+  },
+  "wiki/dev-projects/private-club-app/architecture.md": {
+    "mtime": 1783488748.0,
+    "ast_hash": "03ecf9d43f456fbfef9f26137029c648",
+    "semantic_hash": "03ecf9d43f456fbfef9f26137029c648"
+  },
+  "wiki/dev-projects/shakespearience/architecture.md": {
+    "mtime": 1783552694.0,
+    "ast_hash": "6476d461cbc19718dc5a39e282f9f7ba",
+    "semantic_hash": "6476d461cbc19718dc5a39e282f9f7ba"
+  },
+  "wiki/dev-projects/shakespearience/creative-bible.md": {
+    "mtime": 1784211541.0,
+    "ast_hash": "37f0bac27c84cfc80b46e33320945be8",
+    "semantic_hash": "37f0bac27c84cfc80b46e33320945be8"
+  },
+  "wiki/dev-projects/shakespearience/ops-playbooks/01-accounts-and-access.md": {
+    "mtime": 1784061130.0,
+    "ast_hash": "015898dade6f338e7e45f568412d2589",
+    "semantic_hash": "015898dade6f338e7e45f568412d2589"
+  },
+  "wiki/dev-projects/shakespearience/ops-playbooks/02-legal-foundation.md": {
+    "mtime": 1783983507.0,
+    "ast_hash": "b5d3bd21153e5c1880f4ba337fb700a2",
+    "semantic_hash": "b5d3bd21153e5c1880f4ba337fb700a2"
+  },
+  "wiki/dev-projects/shakespearience/ops-playbooks/03-banking-bookkeeping.md": {
+    "mtime": 1783984628.0,
+    "ast_hash": "93b1ab174d8e050908977c3aaaa6d8ac",
+    "semantic_hash": "93b1ab174d8e050908977c3aaaa6d8ac"
+  },
+  "wiki/dev-projects/shakespearience/ops-playbooks/04-domain-dns-email.md": {
+    "mtime": 1784061077.0,
+    "ast_hash": "2de6c133a877a6a7b710f70b694c4be6",
+    "semantic_hash": "2de6c133a877a6a7b710f70b694c4be6"
+  },
+  "wiki/dev-projects/shakespearience/ops-playbooks/05-kids-privacy-coppa.md": {
+    "mtime": 1783983563.0,
+    "ast_hash": "57d99253b92afc5b8ca8672d0de58efb",
+    "semantic_hash": "57d99253b92afc5b8ca8672d0de58efb"
+  },
+  "wiki/dev-projects/shakespearience/ops-playbooks/06-payments-tax.md": {
+    "mtime": 1783984652.0,
+    "ast_hash": "5667818774583f71c3f3ddb66f7d6f05",
+    "semantic_hash": "5667818774583f71c3f3ddb66f7d6f05"
+  },
+  "wiki/dev-projects/shakespearience/ops-playbooks/07-security-backups.md": {
+    "mtime": 1783984679.0,
+    "ast_hash": "5a853262ef9f456bd8a117476191a892",
+    "semantic_hash": "5a853262ef9f456bd8a117476191a892"
+  },
+  "wiki/dev-projects/shakespearience/ops-playbooks/08-contracts-people.md": {
+    "mtime": 1783986396.0,
+    "ast_hash": "b9fbca0fb8840d50077e529aa48f5022",
+    "semantic_hash": "b9fbca0fb8840d50077e529aa48f5022"
+  },
+  "wiki/dev-projects/shakespearience/ops-playbooks/09-brand-trademark.md": {
+    "mtime": 1783986417.0,
+    "ast_hash": "d5b2374ef604e4d0bf1c85023c1de341",
+    "semantic_hash": "d5b2374ef604e4d0bf1c85023c1de341"
+  },
+  "wiki/dev-projects/shakespearience/ops-playbooks/10-insurance-risk.md": {
+    "mtime": 1783986445.0,
+    "ast_hash": "b88382695c5554ccd5dd53a0dc14c1b6",
+    "semantic_hash": "b88382695c5554ccd5dd53a0dc14c1b6"
+  },
+  "wiki/dev-projects/shakespearience/ops-playbooks/11-vendor-ledger.md": {
+    "mtime": 1783986458.0,
+    "ast_hash": "b16038ffa11031fd98b22668e16485db",
+    "semantic_hash": "b16038ffa11031fd98b22668e16485db"
+  },
+  "wiki/dev-projects/shakespearience/ops-playbooks/12-incident-response.md": {
+    "mtime": 1783986478.0,
+    "ast_hash": "7ee82d5bd7ae4cb1a8fd6bfa916b9629",
+    "semantic_hash": "7ee82d5bd7ae4cb1a8fd6bfa916b9629"
+  },
+  "wiki/dev-projects/shakespearience/ops-playbooks/_index.md": {
+    "mtime": 1784061151.0,
+    "ast_hash": "f4fc9dd3812a490c23decdfa4901f721",
+    "semantic_hash": "f4fc9dd3812a490c23decdfa4901f721"
+  },
+  "wiki/dev-projects/shakespearience/ops-playbooks/ops-operating-costs.md": {
+    "mtime": 1784061142.0,
+    "ast_hash": "397389340537963d3f1f62a70a22d00f",
+    "semantic_hash": "397389340537963d3f1f62a70a22d00f"
+  },
+  "wiki/dev-projects/writetrack/architecture.md": {
+    "mtime": 1783488752.0,
+    "ast_hash": "95d26bee447d2d48bd2751dc7d25b3df",
+    "semantic_hash": "95d26bee447d2d48bd2751dc7d25b3df"
+  },
+  "wiki/inbox.md": {
+    "mtime": 1784221561.0,
+    "ast_hash": "3d036b31a281be9847d4f56b4afd4cd1",
+    "semantic_hash": "3d036b31a281be9847d4f56b4afd4cd1"
+  },
+  "wiki/music-performance/acting-and-performance-pedagogy.md": {
+    "mtime": 1780938944.0,
+    "ast_hash": "3e964fee2305fc959756da07e0a167ba",
+    "semantic_hash": "3e964fee2305fc959756da07e0a167ba"
+  },
+  "wiki/music-performance/composition-practice.md": {
+    "mtime": 1784211461.0,
+    "ast_hash": "d81ffd3cf8216ba032b2fdf3878a8fb2",
+    "semantic_hash": "d81ffd3cf8216ba032b2fdf3878a8fb2"
+  },
+  "wiki/music-performance/directing-practice.md": {
+    "mtime": 1784211492.0,
+    "ast_hash": "f0d5b60533766cad0af79dd2a0f077c3",
+    "semantic_hash": "f0d5b60533766cad0af79dd2a0f077c3"
+  },
+  "wiki/prediction-log/2026-06-08-query-response-timelines.md": {
+    "mtime": 1780935567.0,
+    "ast_hash": "2165845f802d9a256f132be4242b8642",
+    "semantic_hash": "2165845f802d9a256f132be4242b8642"
+  },
+  "wiki/reference-external/ai-skills-development.md": {
+    "mtime": 1780938996.0,
+    "ast_hash": "ab7b40f88af07543cfe2976c23bd7252",
+    "semantic_hash": "ab7b40f88af07543cfe2976c23bd7252"
+  },
+  "wiki/reference-external/canvas-design-masterworks.md": {
+    "mtime": 1780939004.0,
+    "ast_hash": "1dcad2363fab5ba3771752e09d2cfed9",
+    "semantic_hash": "1dcad2363fab5ba3771752e09d2cfed9"
+  },
+  "wiki/reference-external/chatgpt-archive-bottom.md": {
+    "mtime": 1780939022.0,
+    "ast_hash": "55edd995fb04340788f3ed0a7bd99401",
+    "semantic_hash": "55edd995fb04340788f3ed0a7bd99401"
+  },
+  "wiki/reference-external/chatgpt-archive-top.md": {
+    "mtime": 1780939017.0,
+    "ast_hash": "25414724c62aadc1c1fb446ed1559dad",
+    "semantic_hash": "25414724c62aadc1c1fb446ed1559dad"
+  },
+  "wiki/reference-external/gabriel-mcpherson-profile.md": {
+    "mtime": 1780857394.0,
+    "ast_hash": "d10e4f172e809ac8ea17f7be244cc5f6",
+    "semantic_hash": "d10e4f172e809ac8ea17f7be244cc5f6"
+  },
+  "wiki/theory-consciousness/codex-harmonic-lexicon.md": {
+    "mtime": 1783445036.0,
+    "ast_hash": "31bd5ba772933105e503adb59deee594",
+    "semantic_hash": "31bd5ba772933105e503adb59deee594"
+  },
+  "wiki/theory-consciousness/codex-harmonic-system-prompt.md": {
+    "mtime": 1783445010.0,
+    "ast_hash": "1ffa007ef484cd68d06e6f3527cc55a9",
+    "semantic_hash": "1ffa007ef484cd68d06e6f3527cc55a9"
+  },
+  "wiki/theory-consciousness/codex-lexicon.md": {
+    "mtime": 1783418341.0,
+    "ast_hash": "f2b98304f532aed7c7b6addee0768a96",
+    "semantic_hash": "f2b98304f532aed7c7b6addee0768a96"
+  },
+  "wiki/theory-consciousness/compactification-visualizations.md": {
+    "mtime": 1780857498.0,
+    "ast_hash": "07ca4a18444a58eddf385565c30a7b3e",
+    "semantic_hash": "07ca4a18444a58eddf385565c30a7b3e"
+  },
+  "wiki/theory-consciousness/ghrm-framework.md": {
+    "mtime": 1780403740.0,
+    "ast_hash": "4f3dad3384596c6ba80d3a3b7b037adf",
+    "semantic_hash": "4f3dad3384596c6ba80d3a3b7b037adf"
+  },
+  "wiki/theory-consciousness/ghrm-lhc-validation.md": {
+    "mtime": 1780857488.0,
+    "ast_hash": "2fb7e0842aae976f0836d5c5a1e0426a",
+    "semantic_hash": "2fb7e0842aae976f0836d5c5a1e0426a"
+  },
+  "wiki/theory-consciousness/ghrm-toy-model.md": {
+    "mtime": 1780857440.0,
+    "ast_hash": "ed18a4df25cd9e934ff7fd7869c4863b",
+    "semantic_hash": "ed18a4df25cd9e934ff7fd7869c4863b"
+  },
+  "wiki/theory-consciousness/harmonic-foundations.md": {
+    "mtime": 1784222622.0,
+    "ast_hash": "41edbdf3d8569e20b11f8903fd565cb9",
+    "semantic_hash": "41edbdf3d8569e20b11f8903fd565cb9"
+  },
+  "wiki/theory-consciousness/hrif-protocol.md": {
+    "mtime": 1783445378.0,
+    "ast_hash": "1a6ea0b1a94fb32c3db0d488e95253ed",
+    "semantic_hash": "1a6ea0b1a94fb32c3db0d488e95253ed"
+  },
+  "wiki/theory-consciousness/nine-chambers-vibrational-intelligence.md": {
+    "mtime": 1781126683.0,
+    "ast_hash": "e4e7bcb960daaf315366bcc4c29c4606",
+    "semantic_hash": "e4e7bcb960daaf315366bcc4c29c4606"
+  },
+  "wiki/theory-consciousness/resonant-path-youtube-series.md": {
+    "mtime": 1780935579.0,
+    "ast_hash": "0c3971b2a1a2c8807c89b60807e47456",
+    "semantic_hash": "0c3971b2a1a2c8807c89b60807e47456"
+  },
+  "wiki/theory-consciousness/the-vibrational-universe.md": {
+    "mtime": 1780939028.0,
+    "ast_hash": "de21554835945d1ea06e8ecdb8a2caf8",
+    "semantic_hash": "de21554835945d1ea06e8ecdb8a2caf8"
+  },
+  "wiki/theory-consciousness/vch-framework.md": {
+    "mtime": 1780403696.0,
+    "ast_hash": "040361b86fd065b86f999501ef9a5727",
+    "semantic_hash": "040361b86fd065b86f999501ef9a5727"
+  },
+  "wiki/theory-consciousness/vch-full-paper.md": {
+    "mtime": 1783417640.0,
+    "ast_hash": "1dd409d712f7ade0fc0a01b9ea97fc5c",
+    "semantic_hash": "1dd409d712f7ade0fc0a01b9ea97fc5c"
+  },
+  "wiki/theory-consciousness/vch-whitepaper-gabriel-gemini.md": {
+    "mtime": 1783445135.0,
+    "ast_hash": "378d7ddd06f96cf9f34dcc929fb5eb21",
+    "semantic_hash": "378d7ddd06f96cf9f34dcc929fb5eb21"
+  },
+  "raw/Acting 3 Syllabus copy_done.pdf": {
+    "mtime": 1780936776.0,
+    "ast_hash": "de1f9c5983c5b2de557decc13101d481",
+    "semantic_hash": "de1f9c5983c5b2de557decc13101d481"
+  },
+  "raw/Analyze This! AScting 1-2.U2.L2_done.pdf": {
+    "mtime": 1571636410.0,
+    "ast_hash": "1f7686ea7403d73181fa4fb6809aa323",
+    "semantic_hash": "1f7686ea7403d73181fa4fb6809aa323"
+  },
+  "raw/Analyze This! Acting 1-2.U2.L1_done.pdf": {
+    "mtime": 1571636396.0,
+    "ast_hash": "fbab2852088988333ee0dde208c1b218",
+    "semantic_hash": "fbab2852088988333ee0dde208c1b218"
+  },
+  "raw/Gabe McPherson P&W April 2024_done.pdf": {
+    "mtime": 1709139933.0,
+    "ast_hash": "19a69b1ad410adeec8a77095448ce45e",
+    "semantic_hash": "19a69b1ad410adeec8a77095448ce45e"
+  },
+  "raw/Gabe McPherson P&W April 2026_done.pdf": {
+    "mtime": 1775662954.0,
+    "ast_hash": "6d7a8e41e6290838fd0640a1e8060c08",
+    "semantic_hash": "6d7a8e41e6290838fd0640a1e8060c08"
+  },
+  "raw/Gabriel McPherson Bio 2_done.pdf": {
+    "mtime": 1741332065.0,
+    "ast_hash": "985b02c777e370b68415c159b2dd95e3",
+    "semantic_hash": "985b02c777e370b68415c159b2dd95e3"
+  },
+  "raw/Gabriel McPherson Bio_done.pdf": {
+    "mtime": 1719459097.0,
+    "ast_hash": "828d391eaa390b20e848f374b72b05a4",
+    "semantic_hash": "828d391eaa390b20e848f374b72b05a4"
+  },
+  "raw/Gabriel McPherson Performance Biography_done.pdf": {
+    "mtime": 1741332268.0,
+    "ast_hash": "26f962eb7ef793051201b1fd78924ef5",
+    "semantic_hash": "26f962eb7ef793051201b1fd78924ef5"
+  },
+  "raw/Gabriel McPherson_Resume_done.pdf": {
+    "mtime": 1747600328.0,
+    "ast_hash": "08c9d92236f7c1cceaa3d670d758f664",
+    "semantic_hash": "08c9d92236f7c1cceaa3d670d758f664"
+  },
+  "raw/GabrielMcPherson - Resume_done.pdf": {
+    "mtime": 1719458790.0,
+    "ast_hash": "ef619c727cc6bff88f7dd7f49633026c",
+    "semantic_hash": "ef619c727cc6bff88f7dd7f49633026c"
+  },
+  "raw/Gm resume Colect_done.pdf": {
+    "mtime": 1719459335.0,
+    "ast_hash": "814f58f0c8f553a80e5f50866d8d2d77",
+    "semantic_hash": "814f58f0c8f553a80e5f50866d8d2d77"
+  },
+  "raw/HRIF_AI_Specific_Protocol_done.pdf": {
+    "mtime": 1751916735.0,
+    "ast_hash": "0e3832b6c480faccfdbce7783698cdf2",
+    "semantic_hash": "0e3832b6c480faccfdbce7783698cdf2"
+  },
+  "raw/Monologue Rubric v1_done.pdf": {
+    "mtime": 1557712083.0,
+    "ast_hash": "f1d0facf54a83ba39a53aad1cdc753b7",
+    "semantic_hash": "f1d0facf54a83ba39a53aad1cdc753b7"
+  },
+  "raw/Vibrational Consciousness Hypothesis_done.pdf": {
+    "mtime": 1751912817.0,
+    "ast_hash": "79fd1348e7d7919e7897d1fd0079a099",
+    "semantic_hash": "79fd1348e7d7919e7897d1fd0079a099"
+  },
+  "raw/Yup cuz then the lock takes a unified greater mega...._done.pdf": {
+    "mtime": 1742262068.0,
+    "ast_hash": "6ec6d7d8a30ee0a060c2014e462ba055",
+    "semantic_hash": "6ec6d7d8a30ee0a060c2014e462ba055"
+  },
+  "raw/claude and gabe cconvo on LOTS_done.pdf": {
+    "mtime": 1755336377.0,
+    "ast_hash": "df40d942906bb42a60df8158634c1736",
+    "semantic_hash": "df40d942906bb42a60df8158634c1736"
+  },
+  "raw/compactification_composite_panel_with_hypothesis_done.pdf": {
+    "mtime": 1759335796.0,
+    "ast_hash": "d625f7d3169b89ed24bcab274d7623cd",
+    "semantic_hash": "d625f7d3169b89ed24bcab274d7623cd"
+  },
+  "raw/compactification_final_panel_done.pdf": {
+    "mtime": 1759336178.0,
+    "ast_hash": "b6cc185a0769cb9553680cf53c58ab0e",
+    "semantic_hash": "b6cc185a0769cb9553680cf53c58ab0e"
+  },
+  "raw/monologues_done.pdf": {
+    "mtime": 1601916886.0,
+    "ast_hash": "5581cc9f31ad1c8a1c34dab44974cc7a",
+    "semantic_hash": "5581cc9f31ad1c8a1c34dab44974cc7a"
+  }
+}

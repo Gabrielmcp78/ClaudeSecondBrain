@@ -1,0 +1,3 @@
+The inciting incident in *String Theory* occurs in Chapter 1. Following his father's funeral, protagonist David Lang, a 47-year-old quantum dynamics professor, experiences a series of inexplicable events that disrupt his reality. A mysterious Polaroid of a tuning fork buried in soil appears in his lecture slides, and he is subsequently overwhelmed by a 68.48 Hz frequency at a specific bench on campus. This cascade of events forces him to confront a phenomenon that has been latent his entire life, setting the novel's main conflict in motion.
+
+(source: wiki/craft-fiction/string-theory/chapter-summaries.md)

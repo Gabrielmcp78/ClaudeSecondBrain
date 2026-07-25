@@ -2,6 +2,8 @@
 
 Full plot record of *String Theory* by Gabriel McPherson. Sources: all raw chapter files. (source: string-theory-overture.md, string-theory-chapter-01.md, string-theory-chapter-02.md, string-theory-chapter-03.md, string-theory-chapter-04.md, string-theory-chapters-05-08.md, string-theory-chapters-09-12.md, string-theory-chapters-13-16.md, string-theory-chapters-17-20.md)
 
+> **Version note (2026-06-06):** These summaries were sourced from Gabriel McPherson's GitHub Pages chapter summaries (`gabrielmcp78.github.io/string-theory-chapters/`), build date May 31, 2026. Total word count across all chapters in that build: ~107,550. The current query submission states 96,000 words — the novel has been edited since this record was generated. Chapter word counts listed here reflect the May 31 build. Content is high-accuracy (sourced from the published summaries), but specific scenes and details in later chapters (13–20) should be cross-checked against the manuscript before being treated as final canon.
+
 ---
 
 ## Overture: Fragment recovered from sealed archive (293 words)
@@ -98,7 +100,9 @@ Global POV. Six locations simultaneously receive the same event: Reykjavík, Lag
 
 ---
 
-## Chapter 13: Phenom de Guare (5,698 words)
+> **Numbering collision flagged 2026-07-16.** This entry reflects the old 20-chapter (Draft 6.6) structure. The *current* 27-chapter manuscript's Chapter 13 is a different chapter — confirmed to be the old Chapter 6, "Visions and Burdens… of Knowing" (see [full scene-level article](chapter-13-visions-and-burdens.md)). Where "Phenom de Guare" now sits in the current structure is unconfirmed. Do not treat the summary below as the current manuscript's Chapter 13 until Gabriel confirms its new position.
+
+## Chapter 13: Phenom de Guare (5,698 words) — OLD 20-chapter numbering, position unconfirmed in current build
 
 **November 29, 2026.** An EMP at 2:47 a.m. leaves research facilities worldwide enhanced rather than destroyed. A 47-minute holographic recording rewrites firmware at every installation simultaneously. Origin point: Ithaca. Marcus McGrath coordinates global response; CERN detects Monster group symmetries. Celeste is found transfixed before David's glowing equations. She articulates: "The universe isn't singing. It's singing." David has "octavated" — consciousness-integrated mathematics operating in eleven-dimensional space. The system anticipates dialogue: "The future's bleeding backward." Project Cantus (*cantus perpetuus*) archives the data before NSA channels close. **1971 flashback:** Young Ishikawa accesses the secret ARGO lab beneath East Hill, finds Tsukino has vanished mid-equation, and seals the lab from within.
 

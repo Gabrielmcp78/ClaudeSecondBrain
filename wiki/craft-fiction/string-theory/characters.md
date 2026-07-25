@@ -1,6 +1,6 @@
 # String Theory — Characters
 
-Primary and secondary characters across *String Theory* by Gabriel McPherson. Sources: Chapters 1–2, Overture. (source: string-theory-chapter-01.md, string-theory-chapter-02.md, string-theory-overture.md)
+Primary and secondary characters across *String Theory* by Gabriel McPherson. Chapter references reflect the current 27-chapter Draft 6.7 build unless marked [6.6: Ch X]. See [Novel Structure](novel-structure.md) for the full chapter mapping.
 
 ---
 
@@ -24,15 +24,17 @@ Violist; the quartet's anchor. David's ex-partner. Co-author (with David and Mar
 
 Celeste is emotionally direct, observant, and grounded — the counterweight to David's abstraction. In Chapter 1's rehearsal she pleads: "David… stay with us. Stay with me." The words carry the full weight of years of watching him evaporate into equations. In the 2005 MIT flashback she is the preservationist of the group's research, mediating between David's drive and Marcus's destructive panic.
 
-Her Chapter 13 focal point ("Phenom de Guare") connects her to Eleanor Guare's arc. [unverified — requires chapter text]
+Her Chapter 20 focal point ("Phenom de Guare") connects her to Eleanor Guare's arc. [unverified — requires chapter text] *(Draft 6.6: this was Ch 13.)*
 
 ---
 
 ## Eleanor Guare (E. Guare)
 
-First encountered in Chapter 2 as the proprietor of an instrument repair shop in Buffalo. Displays cryptic familiarity with David. The shop's connection to David's family is not immediately explained. Her name appears in Chapter 13's title ("Phenom de Guare"), marking that chapter as her focal point.
+First encountered in Chapter 6 ("Alteration Finds") as the proprietor of an instrument repair shop in Buffalo — the shop appears across Ch 6 scenes 6.1 (The Instrument Shop) and 6.2 (The Workshop). Displays cryptic familiarity with David. Her name appears in Chapter 20's title ("Phenom de Guare"), marking that chapter as her focal point. Chapter 12 ("Twin Primes on the six") reveals her as a 1971 Project ARGO researcher — "researchers Tsukino and Guare."
 
 The repair marks inside David's cello case (dated 1985, bearing his grandfather Elliot Lang's initials) suggest a connection to the Lang family predating David's awareness of her. The nature and depth of that connection is a primary unresolved thread.
+
+*(Draft 6.6: Eleanor's instrument shop was Ch 2; "Tsukino and Guare" reveal was Ch 5; her focal chapter was Ch 13.)*
 
 ---
 
@@ -56,7 +58,7 @@ David sees his father's face overlaying his own in the mirror — "an inheritanc
 
 ## Elliot Lang (deceased)
 
-David's grandfather. Possessed a mysterious melody that David has known unconsciously his entire life — revealed by David's mother Cassandra in Chapter 2. His initials appear in repair marks inside David's cello case dated 1985, connecting him to Eleanor Guare's instrument shop. His knowledge of acoustic phenomena was secretive and specialized. The cross-generational transmission of the melody suggests the 68.48 Hz phenomenon is inherited.
+David's grandfather. Possessed a mysterious melody that David has known unconsciously his entire life — revealed by David's mother Cassandra in Chapters 5–8 (the "Edge of Discovery" material distributed across the Now…Then/Alteration Finds/Firebirds/Remaining Returns sequence of the current build). His initials appear in repair marks inside David's cello case dated 1985, connecting him to Eleanor Guare's instrument shop. His knowledge of acoustic phenomena was secretive and specialized. The cross-generational transmission of the melody suggests the 68.48 Hz phenomenon is inherited. *(Draft 6.6: Cassandra's revelation was in Ch 2.)*
 
 ---
 
@@ -101,3 +103,9 @@ Lead of Project ARGO at Cornell, 1971. Disappeared after Run 47's anomalous outp
 ## Ralph
 
 Custodian at Feynman Hall. Philosopher-janitor who cleans the building at night. Offers David wisdom about resonance and survival.
+
+---
+
+## Professor Garrin
+
+Cornell colleague; minor character, first appearing (unnamed classroom owner) roughly nine months before Chapter 13's present action and directly on-page in Chapter 13 ("The Purge"). David steals a chair from Garrin's classroom mid-lecture — the second in a pair, having taken its match nine months earlier in what David rationalizes as "gentleman's larceny." Garrin is left mid-diagram at the board, unable to reach his own wall phone without crossing the room, and eventually reports the incident to the Dean's office. Comic-institutional counterweight to David's escalating unraveling; no larger role confirmed yet. (source: chapter-13-full-text-2026-07-16)

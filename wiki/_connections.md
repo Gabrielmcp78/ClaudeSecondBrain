@@ -16,6 +16,26 @@ Connection: one sentence describing the relationship.
 
 ## Documented Connections
 
+### [dev-projects/shakespearience/architecture] ↔ [dev-projects/shakespearience/ops-playbooks/]
+*Domain: dev-projects/shakespearience ↔ dev-projects/shakespearience*
+Connection: The 2026-07-22 stack decisions (Sanity CMS cut, Plausible cut, Bitwarden replacing 1Password, Google Workspace replacing Fastmail) are documented once in architecture.md's Technical Implementation section and once more operationally in Playbooks 01 and 04 — both re-synced 2026-07-24 against the same live Trello cards so neither drifts from the other going forward.
+
+### [dev-projects/shakespearience/architecture — Pricing Model Conflict] ↔ [decision-records/]
+*Domain: dev-projects/shakespearience ↔ decision-records*
+Connection: The unresolved Model A (curriculum-first, Stephanie's original doc) vs. Model B (subscription-first, seeded in Stripe code) pricing conflict is exactly the kind of cross-functional decision the agent-protocol.md conflict-resolution hierarchy exists for — flagged in architecture.md rather than silently resolved, awaiting a decision-registry entry once Gabriel and Stephanie choose.
+
+### [dev-projects/shakespearience/architecture — Command Center] ↔ [ai-collaboration/secondbrain-mcp-infrastructure]
+*Domain: dev-projects/shakespearience ↔ ai-collaboration*
+Connection: Shakespearience's planned in-app Command Center dashboard (a protected `/admin` route reading live Trello state, with an explicitly consent-gated AI advisor layer) mirrors this KB's own pattern of treating Trello/wiki as the source of truth and gating any LLM access to operational data behind explicit authorization — the same caution this SB applies to its own agent-to-agent data flows.
+
+### [dev-projects/shakespearience/architecture — Google Drive Structure] ↔ [ai-collaboration/gabriel-workflow-rules]
+*Domain: dev-projects/shakespearience ↔ ai-collaboration*
+Connection: The locked 2026-07-23 numbered-folder Drive structure (00–10 mirroring the Trello board's own lists) is the same instinct behind Gabriel's general workflow rules — external tools get structured to mirror the system of record rather than developing their own parallel taxonomy.
+
+### [String Theory / Chapter 4 — The Apartment] ↔ [theory-consciousness/]
+*Domain: craft-fiction ↔ theory-consciousness*
+Connection: The delayed shattering of David's rocks glass and the spontaneous drawing of a tuning fork surrounded by nested squares are narrative instantiations of the temporal anomalies and geometric structures central to VCH.
+
 ### [String Theory / 68.48 Hz Mechanic] ↔ [theory-consciousness/]
 *Domain: craft-fiction ↔ theory-consciousness*
 Connection: Chapter 9's subtitle ("Spatio-Symbolic Drift in Recursive Harmonic Environments") uses language that maps directly onto VCH harmonic entrainment mechanics; the 68.48 Hz frequency, its multigenerational transmission, directional intensification, and physical symptoms are the fictional instantiation of VCH's harmonic entrainment theory.
@@ -98,7 +118,7 @@ Connection: The cross-language semantic tag vocabulary (@type, @mem, @flow, @sta
 
 ### [dev-infrastructure/flowscape-ambient-sessions] ↔ [craft-fiction/string-theory]
 *Domain: dev-infrastructure ↔ craft-fiction*
-Connection: FlowScape's ambient session captures repeatedly surfaced blocking-resolution context tied directly to String Theory manuscript work, re-confirmed across sessions from 2026-07-18 through 2026-07-23. [reconstructed]
+Connection: FlowScape's ambient session captures repeatedly surfaced blocking-resolution context tied directly to String Theory manuscript work, re-confirmed across sessions from 2026-07-18 through 2026-07-24. [reconstructed]
 
 ### [dev-infrastructure/flowscape-ambient-sessions] ↔ [craft-fiction/string-theory/current-manuscript-state]
 *Domain: dev-infrastructure ↔ craft-fiction/string-theory*
@@ -106,7 +126,7 @@ Connection: A 2026-07-18 FlowScape session captured a blocking issue concurrent 
 
 ### [dev-infrastructure/flowscape-ambient-sessions] ↔ [craft-fiction/fiction-studio]
 *Domain: dev-infrastructure ↔ craft-fiction*
-Connection: FlowScape ambient captures repeatedly tied background session activity to Fiction Studio editorial work, logged across at least eight separate sessions between 2026-07-20 and 2026-07-22. [reconstructed]
+Connection: FlowScape ambient captures repeatedly tied background session activity to Fiction Studio editorial work, logged across at least nine separate sessions between 2026-07-20 and 2026-07-23. [reconstructed]
 
 ### [dev-infrastructure/flowscape-ambient-sessions] ↔ [dev-projects/happy-oppenheimer]
 *Domain: dev-infrastructure ↔ dev-projects*
@@ -123,6 +143,10 @@ Connection: A 2026-07-20 FlowScape ambient session tied background activity to t
 ### [dev-infrastructure/flowscape-ambient-sessions] ↔ [dev-projects/shakespearience]
 *Domain: dev-infrastructure ↔ dev-projects*
 Connection: A 2026-07-18 FlowScape session captured a Shakespearience-specific blocker during ambient monitoring. [reconstructed]
+
+### [dev-infrastructure/flowscape-ambient-sessions] ↔ [reference-external/Gabriel McPherson Profile]
+*Domain: dev-infrastructure ↔ reference-external*
+Connection: A 2026-07-24 FlowScape ambient session captured file organization activity related to Gabriel's therapeutic transcript archive.
 
 ### [ai-collaboration/chatgpt-librarian-session-2026-06-08] ↔ [dev-infrastructure/]
 *Domain: ai-collaboration ↔ dev-infrastructure*

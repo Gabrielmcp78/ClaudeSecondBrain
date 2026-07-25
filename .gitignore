@@ -25,3 +25,9 @@ venv/
 dist/
 build/
 release/
+
+# Dashboard access-control stores — contain password hashes and live
+# session tokens for human members. Never commit these.
+wiki/_meta/members.json
+wiki/_meta/sessions.json
+dashboard/.env

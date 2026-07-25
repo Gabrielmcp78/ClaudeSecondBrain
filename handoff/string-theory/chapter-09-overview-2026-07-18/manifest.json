@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "archive_status": "RAW_TRANSCRIPT_PENDING_AUTHENTICATED_RETRIEVAL",
+  "completion_claim_allowed": false,
+  "project": "STRING THEORY",
+  "author": "Gabriel McPherson",
+  "chatgpt_project": "fictionstudioeditpass-stringtheory7-20-26",
+  "conversation_title": "Chapter 9 Overview",
+  "conversation_id": "6a5ad5af-0dd4-83ea-afe3-7f1bbdb7bdf0",
+  "source_url": "https://chatgpt.com/c/6a5ad5af-0dd4-83ea-afe3-7f1bbdb7bdf0",
+  "preservation_rule": "VERBATIM_ONLY_NO_RECONSTRUCTION",
+  "expected_raw_transcript": "raw/00-conversation-transcript.md",
+  "verified_artifacts": [
+    "verified-artifacts/01-full-studio-review-completed.md",
+    "verified-artifacts/02-cold-panel-review.md",
+    "verified-artifacts/03-session-handoff.md"
+  ],
+  "exact_known_scope_markers": [
+    "@SecondBrain fiction studio skill",
+    "Let’s take an over all look at chapter 9",
+    "Good … first I think you’d doo well to secondbrain into the articles on string theory. Your a little wobbly on relations and surrounding plots",
+    "Run an editorial board review six",
+    "Execute an edit based on it entirely"
+  ]
+}

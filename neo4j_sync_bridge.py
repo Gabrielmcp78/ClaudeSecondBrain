@@ -118,6 +118,7 @@ DOMAIN_ROUTING = [
     ("prestige_fiction",    "dev-projects/prestige-fiction-forge"),
     ("nexus",               "dev-projects/nexus"),
     # MCP / infrastructure
+    ("flowscape",           "dev-infrastructure"),
     ("mcp",                 "dev-infrastructure"),
     ("neo4j",               "dev-infrastructure"),
     ("mem0",                "dev-infrastructure"),

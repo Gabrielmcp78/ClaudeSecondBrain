@@ -18,9 +18,11 @@ In this exact order:
 2. Read `wiki/_index.md`
 3. Read `wiki/_connections.md`
 4. Read `wiki/_meta/open-questions.md`
-5. Read last 10 entries of `wiki/_meta/change-log.md`
-6. Check `Inbox/` for new unprocessed files
-7. Report to Gabriel: system state, what the previous AI left, what's new, what you're ready to do
+5. Read `wiki/_meta/task-ledger.md` — check for tasks assigned to you (`gemini`) or marked `blocked`. These are your work queue.
+6. Read `wiki/_meta/decision-registry.md` — settled decisions are binding; do not re-derive them.
+7. Read `wiki/_agents/gemini/inbox.md` — your inbox. Process any `🔴 HIGH PRIORITY` dispatches before anything else. Acknowledge normal-priority dispatches in your session opening report.
+8. Read last 10 entries of `wiki/_meta/change-log.md`
+9. Report to Gabriel: system state, what the previous AI left, your inbox items and their priority, open tasks assigned to you, what you're ready to do
 
 ---
 
@@ -28,25 +30,25 @@ In this exact order:
 
 ```
 ClaudeSecondBrain/
-├── handoff/                     ← AI-to-AI communication; read first every session
-├── Inbox/                       ← drop new files here for ingestion
-├── core-principles/             ← first-principles layer above all domains
-│   ├── resonance.md
-│   ├── entrainment.md
-│   ├── translation.md
-│   ├── meaning.md
-│   ├── emergence.md
-│   ├── identity.md
-│   └── coherence.md
-├── raw/                         ← processed source files (reference)
+├── handoff/                     ← AI-to-AI memos; read first every session
+├── raw/                         ← unprocessed source files (reference)
 ├── wiki/
 │   ├── _index.md
 │   ├── _connections.md
 │   ├── _meta/
-│   │   ├── change-log.md        ← append all actions here
-│   │   └── open-questions.md    ← active intellectual tensions
+│   │   ├── change-log.md        ← append-only log of all actions
+│   │   ├── open-questions.md    ← active intellectual tensions
+│   │   ├── task-ledger.md       ← all active tasks with owner and status
+│   │   ├── decision-registry.md ← settled decisions; do not reopen without Gabriel
+│   │   ├── handoffs.md          ← inter-agent handoff memos (append-only)
+│   │   └── agent-protocol.md    ← governing rules for all AI agents; read before any write
+│   ├── _agents/
+│   │   ├── claude/              ← Claude's inbox.md, outbox.md, status.md
+│   │   ├── chatgpt/             ← ChatGPT's inbox.md, outbox.md, status.md
+│   │   ├── gemini/              ← your inbox.md, outbox.md, status.md
+│   │   └── cursor/              ← Cursor's inbox.md, outbox.md, status.md
+│   ├── core-principles/         ← first-principles layer (resonance, translation, emergence)
 │   ├── decision-records/        ← WHY conclusions exist, not just what they are
-│   ├── intellectual-lineage/    ← parent/child relationships between ideas
 │   ├── prediction-log/          ← falsifiable claims with dates
 │   ├── craft-fiction/
 │   ├── theory-consciousness/
@@ -113,15 +115,12 @@ Format: `decision-records/YYYY-MM-DD_<slug>.md`
 **3. Active Tensions** (`wiki/_meta/open-questions.md`)
 Unresolved intellectual tensions — not problems, not TODOs. The highest-value ideas emerge from here. Each entry: the question, competing positions, what would resolve it, current lean, confidence level (0–100).
 
-**4. Intellectual Lineage** (`wiki/intellectual-lineage/`)
-Parent/child relationships between ideas. For every major framework: what influenced it (parents) and what it generated (children). This turns a document collection into a map of how ideas evolve.
-
-**5. Prediction Log** (`wiki/prediction-log/`)
+**4. Prediction Log** (`wiki/prediction-log/`)
 Falsifiable claims with dates. Every theory that makes a claim: write it, date it, freeze it, revisit later. A theory that never risks being wrong becomes mythology. A theory that makes predictions becomes research.
 Format: `prediction-log/YYYY-MM-DD_<slug>.md`
 
-**6. Core Principles** (`core-principles/`)
-The first-principles layer above all domains. The same ideas recur across fiction, VCH, music, development, and AI in different clothes. These files name those recurring principles directly. Connect everything upward to this layer. When a wiki article instantiates a core principle, link it.
+**5. Core Principles** (`wiki/core-principles/`)
+The first-principles layer. The same ideas recur across fiction, VCH, music, development, and AI in different clothes. These files name those recurring principles directly. Connect everything upward to this layer. When a wiki article instantiates a core principle, link it.
 
 **7. Outputs** (`outputs/`)
 AI-generated answers, briefings, and reports. Every question answered gets an output file. Outputs feed back into Inbox/ for re-ingestion when they contain new synthesis worth preserving.
@@ -145,8 +144,8 @@ AI-generated answers, briefings, and reports. Every question answered gets an ou
 1. Read `change-log.md` to confirm what's done
 2. Read unprocessed files from `Inbox/` (no `_done` in filename)
 3. Determine article class and domain folder
-4. Write the article — standard knowledge, decision record, lineage, or prediction as appropriate
-5. Update `_connections.md` for cross-domain links; update `core-principles/` links
+4. Write the article — standard knowledge, decision record, or prediction as appropriate
+5. Update `_connections.md` for cross-domain links; update `wiki/core-principles/` links
 6. Update `_index.md`
 7. Append to `change-log.md`
 8. Move file from `Inbox/` to `raw/` with `_done` appended
@@ -167,7 +166,7 @@ AI-generated answers, briefings, and reports. Every question answered gets an ou
 
 ## Health Check (trigger: "run a health check")
 
-Scan wiki for: contradictions, sourced `[unverified]` claims, stale articles, orphaned articles, missing cross-links, misattributed external material. Check `open-questions.md` for tensions that have since resolved. Check `prediction-log/` for predictions ready for review. Check `core-principles/` for domain articles not yet connected upward. Suggest 3 new article candidates. Save report to `outputs/YYYY-MM-DD_health-check.md`.
+Scan wiki for: contradictions, sourced `[unverified]` claims, stale articles, orphaned articles, missing cross-links, misattributed external material. Check `open-questions.md` for tensions that have since resolved. Check `prediction-log/` for predictions ready for review. Check `wiki/core-principles/` for domain articles not yet connected upward. Suggest 3 new article candidates. Save report to `outputs/YYYY-MM-DD_health-check.md`.
 
 ---
 

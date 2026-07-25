@@ -23,7 +23,20 @@ ClaudeSecondBrain/
 │   ├── _index.md                ← navigation entry point; always kept current
 │   ├── _connections.md          ← cross-domain link map; the compounding asset
 │   ├── _meta/                   ← change log, processing memory, bookkeeping
-│   │   └── change-log.md        ← append-only log of all actions taken
+│   │   ├── change-log.md        ← append-only log of all actions taken
+│   │   ├── open-questions.md    ← active intellectual tensions
+│   │   ├── task-ledger.md       ← all active tasks with owner and status
+│   │   ├── decision-registry.md ← settled decisions; do not reopen without Gabriel
+│   │   ├── handoffs.md          ← inter-agent handoff memos (append-only)
+│   │   └── agent-protocol.md    ← governing rules for all AI agents; read before any write
+│   ├── _agents/
+│   │   ├── claude/              ← Claude's inbox.md, outbox.md, status.md
+│   │   ├── chatgpt/             ← ChatGPT's inbox.md, outbox.md, status.md
+│   │   ├── gemini/              ← your inbox.md, outbox.md, status.md
+│   │   └── cursor/              ← Cursor's inbox.md, outbox.md, status.md
+│   ├── core-principles/         ← first-principles layer (resonance, translation, emergence)
+│   ├── decision-records/        ← WHY decisions exist, not just what they are
+│   ├── prediction-log/          ← falsifiable claims with dates
 │   ├── craft-fiction/           ← narrative canon, character architecture, craft rules
 │   ├── theory-consciousness/    ← VCH framework and its scientific bridges
 │   ├── music-performance/       ← composition, orchestration, teaching pedagogy
@@ -45,6 +58,21 @@ Every answer, briefing, or report you generate is saved here as `YYYY-MM-DD_<slu
 
 ### `wiki/_meta/change-log.md`
 The system memory file. Read it before operating to know what has already been processed. Append to it whenever you take any action. This is also accessible at `changelog.md` if referenced from the root, but the canonical location is `wiki/_meta/change-log.md`.
+
+---
+
+## Session Initialization (Non-Negotiable)
+
+Before any write action, read in this order:
+
+1. `wiki/_meta/agent-protocol.md` — governing rules for all agents; write permissions, message types, settled boundaries
+2. `wiki/_meta/task-ledger.md` — check for tasks assigned to `gemini` or marked `blocked`
+3. `wiki/_meta/decision-registry.md` — settled decisions are binding; do not re-derive them
+4. `wiki/_agents/gemini/inbox.md` — your inbox; surface `🔴 HIGH PRIORITY` items first, then acknowledge normal-priority items
+5. `wiki/_meta/handoffs.md` — what the previous agent needs you to know
+6. `wiki/_index.md` and `wiki/_connections.md` — orientation before navigating deeper
+
+Report to Gabriel: inbox items and their priority, open tasks assigned to you, what the previous agent left, and what you are ready to do.
 
 ---
 
@@ -111,6 +139,11 @@ Active project sub-folders:
 - `comtechsuite/`
 - `writetrack/`
 - `prestige-fiction-forge/`
+- `nexus/`
+- `flowscape/`
+- `shakespearience/` — includes `ops-playbooks/` (12 business-setup playbooks + operating costs)
+
+(This list drifted stale — see `wiki/_index.md` for the live inventory going forward rather than trusting this static list.)
 
 ### `dev-infrastructure/`
 Route here: reusable patterns beneath all projects — MCP server architecture, Neo4j/Mem0 memory design, FModCLI, the four-environment SDLC model, provider configs (Gemini, Ollama, Claude), the "imports = contracts" discipline, and any other infrastructure principle that applies across projects rather than within one.

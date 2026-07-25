@@ -1,89 +1,70 @@
 # Gabriel McPherson — Professional Profile
 
-*Distilled from Gabriel's comprehensive resume and creative profile (August 2025 version). This article documents Gabriel's professional background, creative track record, and technical capabilities as context for the knowledge base as a whole.* (source: gabriel_comprehensive_resume_creaive_profile_8_2025_v1.md)
+(Source: `Gabriel McPherson Profile.md`, `Gabe McPherson P&W April 2024.pdf`, `Gabe McPherson P&W April 2026.pdf`, `Gabriel McPherson Bio 2.pdf`, `Gabriel McPherson Bio.pdf`, `Gabriel McPherson Performance Biography.pdf`, `GabrielMcPherson - Resume.pdf`)
 
----
+## Professional Summary
 
-## Summary
+Gabriel McPherson is a Seattle-based professional with a diverse background spanning hospitality, the performing arts, public relations, and education. He is a passionate advocate for arts education and inclusivity, skilled at blending creative vision with operational expertise to deliver exceptional results. He seeks to foster meaningful connections through outreach, design, and cultural representation.
 
-Gabriel McPherson is a Seattle-based AI innovator, composer, novelist, theatrical director, and arts education leader with nearly three decades of experience at the intersection of creativity, technology, and performance. His career spans professional acting (national tour, union performer), music composition (20+ theatrical scores, 5 commissioned musicals), theatrical direction (60+ productions, major U.S. venues), arts education leadership (18 years), and — most recently — AI research and integration work through two self-founded initiatives.
+## Core Competencies
 
----
+*   **Creative Leadership**: Extensive experience as a director, designer, and composer for theatre, film, and television. Has directed over 60 theatrical productions and designed sets and lighting for more than 100 shows.
+*   **Educational Expertise**: Certified educator with a background in curriculum development, classroom management, and technical theater instruction.
+*   **Operations Management**: Skilled in managing large teams, coordinating events, and optimizing operations for success.
+*   **Hospitality & VIP Relations**: Proven ability to cater to high-profile clientele with discretion and exceptional service.
+*   **Public Relations & Outreach**: Adept at community engagement, program development, and fostering philanthropic partnerships.
+*   **Cultural Advocacy**: Deep understanding of queer culture and diversity, promoting inclusivity across all endeavors.
 
-## Active Ventures
+## Professional Experience
 
-**Artique Initiative** (2020–present) — Founder & Director. Explores AI's transformative potential in fine arts and digital media. Collaborates with AI developers on generative technologies; develops educational content and workshops on AI-driven creative workflows; creates ethical frameworks for responsible AI adoption in creative industries.
+**Operations Director, Riverside Family Restaurant Group, Spokane, WA (2021-2023)**
+*   Streamlined operations for multiple venues, enhancing customer service and operational efficiency.
+*   Oversaw financial restructuring and advised on strategic planning for post-covid operations.
+*   Re-aligned staff training programs focused on inclusivity and excellence in service.
 
-**NextStage Initiative** (2019–present) — Project Lead. Development of AI-powered systems for dynamic performance adaptation; real-time audience sentiment analysis for responsive show experiences; strategic partnerships for ethical AI in live venues.
+**Director of Theatrical Arts, Tacoma School of the Arts, Tacoma, WA (2017-2021)**
+*   Designed and implemented comprehensive drama and technical theater programs with a yearly production budget of nearly $400k.
+*   Directed large-scale productions, balancing artistic vision with educational outcomes.
+*   Developed inclusive curricula, integrating cultural diversity and modern theater practices.
+*   Managed technical training, equipping students with industry-standard skills in lighting, sound, and stagecraft.
 
-**Research & Integration Consulting** (2019–present) — Freelance. Strategic AI consulting for business and education; curriculum design on AI applications; AI-driven customer engagement models.
+**Director of Drama and Technical Theatre, Bellarmine Preparatory School, Tacoma, WA (2013-2017)**
+*   Revitalized the drama program, increasing student participation by 200% and audience engagement by 180%, including a doubling of ticket revenue season over season in the first year.
+*   Oversaw a complete technical and structural upgrade to the lighting and rigging facilities of the theatre, with an overall project budget of $600k over 2 seasons.
+*   Collaborated with administration to integrate arts education into broader school goals.
 
----
+**Resident Stage/Music Director, Broadway Center for the Performing Arts, Tacoma, WA (2010-2021)**
+*   Directed 60+ theatrical productions across the U.S., managing artistic vision, team collaboration, and logistics.
+*   Designed sets and lighting for 35+ shows, integrating innovative solutions and audience engagement strategies.
+*   Composed scores for TV, film, and theater, including five commissioned musicals.
 
-## Performing Arts Career
+**Founding Member & Executive Music Producer, Doxology, Seattle, WA (2005-2013)**
+*   Co-founded and led a nationally recognized rock band, touring and producing original music.
+*   Managed creative direction, collaborating with top industry professionals.
 
-**Broadway Center for the Performing Arts** (Tacoma, WA; 2010–2021) — Resident Stage & Music Director. 60+ theatrical productions directed across the U.S. 35+ lighting/set designs. 350+ master classes in movement, voice, classical text, and vocal performance. Original scores for TV, film, and theater including 5 commissioned musicals. Composer credits include Mary Zimmerman's *Secret in the Wings* and *Metamorphoses*, Shakespeare productions (*The Tempest*, *Romeo & Juliet*, and 10+ others).
+**Cast Member, National Tour of Mamma Mia (2002-2005)**
+*   Performed in a nationally touring production, representing the company across diverse audiences.
+*   Served as Educational Outreach Liaison, coordinating community engagement programs.
+*   Led philanthropic initiatives to promote access to the arts.
 
-**Symphony Tacoma** — Co-Producer, Director, and Narrator for Prokofiev's *Romeo & Juliet* (2019).
+**Lead Server, Miyagi's on the Sunset Strip, Los Angeles, CA (2000-2002)**
+*   Delivered personalized service to a consistent flow of A-list clientele.
+*   Balanced high-pressure demands with exceptional hospitality and discretion.
 
-**Cunningham Commission Recipient** — Youth Theatre musical development.
-
-**Mamma Mia National Tour** (2002–2005) — Cast Member & Educational Outreach Liaison.
-
-**Doxology** (Seattle, WA; 2005–2013) — Founding Member & Executive Music Producer. Nationally touring rock band; performed with The B-52's, Snoop Dogg, 311, Garbage, and Wyclef Jean.
-
-**Current creative project:** New musical adaptation based on Louisa May Alcott's *Little Women* trilogy.
-
----
-
-## Education Administration
-
-**Tacoma School of the Arts** (2017–2021) — Director of Theatrical Arts. Drama and technical theater programs; $400K annual budget; AI-driven curriculum enhancements.
-
-**Bellarmine Preparatory School** (2013–2017) — Director of Drama & Technical Theatre. Increased student participation 200% and ticket revenue 100% in first year; $600K facility upgrade over 2 seasons.
-
----
+**Server, Banquet Manager, Corporate Trainer, Sullivan's Steakhouse, Chicago, IL, and Seattle, WA (1997-2000, 2006-2008)**
+*   Managed private events and banquets, ensuring flawless execution and client satisfaction.
+*   Mentored staff and upheld fine-dining service standards.
 
 ## Education
 
-**Bachelor of Fine Arts, Acting** — The Theatre School at DePaul University (Chicago, IL; 2000). Concentration in Music Composition.
+*   **BFA in Acting** – The Theatre School at DePaul University, Chicago, IL (2000)
+*   **Career Technical Education (CTE) Professional Certification** – Bates Technical College, Tacoma, WA (2017)
 
-**Career Technical Education (CTE) Professional Certification** — Bates Technical College (Tacoma, WA; 2017).
+## Professional Memberships
 
-**Ongoing AI study:** Coursera, MIT AI Ethics Lab, DeepLearning.AI.
-
----
-
-## Technical Skills
-
-**AI & Machine Learning:** TensorFlow, OpenAI API, Runway ML, DALL·E, Claude. Programming: Python (NumPy, Pandas), JavaScript, Swift.
-
-**Creative Technologies:** Adobe Creative Suite (Expert Level). Pro Tools, Logic Pro, Digital Orchestration.
-
-**Collaboration & Automation:** Slack, Microsoft Teams, Notion, Trello, Asana. Zapier, AI-driven automation tools.
-
----
-
-## Professional Affiliations
-
-Actors' Equity Association; SAG-AFTRA; Local Musicians Union #47 (Los Angeles); IATSE; Writers Guild of America; National Education Association (Technology Committee Member).
-
----
-
-## Cross-Domain Relevance
-
-Gabriel's background directly informs every domain of this knowledge base:
-
-- His 18 years of music composition and direction inform the [music-performance](../music-performance/) domain and are the direct authority behind *String Theory*'s musical architecture
-- His AI integration work informs the [dev-infrastructure](../dev-infrastructure/) and [ai-collaboration](../ai-collaboration/) domains
-- His theatrical career (60+ productions, master classes, conservatory training) grounds the performance pedagogy dimension of the [music-performance](../music-performance/) domain
-- The *String Theory* novel draws on his music theory expertise, physics research, and personal emotional history
-- The Cunningham Commission and *Little Women* adaptation are active creative projects beyond the novel's scope
-
----
-
-## Cross-References
-
-- [craft-fiction/string-theory/](../craft-fiction/string-theory/) — Gabriel is the author; his music composition background is the direct source of the novel's musical architecture
-- [dev-projects/](../dev-projects/) — Artique Initiative and NextStage are relevant to Codex Guardian and other AI-creative tools
-- [ai-collaboration/](../ai-collaboration/) — Gabriel's AI consulting and ethical framework work are relevant to this domain
+*   Actors' Equity Association
+*   SAG-AFTRA
+*   Local Musicians Union #47
+*   IATSE (Stage Union)
+*   Writers Guild of America
+*   National Education Association

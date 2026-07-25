@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  com.gabrielmcp.secondbrain.ingest-watcher.plist
+  ────────────────────────────────────────────────
+  Triggers ingest.sh whenever any file lands in raw/ (or the Desktop inbox
+  symlink that points to it). launchd fires on any filesystem change to the
+  watched path — new file, rename, deletion.
+
+  Boot-race note: ingest.sh includes a 30-second volume-mount wait loop.
+  If /Volumes/Ready500 is not mounted within 30 seconds of boot, ingest.sh
+  exits cleanly (exit 0) and logs to /tmp/ingest-boot.log. The WatchPaths
+  trigger will re-fire the next time a file lands in raw/, by which point
+  the volume will be mounted under normal conditions.
+
+  Local-trigger fix (2026-07-18): ProgramArguments and WorkingDirectory now
+  point at a thin wrapper on local/boot disk (~/Library/Application Support/
+  secondbrain/ingest-trigger.sh, mirrored at launchd/local-triggers/ in this
+  repo) instead of directly at a script on the external volume. Diagnosed
+  live: launchd refuses to exec a LaunchAgent whose ProgramArguments target
+  a path on an external volume (last exit code = 78: EX_CONFIG), independent
+  of Full Disk Access grants on /bin/zsh — a different failure mode from the
+  earlier TCC/cp runtime bug. The wrapper execs cleanly from local disk, then
+  cd's onto the external volume and hands off to the real ingest.sh, which
+  is where it must stay since raw/ only exists there. WatchPaths is
+  unaffected and still points at the external raw/ folder.
+
+  Prior agent name: the original (unversioned) launchd entry for this job
+  was named com.gabrielmcp.secondbrain.ingest. If that agent is still loaded
+  on your machine, unload it before running install.sh to avoid both running:
+      launchctl unload ~/Library/LaunchAgents/com.gabrielmcp.secondbrain.ingest.plist
+
+  Install:
+      ./launchd/install.sh
+
+  Uninstall:
+      ./launchd/install.sh --unload
+
+  Provider selection: set SECOND_BRAIN_AI_PROVIDER to "gemini" (default) or "claude".
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.gabrielmcp.secondbrain.ingest-watcher</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/zsh</string>
+        <string>/Users/gabrielmcp/Library/Application Support/secondbrain/ingest-trigger.sh</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/gabrielmcp/Library/Application Support/secondbrain</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <!-- Switched from gemini to agy 2026-07-18: Google deprecated the
+             free-tier gemini-cli ("Gemini Code Assist for individuals") in
+             favor of the Antigravity CLI. agy is free; claude is available
+             as a fallback but bills per-token against the Anthropic API,
+             which is why it is not the default. -->
+        <key>SECOND_BRAIN_AI_PROVIDER</key>
+        <string>agy</string>
+        <key>PATH</key>
+        <string>/Users/gabrielmcp/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+        <key>HOME</key>
+        <string>/Users/gabrielmcp</string>
+    </dict>
+
+    <!-- Fire whenever the raw/ directory (or its Desktop symlink) changes -->
+    <key>WatchPaths</key>
+    <array>
+        <string>/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw</string>
+    </array>
+
+    <!--
+      ThrottleInterval: minimum seconds between consecutive firings.
+      30 seconds prevents rapid re-fires if multiple files land at once.
+    -->
+    <key>ThrottleInterval</key>
+    <integer>30</integer>
+
+    <!-- Local, not external: launchd opens these fds at spawn time, before
+         the child process (and its Full Disk Access grant) ever runs. An
+         external-volume path here was the actual EX_CONFIG cause, not
+         ProgramArguments — see local-trigger fix note above. ingest.sh
+         still writes its full structured log to the external
+         logs/ingest.log itself via explicit appends once running. -->
+    <key>StandardOutPath</key>
+    <string>/Users/gabrielmcp/Library/Application Support/secondbrain/logs/ingest.launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/gabrielmcp/Library/Application Support/secondbrain/logs/ingest-error.launchd.log</string>
+
+    <!-- Do not launch at load time — only on WatchPaths trigger -->
+    <key>RunAtLoad</key>
+    <false/>
+</dict>
+</plist>

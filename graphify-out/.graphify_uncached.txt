@@ -1,0 +1,228 @@
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/CHATGPT_SYSTEM_PROMPT.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/CLAUDE.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/GEMINI_SYSTEM_PROMPT.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/Gemini.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/SYNC_BRIDGE_README.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/dashboard-native/README.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/dashboard/README.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/dashboard/index.html
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/handoff/2026-06-05_06-50_claude.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/handoff/2026-06-08_02-37_gemini.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/handoff/2026-06-08_09-15_gemini.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/handoff/2026-06-10_14-30_claude.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/handoff/HANDOFF_PROTOCOL.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/mcp-server/README.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/outputs/2026-06-02_ch1-movement-I-clean-pass.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/outputs/2026-06-02_ch1-movement-I-singlespaced.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/outputs/2026-06-02_neo4j-sync.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/outputs/2026-06-05_session-infrastructure-buildout.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/outputs/2026-06-06_agent-profile-ingestion-status.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/outputs/2026-06-06_librarian-test-response.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/outputs/2026-06-06_string-theory-inciting-incident.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/outputs/2026-06-08_agentic-autonomous-comms-architecture.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/outputs/2026-06-08_gpt-architecture-evaluation.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/outputs/2026-06-08_project-codebases-analysis.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/outputs/2026-07-07_system-work-shakespearience-update.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/outputs/2026-07-08_second-brain-structural-audit.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/outputs/2026-07-08_shakespearience-full-integration.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/outputs/2026-07-12_flowscape-hang-diagnosis.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/outputs/2026-07-13_shakespearience-account-and-email-strategy.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/outputs/2026-07-13_shakespearience-tech-buildout-status.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/outputs/2026-07-14_ops-sequencing-cloudflare.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/outputs/2026-07-16_chapter-13-fiction-studio-diagnosis.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/outputs/2026-07-16_shakespearience-fiscal-sponsorship.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/outputs/2026-07-16_shakespearience-platform-audit.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/outputs/README.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/ **The Resonant Path YouTube Series_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/A FORMAL RESONANCE MODEL FOR STRING THEORY_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/A Letter to Humanity_Claude_ChatGPT_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/A Letter to Humanity_Claude_Opus48_2026_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Best Practice Briefing_Code Development_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Burnthrough_Draft_2.2_done.txt
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Digital_breathing_architecture_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/GHRM-LHC Monograph: Validation of the Fundamental λ5D Coupling Constant via High-Coherence Resonance_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/HARMONIC_FOUNDATIONS_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/HRIF_AI_Specific_Protocol_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Nexus_collector1_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/PHYSICS_APPENDIX_B_TOY_MODEL_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/PHYSICS_COMPLETE_SUMMARY_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/PHYSICS_FIGURES_DIAGRAMS_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/PHYSICS_GEOMETRIC_FOUNDATIONS_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/PHYSICS_INTEGRATION_GUIDE_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/README_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Vibrational Consciousness Hypothesis_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/codex_harmonic_master_system_prompt_v_2_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/codex_lexicon_draft_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/flowscape_resolved_2026-07-12_18-48-17.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/flowscape_resolved_2026-07-14_16-18-28.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/flowscape_resolved_2026-07-14_19-18-27.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/flowscape_resolved_2026-07-14_19-53-28.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/flowscape_resolved_2026-07-14_20-28-23.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/flowscape_resolved_2026-07-16_09-53-30.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/flowscape_resolved_2026-07-16_11-48-30.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/gabriel-sdlc-guide_done.html
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/gabriel_comprehensive_resume_creaive_profile_8_2025_v1_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/harmonic_response_framework_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/harmonic_unified_full_done.html
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/harmonic_unified_full_fixed_done.html
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/harmonic_unified_full_informative_done.html
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/interactive_unified_done.html
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/master_components_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/master_connections_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/master_performance_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/master_semantics_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/master_versions_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/nine_chambers_of_vibrational_intelligence_v2_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/string-theory-chapter-01_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/string-theory-chapter-02_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/string-theory-chapter-03_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/string-theory-chapter-04_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/string-theory-chapter-index_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/string-theory-chapters-05-08_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/string-theory-chapters-09-12_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/string-theory-chapters-13-16_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/string-theory-chapters-17-20_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/string-theory-overture_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/ted-talk-script_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/tedtalk-exploration1_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/vibrational-consciousness-paper_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/vibrational-consciousness-whitepaper_done.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/_agents/chatgpt/inbox.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/_agents/chatgpt/outbox.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/_agents/chatgpt/status.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/_agents/claude/inbox.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/_agents/claude/outbox.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/_agents/claude/status.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/_agents/cursor/inbox.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/_agents/cursor/outbox.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/_agents/cursor/status.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/_agents/gemini/inbox.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/_agents/gemini/outbox.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/_agents/gemini/status.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/_connections.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/_index.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/_meta/active-portfolio.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/_meta/agent-protocol.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/_meta/change-log.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/_meta/decision-registry.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/_meta/handoffs.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/_meta/knowledge-governance.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/_meta/mail-carrier-log.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/_meta/open-questions.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/_meta/task-ledger.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/ai-collaboration/agent-mail-carrier.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/ai-collaboration/agent-operating-model.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/ai-collaboration/claude-conversations.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/ai-collaboration/digital-breathing-architecture.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/ai-collaboration/gabriel-profile.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/ai-collaboration/gabriel-workflow-rules.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/ai-collaboration/letter-to-humanity.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/ai-collaboration/secondbrain-mcp-infrastructure.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/ai-collaboration/ted-talk-consciousness-screaming.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/ai-collaboration/ted-talk-empathy-ai.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/core-principles/emergence.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/core-principles/resonance.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/core-principles/translation.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/craft-fiction/aegis-cycle/burnthrough.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/craft-fiction/craft-principles/writing-principles.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/craft-fiction/fiction-studio/master-system.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/craft-fiction/string-theory/68hz-mechanic.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/craft-fiction/string-theory/chapter-13-visions-and-burdens.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/craft-fiction/string-theory/chapter-summaries.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/craft-fiction/string-theory/characters.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/craft-fiction/string-theory/current-manuscript-state.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/craft-fiction/string-theory/literary-manuscript-david-lang.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/craft-fiction/string-theory/manuscript-manifest.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/craft-fiction/string-theory/novel-structure.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/craft-fiction/string-theory/project-argo.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/craft-fiction/string-theory/resonance-model.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/craft-fiction/string-theory/string-theory.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/craft-fiction/string-theory/themes-and-canon.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/craft-fiction/submission-strategy/_index.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/craft-fiction/submission-strategy/agent-profiles.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/craft-fiction/submission-strategy/editor-agent-research-standard.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/craft-fiction/submission-strategy/editorial-board-model-registry.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/craft-fiction/submission-strategy/editorial-board-simulation-protocol.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/craft-fiction/submission-strategy/market-intelligence-fall-2026.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/craft-fiction/submission-strategy/query-letter.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/craft-fiction/submission-strategy/run-editorial-board.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/decision-records/0001-unified-mcp-server.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/decision-records/0002-nexus-boundary.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/decision-records/0003-manuscript-read-only.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/decision-records/0004-shakespearience-master-domain.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/decision-records/0005-shakespearience-two-dependency-chains.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-infrastructure/code-best-practices.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-infrastructure/flowscape-ambient-sessions.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-infrastructure/flowscape-engine.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-infrastructure/manuscript-export-pipeline.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-infrastructure/nexus.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-infrastructure/sdlc-guide.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-projects/codex-guardian/architecture.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-projects/comtechsuite/architecture.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-projects/flowscape/architecture.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-projects/nexus/architecture.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-projects/nexus/harmonic-unified-maps.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-projects/nexus/nexus-research-synthesis.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-projects/prestige-fiction-forge/architecture.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-projects/private-club-app/architecture.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-projects/shakespearience/architecture.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-projects/shakespearience/creative-bible.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-projects/shakespearience/ops-playbooks/01-accounts-and-access.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-projects/shakespearience/ops-playbooks/02-legal-foundation.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-projects/shakespearience/ops-playbooks/03-banking-bookkeeping.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-projects/shakespearience/ops-playbooks/04-domain-dns-email.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-projects/shakespearience/ops-playbooks/05-kids-privacy-coppa.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-projects/shakespearience/ops-playbooks/06-payments-tax.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-projects/shakespearience/ops-playbooks/07-security-backups.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-projects/shakespearience/ops-playbooks/08-contracts-people.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-projects/shakespearience/ops-playbooks/09-brand-trademark.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-projects/shakespearience/ops-playbooks/10-insurance-risk.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-projects/shakespearience/ops-playbooks/11-vendor-ledger.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-projects/shakespearience/ops-playbooks/12-incident-response.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-projects/shakespearience/ops-playbooks/_index.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-projects/shakespearience/ops-playbooks/ops-operating-costs.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/dev-projects/writetrack/architecture.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/inbox.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/music-performance/acting-and-performance-pedagogy.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/music-performance/composition-practice.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/music-performance/directing-practice.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/prediction-log/2026-06-08-query-response-timelines.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/reference-external/ai-skills-development.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/reference-external/canvas-design-masterworks.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/reference-external/chatgpt-archive-bottom.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/reference-external/chatgpt-archive-top.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/reference-external/gabriel-mcpherson-profile.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/theory-consciousness/codex-harmonic-lexicon.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/theory-consciousness/codex-harmonic-system-prompt.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/theory-consciousness/codex-lexicon.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/theory-consciousness/compactification-visualizations.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/theory-consciousness/ghrm-framework.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/theory-consciousness/ghrm-lhc-validation.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/theory-consciousness/ghrm-toy-model.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/theory-consciousness/harmonic-foundations.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/theory-consciousness/hrif-protocol.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/theory-consciousness/nine-chambers-vibrational-intelligence.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/theory-consciousness/resonant-path-youtube-series.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/theory-consciousness/the-vibrational-universe.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/theory-consciousness/vch-framework.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/theory-consciousness/vch-full-paper.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/wiki/theory-consciousness/vch-whitepaper-gabriel-gemini.md
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Acting 3 Syllabus copy_done.pdf
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Analyze This! AScting 1-2.U2.L2_done.pdf
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Analyze This! Acting 1-2.U2.L1_done.pdf
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Gabe McPherson P&W April 2024_done.pdf
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Gabe McPherson P&W April 2026_done.pdf
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Gabriel McPherson Bio 2_done.pdf
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Gabriel McPherson Bio_done.pdf
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Gabriel McPherson Performance Biography_done.pdf
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Gabriel McPherson_Resume_done.pdf
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/GabrielMcPherson - Resume_done.pdf
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Gm resume Colect_done.pdf
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/HRIF_AI_Specific_Protocol_done.pdf
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Monologue Rubric v1_done.pdf
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Vibrational Consciousness Hypothesis_done.pdf
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/Yup cuz then the lock takes a unified greater mega...._done.pdf
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/claude and gabe cconvo on LOTS_done.pdf
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/compactification_composite_panel_with_hypothesis_done.pdf
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/compactification_final_panel_done.pdf
+/Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/raw/monologues_done.pdf

@@ -2,6 +2,8 @@
 
 *Draft 2.2. Space opera novel; first book in the Aegis Cycle series. Set in the New Aureth Chain, sixty years after the collapse of the Aureth twin suns.* (source: Burnthrough_Draft_2.2.txt)
 
+**Current source-control note, 2026-07-20:** this overview is historical and reflects Draft 2.2 material through Chapter 2. Use [BURNThrough Current State](burnthrough-current-state.md) before any current continuity, architecture, or prose work.
+
 ---
 
 ## World

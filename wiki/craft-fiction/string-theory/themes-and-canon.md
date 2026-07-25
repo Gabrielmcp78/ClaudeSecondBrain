@@ -25,7 +25,9 @@ The original Project ARGO model predicted convergence on November 28, 2026. Davi
 
 ## Transcendence vs. Death
 
-Chapter 11's ending is deliberately ambiguous. David uploads encrypted data and loses consciousness as the chalkboard wall collapses. Chapter 14 depicts David in a dream-scholar's study with his deceased father. Chapter 17 shows David vanishing physically. Chapter 19 shows Celeste's son (also named David) in an advanced playroom years later. The novel does not resolve whether David dies, transcends, or both — the ambiguity is structural, not accidental.
+Chapter 18's ending is deliberately ambiguous. David uploads encrypted data and loses consciousness as the chalkboard wall collapses. Chapter 21 depicts David in a dream-scholar's study with his deceased father. Chapter 24 shows David vanishing physically. Chapter 26 shows Celeste's son (also named David) in an advanced playroom years later. The novel does not resolve whether David dies, transcends, or both — the ambiguity is structural, not accidental.
+
+*(Draft 6.6 references: these events were Chs 11, 14, 17, 19 in the 20-chapter build. See [Novel Structure](novel-structure.md) chapter mapping table.)*
 
 ---
 
@@ -53,13 +55,15 @@ The SolPhi Institute's foundational document. Ten points:
 
 ## Rune Ishikawa's True Role
 
-Throughout Chapters 1–8, Ishikawa reads as institutional antagonist: he questions David's work, produces the dossier, recommends administrative leave, removes David's credentials. Chapter 17 recontextualizes every prior action — Ishikawa has been protecting and partnering with David throughout. His apparent antagonism was stewardship. He and David transcend together on the train. The 1971 flashback (Chapter 13) shows young Ishikawa sealing Project ARGO's lab and maintaining its operation — he has been the keeper of the phenomenon for decades.
+Throughout the opening chapters, Ishikawa reads as institutional antagonist: he questions David's work, produces the dossier, recommends administrative leave, removes David's credentials. Chapter 24 recontextualizes every prior action — Ishikawa has been protecting and partnering with David throughout. His apparent antagonism was stewardship. He and David transcend together on the train. Chapter 20 scene 20.5 ("THE WEIGHT OF NAMES | September 1971") contains the 1971 Project ARGO flashback — this is where young Ishikawa's role as keeper of the phenomenon is revealed. *(Draft 6.6: Ch 17 for the recontextualization; the 1971 flashback was in what was then Ch 13.)*
 
 ---
 
 ## Eleanor Guare's Role
 
-First presented as an instrument repair shop proprietor in Buffalo (Chapter 2). Chapter 5 reveals "researchers Tsukino and Guare" from 1971 — she is a Project ARGO original researcher. Her shop's connection to David's family predates his awareness of her (cello repair marks dated 1985 with his grandfather Elliot's initials). Her Chapter 13 title ("Phenom de Guare") marks her as a focal point rather than a peripheral figure. Full clarification of her role and relationship to the multigenerational phenomenon is [unverified — requires full chapter text analysis].
+First presented as an instrument repair shop proprietor in Buffalo (Chs 6–7 in the current build; the Instrument Shop, Workshop, and Hotel Room scenes in Ch 6 are her introduction). Chapter 12 ("Twin Primes on the six") reveals "researchers Tsukino and Guare" from 1971 — she is a Project ARGO original researcher. Her shop's connection to David's family predates his awareness of her (cello repair marks dated 1985 with his grandfather Elliot's initials). Chapter 20 ("Phenom de Guare") is her focal chapter — the title is named for her. The 1971 material in Ch 20 scene 20.5 ("THE WEIGHT OF NAMES | September 1971") is her origin. Full clarification of her role and relationship to the multigenerational phenomenon is [unverified — requires full chapter text analysis].
+
+*(Draft 6.6: Eleanor's instrument shop was in Ch 2; "Tsukino and Guare" reveal was Ch 5; her focal chapter "Phenom de Guare" was Ch 13.)*
 
 ---
 
@@ -90,25 +94,18 @@ A Polaroid of a tuning fork buried in soil appears in David's lecture slides (Ch
 
 Each chapter carries a musical subtitle that governs its internal organization. The forms are not decorative:
 
-| Form | Chapter | Implication |
-|------|---------|-------------|
-| String quartet in four movements | 1 | Four distinct spaces/perspectives in counterpoint |
-| Epistemic fugue in four voices | 2 | Four voices (timelines/perspectives) pursuing the same subject |
-| Secular passion in eight movements | 3 | David's suffering mapped onto the oratorio passion structure |
-| Suite with walking interstitials | 4 | Contrasting scenes with transitional passages |
-| Fantasia quasi sonata | 5 | Free-form but gesturing toward formal resolution |
-| Symphony in five movements | 6 | Broad scope; multiple thematic groups |
-| — | 7 | No subtitle; the solar connection stands alone |
-| — | 8 | No subtitle; institutional collapse |
-| Spatio-Symbolic Drift in Recursive Harmonic Environments | 9 | VCH-adjacent subtitle; the burial chapter |
-| — | 10 | Convergence; the experiment fails |
-| Fantasia on Bach's Sarabande in four movements | 11 | Variation on existing work; the climax |
-| — | 12 | Global aftermath; no musical form needed |
-| — | 13 | The institutional response |
-| — | 14 | The father scene; outside time |
-| — | 15 | David's re-entry into the world |
-| Passacaglia with chorale in four movements | 16 | Ostinato bass with chorale above; the final decision |
-| Collapsed Reality | 17 | Departure |
-| TONAL ACTIVATION | 18 | The protocol made public |
-| — | 19 | The legacy in the son |
-| — | 20 | The reunion outside time |
+*Note: Musical form designations below reflect both confirmed (from manifest) and historical (from Draft 6.6) data. Where a form is not confirmed in the Draft 6.7 manifest, it is marked [historical: 6.6].*
+
+| Form | Chapter (Draft 6.7) | Notes |
+|------|---------------------|-------|
+| I. Allegro sostenuto | 3 — THE REHEARSAL HALL | Confirmed in manifest subtitle |
+| SUBJECT/ANSWER intercutting | 5 — Now… Then | Fugal device visible in scene headings; not a formal subtitle |
+| Secular passion in eight movements [historical: 6.6] | 9 — Fruitful Eve, False Dawn, Fateful Night | Was Ch 3 in 6.6; 8 scenes in current build confirming the form |
+| Suite with walking interstitials [historical: 6.6] | 10–11 — Exercises in Humanity / Humanities | Was Ch 4 in 6.6; Walk A–E sequence confirms the interstitial structure |
+| Fantasia quasi sonata [historical: 6.6] | 12 — Twin Primes on the six | Was Ch 5 in 6.6 |
+| Symphony in five movements [historical: 6.6] | 13 — Visions and Burdens… of Knowing | Was Ch 6 in 6.6; 5 scenes confirm the movement count |
+| Spatio-Symbolic Drift in Recursive Harmonic Environments | 16 — To Ground | Confirmed in manifest subtitle |
+| Fantasia on Bach's Sarabande [historical: 6.6] | 18 — The Symmetry of Violence | Was Ch 11 in 6.6; scene 18.1 "The SARABANDE" confirms the form survives |
+| Passacaglia with chorale in four movements [historical: 6.6] | 23 — The Final Decision | Was Ch 16 in 6.6; not confirmed in manifest subtitle |
+| Collapsed Reality | 24 — Endless Possibilities | Confirmed in manifest subtitle |
+| TONAL ACTIVATION | 25 — Reverberation | Confirmed in manifest subtitle |

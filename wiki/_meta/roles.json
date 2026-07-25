@@ -1,0 +1,62 @@
+[
+  {
+    "id": "owner",
+    "name": "Owner",
+    "builtIn": true,
+    "createdAt": "2026-07-07T21:29:50.379Z",
+    "createdBy": "system",
+    "description": "Full control of the SecondBrain system, including creating new privilege levels and managing every member and agent.",
+    "permissions": [
+      "view_dashboard",
+      "view_agents",
+      "dispatch_agents",
+      "delegate_tasks",
+      "manage_agents",
+      "manage_members",
+      "manage_roles",
+      "manage_system"
+    ]
+  },
+  {
+    "id": "admin",
+    "name": "Admin",
+    "builtIn": true,
+    "createdAt": "2026-07-07T21:29:50.380Z",
+    "createdBy": "system",
+    "description": "Operates day-to-day and manages agents and members, but cannot redefine the privilege structure itself.",
+    "permissions": [
+      "view_dashboard",
+      "view_agents",
+      "dispatch_agents",
+      "delegate_tasks",
+      "manage_agents",
+      "manage_members"
+    ]
+  },
+  {
+    "id": "collaborator",
+    "name": "Collaborator",
+    "builtIn": true,
+    "createdAt": "2026-07-07T21:29:50.380Z",
+    "createdBy": "system",
+    "description": "Full working access to the dashboard and agent hub — can dispatch agents and delegate tasks — without admin controls.",
+    "permissions": [
+      "view_dashboard",
+      "view_agents",
+      "dispatch_agents",
+      "delegate_tasks"
+    ]
+  },
+  {
+    "id": "viewer",
+    "name": "Viewer",
+    "builtIn": true,
+    "createdAt": "2026-07-07T21:29:50.380Z",
+    "createdBy": "system",
+    "description": "Read-only access to the dashboard and agent hub. Cannot send dispatches or create tasks.",
+    "permissions": [
+      "view_dashboard",
+      "view_agents"
+    ]
+  }
+]

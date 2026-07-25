@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  com.gabrielmcp.secondbrain.outputs-review.plist
+  ────────────────────────────────────────────────
+  Runs outputs_review.py daily at 18:00 local time. Scans outputs/ for files
+  not yet referenced in change-log.md, scores each for wiki promotion potential,
+  and writes a ranked review queue to wiki/_agents/claude/inbox.md.
+
+  Install:
+      cp launchd/com.gabrielmcp.secondbrain.outputs-review.plist ~/Library/LaunchAgents/
+      launchctl load ~/Library/LaunchAgents/com.gabrielmcp.secondbrain.outputs-review.plist
+
+  Uninstall:
+      launchctl unload ~/Library/LaunchAgents/com.gabrielmcp.secondbrain.outputs-review.plist
+      rm ~/Library/LaunchAgents/com.gabrielmcp.secondbrain.outputs-review.plist
+
+  Run manually at any time:
+      python3 /Volumes/Ready500/DEVELOPMENT/ClaudeSecondBrain/scripts/outputs_review.py
+
+  Local-trigger fix (2026-07-18): ProgramArguments and WorkingDirectory now
+  point at a thin wrapper on local/boot disk (~/Library/Application Support/
+  secondbrain/outputs-review-trigger.sh, mirrored at launchd/local-triggers/
+  in this repo) instead of directly at python3 with a script path on the
+  external volume. Same EX_CONFIG root cause as the ingest-watcher fix above
+  — launchd refuses to exec when ProgramArguments target an external-volume
+  path, regardless of Full Disk Access on the interpreter binary.
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.gabrielmcp.secondbrain.outputs-review</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/zsh</string>
+        <string>/Users/gabrielmcp/Library/Application Support/secondbrain/outputs-review-trigger.sh</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/gabrielmcp/Library/Application Support/secondbrain</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+        <key>HOME</key>
+        <string>/Users/gabrielmcp</string>
+    </dict>
+
+    <!-- Run daily at 18:00 local time -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>18</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <!--
+      If the machine is off or asleep at 18:00, launchd will fire the job
+      the next time the system is awake after the scheduled time.
+    -->
+
+    <!-- Local, not external — see ingest-watcher plist for the EX_CONFIG
+         explanation. The script's real deliverable (wiki/_agents/claude/
+         inbox.md) is written directly by outputs_review.py once running;
+         this only captures its stdout/stderr chatter. -->
+    <key>StandardOutPath</key>
+    <string>/Users/gabrielmcp/Library/Application Support/secondbrain/logs/outputs-review.launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/gabrielmcp/Library/Application Support/secondbrain/logs/outputs-review-error.launchd.log</string>
+
+    <key>RunAtLoad</key>
+    <false/>
+</dict>
+</plist>

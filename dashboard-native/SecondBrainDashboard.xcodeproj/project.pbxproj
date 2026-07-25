@@ -1,0 +1,199 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA000001 /* SecondBrainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000011 /* SecondBrainApp.swift */; };
+		AA000002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000012 /* AppDelegate.swift */; };
+		AA000003 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000013 /* WebViewController.swift */; };
+		AA000004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA000014 /* Assets.xcassets */; };
+		AA000005 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA000015 /* Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA000010 /* SecondBrainDashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondBrainDashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA000011 /* SecondBrainApp.swift */     = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondBrainApp.swift;     sourceTree = "<group>"; };
+		AA000012 /* AppDelegate.swift */        = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift;        sourceTree = "<group>"; };
+		AA000013 /* WebViewController.swift */  = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift;  sourceTree = "<group>"; };
+		AA000014 /* Assets.xcassets */          = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets;        sourceTree = "<group>"; };
+		AA000015 /* Info.plist */               = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist;                  sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA000020 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA000030 /* Products */ = {
+			isa = PBXGroup;
+			children = (AA000010,);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA000031 /* SecondBrainDashboard */ = {
+			isa = PBXGroup;
+			children = (AA000011, AA000012, AA000013, AA000014, AA000015);
+			path = SecondBrainDashboard;
+			sourceTree = "<group>";
+		};
+		AA000032 /* root */ = {
+			isa = PBXGroup;
+			children = (AA000031, AA000030);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA000040 /* SecondBrainDashboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA000060 /* Build configuration list for PBXNativeTarget */;
+			buildPhases = (AA000050, AA000020, AA000051);
+			buildRules = ();
+			dependencies = ();
+			name = SecondBrainDashboard;
+			productName = SecondBrainDashboard;
+			productReference = AA000010;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA000041 /* Project */ = {
+			isa = PBXProject;
+			buildConfigurationList = AA000061 /* Build configuration list for PBXProject */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base);
+			mainGroup = AA000032;
+			productRefGroup = AA000030;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (AA000040);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA000051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (AA000004, AA000005);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA000050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (AA000001, AA000002, AA000003);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA000070 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)");
+				INFOPLIST_FILE = SecondBrainDashboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/../Frameworks");
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gabrielmcp.sbbrain.dashboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+				ENABLE_HARDENED_RUNTIME = YES;
+			};
+			name = Debug;
+		};
+		AA000071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				INFOPLIST_FILE = SecondBrainDashboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/../Frameworks");
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gabrielmcp.sbbrain.dashboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+				ENABLE_HARDENED_RUNTIME = YES;
+			};
+			name = Release;
+		};
+		AA000072 /* Debug (Project) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				COPY_PHASE_STRIP = NO;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AA000073 /* Release (Project) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				COPY_PHASE_STRIP = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA000060 /* Build configuration list for PBXNativeTarget */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (AA000070, AA000071);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA000061 /* Build configuration list for PBXProject */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (AA000072, AA000073);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = AA000041 /* Project */;
+}

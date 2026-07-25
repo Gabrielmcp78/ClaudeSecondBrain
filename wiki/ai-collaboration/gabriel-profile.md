@@ -6,7 +6,7 @@
 
 ## Professional Identity
 
-Gabriel McPherson is a Seattle-based creative professional working at the intersection of arts leadership, technology integration, and speculative theory. His career spans three decades and encompasses theatrical direction, music composition, AI research, software development, and novel writing. He holds a Bachelor of Fine Arts in Acting (concentration: Music Composition) from The Theatre School at DePaul University (2000) and a Career Technical Education certification from Bates Technical College (2017).
+Gabriel McPherson is a creative professional working at the intersection of arts leadership, technology integration, and speculative theory. Based in Martindale, TX (outside Austin) as of July 2026 through at least end of year; previously Seattle-based. His career spans three decades and encompasses theatrical direction, music composition, AI research, software development, and novel writing. He holds a Bachelor of Fine Arts in Acting (concentration: Music Composition) from The Theatre School at DePaul University (2000) and a Career Technical Education certification from Bates Technical College (2017).
 
 Core descriptors used in his own framing: Visionary Innovator in AI/LLM Architecture; Pioneer in AI-enhanced artistic expression; practitioner in creative-technology integration.
 
@@ -25,6 +25,8 @@ Core descriptors used in his own framing: Visionary Innovator in AI/LLM Architec
 **Current novel project:** *String Theory* — upmarket literary fiction with speculative elements. Active submission phase as of 2026. See [String Theory wiki articles](../craft-fiction/string-theory/) and [Agent Profiles](../craft-fiction/submission-strategy/agent-profiles.md).
 
 **Current fiction project:** *BURNThrough* — the Aegis Cycle, Draft 2.2. Space opera. See [Burnthrough](../craft-fiction/aegis-cycle/burnthrough.md).
+
+**Current production collaboration:** *The Shakespearience* — cinematic Shakespeare podcast for children and families, with Stephanie Carll / Present Company. See [Shakespearience Architecture](../dev-projects/shakespearience/architecture.md).
 
 ---
 
@@ -52,7 +54,7 @@ Gabriel originated the [Vibrational Consciousness Hypothesis (VCH)](../theory-co
 
 **Communication style:** Conversational yet substantial. Blend of imaginative language and practical frameworks. High detail plus big-picture synthesis. Examples over theory. Iterative refinement.
 
-**Active projects (as of 2026-06-02):** *String Theory* (submission), *BURNThrough / Aegis Cycle* (draft), Nexus System (development), MemBrain/multi-agent infrastructure (architecture), MCP-AppleIntel (integration testing).
+**Active projects (as of 2026-07-07):** *String Theory* (submission), *BURNThrough / Aegis Cycle* (draft), Nexus System (development), MemBrain/multi-agent infrastructure (architecture), MCP-AppleIntel (integration testing), The Shakespearience (production collaboration with Stephanie Carll / Present Company).
 
 **Domain depth:** Gabriel brings 18+ years of teaching pedagogy, professional performance experience, and genuine technical fluency in AI systems. When working on creative projects, assume deep craft knowledge; when working on AI/dev projects, assume deep systems-level ambition and SDK-first preferences.
 
@@ -71,3 +73,4 @@ Actors' Equity Association; SAG-AFTRA; Local Musicians Union #47 (Los Angeles); 
 - [VCH Framework](../theory-consciousness/vch-framework.md) — Gabriel's consciousness theory
 - [GHRM Framework](../theory-consciousness/ghrm-framework.md) — Gabriel's physics model
 - [Nexus System](../dev-projects/nexus/architecture.md) — Gabriel's software architecture project
+- [The Shakespearience](../dev-projects/shakespearience/architecture.md) — cinematic Shakespeare podcast collaboration with Stephanie Carll / Present Company

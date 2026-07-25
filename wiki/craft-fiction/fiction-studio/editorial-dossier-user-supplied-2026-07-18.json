@@ -1,0 +1,152 @@
+[
+  {
+    "editor_name": "Jordan Pavlin",
+    "house": "Knopf",
+    "editing_process": "Highly collaborative, focus on voice-driven intimacy. Deep dives into character motivation; she pushes authors to make their interior monologues more rigorous and authentic.",
+    "likes": "Unforced prose, psychological interiority, emotional honesty, narratives that feel inevitable rather than constructed.",
+    "dislikes": "Self-conscious stylistic flourishes, sentimentality, characters that lack clear agency, 'plotty' prose that lacks soul.",
+    "editorial_sensibility": "The 'advocate'—she looks for books that she can champion as essential; values long-term career building over the 'hot' book of the moment.",
+    "public_record_insights": "Known for her work with authors like Karen Russell and Louise Erdrich; focuses on the rhythm of the sentence as an extension of the character’s thought process.",
+    "notable_books": ["The Goldfinch by Donna Tartt", "Homegoing by Yaa Gyasi", "The Sellout by Paul Beatty", "Swamplandia! by Karen Russell"]
+  },
+  {
+    "editor_name": "Robin Desser",
+    "house": "Knopf",
+    "editing_process": "Structural architect. Spends significant time on the 'macro'—pacing, character arcs, and the structural integrity of the narrative frame before addressing line edits.",
+    "likes": "Narrative urgency, clarity of vision, stories that hook the reader immediately, structural innovation that serves the plot.",
+    "dislikes": "Flabby midsections, lack of stakes, protagonists who remain static, overly dense or opaque prose that obscures the emotional center.",
+    "editorial_sensibility": "The 'architect'—believes that if the structure is solid, the prose will have the space to shine. Values a propulsive, undeniable reading experience.",
+    "public_record_insights": "Often praised for her ability to untangle complex manuscript webs; focuses heavily on how a book moves through time.",
+    "notable_books": ["The Brief Wondrous Life of Oscar Wao by Junot Díaz", "A Visit from the Goon Squad by Jennifer Egan", "Wild by Cheryl Strayed"]
+  },
+  {
+    "editor_name": "Gary Fisketjon",
+    "house": "Knopf",
+    "editing_process": "Legendarily meticulous. Known for his 'green pen' method; line-by-line, word-by-word surgical precision. He focuses on tightening the prose until only the essential remains.",
+    "likes": "Economy, minimalism, precision, muscular prose, authentic dialogue that sounds like real speech.",
+    "dislikes": "Adverb-heavy writing, lack of restraint, melodrama, decorative prose that doesn't advance the narrative.",
+    "editorial_sensibility": "The 'purist'—believes in the erasure of the author's ego; the goal is for the prose to feel as if it simply exists, without visible effort.",
+    "public_record_insights": "Famous for long-standing collaborations (e.g., Haruki Murakami, Cormac McCarthy); viewed as the gold standard for high-literary discipline.",
+    "notable_books": ["The Secret History by Donna Tartt", "Blood Meridian by Cormac McCarthy", "Norwegian Wood by Haruki Murakami", "Less Than Zero by Bret Easton Ellis"]
+  },
+  {
+    "editor_name": "Becky Saletan",
+    "house": "Riverhead",
+    "editing_process": "Strategic and editorially involved. Focuses on the intersection of cultural relevance and narrative craft; works closely on positioning and voice.",
+    "likes": "Literary-commercial hybrids, books with 'voice' that feel urgent, narratives that engage with contemporary social dynamics.",
+    "dislikes": "Isolationist fiction that feels detached from the real world, clunky exposition, characters that function as stand-ins for ideology.",
+    "editorial_sensibility": "The 'cultural curator'—seeks books that will start conversations. Values books that demand to be read now.",
+    "public_record_insights": "Known for bridging the gap between high-art and the marketplace; excels at making challenging literary concepts accessible.",
+    "notable_books": ["The Brief Wondrous Life of Oscar Wao by Junot Díaz", "The Reluctant Fundamentalist by Mohsin Hamid", "The Sympathizer by Viet Thanh Nguyen"]
+  },
+  {
+    "editor_name": "Nan Graham",
+    "house": "Scribner",
+    "editing_process": "Deep emotional engagement. She acts as the ultimate 'first reader,' focusing on the moral and emotional stakes of the book.",
+    "likes": "The 'cultural artifact'—books that feel like they will endure, complex human relationships, intellectual depth.",
+    "dislikes": "Superficiality, books that rely on shock value, lack of thematic resonance.",
+    "editorial_sensibility": "The 'guardian'—views publishing as a stewardship of literature. Looks for the rare book that has both immediate impact and longevity.",
+    "public_record_insights": "Long-time editor of Don DeLillo and Stephen King; balances the profound with the popular with unparalleled skill.",
+    "notable_books": ["Underworld by Don DeLillo", "All the Light We Cannot See by Anthony Doerr", "The Shining by Stephen King"]
+  },
+  {
+    "editor_name": "Mitzi Angel",
+    "house": "FSG",
+    "editing_process": "Aesthetic-focused. Operates at a high-literary level where the quality of the sentence is the primary metric of success.",
+    "likes": "Strange/idiosyncratic voices, linguistic innovation, experimental structures, prose that defies categorization.",
+    "dislikes": "Convention for the sake of convention, 'market-tested' formulas, sloppy or un-curated prose.",
+    "editorial_sensibility": "The 'aesthete'—prioritizes the singular vision of the author above all else. If it's weird and brilliant, she wants it.",
+    "public_record_insights": "Renowned for her uncompromising taste; she champions work that pushes the boundaries of what a novel can be.",
+    "notable_books": ["Normal People by Sally Rooney", "Dept. of Speculation by Jenny Offill", "Bluets by Maggie Nelson"]
+  },
+  {
+    "editor_name": "Sean McDonald",
+    "house": "FSG",
+    "editing_process": "Intellectually intensive. Engages with the 'big ideas' of the manuscript; pushes the author to sharpen their arguments and world-building.",
+    "likes": "High-concept literary fiction, books that demand intellectual rigor, unique world-views, challenging narrative structures.",
+    "dislikes": "Lazy world-building, lack of ambition, prose that takes the 'easy road'.",
+    "editorial_sensibility": "The 'provocateur'—seeks out books that challenge the reader and change the way they look at the world.",
+    "public_record_insights": "Known for his work with complex literary voices; enjoys the intersection of philosophy and fiction.",
+    "notable_books": ["Submission by Michel Houellebecq", "The Sellout by Paul Beatty", "10:04 by Ben Lerner"]
+  },
+  {
+    "editor_name": "Eric Chinski",
+    "house": "FSG",
+    "editing_process": "Thematic deep-dives. Focuses on the 'why' of the book; ensures the moral and social framework of the story holds up under scrutiny.",
+    "likes": "Socially engaged fiction, intellectual complexity, historical depth, nuanced character studies.",
+    "dislikes": "Simplistic black-and-white moralizing, lack of intellectual rigor, characters that lack agency.",
+    "editorial_sensibility": "The 'intellectual'—values the book as a way of exploring the human condition. Always looks for the 'why' beneath the 'what.'",
+    "public_record_insights": "Widely respected for his work on books that tackle heavy, serious subjects with grace and precision.",
+    "notable_books": ["The Corrections by Jonathan Franzen", "The Known World by Edward P. Jones", "Gilead by Marilynne Robinson"]
+  },
+  {
+    "editor_name": "Sarah Crichton",
+    "house": "Sarah Crichton Books (FSG)",
+    "editing_process": "Urgency-driven. Asks 'why does this book need to exist right now?' Edits with a focus on the moral weight and social relevance of the work.",
+    "likes": "Narratives with 'teeth,' social commentary, urgent/necessary stories, clear-eyed prose.",
+    "dislikes": "Apathy, lack of consequence, stories that don't have something to say.",
+    "editorial_sensibility": "The 'witness'—looks for books that bear witness to the world we live in. Values courage in writing.",
+    "public_record_insights": "Often seeks out voices that have been marginalized or have something challenging to say about the state of the world.",
+    "notable_books": ["The Glass Castle by Jeannette Walls", "Midnight in the Garden of Good and Evil by John Berendt", "The Immortal Life of Henrietta Lacks by Rebecca Skloot"]
+  },
+  {
+    "editor_name": "Megan Lynch",
+    "house": "Little, Brown",
+    "editing_process": "Voice-centric. Identifies the 'strange' and pulls it to the surface; helps the author amplify their unique creative DNA.",
+    "likes": "Distinctive, inimitable voices, the 'beautifully strange,' emotional anchors in speculative worlds.",
+    "dislikes": "Derivativeness, safe choices, prose that feels like it was written to please everyone.",
+    "editorial_sensibility": "The 'discoverer'—looks for the spark of originality that makes an author stand out in a crowded market.",
+    "public_record_insights": "Known for her championing of unique literary stylists; she is not afraid of the 'weird'.",
+    "notable_books": ["The Goldfinch by Donna Tartt", "The Girl with the Dragon Tattoo by Stieg Larsson", "The Interestings by Meg Wolitzer"]
+  },
+  {
+    "editor_name": "Judy Clain",
+    "house": "Little, Brown",
+    "editing_process": "Market-aware but literary-driven. Focuses on the balance between a compelling 'hook' and authentic character development.",
+    "likes": "Compulsive readability, complex character work, 'book club' fiction with literary ambition.",
+    "dislikes": "Boredom, lack of plot movement, 'empty' prose that lacks character depth.",
+    "editorial_sensibility": "The 'balancer'—knows how to keep a book accessible to a broad audience while maintaining high literary standards.",
+    "public_record_insights": "Highly sought after for her ability to turn literary books into broad successes; emphasizes the reader’s experience.",
+    "notable_books": ["Room by Emma Donoghue", "I Am Malala by Malala Yousafzai", "Homeland Elegies by Ayad Akhtar"]
+  },
+  {
+    "editor_name": "Denise Oswald",
+    "house": "Pantheon (HarperCollins)",
+    "editing_process": "Big-picture focused. Encourages authors to expand their scope; looks at the cultural and social implications of the narrative.",
+    "likes": "Ambitious scopes, cultural criticism, big-idea fiction, historical resonance.",
+    "dislikes": "Small/petty concerns, lack of ambition, prose that feels closed-off or claustrophobic.",
+    "editorial_sensibility": "The 'visionary'—looks for the books that will define the cultural moment. Values scale and depth.",
+    "public_record_insights": "Works frequently with writers who are also thinkers or critics; values the intersection of intellect and art.",
+    "notable_books": ["The Brief Wondrous Life of Oscar Wao by Junot Díaz", "The Sense of an Ending by Julian Barnes", "The Year of Magical Thinking by Joan Didion"]
+  },
+  {
+    "editor_name": "Julie Grau",
+    "house": "Random House",
+    "editing_process": "Direct and frank. Believes in a strong, long-term editorial relationship; cuts through the noise to get to the heart of the author's intent.",
+    "likes": "Historical realism, emotional authenticity, character-driven narrative arcs, clean prose.",
+    "dislikes": "Artifice, melodrama, sentimentality, characters that aren't 'real'.",
+    "editorial_sensibility": "The 'straight-shooter'—known for her candid, high-commitment editing style. She is in the trenches with her authors.",
+    "public_record_insights": "Known for her success with high-profile biographical and historical fiction; values truth above comfort.",
+    "notable_books": ["The Emperor of All Maladies by Siddhartha Mukherjee", "The Known World by Edward P. Jones", "The Corrections by Jonathan Franzen"]
+  },
+  {
+    "editor_name": "Terry Karten",
+    "house": "HarperCollins",
+    "editing_process": "Meticulous and broad-reaching. Works with large, sprawling manuscripts; focuses on structure, pacing, and historical/cultural grounding.",
+    "likes": "Ambitious scope, masterful prose, research-heavy narratives, complex sprawling worlds.",
+    "dislikes": "Inaccuracy, lack of research, thin characters, plot holes.",
+    "editorial_sensibility": "The 'classical heavyweight'—prized for her ability to wrangle massive, complex books into coherent, brilliant novels.",
+    "public_record_insights": "A legendary editor who excels at the 'big book'—the kind that defines a career.",
+    "notable_books": ["The Poisonwood Bible by Barbara Kingsolver", "The Amazing Adventures of Kavalier & Clay by Michael Chabon", "A Gentleman in Moscow by Amor Towles"]
+  },
+  {
+    "editor_name": "Trena Keating",
+    "house": "Dutton",
+    "editing_process": "Pacing-focused. Works to ensure the momentum of the book is unrelenting while keeping the prose high-quality.",
+    "likes": "Propulsive storytelling, high-stakes narratives, sharp dialogue, 'unputdownable' quality.",
+    "dislikes": "Slow beginnings, meandering plots, lack of tension, repetitive prose.",
+    "editorial_sensibility": "The 'powerhouse'—focuses on the reader’s engagement. She knows how to build a book that keeps people reading until 3 AM.",
+    "public_record_insights": "Known for identifying commercial potential in literary fiction; she understands the 'pulse' of a story.",
+    "notable_books": ["The Help by Kathryn Stockett", "The Devil Wears Prada by Lauren Weisberger", "Where the Crawdads Sing by Delia Owens"]
+  }
+]

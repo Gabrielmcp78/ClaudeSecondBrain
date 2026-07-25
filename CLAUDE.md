@@ -20,6 +20,20 @@ ClaudeSecondBrain/
 │   ├── _index.md                ← navigation entry point; always kept current
 │   ├── _connections.md          ← cross-domain link map; the compounding asset
 │   ├── _meta/                   ← change log, processing memory, bookkeeping
+│   │   ├── change-log.md        ← append-only log of all actions taken
+│   │   ├── open-questions.md    ← active intellectual tensions
+│   │   ├── task-ledger.md       ← all active tasks with owner and status
+│   │   ├── decision-registry.md ← settled decisions; do not reopen without Gabriel
+│   │   ├── handoffs.md          ← inter-agent handoff memos (append-only)
+│   │   └── agent-protocol.md    ← governing rules for all AI agents; read before any write
+│   ├── _agents/
+│   │   ├── claude/              ← your inbox.md, outbox.md, status.md
+│   │   ├── chatgpt/             ← ChatGPT's inbox.md, outbox.md, status.md
+│   │   ├── gemini/              ← Gemini's inbox.md, outbox.md, status.md
+│   │   └── cursor/              ← Cursor's inbox.md, outbox.md, status.md
+│   ├── core-principles/         ← first-principles layer (resonance, translation, emergence)
+│   ├── decision-records/        ← WHY conclusions exist, not just what they are
+│   ├── prediction-log/          ← falsifiable claims with dates
 │   ├── craft-fiction/           ← narrative canon, character architecture, craft rules
 │   ├── theory-consciousness/    ← VCH framework and its scientific bridges
 │   ├── music-performance/       ← composition, orchestration, teaching pedagogy
@@ -182,3 +196,74 @@ When asked to perform a health check:
 |------|--------|----------------|
 | 2026-06-02 | Taxonomy rebuilt around Gabriel's actual domains | CLAUDE.md, wiki/_index.md |
 | 2026-06-02 | Initial schema created | CLAUDE.md, wiki/index.md |
+
+## Session Initialization (Non-Negotiable Hard Gate)
+
+**Do not take any write action until all seven steps are complete. This is not a suggestion — it is a structural contract that prevents stale-context writes, duplicate work, and boundary violations.**
+
+Execute in order:
+
+| Step | File | Purpose |
+|------|------|---------|
+| 1 | `wiki/_index.md` | Navigation map and article inventory — understand what exists before touching anything |
+| 2 | `wiki/_connections.md` | Cross-domain relationship map — understand how topics relate |
+| 3 | `wiki/_meta/change-log.md` | What changed and when — do not duplicate recent work |
+| 4 | `wiki/_meta/agent-protocol.md` | Governing rules, write permissions, conflict resolution, all amendments |
+| 5 | `wiki/_agents/claude/status.md` | Your current operational state — then **immediately write today's date and current task** |
+| 6 | `wiki/_agents/claude/inbox.md` | Messages directed to you; surface 🔴 HIGH PRIORITY items first |
+| 7 | *(begin work)* | Only now proceed |
+
+> **If any file is missing or unreadable:** log the error to your inbox and continue — do not abort the session.
+
+**Session Status Sync (mandatory at start AND end):** Write to `wiki/_agents/claude/status.md` twice per session — once at startup (set `Last active` to today, `Current task` to a one-line description) and once at close (update `Current task` to reflect what was done and what if anything blocks next steps). A stale `status.md` makes the dashboard report a live agent as dormant.
+
+**Fiction tasks:** After completing the seven steps, read `wiki/craft-fiction/fiction-studio/master-system.md` before any fiction diagnosis, continuity, assembly, or revision work.
+
+**Report to Gabriel:** inbox items and their priority, open tasks, what the previous agent left, and what you are ready to do.
+
+---
+
+<!-- codex-guardian:start -->
+## Codex Guardian — Active Phase Context
+> Auto-managed by Codex Guardian extension. Do not edit this block manually.
+> Last updated: 6/9/2026, 11:36:20 PM
+
+### Current Phase: Phase 03b — Live Verification
+**Phase objective:** Witness system behavior on real infrastructure. Zero mocks. Real devices. Real flows.
+
+**AI Project Summary (high confidence):**
+ClaudeSecondBrain is a self‑improving personal knowledge base that ingests raw documents, syncs them to Google Drive, and exposes a Multi‑Connector Protocol (MCP) server for AI agents like Claude, Gemini, and ChatGPT Atlas. The core infrastructure is built and currently being verified with real AI agents, and the project is ready to move into staging and release preparation.
+
+### Exit Gate (what must be true before leaving this phase)
+Every multi-device/auth V1 flow witnessed on real hardware. Integration truth log complete.
+
+### Mock Policy
+🚫 **FORBIDDEN** — All production code paths must use real services. No jest.mock(), vi.mock(), sinon stubs, MSW handlers, or any simulated responses.
+
+### Allowed in this phase
+- ✅ bug fixes from Live Verify findings
+- ✅ logging improvements
+- ✅ error handling
+
+### Forbidden in this phase
+- ❌ new features
+- ❌ adding mocks
+- ❌ treating simulator as real device
+
+### Current Blockers
+- ⚠️ No dedicated staging environment that mirrors production (separate Drive bucket, separate Neo4j instance, isolated MCP instance).
+- ⚠️ Lack of automated integration/end‑to‑end tests and CI pipeline to catch regressions before release.
+- ⚠️ No beta‑testing plan or external user feedback loop; all testing is internal between AI agents.
+
+### Recommended Next Actions
+1. Create a staging deployment (separate Google Drive folder, Neo4j sandbox, and MCP instance) and run the full ingestion/MCP flow against it.
+2. Write automated integration tests for the MCP endpoints, ingest pipeline, and Neo4j sync, and hook them into a CI workflow.
+3. Prepare release packaging: version bump, release notes, deployment scripts, and a short beta‑testing window with invited users.
+
+---
+**Agent compliance instructions:**
+If any part of your task would violate the FORBIDDEN list above, stop and explain
+why before proceeding. Suggest the phase-appropriate alternative instead.
+Do not add mocks, placeholders, hardcoded credentials, or features outside the
+current phase scope without explicit user approval.
+<!-- codex-guardian:end -->
