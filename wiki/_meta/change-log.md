@@ -1,3 +1,14 @@
+## 2026-07-26 — Google Workspace Admin + Cloudflare Agent Access Research (Claude, Cowork)
+
+Same session, continued. Gabriel corrected an earlier claim (Google Workspace was reported "pending" but has actually been live for a few days — DNS-completeness of that correction still needs confirming next session before touching Bitwarden's email rotation), then asked directly whether Claude has full Google Console/Cloudflare connector access, and if not, wanted it made a top priority.
+
+**Checked the live connector registry:** Google Drive connected (files only); Gmail/Calendar exist but unauthorized; no Google Workspace Admin/Directory connector exists in the registry at all; Cloudflare has one connector ("Cloudflare Developer Platform," Workers/KV-focused, DNS coverage unconfirmed) and it wasn't connected — surfaced a Connect button to Gabriel via `suggest_connectors`.
+
+**Researched** agent tools for real Google Console access: Antigravity CLI (`agy`, Google's own terminal agent, replaced Gemini CLI which was shut down 2026-06-18 — cross-references TASK-2026-07-18-001, where this SB's own ingestion loop was already migrated onto `agy`, so Gabriel already has it installed and working), OpenClaw (self-hosted agent gateway, already in Gabriel's toolkit vocabulary), and jcode (general Rust coding-agent harness, not Google-specific). All three converge on the same real blocker: a Google Cloud service account with Workspace domain-wide delegation. Wrote the full Cloud Console + Admin console click-path for Gabriel.
+
+**wiki/_meta/task-ledger.md** — Added TASK-2026-07-26-003 (Google Workspace Admin + Cloudflare agent access), Status OPEN, Owner Gabriel, Priority High per his explicit instruction.
+**Trello** — Created card ["Agent Access — Service Account + Domain-Wide Delegation into Google Workspace Admin"](https://trello.com/c/7WPF0IT2) on The Tech Guts, assigned to Gabriel, full decision-record format matching board voice.
+
 ## 2026-07-26 — Shakespearience Morning Status Re-Verification (Claude, Cowork)
 
 Gabriel asked for a morning Shakespearience tech status report and an ambitious afternoon to-do list, then instructed that SecondBrain "should always be involved" going forward — SB folder access was requested and granted mid-session (this Cowork session previously had only Trello + the platform repo mounted).

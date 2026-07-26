@@ -6,6 +6,16 @@
 
 ## Active Tasks
 
+### TASK-2026-07-26-003 — Google Workspace Admin + Cloudflare agent access (service account + domain-wide delegation)
+**Status:** OPEN
+**Owner:** Gabriel (super-admin/account-owner actions only he can perform)
+**Priority:** High — Gabriel explicitly said this "needs to go to the top of the list"
+**Context:** Gabriel asked whether Claude has direct Google Workspace Admin console / Cloudflare access via connectors. Checked the live connector registry: Google Drive is connected (files only); Gmail/Calendar exist but unauthorized; **no Google Workspace Admin/Directory connector exists in the registry at all**; Cloudflare has one connector ("Cloudflare Developer Platform," Workers/KV-focused per its listed tools, not confirmed to cover DNS zone/record management) and it isn't connected. Cloudflare connect button was surfaced to Gabriel via `suggest_connectors` in-session.
+**Research:** Gabriel asked for agent tools that could get real Google Console access under credentials he controls. Confirmed three real options — **Antigravity CLI (`agy`)**, Google's own terminal agent that replaced Gemini CLI (shut down 2026-06-18, note this **directly corroborates TASK-2026-07-18-001** below, where the SB's own ingestion loop was already migrated onto `agy` as its provider — Gabriel already has it installed and working); **OpenClaw**, a self-hosted agent gateway typically deployed on a GCP VM, already in Gabriel's own toolkit vocabulary; **jcode**, a general-purpose Rust coding-agent harness, not Google-specific.
+**The actual blocker, regardless of CLI choice:** a Google Cloud service account with Workspace domain-wide delegation. Full click-by-click setup (Cloud Console service-account creation + Admin SDK enablement, then Workspace Admin console → Security → API controls → Manage Domain Wide Delegation authorization) was written out for Gabriel in-session and filed as a full decision-record card on Trello.
+**Next action:** Gabriel creates the service account + JSON key (store in Bitwarden immediately as a fifth root credential) and authorizes domain-wide delegation. Once that credential exists, Claude can build the wiring (Antigravity CLI first, recommended — no separate hosting needed, uses the same credential).
+**Trello card:** [Agent Access — Service Account + Domain-Wide Delegation into Google Workspace Admin](https://trello.com/c/7WPF0IT2) (The Tech Guts, assigned Gabriel).
+
 ### TASK-2026-07-25-002 — Reconcile agent-control/projects/ingestion sprawl into canonical taxonomy
 **Status:** CLOSED
 **Owner:** Claude
