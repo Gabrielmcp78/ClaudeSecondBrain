@@ -213,11 +213,11 @@ Dynamic log files, open items, and inbox logs for tracking platform health and c
 | Metric | Count |
 |--------|-------|
 | Total wiki articles | 95 (+1 this session: String Theory Front Matter) |
-| Raw files processed | 104 (+1 this session: String Theory Front Matter) |
+| Raw files processed | 105 (+2 this session: String Theory Front Matter, FlowScape Session) |
 | Outputs generated | 5 (+2: OAuth diagnosis, 2026-07-18 health check) |
 | Decision records (ADRs) | 6 |
 | Last article additions | 2026-07-26 (String Theory Front Matter) |
-| Last ingestion | 2026-07-26 (Gemini session, String Theory Front Matter) |
+| Last ingestion | 2026-07-26 (Gemini session, FlowScape Blocking Resolution) |
 | Last health check | 2026-07-18 |
 | Active-focus project | The Shakespearience (see [dev-projects/shakespearience](dev-projects/shakespearience/architecture.md) and the native dashboard's Active Projects panel) |
 

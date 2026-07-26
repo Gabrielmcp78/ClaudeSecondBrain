@@ -1,3 +1,10 @@
+## 2026-07-26 — FlowScape July 26 (05:08) Blocking Resolution Ingestion (Gemini)
+
+**wiki/dev-infrastructure/flowscape-ambient-sessions.md** — Appended FlowScape ambient session from 2026-07-26 05:08 capturing a blocking issue with HTML rendering in the String Theory MASTER project.
+**wiki/_connections.md** — Cross-domain link already established; no update needed.
+**wiki/_index.md** — Updated Stats block to reflect the new processed raw file and new ingestion date.
+**raw/flowscape_resolved_2026-07-26_05-08-38.md** → `_done.md`
+
 ## 2026-07-26 — String Theory Front Matter Ingestion (Gemini)
 
 **wiki/craft-fiction/string-theory/string-theory-front-matter.md** — New article created documenting the foundational "Ratio Philosophy", translating VCH concepts into a sacred narrative grammar for the novel.
