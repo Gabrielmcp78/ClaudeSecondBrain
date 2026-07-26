@@ -1,3 +1,14 @@
+## 2026-07-26 — Shakespearience Morning Status Re-Verification (Claude, Cowork)
+
+Gabriel asked for a morning Shakespearience tech status report and an ambitious afternoon to-do list, then instructed that SecondBrain "should always be involved" going forward — SB folder access was requested and granted mid-session (this Cowork session previously had only Trello + the platform repo mounted).
+
+**Findings:** live-pulled Trello (Tech Guts 16 cards, Tech Production 9 cards, Ops & Setup 13 cards) and cross-checked directly against the platform codebase. Confirmed at the file level, not just card language, that the 2026-07-16 release-engineering gap is real: `.env.local`'s `DATABASE_URL`/`DIRECT_URL` are literal `[HOST]` placeholders (no Supabase project exists, no `prisma/migrations/` directory), no `.github/workflows/` exists, and neither `.env.staging` nor `.env.liveverify` exist. The four Tech Guts cards opened 2026-07-16 (Pilot Environment, Release Engineering/CI, Platform Delivery State, Command Center) remain unassigned. Two codebase commits since the 2026-07-24 sync were newly logged: episode content management + publishing API (2026-07-25) and a new `mcp-server/` exposing the codebase to ChatGPT via MCP (2026-07-22).
+
+**wiki/dev-projects/shakespearience/architecture.md** — Status banner date moved to 2026-07-26; added a sourcing note distinguishing Trello-as-authoritative-for-task-state from wiki-as-authoritative-for-synthesis (per Daily Keeper Protocol §3); appended a "Re-verified 2026-07-26" paragraph under the existing Release Engineering Gap section with the file-level findings above.
+**wiki/_index.md** — Updated the Shakespearience article summary and the Stats block (outputs count, last article additions, last ingestion date).
+**outputs/2026-07-26_shakespearience-morning-status-and-todo.md** — New output: full status report plus a split to-do list (buildable today with zero new accounts — CI workflow, env-tier scaffolding — vs. requires Gabriel's hands — Supabase/Stripe/Clerk account setup).
+**wiki/_agents/claude/status.md** — Updated at session start and will be updated again at session close below.
+
 ## 2026-07-26 — FlowScape July 26 (05:08) Blocking Resolution Ingestion (Gemini)
 
 **wiki/dev-infrastructure/flowscape-ambient-sessions.md** — Appended FlowScape ambient session from 2026-07-26 05:08 capturing a blocking issue with HTML rendering in the String Theory MASTER project.
