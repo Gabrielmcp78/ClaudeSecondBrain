@@ -17,6 +17,7 @@ Narrative canon, character architecture, craft principles, and submission strate
 - `submission-strategy/` — agent research, query letters, market notes
 
 **Articles:**
+- [String Theory — Before the First Word](craft-fiction/string-theory/string-theory-front-matter.md) — foundational Ratio Philosophy and Genesis rewritten as Ratio Mechanics (VCH expressed in sacred grammar).
 - [String Theory Overview](craft-fiction/string-theory/string-theory.md) — complete spec-fiction novel overview, context parameters, key dates, and characters.
 - [Current Manuscript State](craft-fiction/string-theory/current-manuscript-state.md) — live control center: Draft 6.7 status, 27-chapter structure, query log, research flags, continuity flags, editorial feedback.
 - [Novel Structure](craft-fiction/string-theory/novel-structure.md) — chapter architecture, musical forms, narrative signals from titles. `[historical: 2026-05 — reflects 20-chapter structure; re-ingest pending]`
@@ -110,6 +111,7 @@ Architecture decisions and design notes for active builds. Code lives in `/Volum
 - [Ops Playbooks](dev-projects/shakespearience/ops-playbooks/_index.md) — plain-English business-setup guides for Gabriel & Stephanie. **All 12 playbooks ready**, playbooks 01 and 04 rewritten 2026-07-24 for the 2026-07-22 Bitwarden (was 1Password) and Google Workspace (was Fastmail) provider changes. Master domain `shakespearienceworld.com` at Cloudflare Registrar (locked 2026-07-14, confirmed correct 2026-07-22), plus [Ops Operating Costs](dev-projects/shakespearience/ops-playbooks/ops-operating-costs.md).
 - [GeminiChatter Architecture](dev-projects/geminichat/architecture.md) — Native macOS Gemini chat app; SwiftUI LiquidGlass UI, GoogleGenerativeAI SDK, FastAPI+PostgreSQL memory service, planned SecondBrain MCP integration. `[historical: 2026-06-05 — re-verify before any work]`
 - [NextStage OS — Capital and Concept Package](dev-projects/nextstage/concept-and-capital-package.md) — Comprehensive planning and capital package for NextStage OS including board materials, investor memorandum, proforma models, and concept overview.
+- [NextStage Comprehensive Ecosystem Dossier](dev-projects/nextstage/comprehensive-ecosystem-dossier.md) — Dual-entity ecosystem architecture (Foundation + OS), financial model, and platform roadmap for the NextStage initiative.
 
 ---
 
@@ -210,12 +212,12 @@ Dynamic log files, open items, and inbox logs for tracking platform health and c
 
 | Metric | Count |
 |--------|-------|
-| Total wiki articles | 93 (+1 this session: Chapter 4 — The Apartment) |
-| Raw files processed | 102 (+2 this session: flowscape_resolved_2026-07-24_15-10-54.md, flowscape_session_2026-07-24.md) |
+| Total wiki articles | 95 (+1 this session: String Theory Front Matter) |
+| Raw files processed | 104 (+1 this session: String Theory Front Matter) |
 | Outputs generated | 5 (+2: OAuth diagnosis, 2026-07-18 health check) |
 | Decision records (ADRs) | 6 |
-| Last article additions | 2026-07-24 (Chapter 4 — The Apartment) |
-| Last ingestion | 2026-07-24 (Gemini session, processed FlowScape session logs) |
+| Last article additions | 2026-07-26 (String Theory Front Matter) |
+| Last ingestion | 2026-07-26 (Gemini session, String Theory Front Matter) |
 | Last health check | 2026-07-18 |
 | Active-focus project | The Shakespearience (see [dev-projects/shakespearience](dev-projects/shakespearience/architecture.md) and the native dashboard's Active Projects panel) |
 

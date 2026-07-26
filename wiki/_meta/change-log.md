@@ -1,3 +1,22 @@
+## 2026-07-26 — String Theory Front Matter Ingestion (Gemini)
+
+**wiki/craft-fiction/string-theory/string-theory-front-matter.md** — New article created documenting the foundational "Ratio Philosophy", translating VCH concepts into a sacred narrative grammar for the novel.
+**wiki/_connections.md** — Added cross-domain link connecting `craft-fiction/string-theory/string-theory-front-matter` and `theory-consciousness/vch-framework`.
+**wiki/_index.md** — Updated String Theory index and Stats block to reflect the new processed raw file.
+**raw/string_theory_front_matter_feb24_2026.md** → `_done.md`
+
+## 2026-07-26 — NextStage Comprehensive Dossier Ingestion (Gemini)
+
+**wiki/dev-projects/nextstage/comprehensive-ecosystem-dossier.md** — New article created documenting the NextStage ecosystem architecture (Foundation + OS), revenue engine, and platform roadmap.
+**wiki/_connections.md** — Added cross-domain link connecting `dev-projects/nextstage/comprehensive-ecosystem-dossier` and `music-performance/directing-practice`.
+**wiki/_index.md** — Updated NextStage OS articles list and Stats block to reflect the new processed raw file.
+**raw/NextStage Comprehensive Dossier_ Architecture, Economics & Roadmap.md** → `_done.md`
+
+## 2026-07-25 — SBCC Synthesis Loop
+
+**wiki/synthesis/2026-07-25.md** — Daily synthesis note: 18 pairs (4 strong, 11 medium, 3 ambient).
+**wiki/_connections.md** — Refreshed with latest semantic bridge data.
+
 ## 2026-07-25 — Reconciled Undocumented Parallel Taxonomy (Claude, Cowork)
 
 Gabriel pasted a claim (from an apparently different agent/session, dated 2026-07-23) listing 10 new wiki files and asked "do these things exist?" Verified via filesystem: all 15 files across `wiki/agent-control/` (7), `wiki/projects/string-theory/`, `wiki/projects/burnthrough/`, `wiki/projects/fiction-studio/` (5 total), and `wiki/ingestion/` (5) were genuine and substantive — but none were linked from `_index.md` in the canonical way, and `_index.md` itself had a malformed duplicate-header section (lines ~246-276) from whatever process wrote them. They also duplicated/fragmented content already covered, in some cases more thoroughly, in the canonical `craft-fiction/string-theory/` and `craft-fiction/aegis-cycle/` articles. Gabriel authorized reconciliation with "reconcile them now."
@@ -992,3 +1011,7 @@ Note: the running MCP server holds the old code in memory — the fix takes effe
 **wiki/_connections.md** — Added cross-domain link connecting `dev-infrastructure/flowscape-ambient-sessions` and `craft-fiction/string-theory`.
 **wiki/_index.md** — Updated Stats block to reflect the new processed raw file and new ingestion date.
 **raw/flowscape_resolved_2026-07-21_23-09-22.md** → `_done`
+
+## 2026-07-25 — Inbox cleanup: fired test-broadcast triggers removed (Claude, Cowork session)
+
+**wiki/_agents/claude/inbox.md** — Removed four one-off "broadcast" dispatches from Gabriel (2026-06-11 abracadabra/Bally-hoo, 2026-06-28 Harry Caray request, 2026-06-28 yeee-haw-cowboy, 2026-06-29 woopty-woo). All four were session-continuity test triggers; all had been executed/acknowledged in this or a prior session. The Harry Caray one had asked for actual content (not just an echo phrase) and had never been answered before removal — answered inline in chat before deleting, so no open item was lost. Left in place: the 2026-06-10 generic "Wake-up call" entry (not a fired trigger).
