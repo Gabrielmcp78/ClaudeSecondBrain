@@ -1,0 +1,1409 @@
+{
+  "communities": {
+    "0": [
+      "chatgpt_system_prompt",
+      "dashboard_readme",
+      "dashboard_vite_config",
+      "gemini_system_prompt",
+      "handoff_2026_06_05_06_50_claude",
+      "handoff_2026_06_08_02_37_gemini",
+      "handoff_handoff_protocol",
+      "ingest",
+      "ingest_sh__entry",
+      "mcp_server_readme",
+      "outputs_2026_06_02_ch1_movement_i_clean_pass",
+      "outputs_2026_06_02_ch1_movement_i_singlespaced",
+      "outputs_2026_06_05_session_infrastructure_buildout",
+      "outputs_2026_06_06_librarian_test_response",
+      "outputs_2026_06_08_agentic_autonomous_comms_architecture",
+      "outputs_2026_06_08_gpt_architecture_evaluation",
+      "outputs_2026_06_08_project_codebases_analysis",
+      "outputs_2026_07_08_second_brain_structural_audit",
+      "outputs_2026_07_13_shakespearience_account_and_email_strategy",
+      "outputs_2026_07_14_ops_sequencing_cloudflare",
+      "outputs_2026_07_16_chapter_13_fiction_studio_diagnosis",
+      "outputs_2026_07_16_shakespearience_fiscal_sponsorship",
+      "outputs_2026_07_16_shakespearience_platform_audit",
+      "raw_master_connections_done",
+      "raw_vibrational_consciousness_hypothesis_done",
+      "startup_kit",
+      "startup_kit_sh__entry",
+      "sync_bridge_readme",
+      "wiki_agents_chatgpt_inbox",
+      "wiki_agents_chatgpt_outbox",
+      "wiki_agents_chatgpt_status",
+      "wiki_agents_claude_inbox",
+      "wiki_agents_claude_outbox",
+      "wiki_agents_claude_status",
+      "wiki_agents_cursor_inbox",
+      "wiki_agents_cursor_outbox",
+      "wiki_agents_cursor_status",
+      "wiki_agents_gemini_inbox",
+      "wiki_agents_gemini_outbox",
+      "wiki_agents_gemini_status",
+      "wiki_ai_collaboration_agent_mail_carrier",
+      "wiki_ai_collaboration_agent_operating_model",
+      "wiki_ai_collaboration_secondbrain_mcp_infrastructure",
+      "wiki_connections",
+      "wiki_craft_fiction_fiction_studio_master_system",
+      "wiki_craft_fiction_submission_strategy_editor_agent_research_standard",
+      "wiki_craft_fiction_submission_strategy_editorial_board_model_registry",
+      "wiki_craft_fiction_submission_strategy_editorial_board_simulation_protocol",
+      "wiki_craft_fiction_submission_strategy_index",
+      "wiki_craft_fiction_submission_strategy_run_editorial_board",
+      "wiki_decision_records_0003_manuscript_read_only",
+      "wiki_dev_projects_shakespearience_ops_playbooks_index",
+      "wiki_inbox",
+      "wiki_meta_agent_protocol",
+      "wiki_meta_change_log",
+      "wiki_meta_handoffs",
+      "wiki_meta_knowledge_governance",
+      "wiki_meta_mail_carrier_log",
+      "wiki_meta_open_questions",
+      "wiki_meta_task_ledger"
+    ],
+    "1": [
+      "bool",
+      "cocoa",
+      "combine",
+      "dashboard_native_readme",
+      "dashboard_native_secondbraindashboard_appdelegate",
+      "dashboard_native_secondbraindashboard_appdelegate_appdelegate",
+      "dashboard_native_secondbraindashboard_appdelegate_appdelegate_applicationdidfinishlaunching",
+      "dashboard_native_secondbraindashboard_appdelegate_appdelegate_applicationshouldterminateafterlastwindowclosed",
+      "dashboard_native_secondbraindashboard_appdelegate_appdelegate_buildmenu",
+      "dashboard_native_secondbraindashboard_appdelegate_appdelegate_buildwindow",
+      "dashboard_native_secondbraindashboard_appdelegate_appdelegate_reload",
+      "dashboard_native_secondbraindashboard_secondbrainapp",
+      "dashboard_native_secondbraindashboard_secondbrainapp_secondbrainapp",
+      "dashboard_native_secondbraindashboard_secondbrainapp_secondbrainapp_main",
+      "dashboard_native_secondbraindashboard_webviewcontroller",
+      "dashboard_native_secondbraindashboard_webviewcontroller_loadingview",
+      "dashboard_native_secondbraindashboard_webviewcontroller_loadingview_init",
+      "dashboard_native_secondbraindashboard_webviewcontroller_loadingview_setstate",
+      "dashboard_native_secondbraindashboard_webviewcontroller_loadingview_setup",
+      "dashboard_native_secondbraindashboard_webviewcontroller_serverwatcher",
+      "dashboard_native_secondbraindashboard_webviewcontroller_serverwatcher_cancel",
+      "dashboard_native_secondbraindashboard_webviewcontroller_serverwatcher_init",
+      "dashboard_native_secondbraindashboard_webviewcontroller_serverwatcher_poll",
+      "dashboard_native_secondbraindashboard_webviewcontroller_serverwatcher_schedule",
+      "dashboard_native_secondbraindashboard_webviewcontroller_serverwatcher_start",
+      "dashboard_native_secondbraindashboard_webviewcontroller_state",
+      "dashboard_native_secondbraindashboard_webviewcontroller_state_connecting",
+      "dashboard_native_secondbraindashboard_webviewcontroller_state_done",
+      "dashboard_native_secondbraindashboard_webviewcontroller_state_error",
+      "dashboard_native_secondbraindashboard_webviewcontroller_state_loading",
+      "dashboard_native_secondbraindashboard_webviewcontroller_webviewcontroller",
+      "dashboard_native_secondbraindashboard_webviewcontroller_webviewcontroller_loaddashboard",
+      "dashboard_native_secondbraindashboard_webviewcontroller_webviewcontroller_loadview",
+      "dashboard_native_secondbraindashboard_webviewcontroller_webviewcontroller_reload",
+      "dashboard_native_secondbraindashboard_webviewcontroller_webviewcontroller_setuploadingview",
+      "dashboard_native_secondbraindashboard_webviewcontroller_webviewcontroller_setupwebview",
+      "dashboard_native_secondbraindashboard_webviewcontroller_webviewcontroller_startwatching",
+      "dashboard_native_secondbraindashboard_webviewcontroller_webviewcontroller_viewdidload",
+      "dashboard_native_secondbraindashboard_webviewcontroller_webviewcontroller_webview",
+      "date",
+      "dispatchsourcetimer",
+      "error",
+      "notification",
+      "nsapplication",
+      "nsapplicationdelegate",
+      "nscoder",
+      "nsobject",
+      "nsrect",
+      "nsview",
+      "nsviewcontroller",
+      "nswindow",
+      "string",
+      "timeinterval",
+      "url",
+      "void",
+      "webkit",
+      "wknavigation",
+      "wknavigationdelegate",
+      "wkwebview"
+    ],
+    "2": [
+      "dashboard_index",
+      "handoff_2026_06_08_09_15_gemini",
+      "outputs_2026_06_02_neo4j_sync",
+      "outputs_2026_06_06_agent_profile_ingestion_status",
+      "outputs_2026_06_06_string_theory_inciting_incident",
+      "raw_a_letter_to_humanity_claude_chatgpt_done",
+      "raw_string_theory_chapter_index_done",
+      "wiki_ai_collaboration_claude_conversations",
+      "wiki_ai_collaboration_gabriel_workflow_rules",
+      "wiki_ai_collaboration_letter_to_humanity",
+      "wiki_ai_collaboration_ted_talk_consciousness_screaming",
+      "wiki_ai_collaboration_ted_talk_empathy_ai",
+      "wiki_core_principles_emergence",
+      "wiki_core_principles_resonance",
+      "wiki_craft_fiction_craft_principles_writing_principles",
+      "wiki_craft_fiction_string_theory_68hz_mechanic",
+      "wiki_craft_fiction_string_theory_chapter_13_visions_and_burdens",
+      "wiki_craft_fiction_string_theory_chapter_summaries",
+      "wiki_craft_fiction_string_theory_characters",
+      "wiki_craft_fiction_string_theory_current_manuscript_state",
+      "wiki_craft_fiction_string_theory_literary_manuscript_david_lang",
+      "wiki_craft_fiction_string_theory_manuscript_manifest",
+      "wiki_craft_fiction_string_theory_novel_structure",
+      "wiki_craft_fiction_string_theory_project_argo",
+      "wiki_craft_fiction_string_theory_resonance_model",
+      "wiki_craft_fiction_string_theory_string_theory",
+      "wiki_craft_fiction_string_theory_themes_and_canon",
+      "wiki_craft_fiction_submission_strategy_agent_profiles",
+      "wiki_craft_fiction_submission_strategy_market_intelligence_fall_2026",
+      "wiki_craft_fiction_submission_strategy_query_letter",
+      "wiki_decision_records_0001_unified_mcp_server",
+      "wiki_decision_records_0002_nexus_boundary",
+      "wiki_decision_records_0004_shakespearience_master_domain",
+      "wiki_decision_records_0005_shakespearience_two_dependency_chains",
+      "wiki_dev_infrastructure_code_best_practices",
+      "wiki_dev_infrastructure_manuscript_export_pipeline",
+      "wiki_dev_infrastructure_sdlc_guide",
+      "wiki_dev_projects_nexus_harmonic_unified_maps",
+      "wiki_index",
+      "wiki_music_performance_acting_and_performance_pedagogy",
+      "wiki_prediction_log_2026_06_08_query_response_timelines",
+      "wiki_reference_external_ai_skills_development",
+      "wiki_reference_external_canvas_design_masterworks",
+      "wiki_reference_external_chatgpt_archive_bottom",
+      "wiki_reference_external_chatgpt_archive_top",
+      "wiki_theory_consciousness_codex_harmonic_lexicon",
+      "wiki_theory_consciousness_codex_harmonic_system_prompt",
+      "wiki_theory_consciousness_compactification_visualizations",
+      "wiki_theory_consciousness_ghrm_framework",
+      "wiki_theory_consciousness_ghrm_lhc_validation",
+      "wiki_theory_consciousness_ghrm_toy_model",
+      "wiki_theory_consciousness_harmonic_foundations",
+      "wiki_theory_consciousness_hrif_protocol",
+      "wiki_theory_consciousness_nine_chambers_vibrational_intelligence",
+      "wiki_theory_consciousness_resonant_path_youtube_series",
+      "wiki_theory_consciousness_the_vibrational_universe",
+      "wiki_theory_consciousness_vch_framework",
+      "wiki_theory_consciousness_vch_full_paper",
+      "wiki_theory_consciousness_vch_whitepaper_gabriel_gemini"
+    ],
+    "3": [
+      "dashboard_package",
+      "dashboard_package_engines",
+      "dashboard_package_engines_node",
+      "dashboard_package_engines_pnpm",
+      "dashboard_package_name",
+      "dashboard_package_packagemanager",
+      "dashboard_package_private",
+      "dashboard_package_type",
+      "dashboard_package_version",
+      "handoff_2026_06_10_14_30_claude",
+      "outputs_2026_07_07_system_work_shakespearience_update",
+      "outputs_2026_07_08_shakespearience_full_integration",
+      "outputs_2026_07_12_flowscape_hang_diagnosis",
+      "outputs_2026_07_13_shakespearience_tech_buildout_status",
+      "outputs_readme",
+      "package",
+      "package_description",
+      "package_name",
+      "package_private",
+      "package_type",
+      "wiki_ai_collaboration_digital_breathing_architecture",
+      "wiki_ai_collaboration_gabriel_profile",
+      "wiki_core_principles_translation",
+      "wiki_dev_infrastructure_flowscape_ambient_sessions",
+      "wiki_dev_infrastructure_flowscape_engine",
+      "wiki_dev_projects_codex_guardian_architecture",
+      "wiki_dev_projects_comtechsuite_architecture",
+      "wiki_dev_projects_flowscape_architecture",
+      "wiki_dev_projects_nexus_architecture",
+      "wiki_dev_projects_nexus_nexus_research_synthesis",
+      "wiki_dev_projects_prestige_fiction_forge_architecture",
+      "wiki_dev_projects_private_club_app_architecture",
+      "wiki_dev_projects_shakespearience_architecture",
+      "wiki_dev_projects_shakespearience_creative_bible",
+      "wiki_dev_projects_shakespearience_ops_playbooks_01_accounts_and_access",
+      "wiki_dev_projects_shakespearience_ops_playbooks_02_legal_foundation",
+      "wiki_dev_projects_shakespearience_ops_playbooks_03_banking_bookkeeping",
+      "wiki_dev_projects_shakespearience_ops_playbooks_04_domain_dns_email",
+      "wiki_dev_projects_shakespearience_ops_playbooks_05_kids_privacy_coppa",
+      "wiki_dev_projects_shakespearience_ops_playbooks_06_payments_tax",
+      "wiki_dev_projects_shakespearience_ops_playbooks_07_security_backups",
+      "wiki_dev_projects_shakespearience_ops_playbooks_08_contracts_people",
+      "wiki_dev_projects_shakespearience_ops_playbooks_09_brand_trademark",
+      "wiki_dev_projects_shakespearience_ops_playbooks_10_insurance_risk",
+      "wiki_dev_projects_shakespearience_ops_playbooks_11_vendor_ledger",
+      "wiki_dev_projects_shakespearience_ops_playbooks_12_incident_response",
+      "wiki_dev_projects_shakespearience_ops_playbooks_ops_operating_costs",
+      "wiki_dev_projects_writetrack_architecture",
+      "wiki_meta_active_portfolio",
+      "wiki_music_performance_composition_practice",
+      "wiki_music_performance_directing_practice",
+      "wiki_reference_external_gabriel_mcpherson_profile"
+    ],
+    "4": [
+      "mcp_server_index",
+      "mcp_server_index_app",
+      "mcp_server_index_batchupdatedocument",
+      "mcp_server_index_cleanupstalesessions",
+      "mcp_server_index_countoccurrences",
+      "mcp_server_index_createserver",
+      "mcp_server_index_default_safe_roots",
+      "mcp_server_index_dirname",
+      "mcp_server_index_docsfetch",
+      "mcp_server_index_documentendindex",
+      "mcp_server_index_drivefetch",
+      "mcp_server_index_execasync",
+      "mcp_server_index_execfileasync",
+      "mcp_server_index_exportdrivedoc",
+      "mcp_server_index_extractdrivefileid",
+      "mcp_server_index_getdrivemetadata",
+      "mcp_server_index_getgdriveaccesstoken",
+      "mcp_server_index_getgoogledocument",
+      "mcp_server_index_httpserver",
+      "mcp_server_index_isallowedsecondbrainwritepath",
+      "mcp_server_index_istextpath",
+      "mcp_server_index_loadsaferoots",
+      "mcp_server_index_local_search_extensions",
+      "mcp_server_index_max_read_bytes",
+      "mcp_server_index_max_search_read_bytes",
+      "mcp_server_index_max_workspace_results",
+      "mcp_server_index_pathexists",
+      "mcp_server_index_port",
+      "mcp_server_index_provenanceblock",
+      "mcp_server_index_readlocaltext",
+      "mcp_server_index_readtextfile",
+      "mcp_server_index_recentfiles",
+      "mcp_server_index_relativepath",
+      "mcp_server_index_root",
+      "mcp_server_index_safe_root_names",
+      "mcp_server_index_safe_roots",
+      "mcp_server_index_safepath",
+      "mcp_server_index_safeworkspacepath",
+      "mcp_server_index_searchdrive",
+      "mcp_server_index_second_brain_write_prefixes",
+      "mcp_server_index_shutdown",
+      "mcp_server_index_snippet",
+      "mcp_server_index_ssetransports",
+      "mcp_server_index_streamabletransports",
+      "mcp_server_index_text_extensions",
+      "mcp_server_index_textfromstructuralelements",
+      "mcp_server_index_textresult",
+      "mcp_server_index_walk",
+      "mcp_server_index_walkworkspace",
+      "mcp_server_index_workspacerelativepath"
+    ],
+    "5": [
+      "dashboard_server_auth",
+      "dashboard_server_auth_attachuser",
+      "dashboard_server_auth_bootstraprequired",
+      "dashboard_server_auth_canaccessproject",
+      "dashboard_server_auth_cookieoptions",
+      "dashboard_server_auth_createowner",
+      "dashboard_server_auth_createrole",
+      "dashboard_server_auth_deletemember",
+      "dashboard_server_auth_deleterole",
+      "dashboard_server_auth_ensurerolesseeded",
+      "dashboard_server_auth_findinvite",
+      "dashboard_server_auth_getmemberbyemail",
+      "dashboard_server_auth_getmemberbyid",
+      "dashboard_server_auth_getrolebyid",
+      "dashboard_server_auth_getsession",
+      "dashboard_server_auth_hashpassword",
+      "dashboard_server_auth_invite_ttl_days",
+      "dashboard_server_auth_invitemember",
+      "dashboard_server_auth_isinviteexpired",
+      "dashboard_server_auth_listmembers",
+      "dashboard_server_auth_listroles",
+      "dashboard_server_auth_member",
+      "dashboard_server_auth_memberstatus",
+      "dashboard_server_auth_projectaccess",
+      "dashboard_server_auth_publicmember",
+      "dashboard_server_auth_redeeminvite",
+      "dashboard_server_auth_requireauth",
+      "dashboard_server_auth_resendinvite",
+      "dashboard_server_auth_savemembers",
+      "dashboard_server_auth_session",
+      "dashboard_server_auth_session_ttl_days",
+      "dashboard_server_auth_slugify",
+      "dashboard_server_auth_touchlastlogin",
+      "dashboard_server_auth_updatemember",
+      "dashboard_server_auth_updaterole",
+      "dashboard_server_auth_verifylogin",
+      "dashboard_server_auth_verifypassword",
+      "dashboard_server_index",
+      "dashboard_server_index_app",
+      "dashboard_server_index_dashboard_root",
+      "dashboard_server_index_distpath",
+      "dashboard_server_index_sb_root",
+      "dashboard_server_store_newid",
+      "dashboard_server_store_newtoken"
+    ],
+    "6": [
+      "neo4j_sync_bridge",
+      "neo4j_sync_bridge_append_change_log",
+      "neo4j_sync_bridge_append_connection",
+      "neo4j_sync_bridge_build_article",
+      "neo4j_sync_bridge_ensure_dir",
+      "neo4j_sync_bridge_fetch_database_overview",
+      "neo4j_sync_bridge_fetch_project_stats",
+      "neo4j_sync_bridge_fetch_recent_conversations",
+      "neo4j_sync_bridge_fetch_top_chunks_for_project",
+      "neo4j_sync_bridge_get_driver",
+      "neo4j_sync_bridge_infer_connections",
+      "neo4j_sync_bridge_main",
+      "neo4j_sync_bridge_neo4j_session",
+      "neo4j_sync_bridge_py_path",
+      "neo4j_sync_bridge_rationale_147",
+      "neo4j_sync_bridge_rationale_159",
+      "neo4j_sync_bridge_rationale_166",
+      "neo4j_sync_bridge_rationale_193",
+      "neo4j_sync_bridge_rationale_216",
+      "neo4j_sync_bridge_rationale_238",
+      "neo4j_sync_bridge_rationale_262",
+      "neo4j_sync_bridge_rationale_280",
+      "neo4j_sync_bridge_rationale_287",
+      "neo4j_sync_bridge_rationale_295",
+      "neo4j_sync_bridge_rationale_383",
+      "neo4j_sync_bridge_rationale_394",
+      "neo4j_sync_bridge_rationale_434",
+      "neo4j_sync_bridge_rationale_468",
+      "neo4j_sync_bridge_rationale_489",
+      "neo4j_sync_bridge_rationale_514",
+      "neo4j_sync_bridge_rationale_581",
+      "neo4j_sync_bridge_route_project",
+      "neo4j_sync_bridge_run_sync",
+      "neo4j_sync_bridge_save_report",
+      "neo4j_sync_bridge_slugify",
+      "neo4j_sync_bridge_truncate",
+      "neo4j_sync_bridge_write_article"
+    ],
+    "7": [
+      "outputs_2026_07_18_health_check_md",
+      "outputs_2026_07_23_health_check_md",
+      "outputs_2026_07_24_raw_ingestion_audit_md",
+      "raw_flowscape_resolved_2026_07_12_18_48_17_done_md",
+      "raw_flowscape_resolved_2026_07_14_16_18_28_done_md",
+      "raw_flowscape_resolved_2026_07_14_19_18_27_done_md",
+      "raw_flowscape_resolved_2026_07_14_19_53_28_done_md",
+      "raw_flowscape_resolved_2026_07_14_20_28_23_done_md",
+      "raw_flowscape_resolved_2026_07_16_09_53_30_done_md",
+      "raw_flowscape_resolved_2026_07_16_11_48_30_done_md",
+      "raw_flowscape_resolved_2026_07_17_18_08_28_done_md",
+      "raw_flowscape_resolved_2026_07_18_12_08_30_done_md",
+      "raw_flowscape_resolved_2026_07_18_14_58_25_done_md",
+      "raw_flowscape_resolved_2026_07_18_21_43_33_done_md",
+      "raw_flowscape_resolved_2026_07_20_02_44_16_done_md",
+      "raw_flowscape_resolved_2026_07_20_03_19_14_done_md",
+      "raw_flowscape_resolved_2026_07_20_06_04_16_done_md",
+      "raw_flowscape_resolved_2026_07_20_10_04_19_done_md",
+      "raw_flowscape_resolved_2026_07_20_10_43_23_done_md",
+      "raw_flowscape_resolved_2026_07_20_18_24_16_done_md",
+      "raw_flowscape_resolved_2026_07_20_19_09_20_done_md",
+      "raw_flowscape_resolved_2026_07_20_23_39_21_done_md",
+      "raw_flowscape_resolved_2026_07_21_17_49_14_done_md",
+      "raw_flowscape_resolved_2026_07_21_18_54_21_done_md",
+      "raw_flowscape_resolved_2026_07_21_19_39_16_done_md",
+      "raw_flowscape_resolved_2026_07_21_20_44_16_done_md",
+      "raw_flowscape_resolved_2026_07_21_21_59_16_done_md",
+      "raw_flowscape_resolved_2026_07_21_22_29_20_done_md",
+      "raw_flowscape_resolved_2026_07_21_23_09_22_done_md",
+      "raw_flowscape_resolved_2026_07_22_01_49_18_done_md",
+      "raw_flowscape_resolved_2026_07_22_22_01_11_done_md",
+      "raw_flowscape_resolved_2026_07_23_13_26_10_done_md",
+      "raw_flowscape_resolved_2026_07_23_19_36_22_done_md",
+      "raw_flowscape_resolved_2026_07_23_23_31_15_done_md",
+      "raw_flowscape_resolved_2026_07_24_01_16_19_done_md",
+      "raw_flowscape_resolved_2026_07_24_01_46_20_done_md",
+      "raw_flowscape_resolved_2026_07_24_15_10_54_done_md"
+    ],
+    "8": [
+      "dashboard_tsconfig",
+      "dashboard_tsconfig_compileroptions",
+      "dashboard_tsconfig_compileroptions_allowimportingtsextensions",
+      "dashboard_tsconfig_compileroptions_baseurl",
+      "dashboard_tsconfig_compileroptions_isolatedmodules",
+      "dashboard_tsconfig_compileroptions_jsx",
+      "dashboard_tsconfig_compileroptions_lib",
+      "dashboard_tsconfig_compileroptions_module",
+      "dashboard_tsconfig_compileroptions_moduledetection",
+      "dashboard_tsconfig_compileroptions_moduleresolution",
+      "dashboard_tsconfig_compileroptions_noemit",
+      "dashboard_tsconfig_compileroptions_nofallthroughcasesinswitch",
+      "dashboard_tsconfig_compileroptions_nounusedlocals",
+      "dashboard_tsconfig_compileroptions_nounusedparameters",
+      "dashboard_tsconfig_compileroptions_paths",
+      "dashboard_tsconfig_compileroptions_skiplibcheck",
+      "dashboard_tsconfig_compileroptions_strict",
+      "dashboard_tsconfig_compileroptions_target",
+      "dashboard_tsconfig_compileroptions_usedefineforclassfields",
+      "dashboard_tsconfig_exclude",
+      "dashboard_tsconfig_include",
+      "ref_dist",
+      "ref_dom",
+      "ref_dom_iterable",
+      "ref_es2022",
+      "ref_node_modules",
+      "ref_server",
+      "ref_src"
+    ],
+    "9": [
+      "scripts_mail_carrier_loop",
+      "scripts_mail_carrier_loop_already_delivered",
+      "scripts_mail_carrier_loop_append_log",
+      "scripts_mail_carrier_loop_body_from_block",
+      "scripts_mail_carrier_loop_delivery_block",
+      "scripts_mail_carrier_loop_derive_message_id",
+      "scripts_mail_carrier_loop_ensure_file",
+      "scripts_mail_carrier_loop_fields_from_block",
+      "scripts_mail_carrier_loop_global_delivery_note",
+      "scripts_mail_carrier_loop_load_ledger",
+      "scripts_mail_carrier_loop_lock",
+      "scripts_mail_carrier_loop_lock_enter",
+      "scripts_mail_carrier_loop_lock_exit",
+      "scripts_mail_carrier_loop_mailmessage",
+      "scripts_mail_carrier_loop_main",
+      "scripts_mail_carrier_loop_mark_delivered",
+      "scripts_mail_carrier_loop_notify_macos",
+      "scripts_mail_carrier_loop_parse_outbox",
+      "scripts_mail_carrier_loop_parse_recipients",
+      "scripts_mail_carrier_loop_py_path",
+      "scripts_mail_carrier_loop_rationale_235",
+      "scripts_mail_carrier_loop_repo_root_from_script",
+      "scripts_mail_carrier_loop_route_once",
+      "scripts_mail_carrier_loop_safe_read",
+      "scripts_mail_carrier_loop_save_ledger",
+      "scripts_mail_carrier_loop_split_mail_blocks",
+      "scripts_mail_carrier_loop_utc_now",
+      "scripts_mail_carrier_loop_valid_recipients"
+    ],
+    "10": [
+      "dashboard_server_parsers",
+      "dashboard_server_parsers_agentstatus",
+      "dashboard_server_parsers_articleentry",
+      "dashboard_server_parsers_buildarticlepathresolver",
+      "dashboard_server_parsers_connection",
+      "dashboard_server_parsers_decision",
+      "dashboard_server_parsers_derivetasknotes",
+      "dashboard_server_parsers_extractfield",
+      "dashboard_server_parsers_extractfreeformfield",
+      "dashboard_server_parsers_extractlistfield",
+      "dashboard_server_parsers_handoff",
+      "dashboard_server_parsers_inboxentry",
+      "dashboard_server_parsers_normalizearticlekey",
+      "dashboard_server_parsers_normalizetaskpriority",
+      "dashboard_server_parsers_normalizetaskstatus",
+      "dashboard_server_parsers_parseagents",
+      "dashboard_server_parsers_parsearticleindex",
+      "dashboard_server_parsers_parseconnections",
+      "dashboard_server_parsers_parsedecisions",
+      "dashboard_server_parsers_parsehandoffs",
+      "dashboard_server_parsers_parseinboxentries",
+      "dashboard_server_parsers_parserawqueue",
+      "dashboard_server_parsers_parsesystemstats",
+      "dashboard_server_parsers_parsetasks",
+      "dashboard_server_parsers_readfile",
+      "dashboard_server_parsers_systemstats",
+      "dashboard_server_parsers_task"
+    ],
+    "11": [
+      "chokidar",
+      "cookie_parser",
+      "d3",
+      "dashboard_package_dependencies",
+      "dashboard_package_dependencies_chokidar",
+      "dashboard_package_dependencies_cookie_parser",
+      "dashboard_package_dependencies_cors",
+      "dashboard_package_dependencies_d3",
+      "dashboard_package_dependencies_dotenv",
+      "dashboard_package_dependencies_express",
+      "dashboard_package_dependencies_lucide_react",
+      "dashboard_package_dependencies_react",
+      "dashboard_package_dependencies_react_dom",
+      "dashboard_package_dependencies_tailwindcss_vite",
+      "dashboard_package_dependencies_vite",
+      "dashboard_package_dependencies_vitejs_plugin_react",
+      "dashboard_package_json_cors",
+      "dashboard_package_json_express",
+      "dotenv",
+      "lucide_react",
+      "react",
+      "react_dom",
+      "tailwindcss_vite",
+      "vite",
+      "vitejs_plugin_react"
+    ],
+    "12": [
+      "concurrently",
+      "dashboard_package_devdependencies",
+      "dashboard_package_devdependencies_concurrently",
+      "dashboard_package_devdependencies_esbuild",
+      "dashboard_package_devdependencies_tailwindcss",
+      "dashboard_package_devdependencies_tsx",
+      "dashboard_package_devdependencies_types_cookie_parser",
+      "dashboard_package_devdependencies_types_cors",
+      "dashboard_package_devdependencies_types_d3",
+      "dashboard_package_devdependencies_types_express",
+      "dashboard_package_devdependencies_types_node",
+      "dashboard_package_devdependencies_types_react",
+      "dashboard_package_devdependencies_types_react_dom",
+      "dashboard_package_devdependencies_typescript",
+      "esbuild",
+      "tailwindcss",
+      "tsx",
+      "types_cookie_parser",
+      "types_cors",
+      "types_d3",
+      "types_express",
+      "types_node",
+      "types_react",
+      "types_react_dom",
+      "typescript"
+    ],
+    "13": [
+      "dashboard_src_components_networkgraph",
+      "dashboard_src_components_networkgraph_articlepathfornode",
+      "dashboard_src_components_networkgraph_buildnodes",
+      "dashboard_src_components_networkgraph_domainfromid",
+      "dashboard_src_components_networkgraph_fallback_dims",
+      "dashboard_src_components_networkgraph_networkgraph",
+      "dashboard_src_components_networkgraph_props",
+      "dashboard_src_components_networkgraph_simlink",
+      "dashboard_src_components_networkgraph_simnode",
+      "dashboard_src_components_networksidebar",
+      "dashboard_src_components_networksidebar_articleviewer",
+      "dashboard_src_components_networksidebar_breadcrumb",
+      "dashboard_src_components_networksidebar_connectioninspector",
+      "dashboard_src_components_networksidebar_domainlegend",
+      "dashboard_src_components_networksidebar_networksidebar",
+      "dashboard_src_components_networksidebar_nodeinspector",
+      "dashboard_src_components_networksidebar_props",
+      "dashboard_src_components_networksidebar_rendermarkdown",
+      "dashboard_src_components_networksidebar_wikidir",
+      "dashboard_src_components_networksidebar_wikidiritem",
+      "dashboard_src_components_networksidebar_wikifile",
+      "dashboard_src_components_networksidebar_wikinode",
+      "dashboard_src_types_connection",
+      "dashboard_src_types_domain_colors"
+    ],
+    "14": [
+      "handoff_string_theory_chapter_09_overview_2026_07_18_manifest",
+      "handoff_string_theory_chapter_09_overview_2026_07_18_manifest_archive_status",
+      "handoff_string_theory_chapter_09_overview_2026_07_18_manifest_author",
+      "handoff_string_theory_chapter_09_overview_2026_07_18_manifest_chatgpt_project",
+      "handoff_string_theory_chapter_09_overview_2026_07_18_manifest_completion_claim_allowed",
+      "handoff_string_theory_chapter_09_overview_2026_07_18_manifest_conversation_id",
+      "handoff_string_theory_chapter_09_overview_2026_07_18_manifest_conversation_title",
+      "handoff_string_theory_chapter_09_overview_2026_07_18_manifest_exact_known_scope_markers",
+      "handoff_string_theory_chapter_09_overview_2026_07_18_manifest_expected_raw_transcript",
+      "handoff_string_theory_chapter_09_overview_2026_07_18_manifest_preservation_rule",
+      "handoff_string_theory_chapter_09_overview_2026_07_18_manifest_project",
+      "handoff_string_theory_chapter_09_overview_2026_07_18_manifest_schema_version",
+      "handoff_string_theory_chapter_09_overview_2026_07_18_manifest_source_url",
+      "handoff_string_theory_chapter_09_overview_2026_07_18_manifest_verified_artifacts",
+      "ref_execute_an_edit_based_on_it_entirely",
+      "ref_good_first_i_think_you_d_doo_well_to_secondbrain_into_the_articles_on_string_theory_your_a_little_wobbly_on_relations_and_surrounding_plots",
+      "ref_let_s_take_an_over_all_look_at_chapter_9",
+      "ref_run_an_editorial_board_review_six",
+      "ref_secondbrain_fiction_studio_skill",
+      "ref_verified_artifacts_01_full_studio_review_completed_md",
+      "ref_verified_artifacts_02_cold_panel_review_md",
+      "ref_verified_artifacts_03_session_handoff_md"
+    ],
+    "15": [
+      "dashboard_server_agentregistry",
+      "dashboard_server_agentregistry_addagent",
+      "dashboard_server_agentregistry_agentconfig",
+      "dashboard_server_agentregistry_agentkind",
+      "dashboard_server_agentregistry_isknownagent",
+      "dashboard_server_agentregistry_listactiveagentids",
+      "dashboard_server_agentregistry_listagents",
+      "dashboard_server_agentregistry_palette",
+      "dashboard_server_agentregistry_removeagent",
+      "dashboard_server_agentregistry_scaffoldagentwiki",
+      "dashboard_server_agentregistry_seeddefaults",
+      "dashboard_server_agentregistry_slugify",
+      "dashboard_server_agentregistry_updateagent",
+      "dashboard_server_auth_createsession",
+      "dashboard_server_auth_destroysession",
+      "dashboard_server_auth_listsessions",
+      "dashboard_server_store",
+      "dashboard_server_store_metadir",
+      "dashboard_server_store_readjson",
+      "dashboard_server_store_storepath",
+      "dashboard_server_store_writejson"
+    ],
+    "16": [
+      "dashboard_src_app",
+      "dashboard_src_app_app",
+      "dashboard_src_app_authgate",
+      "dashboard_src_app_dashboard",
+      "dashboard_src_app_splashloading",
+      "dashboard_src_app_tab",
+      "dashboard_src_app_tabs",
+      "dashboard_src_components_login",
+      "dashboard_src_components_login_login",
+      "dashboard_src_components_setuphub",
+      "dashboard_src_components_setuphub_setuphub",
+      "dashboard_src_components_setuphub_subtab",
+      "dashboard_src_context_authcontext",
+      "dashboard_src_context_authcontext_authcontext",
+      "dashboard_src_context_authcontext_authcontextvalue",
+      "dashboard_src_context_authcontext_authprovider",
+      "dashboard_src_context_authcontext_empty_state",
+      "dashboard_src_context_authcontext_useauth",
+      "dashboard_src_lib_api_fetchjson",
+      "dashboard_src_main",
+      "dashboard_src_types_authstate"
+    ],
+    "17": [
+      "dashboard_src_components_inviteredeem",
+      "dashboard_src_components_inviteredeem_invitepreview",
+      "dashboard_src_components_inviteredeem_inviteredeem",
+      "dashboard_src_components_setup_agentspanel",
+      "dashboard_src_components_setup_agentspanel_agentspanel",
+      "dashboard_src_components_setup_memberspanel",
+      "dashboard_src_components_setup_memberspanel_memberspanel",
+      "dashboard_src_components_setup_memberspanel_props",
+      "dashboard_src_components_setup_memberspanel_rolebadge",
+      "dashboard_src_components_setup_memberspanel_statusbadge",
+      "dashboard_src_components_setup_rolespanel",
+      "dashboard_src_components_setup_rolespanel_props",
+      "dashboard_src_components_setup_rolespanel_rolespanel",
+      "dashboard_src_lib_api",
+      "dashboard_src_lib_api_api",
+      "dashboard_src_lib_api_apierror",
+      "dashboard_src_lib_api_request",
+      "dashboard_src_types_agentconfig",
+      "dashboard_src_types_member",
+      "dashboard_src_types_permission",
+      "dashboard_src_types_role"
+    ],
+    "18": [
+      "dashboard_src_components_agenthub",
+      "dashboard_src_components_agenthub_agenthub",
+      "dashboard_src_components_agenthub_agentpanel",
+      "dashboard_src_components_agenthub_api",
+      "dashboard_src_components_agenthub_broadcastcomposer",
+      "dashboard_src_components_agenthub_hierarchystrip",
+      "dashboard_src_components_agenthub_inboxcontent",
+      "dashboard_src_components_agenthub_inboxentrycard",
+      "dashboard_src_components_agenthub_isactive",
+      "dashboard_src_components_agenthub_mdtohtml",
+      "dashboard_src_components_agenthub_outboxcontent",
+      "dashboard_src_components_agenthub_panel",
+      "dashboard_src_components_agenthub_priority",
+      "dashboard_src_components_agenthub_prioritybadge",
+      "dashboard_src_components_agenthub_props",
+      "dashboard_src_components_agenthub_taskstatusicon",
+      "dashboard_src_types_agentstatus",
+      "dashboard_src_types_buildagentmaps",
+      "dashboard_src_types_inboxentry"
+    ],
+    "19": [
+      "dashboard_src_components_commandrail",
+      "dashboard_src_components_commandrail_commandrail",
+      "dashboard_src_components_commandrail_decisioncard",
+      "dashboard_src_components_commandrail_handoffcard",
+      "dashboard_src_components_commandrail_props",
+      "dashboard_src_components_systempulse",
+      "dashboard_src_components_systempulse_props",
+      "dashboard_src_components_systempulse_stat",
+      "dashboard_src_components_systempulse_systempulse",
+      "dashboard_src_components_systempulse_tab",
+      "dashboard_src_types",
+      "dashboard_src_types_decision",
+      "dashboard_src_types_handoff",
+      "dashboard_src_types_memberstatus",
+      "dashboard_src_types_projectaccess",
+      "dashboard_src_types_systemstats"
+    ],
+    "20": [
+      "scripts_outputs_review",
+      "scripts_outputs_review_build_report",
+      "scripts_outputs_review_find_sb_root",
+      "scripts_outputs_review_logged_outputs",
+      "scripts_outputs_review_main",
+      "scripts_outputs_review_py_path",
+      "scripts_outputs_review_rationale_101",
+      "scripts_outputs_review_rationale_111",
+      "scripts_outputs_review_rationale_300",
+      "scripts_outputs_review_rationale_89",
+      "scripts_outputs_review_recommendation",
+      "scripts_outputs_review_score_file",
+      "scripts_outputs_review_write_to_inbox"
+    ],
+    "21": [
+      "dashboard_server_auth_authedrequest",
+      "dashboard_server_auth_requirepermission",
+      "dashboard_server_permissions",
+      "dashboard_server_permissions_builtinroles",
+      "dashboard_server_permissions_now",
+      "dashboard_server_permissions_permission",
+      "dashboard_server_permissions_permission_keys",
+      "dashboard_server_permissions_permissions",
+      "dashboard_server_permissions_role",
+      "dashboard_server_permissions_rolehaspermission"
+    ],
+    "22": [
+      "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_alice_munro",
+      "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_emily_st_john_mandel",
+      "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_f_scott_fitzgerald",
+      "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_gabriel_mcpherson",
+      "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_joan_didion",
+      "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_kazuo_ishiguro",
+      "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_michael_ondaatje",
+      "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_olga_tokarczuk",
+      "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_richard_powers",
+      "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_thomas_mann"
+    ],
+    "23": [
+      "modelcontextprotocol_sdk",
+      "package_dependencies",
+      "package_dependencies_cors",
+      "package_dependencies_express",
+      "package_dependencies_modelcontextprotocol_sdk",
+      "package_dependencies_zod",
+      "package_json_cors",
+      "package_json_express",
+      "zod"
+    ],
+    "24": [
+      "dashboard_package_scripts",
+      "dashboard_package_scripts_build",
+      "dashboard_package_scripts_build_server",
+      "dashboard_package_scripts_dev",
+      "dashboard_package_scripts_lint",
+      "dashboard_package_scripts_serve",
+      "dashboard_package_scripts_server_dev",
+      "dashboard_package_scripts_start"
+    ],
+    "25": [
+      "package_scripts",
+      "package_scripts_app",
+      "package_scripts_dev",
+      "package_scripts_ingest",
+      "package_scripts_mcp",
+      "package_scripts_mcp_dev",
+      "package_scripts_mcp_tunnel",
+      "package_scripts_sync"
+    ],
+    "26": [
+      "dashboard_src_components_taskboard",
+      "dashboard_src_components_taskboard_priority_badge",
+      "dashboard_src_components_taskboard_props",
+      "dashboard_src_components_taskboard_status_config",
+      "dashboard_src_components_taskboard_taskboard",
+      "dashboard_src_components_taskboard_taskcard",
+      "dashboard_src_types_task"
+    ],
+    "27": [
+      "wiki_craft_fiction_aegis_cycle_burnthrough_ch1_ch2_department_review_2026_07_20_md",
+      "wiki_craft_fiction_aegis_cycle_burnthrough_ch3_ch6_transfer_board_2026_07_20_md",
+      "wiki_craft_fiction_aegis_cycle_burnthrough_ch7_ch13_continuity_bridge_2026_07_20_md",
+      "wiki_craft_fiction_aegis_cycle_burnthrough_current_state_md",
+      "wiki_craft_fiction_aegis_cycle_burnthrough_jalen_soren_insertion_map_md",
+      "wiki_craft_fiction_aegis_cycle_burnthrough_opening_name_ledger_2026_07_20_md",
+      "wiki_craft_fiction_aegis_cycle_burnthrough_opening_pass_r01_2026_07_20_md"
+    ],
+    "28": [
+      "wiki_craft_fiction_fiction_studio_artistic_vision_legacy_empty_chair_artistic_vision",
+      "wiki_craft_fiction_fiction_studio_artistic_vision_legacy_empty_chair_empty_chair",
+      "wiki_craft_fiction_fiction_studio_artistic_vision_legacy_empty_chair_legacy",
+      "wiki_craft_fiction_fiction_studio_artistic_vision_legacy_empty_chair_md",
+      "wiki_craft_fiction_fiction_studio_departments_v2_md",
+      "wiki_craft_fiction_fiction_studio_full_studio_review_protocol",
+      "wiki_craft_fiction_fiction_studio_orchestration_v2_md"
+    ],
+    "29": [
+      "handoff_2026_07_18_17_45_chatgpt_md",
+      "handoff_string_theory_chapter_09_overview_2026_07_18_verified_artifacts_01_full_studio_review_completed_md",
+      "handoff_string_theory_chapter_09_overview_2026_07_18_verified_artifacts_02_cold_panel_review_md",
+      "handoff_string_theory_chapter_09_overview_2026_07_18_verified_artifacts_03_session_handoff_md",
+      "outputs_2026_07_18_chapter_9_2_cold_panel_review_md",
+      "outputs_2026_07_18_chapter_9_full_studio_review_completed_md"
+    ],
+    "30": [
+      "sync",
+      "sync_log",
+      "sync_reconcile_done_files",
+      "sync_run_leg",
+      "sync_sh__entry"
+    ],
+    "31": [
+      "launchd_install",
+      "launchd_install_is_loaded",
+      "launchd_install_label_from_plist",
+      "launchd_install_sh__entry"
+    ],
+    "32": [
+      "scripts_notify_format",
+      "scripts_notify_format_escape_for_applescript",
+      "scripts_notify_format_main",
+      "scripts_notify_format_rationale_64"
+    ],
+    "33": [
+      "wiki_dev_projects_shakespearience_ops_playbooks_01_accounts_and_access_md",
+      "wiki_dev_projects_shakespearience_ops_playbooks_04_domain_dns_email_md",
+      "wiki_meta_decision_registry_md"
+    ],
+    "34": [
+      "wiki_dev_projects_shakespearience_ops_playbooks_03_business_banking_bookkeeping_md",
+      "wiki_dev_projects_shakespearience_ops_playbooks_06_payments_tax_stripe_md",
+      "wiki_dev_projects_shakespearience_ops_playbooks_07_security_hygiene_backups_md"
+    ],
+    "35": [
+      "check_version",
+      "check_version_app"
+    ],
+    "36": [
+      "claude_md",
+      "gemini_md"
+    ],
+    "37": [
+      "craft_fiction_string_theory_chapter_04_the_apartment",
+      "theory_consciousness"
+    ],
+    "38": [
+      "launchd_local_triggers_ingest_trigger",
+      "launchd_local_triggers_ingest_trigger_sh__entry"
+    ],
+    "39": [
+      "launchd_local_triggers_outputs_review_trigger",
+      "launchd_local_triggers_outputs_review_trigger_sh__entry"
+    ],
+    "40": [
+      "test_server",
+      "test_server_test"
+    ],
+    "41": [
+      "handoff_2026_07_17_20_45_chatgpt_md"
+    ],
+    "42": [
+      "handoff_2026_07_17_creative_institution_operating_system_md"
+    ],
+    "43": [
+      "handoff_string_theory_chapter_09_overview_2026_07_18_agent_handoff_continuation_contract_md"
+    ],
+    "44": [
+      "handoff_string_theory_chapter_09_overview_2026_07_18_raw_pending_md"
+    ],
+    "45": [
+      "handoff_string_theory_chapter_09_overview_2026_07_18_readme_md"
+    ],
+    "46": [
+      "outputs_2026_07_18_gdrive_oauth_invalid_grant_diagnosis_md"
+    ],
+    "47": [
+      "outputs_2026_07_18_string_theory_chapter_1_experimental_7_2_1_five_task_pre_canon_pass_md"
+    ],
+    "48": [
+      "outputs_2026_07_18_string_theory_chapter_1_experimental_7_2_3_controlled_opening_seam_repair_md"
+    ],
+    "49": [
+      "outputs_2026_07_18_string_theory_chapter_1_experimental_7_2_full_studio_review_md"
+    ],
+    "50": [
+      "outputs_2026_07_18_string_theory_chapter_1_opening_reanchoring_council_pilot_md"
+    ],
+    "51": [
+      "outputs_string_theory_chapter_04_working_tab_check_md"
+    ],
+    "52": [
+      "pipeline_test_2026_07_18_done_md"
+    ],
+    "53": [
+      "raw_a_formal_resonance_model_for_string_theory_done"
+    ],
+    "54": [
+      "raw_a_letter_to_humanity_claude_opus48_2026_done"
+    ],
+    "55": [
+      "raw_acting_3_syllabus_copy_done"
+    ],
+    "56": [
+      "raw_analyze_this_acting_1_2_u2_l1_done"
+    ],
+    "57": [
+      "raw_analyze_this_ascting_1_2_u2_l2_done"
+    ],
+    "58": [
+      "raw_best_practice_briefing_code_development_done"
+    ],
+    "59": [
+      "raw_burnthrough_draft_2_2_done_txt"
+    ],
+    "60": [
+      "raw_claude_and_gabe_cconvo_on_lots_done"
+    ],
+    "61": [
+      "raw_codex_harmonic_master_system_prompt_v_2_done"
+    ],
+    "62": [
+      "raw_codex_lexicon_draft_done"
+    ],
+    "63": [
+      "raw_compactification_composite_panel_with_hypothesis_done"
+    ],
+    "64": [
+      "raw_compactification_final_panel_done"
+    ],
+    "65": [
+      "raw_digital_breathing_architecture_done"
+    ],
+    "66": [
+      "raw_gabe_mcpherson_p_w_april_2024_done"
+    ],
+    "67": [
+      "raw_gabe_mcpherson_p_w_april_2026_done"
+    ],
+    "68": [
+      "raw_gabriel_comprehensive_resume_creaive_profile_8_2025_v1_done"
+    ],
+    "69": [
+      "raw_gabriel_mcpherson_bio_2_done"
+    ],
+    "70": [
+      "raw_gabriel_mcpherson_bio_done"
+    ],
+    "71": [
+      "raw_gabriel_mcpherson_performance_biography_done"
+    ],
+    "72": [
+      "raw_gabriel_mcpherson_resume_done"
+    ],
+    "73": [
+      "raw_gabriel_sdlc_guide_done"
+    ],
+    "74": [
+      "raw_gabrielmcpherson_resume_done"
+    ],
+    "75": [
+      "raw_ghrm_lhc_monograph_validation_of_the_fundamental_5d_coupling_constant_via_high_coherence_resonance_done"
+    ],
+    "76": [
+      "raw_gm_resume_colect_done"
+    ],
+    "77": [
+      "raw_harmonic_foundations_done"
+    ],
+    "78": [
+      "raw_harmonic_response_framework_done"
+    ],
+    "79": [
+      "raw_harmonic_unified_full_done"
+    ],
+    "80": [
+      "raw_harmonic_unified_full_fixed_done"
+    ],
+    "81": [
+      "raw_harmonic_unified_full_informative_done"
+    ],
+    "82": [
+      "raw_hrif_ai_specific_protocol_done"
+    ],
+    "83": [
+      "raw_interactive_unified_done"
+    ],
+    "84": [
+      "raw_master_components_done"
+    ],
+    "85": [
+      "raw_master_performance_done"
+    ],
+    "86": [
+      "raw_master_semantics_done"
+    ],
+    "87": [
+      "raw_master_versions_done"
+    ],
+    "88": [
+      "raw_monologue_rubric_v1_done"
+    ],
+    "89": [
+      "raw_monologues_done"
+    ],
+    "90": [
+      "raw_nexus_collector1_done"
+    ],
+    "91": [
+      "raw_nine_chambers_of_vibrational_intelligence_v2_done"
+    ],
+    "92": [
+      "raw_physics_appendix_b_toy_model_done"
+    ],
+    "93": [
+      "raw_physics_complete_summary_done"
+    ],
+    "94": [
+      "raw_physics_figures_diagrams_done"
+    ],
+    "95": [
+      "raw_physics_geometric_foundations_done"
+    ],
+    "96": [
+      "raw_physics_integration_guide_done"
+    ],
+    "97": [
+      "raw_readme_done"
+    ],
+    "98": [
+      "raw_string_theory_chapter_01_done"
+    ],
+    "99": [
+      "raw_string_theory_chapter_02_done"
+    ],
+    "100": [
+      "raw_string_theory_chapter_03_done"
+    ],
+    "101": [
+      "raw_string_theory_chapter_04_done"
+    ],
+    "102": [
+      "raw_string_theory_chapters_05_08_done"
+    ],
+    "103": [
+      "raw_string_theory_chapters_09_12_done"
+    ],
+    "104": [
+      "raw_string_theory_chapters_13_16_done"
+    ],
+    "105": [
+      "raw_string_theory_chapters_17_20_done"
+    ],
+    "106": [
+      "raw_string_theory_overture_done"
+    ],
+    "107": [
+      "raw_ted_talk_script_done"
+    ],
+    "108": [
+      "raw_tedtalk_exploration1_done"
+    ],
+    "109": [
+      "raw_the_resonant_path_youtube_series_done"
+    ],
+    "110": [
+      "raw_vibrational_consciousness_paper_done"
+    ],
+    "111": [
+      "raw_vibrational_consciousness_whitepaper_done"
+    ],
+    "112": [
+      "raw_yup_cuz_then_the_lock_takes_a_unified_greater_mega_done"
+    ],
+    "113": [
+      "wiki_craft_fiction_aegis_cycle_burnthrough_md"
+    ],
+    "114": [
+      "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_elaine_scarry"
+    ],
+    "115": [
+      "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_erich_auerbach"
+    ],
+    "116": [
+      "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_gaston_bachelard"
+    ],
+    "117": [
+      "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_james_wood"
+    ],
+    "118": [
+      "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_mikhail_bakhtin"
+    ],
+    "119": [
+      "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_peter_brooks"
+    ],
+    "120": [
+      "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_viktor_shklovsky"
+    ],
+    "121": [
+      "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_w_g_sebald"
+    ],
+    "122": [
+      "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_wayne_c_booth"
+    ],
+    "123": [
+      "wiki_craft_fiction_fiction_studio_departments_v2"
+    ],
+    "124": [
+      "wiki_craft_fiction_fiction_studio_orchestrated_narrative_engine_assessment_2026_07_18"
+    ],
+    "125": [
+      "wiki_craft_fiction_fiction_studio_orchestration_v2"
+    ],
+    "126": [
+      "wiki_craft_fiction_fiction_studio_pilots_2026_07_18_chapter_9_provisional_full_studio_review"
+    ],
+    "127": [
+      "wiki_craft_fiction_fiction_studio_source_control_protocol"
+    ],
+    "128": [
+      "wiki_craft_fiction_string_theory_chapter_04_the_apartment"
+    ],
+    "129": [
+      "wiki_craft_fiction_string_theory_voice_doctrine_celeste_cassandra_2026_07_20"
+    ],
+    "130": [
+      "wiki_decision_records_0006_intellectual_lineage_demoted"
+    ],
+    "131": [
+      "wiki_dev_infrastructure_sbcc_build_2026_07_21"
+    ],
+    "132": [
+      "wiki_dev_projects_geminichat_architecture"
+    ],
+    "133": [
+      "wiki_dev_projects_nextstage_concept_and_capital_package"
+    ],
+    "134": [
+      "wiki_dev_projects_shakespearience_ops_playbooks_11_vendor_subscription_ledger_md"
+    ]
+  },
+  "cohesion": {
+    "0": 0.18135593220338983,
+    "1": 0.05493863237872589,
+    "2": 0.0929281122150789,
+    "3": 0.15610859728506787,
+    "4": 0.08244897959183674,
+    "5": 0.11205073995771671,
+    "6": 0.0915915915915916,
+    "7": 0.05405405405405406,
+    "8": 0.07142857142857142,
+    "9": 0.18783068783068782,
+    "10": 0.1282051282051282,
+    "11": 0.08,
+    "12": 0.08,
+    "13": 0.10869565217391304,
+    "14": 0.09090909090909091,
+    "15": 0.19523809523809524,
+    "16": 0.1523809523809524,
+    "17": 0.12857142857142856,
+    "18": 0.16374269005847952,
+    "19": 0.19166666666666668,
+    "20": 0.2948717948717949,
+    "21": 0.2222222222222222,
+    "22": 0.2,
+    "23": 0.2222222222222222,
+    "24": 0.25,
+    "25": 0.25,
+    "26": 0.3333333333333333,
+    "27": 0.2857142857142857,
+    "28": 0.3333333333333333,
+    "29": 0.3333333333333333,
+    "30": 0.9,
+    "31": 0.6666666666666666,
+    "32": 0.6666666666666666,
+    "33": 1.0,
+    "34": 0.6666666666666666,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 1.0,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0,
+    "45": 1.0,
+    "46": 1.0,
+    "47": 1.0,
+    "48": 1.0,
+    "49": 1.0,
+    "50": 1.0,
+    "51": 1.0,
+    "52": 1.0,
+    "53": 1.0,
+    "54": 1.0,
+    "55": 1.0,
+    "56": 1.0,
+    "57": 1.0,
+    "58": 1.0,
+    "59": 1.0,
+    "60": 1.0,
+    "61": 1.0,
+    "62": 1.0,
+    "63": 1.0,
+    "64": 1.0,
+    "65": 1.0,
+    "66": 1.0,
+    "67": 1.0,
+    "68": 1.0,
+    "69": 1.0,
+    "70": 1.0,
+    "71": 1.0,
+    "72": 1.0,
+    "73": 1.0,
+    "74": 1.0,
+    "75": 1.0,
+    "76": 1.0,
+    "77": 1.0,
+    "78": 1.0,
+    "79": 1.0,
+    "80": 1.0,
+    "81": 1.0,
+    "82": 1.0,
+    "83": 1.0,
+    "84": 1.0,
+    "85": 1.0,
+    "86": 1.0,
+    "87": 1.0,
+    "88": 1.0,
+    "89": 1.0,
+    "90": 1.0,
+    "91": 1.0,
+    "92": 1.0,
+    "93": 1.0,
+    "94": 1.0,
+    "95": 1.0,
+    "96": 1.0,
+    "97": 1.0,
+    "98": 1.0,
+    "99": 1.0,
+    "100": 1.0,
+    "101": 1.0,
+    "102": 1.0,
+    "103": 1.0,
+    "104": 1.0,
+    "105": 1.0,
+    "106": 1.0,
+    "107": 1.0,
+    "108": 1.0,
+    "109": 1.0,
+    "110": 1.0,
+    "111": 1.0,
+    "112": 1.0,
+    "113": 1.0,
+    "114": 1.0,
+    "115": 1.0,
+    "116": 1.0,
+    "117": 1.0,
+    "118": 1.0,
+    "119": 1.0,
+    "120": 1.0,
+    "121": 1.0,
+    "122": 1.0,
+    "123": 1.0,
+    "124": 1.0,
+    "125": 1.0,
+    "126": 1.0,
+    "127": 1.0,
+    "128": 1.0,
+    "129": 1.0,
+    "130": 1.0,
+    "131": 1.0,
+    "132": 1.0,
+    "133": 1.0,
+    "134": 1.0
+  },
+  "gods": [
+    {
+      "id": "wiki_index",
+      "label": "Knowledge Base \u2014 Master Index",
+      "degree": 100
+    },
+    {
+      "id": "wiki_agents_claude_inbox",
+      "label": "claude Inbox",
+      "degree": 55
+    },
+    {
+      "id": "wiki_meta_task_ledger",
+      "label": "Task Ledger",
+      "degree": 54
+    },
+    {
+      "id": "dashboard_readme",
+      "label": "SecondBrain Dashboard",
+      "degree": 46
+    },
+    {
+      "id": "wiki_dev_projects_prestige_fiction_forge_architecture",
+      "label": "Prestige Fiction Forge \u2014 Project Architecture",
+      "degree": 30
+    },
+    {
+      "id": "mcp_server_index_createserver",
+      "label": "createServer()",
+      "degree": 29
+    },
+    {
+      "id": "wiki_connections",
+      "label": "Cross-Domain Connection Map",
+      "degree": 29
+    },
+    {
+      "id": "wiki_craft_fiction_submission_strategy_index",
+      "label": "Submission Strategy \u2014 Index",
+      "degree": 29
+    },
+    {
+      "id": "wiki_dev_projects_codex_guardian_architecture",
+      "label": "Codex Guardian \u2014 Project Architecture",
+      "degree": 29
+    },
+    {
+      "id": "chatgpt_system_prompt",
+      "label": "Handoff Note",
+      "degree": 27
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Neo4j \u2194 ClaudeSecondBrain Sync Bridge",
+      "target": "sync.sh script",
+      "source_files": [
+        "SYNC_BRIDGE_README.md",
+        "sync.sh"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc \u2194 code); connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "Handoff Note",
+      "target": "startup-kit.sh script",
+      "source_files": [
+        "GEMINI_SYSTEM_PROMPT.md",
+        "startup-kit.sh"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (code \u2194 doc); connects across different repos/directories"
+    },
+    {
+      "source": "Handoff Note",
+      "target": "startup-kit.sh script",
+      "source_files": [
+        "handoff/2026-06-05_06-50_claude.md",
+        "startup-kit.sh"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (code \u2194 doc); connects across different repos/directories"
+    },
+    {
+      "source": "Handoff Note",
+      "target": "ingest.sh script",
+      "source_files": [
+        "handoff/2026-06-05_06-50_claude.md",
+        "ingest.sh"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc \u2194 code); connects across different repos/directories"
+    },
+    {
+      "source": "Session Output: ClaudeSecondBrain Infrastructure Buildout",
+      "target": "ingest.sh script",
+      "source_files": [
+        "outputs/2026-06-05_session-infrastructure-buildout.md",
+        "ingest.sh"
+      ],
+      "confidence": "INFERRED",
+      "relation": "references",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc \u2194 code); connects across different repos/directories"
+    }
+  ],
+  "tokens": {
+    "input": 248213,
+    "output": 20766
+  }
+}

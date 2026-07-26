@@ -769,7 +769,7 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "dashboard/package.json",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "dashboard_package"
     },
     {
@@ -780,7 +780,7 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "name",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "dashboard_package_name"
     },
     {
@@ -791,7 +791,7 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "version",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "dashboard_package_version"
     },
     {
@@ -802,7 +802,7 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "private",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "dashboard_package_private"
     },
     {
@@ -813,7 +813,7 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "type",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "dashboard_package_type"
     },
     {
@@ -824,7 +824,7 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "packagemanager",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "dashboard_package_packagemanager"
     },
     {
@@ -835,7 +835,7 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "engines",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "dashboard_package_engines"
     },
     {
@@ -846,7 +846,7 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "node",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "dashboard_package_engines_node"
     },
     {
@@ -857,7 +857,7 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "pnpm",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "dashboard_package_engines_pnpm"
     },
     {
@@ -1779,9 +1779,9 @@
       "source_file": "dashboard/server/auth.ts",
       "source_location": "L101",
       "_origin": "ast",
-      "community": 135,
+      "community": 5,
       "norm_label": "getmemberbyid()",
-      "community_name": "index.ts",
+      "community_name": "auth.ts",
       "id": "dashboard_server_auth_getmemberbyid"
     },
     {
@@ -1933,9 +1933,9 @@
       "source_file": "dashboard/server/auth.ts",
       "source_location": "L265",
       "_origin": "ast",
-      "community": 135,
+      "community": 5,
       "norm_label": "listroles()",
-      "community_name": "index.ts",
+      "community_name": "auth.ts",
       "id": "dashboard_server_auth_listroles"
     },
     {
@@ -1944,9 +1944,9 @@
       "source_file": "dashboard/server/auth.ts",
       "source_location": "L269",
       "_origin": "ast",
-      "community": 135,
+      "community": 5,
       "norm_label": "getrolebyid()",
-      "community_name": "index.ts",
+      "community_name": "auth.ts",
       "id": "dashboard_server_auth_getrolebyid"
     },
     {
@@ -1977,9 +1977,9 @@
       "source_file": "dashboard/server/auth.ts",
       "source_location": "L290",
       "_origin": "ast",
-      "community": 135,
+      "community": 5,
       "norm_label": "updaterole()",
-      "community_name": "index.ts",
+      "community_name": "auth.ts",
       "id": "dashboard_server_auth_updaterole"
     },
     {
@@ -1988,9 +1988,9 @@
       "source_file": "dashboard/server/auth.ts",
       "source_location": "L304",
       "_origin": "ast",
-      "community": 135,
+      "community": 5,
       "norm_label": "deleterole()",
-      "community_name": "index.ts",
+      "community_name": "auth.ts",
       "id": "dashboard_server_auth_deleterole"
     },
     {
@@ -2032,9 +2032,9 @@
       "source_file": "dashboard/server/auth.ts",
       "source_location": "L339",
       "_origin": "ast",
-      "community": 135,
+      "community": 5,
       "norm_label": "getsession()",
-      "community_name": "index.ts",
+      "community_name": "auth.ts",
       "id": "dashboard_server_auth_getsession"
     },
     {
@@ -2043,9 +2043,9 @@
       "source_file": "dashboard/server/auth.ts",
       "source_location": "L343",
       "_origin": "ast",
-      "community": 135,
+      "community": 5,
       "norm_label": "cookieoptions()",
-      "community_name": "index.ts",
+      "community_name": "auth.ts",
       "id": "dashboard_server_auth_cookieoptions"
     },
     {
@@ -2054,9 +2054,9 @@
       "source_file": "dashboard/server/auth.ts",
       "source_location": "L360",
       "_origin": "ast",
-      "community": 135,
+      "community": 5,
       "norm_label": "attachuser()",
-      "community_name": "index.ts",
+      "community_name": "auth.ts",
       "id": "dashboard_server_auth_attachuser"
     },
     {
@@ -2065,9 +2065,9 @@
       "source_file": "dashboard/server/auth.ts",
       "source_location": "L374",
       "_origin": "ast",
-      "community": 135,
+      "community": 5,
       "norm_label": "requireauth()",
-      "community_name": "index.ts",
+      "community_name": "auth.ts",
       "id": "dashboard_server_auth_requireauth"
     },
     {
@@ -2098,9 +2098,9 @@
       "source_file": "dashboard/server/auth.ts",
       "source_location": "L404",
       "_origin": "ast",
-      "community": 135,
+      "community": 5,
       "norm_label": "publicmember()",
-      "community_name": "index.ts",
+      "community_name": "auth.ts",
       "id": "dashboard_server_auth_publicmember"
     },
     {
@@ -2109,9 +2109,9 @@
       "source_file": "dashboard/server/index.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 135,
+      "community": 5,
       "norm_label": "index.ts",
-      "community_name": "index.ts",
+      "community_name": "auth.ts",
       "id": "dashboard_server_index"
     },
     {
@@ -2120,9 +2120,9 @@
       "source_file": "dashboard/server/index.ts",
       "source_location": "L57",
       "_origin": "ast",
-      "community": 135,
+      "community": 5,
       "norm_label": "dashboard_root",
-      "community_name": "index.ts",
+      "community_name": "auth.ts",
       "id": "dashboard_server_index_dashboard_root"
     },
     {
@@ -2131,9 +2131,9 @@
       "source_file": "dashboard/server/index.ts",
       "source_location": "L60",
       "_origin": "ast",
-      "community": 135,
+      "community": 5,
       "norm_label": "sb_root",
-      "community_name": "index.ts",
+      "community_name": "auth.ts",
       "id": "dashboard_server_index_sb_root"
     },
     {
@@ -2142,9 +2142,9 @@
       "source_file": "dashboard/server/index.ts",
       "source_location": "L67",
       "_origin": "ast",
-      "community": 135,
+      "community": 5,
       "norm_label": "app",
-      "community_name": "index.ts",
+      "community_name": "auth.ts",
       "id": "dashboard_server_index_app"
     },
     {
@@ -2153,9 +2153,9 @@
       "source_file": "dashboard/server/index.ts",
       "source_location": "L670",
       "_origin": "ast",
-      "community": 135,
+      "community": 5,
       "norm_label": "distpath",
-      "community_name": "index.ts",
+      "community_name": "auth.ts",
       "id": "dashboard_server_index_distpath"
     },
     {
@@ -4795,7 +4795,7 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "package.json",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "package"
     },
     {
@@ -4806,7 +4806,7 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "name",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "package_name"
     },
     {
@@ -4817,7 +4817,7 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "private",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "package_private"
     },
     {
@@ -4828,7 +4828,7 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "description",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "package_description"
     },
     {
@@ -4839,7 +4839,7 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "type",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "package_type"
     },
     {
@@ -5699,7 +5699,7 @@
       "contributor": null,
       "community": 2,
       "norm_label": "handoff note",
-      "community_name": "Knowledge Base \u2014 Master Index",
+      "community_name": "change-log.md",
       "id": "handoff_2026_06_08_09_15_gemini"
     },
     {
@@ -5713,7 +5713,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "handoff note",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "handoff_2026_06_10_14_30_claude"
     },
     {
@@ -5895,7 +5895,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "system work + shakespearience update \u2014 2026-07-07",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "outputs_2026_07_07_system_work_shakespearience_update"
     },
     {
@@ -5923,7 +5923,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "shakespearience \u2014 full second brain integration + dashboard focus feature",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "outputs_2026_07_08_shakespearience_full_integration"
     },
     {
@@ -5937,7 +5937,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "flowscape hang \u2014 diagnosis, immediate fix, and durable fix",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "outputs_2026_07_12_flowscape_hang_diagnosis"
     },
     {
@@ -5951,7 +5951,7 @@
       "contributor": null,
       "community": 0,
       "norm_label": "shakespearience \u2014 account management + business email strategy",
-      "community_name": "change-log.md",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "outputs_2026_07_13_shakespearience_account_and_email_strategy"
     },
     {
@@ -5965,7 +5965,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "shakespearience \u2014 technical buildout status",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "outputs_2026_07_13_shakespearience_tech_buildout_status"
     },
     {
@@ -5979,7 +5979,7 @@
       "contributor": null,
       "community": 0,
       "norm_label": "ops sequencing \u2014 cloudflare signup & the master domain",
-      "community_name": "change-log.md",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "outputs_2026_07_14_ops_sequencing_cloudflare"
     },
     {
@@ -6035,7 +6035,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "outputs/",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "outputs_readme"
     },
     {
@@ -6273,7 +6273,7 @@
       "contributor": null,
       "community": 97,
       "norm_label": "raw/",
-      "community_name": "raw/",
+      "community_name": "change-log.md",
       "id": "raw_readme_done"
     },
     {
@@ -6903,7 +6903,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "active portfolio",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "wiki_meta_active_portfolio"
     },
     {
@@ -7057,7 +7057,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "digital breathing architecture",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "wiki_ai_collaboration_digital_breathing_architecture"
     },
     {
@@ -7071,7 +7071,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "gabriel mcpherson \u2014 profile",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "wiki_ai_collaboration_gabriel_profile"
     },
     {
@@ -7183,7 +7183,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "translation \u2014 the semantic preservation principle",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "wiki_core_principles_translation"
     },
     {
@@ -7491,7 +7491,7 @@
       "contributor": null,
       "community": 2,
       "norm_label": "adr 0001 \u2014 unified mcp server architecture",
-      "community_name": "Knowledge Base \u2014 Master Index",
+      "community_name": "change-log.md",
       "id": "wiki_decision_records_0001_unified_mcp_server"
     },
     {
@@ -7547,7 +7547,7 @@
       "contributor": null,
       "community": 2,
       "norm_label": "code development best practices",
-      "community_name": "Knowledge Base \u2014 Master Index",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "wiki_dev_infrastructure_code_best_practices"
     },
     {
@@ -7561,7 +7561,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "flowscape ambient context engine",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "wiki_dev_infrastructure_flowscape_engine"
     },
     {
@@ -7603,7 +7603,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "codex guardian \u2014 project architecture",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "wiki_dev_projects_codex_guardian_architecture"
     },
     {
@@ -7617,7 +7617,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "comtechsuite \u2014 project architecture",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "wiki_dev_projects_comtechsuite_architecture"
     },
     {
@@ -7631,7 +7631,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "flowscape project architecture",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "wiki_dev_projects_flowscape_architecture"
     },
     {
@@ -7645,7 +7645,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "nexus system \u2014 architecture and technical proposal",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "wiki_dev_projects_nexus_architecture"
     },
     {
@@ -7673,7 +7673,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "nexus \u2014 cross-language research synthesis",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "wiki_dev_projects_nexus_nexus_research_synthesis"
     },
     {
@@ -7687,7 +7687,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "prestige fiction forge \u2014 project architecture",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "wiki_dev_projects_prestige_fiction_forge_architecture"
     },
     {
@@ -7701,7 +7701,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "private club app \u2014 project architecture",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "wiki_dev_projects_private_club_app_architecture"
     },
     {
@@ -7715,7 +7715,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "playbook 02 \u2014 legal foundation",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "wiki_dev_projects_shakespearience_ops_playbooks_02_legal_foundation"
     },
     {
@@ -7729,7 +7729,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "playbook 03 \u2014 business banking & bookkeeping",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "wiki_dev_projects_shakespearience_ops_playbooks_03_banking_bookkeeping"
     },
     {
@@ -7743,7 +7743,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "playbook 05 \u2014 kids' privacy & compliance (coppa / ferpa)",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "wiki_dev_projects_shakespearience_ops_playbooks_05_kids_privacy_coppa"
     },
     {
@@ -7757,7 +7757,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "playbook 06 \u2014 payments & tax (stripe)",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "wiki_dev_projects_shakespearience_ops_playbooks_06_payments_tax"
     },
     {
@@ -7771,7 +7771,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "playbook 07 \u2014 security hygiene & backups",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "wiki_dev_projects_shakespearience_ops_playbooks_07_security_backups"
     },
     {
@@ -7785,7 +7785,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "playbook 08 \u2014 contracts & people",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "wiki_dev_projects_shakespearience_ops_playbooks_08_contracts_people"
     },
     {
@@ -7799,7 +7799,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "playbook 09 \u2014 brand & trademark",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "wiki_dev_projects_shakespearience_ops_playbooks_09_brand_trademark"
     },
     {
@@ -7813,7 +7813,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "playbook 10 \u2014 insurance & risk",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "wiki_dev_projects_shakespearience_ops_playbooks_10_insurance_risk"
     },
     {
@@ -7827,7 +7827,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "playbook 11 \u2014 vendor & subscription ledger",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "wiki_dev_projects_shakespearience_ops_playbooks_11_vendor_ledger"
     },
     {
@@ -7841,7 +7841,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "playbook 12 \u2014 incident response",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "wiki_dev_projects_shakespearience_ops_playbooks_12_incident_response"
     },
     {
@@ -7855,7 +7855,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "ops operating costs (companion to the budget sheet)",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "wiki_dev_projects_shakespearience_ops_playbooks_ops_operating_costs"
     },
     {
@@ -7869,7 +7869,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "writetrack \u2014 project architecture",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "wiki_dev_projects_writetrack_architecture"
     },
     {
@@ -7897,7 +7897,7 @@
       "contributor": null,
       "community": 2,
       "norm_label": "acting and performance pedagogy",
-      "community_name": "Knowledge Base \u2014 Master Index",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "wiki_music_performance_acting_and_performance_pedagogy"
     },
     {
@@ -7911,7 +7911,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "composition practice",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "wiki_music_performance_composition_practice"
     },
     {
@@ -7925,7 +7925,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "directing practice",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "wiki_music_performance_directing_practice"
     },
     {
@@ -8009,7 +8009,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "gabriel mcpherson \u2014 professional profile",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture",
+      "community_name": "Shakespearience \u2014 Ops Playbooks",
       "id": "wiki_reference_external_gabriel_mcpherson_profile"
     },
     {
@@ -9214,514 +9214,457 @@
       "label": "CLAUDE.md",
       "file_type": "document",
       "source_file": "CLAUDE.md",
-      "community": 36,
-      "norm_label": "claude.md",
       "id": "claude_md",
-      "community_name": "CLAUDE.md"
+      "community": 36,
+      "norm_label": "claude.md"
     },
     {
       "label": "Gemini.md",
       "file_type": "document",
       "source_file": "Gemini.md",
-      "community": 36,
-      "norm_label": "gemini.md",
       "id": "gemini_md",
-      "community_name": "CLAUDE.md"
+      "community": 36,
+      "norm_label": "gemini.md"
     },
     {
       "label": "Handoff Note from ChatGPT 2026-07-17 20:45",
       "file_type": "document",
       "source_file": "handoff/2026-07-17_20-45_chatgpt.md",
-      "community": 41,
-      "norm_label": "handoff note from chatgpt 2026-07-17 20:45",
       "id": "handoff_2026_07_17_20_45_chatgpt_md",
-      "community_name": "Handoff Note from ChatGPT 2026-07-17 20:45"
+      "community": 41,
+      "norm_label": "handoff note from chatgpt 2026-07-17 20:45"
     },
     {
       "label": "Handoff \u2014 Creative Institution Operating System 2026-07-17",
       "file_type": "document",
       "source_file": "handoff/2026-07-17_creative-institution-operating-system.md",
-      "community": 42,
-      "norm_label": "handoff \u2014 creative institution operating system 2026-07-17",
       "id": "handoff_2026_07_17_creative_institution_operating_system_md",
-      "community_name": "Handoff \u2014 Creative Institution Operating System 2026-07-17"
+      "community": 42,
+      "norm_label": "handoff \u2014 creative institution operating system 2026-07-17"
     },
     {
       "label": "Handoff Note from ChatGPT 2026-07-18 17:45",
       "file_type": "document",
       "source_file": "handoff/2026-07-18_17-45_chatgpt.md",
-      "community": 29,
-      "norm_label": "handoff note from chatgpt 2026-07-18 17:45",
       "id": "handoff_2026_07_18_17_45_chatgpt_md",
-      "community_name": "Fiction Studio Pilot 001 \u2014 Completed Full Studio Review"
+      "community": 29,
+      "norm_label": "handoff note from chatgpt 2026-07-18 17:45"
     },
     {
       "label": "Chapter 9 Overview \u2014 Lossless Conversation Archive",
       "file_type": "document",
       "source_file": "handoff/string-theory/chapter-09-overview-2026-07-18/README.md",
-      "community": 45,
-      "norm_label": "chapter 9 overview \u2014 lossless conversation archive",
       "id": "handoff_string_theory_chapter_09_overview_2026_07_18_readme_md",
-      "community_name": "Chapter 9 Overview \u2014 Lossless Conversation Archive"
+      "community": 45,
+      "norm_label": "chapter 9 overview \u2014 lossless conversation archive"
     },
     {
       "label": "Agent Continuation Contract",
       "file_type": "document",
       "source_file": "handoff/string-theory/chapter-09-overview-2026-07-18/agent-handoff/continuation-contract.md",
-      "community": 43,
-      "norm_label": "agent continuation contract",
       "id": "handoff_string_theory_chapter_09_overview_2026_07_18_agent_handoff_continuation_contract_md",
-      "community_name": "Agent Continuation Contract"
+      "community": 43,
+      "norm_label": "agent continuation contract"
     },
     {
       "label": "RAW TRANSCRIPT PENDING",
       "file_type": "document",
       "source_file": "handoff/string-theory/chapter-09-overview-2026-07-18/raw/PENDING.md",
-      "community": 44,
-      "norm_label": "raw transcript pending",
       "id": "handoff_string_theory_chapter_09_overview_2026_07_18_raw_pending_md",
-      "community_name": "RAW TRANSCRIPT PENDING"
+      "community": 44,
+      "norm_label": "raw transcript pending"
     },
     {
       "label": "Fiction Studio Pilot 001 \u2014 Completed Full Studio Review",
       "file_type": "document",
       "source_file": "handoff/string-theory/chapter-09-overview-2026-07-18/verified-artifacts/01-full-studio-review-completed.md",
-      "community": 29,
-      "norm_label": "fiction studio pilot 001 \u2014 completed full studio review",
       "id": "handoff_string_theory_chapter_09_overview_2026_07_18_verified_artifacts_01_full_studio_review_completed_md",
-      "community_name": "Fiction Studio Pilot 001 \u2014 Completed Full Studio Review"
+      "community": 29,
+      "norm_label": "fiction studio pilot 001 \u2014 completed full studio review"
     },
     {
       "label": "Fiction Studio Cold Panel Review \u2014 9.2 \u201cThe Tuning\u201d",
       "file_type": "document",
       "source_file": "handoff/string-theory/chapter-09-overview-2026-07-18/verified-artifacts/02-cold-panel-review.md",
-      "community": 29,
-      "norm_label": "fiction studio cold panel review \u2014 9.2 \u201cthe tuning\u201d",
       "id": "handoff_string_theory_chapter_09_overview_2026_07_18_verified_artifacts_02_cold_panel_review_md",
-      "community_name": "Fiction Studio Pilot 001 \u2014 Completed Full Studio Review"
+      "community": 29,
+      "norm_label": "fiction studio cold panel review \u2014 9.2 \u201cthe tuning\u201d"
     },
     {
       "label": "Handoff Note from ChatGPT 2026-07-18",
       "file_type": "document",
       "source_file": "handoff/string-theory/chapter-09-overview-2026-07-18/verified-artifacts/03-session-handoff.md",
-      "community": 29,
-      "norm_label": "handoff note from chatgpt 2026-07-18",
       "id": "handoff_string_theory_chapter_09_overview_2026_07_18_verified_artifacts_03_session_handoff_md",
-      "community_name": "Fiction Studio Pilot 001 \u2014 Completed Full Studio Review"
+      "community": 29,
+      "norm_label": "handoff note from chatgpt 2026-07-18"
     },
     {
       "label": "Fiction Studio Cold Panel Review \u2014 9.2 \u201cThe Tuning\u201d",
       "file_type": "document",
       "source_file": "outputs/2026-07-18_chapter-9-2-cold-panel-review.md",
-      "community": 29,
-      "norm_label": "fiction studio cold panel review \u2014 9.2 \u201cthe tuning\u201d",
       "id": "outputs_2026_07_18_chapter_9_2_cold_panel_review_md",
-      "community_name": "Fiction Studio Pilot 001 \u2014 Completed Full Studio Review"
+      "community": 29,
+      "norm_label": "fiction studio cold panel review \u2014 9.2 \u201cthe tuning\u201d"
     },
     {
       "label": "Fiction Studio Pilot 001 \u2014 Completed Full Studio Review",
       "file_type": "document",
       "source_file": "outputs/2026-07-18_chapter-9-full-studio-review-completed.md",
-      "community": 29,
-      "norm_label": "fiction studio pilot 001 \u2014 completed full studio review",
       "id": "outputs_2026_07_18_chapter_9_full_studio_review_completed_md",
-      "community_name": "Fiction Studio Pilot 001 \u2014 Completed Full Studio Review"
+      "community": 29,
+      "norm_label": "fiction studio pilot 001 \u2014 completed full studio review"
     },
     {
       "label": "Google Drive auth failure \u2014 diagnosis (2026-07-18)",
       "file_type": "document",
       "source_file": "outputs/2026-07-18_gdrive-oauth-invalid-grant-diagnosis.md",
-      "community": 46,
-      "norm_label": "google drive auth failure \u2014 diagnosis (2026-07-18)",
       "id": "outputs_2026_07_18_gdrive_oauth_invalid_grant_diagnosis_md",
-      "community_name": "Google Drive auth failure \u2014 diagnosis (2026-07-18)"
+      "community": 46,
+      "norm_label": "google drive auth failure \u2014 diagnosis (2026-07-18)"
     },
     {
       "label": "Monthly Health Check \u2014 2026-07-18",
       "file_type": "document",
       "source_file": "outputs/2026-07-18_health-check.md",
-      "community": 7,
-      "norm_label": "monthly health check \u2014 2026-07-18",
       "id": "outputs_2026_07_18_health_check_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "monthly health check \u2014 2026-07-18"
     },
     {
       "label": "STRING THEORY Chapter 1 Experimental 7.2.1 \u2014 Five-Task Pre-Canon Pass",
       "file_type": "document",
       "source_file": "outputs/2026-07-18_string-theory-chapter-1-experimental-7-2-1-five-task-pre-canon-pass.md",
-      "community": 47,
-      "norm_label": "string theory chapter 1 experimental 7.2.1 \u2014 five-task pre-canon pass",
       "id": "outputs_2026_07_18_string_theory_chapter_1_experimental_7_2_1_five_task_pre_canon_pass_md",
-      "community_name": "STRING THEORY Chapter 1 Experimental 7.2.1 \u2014 Five-Task Pre-Canon Pass"
+      "community": 47,
+      "norm_label": "string theory chapter 1 experimental 7.2.1 \u2014 five-task pre-canon pass"
     },
     {
       "label": "STRING THEORY Chapter One Experimental 7.2.3 \u2014 Controlled Opening Seam Repair",
       "file_type": "document",
       "source_file": "outputs/2026-07-18_string-theory-chapter-1-experimental-7-2-3-controlled-opening-seam-repair.md",
-      "community": 48,
-      "norm_label": "string theory chapter one experimental 7.2.3 \u2014 controlled opening seam repair",
       "id": "outputs_2026_07_18_string_theory_chapter_1_experimental_7_2_3_controlled_opening_seam_repair_md",
-      "community_name": "STRING THEORY Chapter One Experimental 7.2.3 \u2014 Controlled Opening Seam Repair"
+      "community": 48,
+      "norm_label": "string theory chapter one experimental 7.2.3 \u2014 controlled opening seam repair"
     },
     {
       "label": "STRING THEORY \u2014 Chapter 1 Experimental 7.2 Full Studio Review",
       "file_type": "document",
       "source_file": "outputs/2026-07-18_string-theory-chapter-1-experimental-7-2-full-studio-review.md",
-      "community": 49,
-      "norm_label": "string theory \u2014 chapter 1 experimental 7.2 full studio review",
       "id": "outputs_2026_07_18_string_theory_chapter_1_experimental_7_2_full_studio_review_md",
-      "community_name": "STRING THEORY \u2014 Chapter 1 Experimental 7.2 Full Studio Review"
+      "community": 49,
+      "norm_label": "string theory \u2014 chapter 1 experimental 7.2 full studio review"
     },
     {
       "label": "STRING THEORY Chapter 1 \u2014 Opening Re-Anchoring Council Pilot",
       "file_type": "document",
       "source_file": "outputs/2026-07-18_string-theory-chapter-1-opening-reanchoring-council-pilot.md",
-      "community": 50,
-      "norm_label": "string theory chapter 1 \u2014 opening re-anchoring council pilot",
       "id": "outputs_2026_07_18_string_theory_chapter_1_opening_reanchoring_council_pilot_md",
-      "community_name": "STRING THEORY Chapter 1 \u2014 Opening Re-Anchoring Council Pilot"
+      "community": 50,
+      "norm_label": "string theory chapter 1 \u2014 opening re-anchoring council pilot"
     },
     {
       "label": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23",
       "file_type": "document",
       "source_file": "outputs/2026-07-23_health-check.md",
-      "community": 7,
-      "norm_label": "claudesecondbrain \u2014 monthly health check 2026-07-23",
       "id": "outputs_2026_07_23_health_check_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "claudesecondbrain \u2014 monthly health check 2026-07-23"
     },
     {
       "label": "Raw Inbox Ingestion Audit \u2014 2026-07-24",
       "file_type": "document",
       "source_file": "outputs/2026-07-24_raw-ingestion-audit.md",
-      "community": 7,
-      "norm_label": "raw inbox ingestion audit \u2014 2026-07-24",
       "id": "outputs_2026_07_24_raw_ingestion_audit_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "raw inbox ingestion audit \u2014 2026-07-24"
     },
     {
       "label": "STRING THEORY Chapter 4 Working Tab Check",
       "file_type": "document",
       "source_file": "outputs/string-theory-chapter-04-working-tab-check.md",
-      "community": 51,
-      "norm_label": "string theory chapter 4 working tab check",
       "id": "outputs_string_theory_chapter_04_working_tab_check_md",
-      "community_name": "STRING THEORY Chapter 4 Working Tab Check"
+      "community": 51,
+      "norm_label": "string theory chapter 4 working tab check"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-12 18:48",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-12_18-48-17_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-12 18:48",
       "id": "raw_flowscape_resolved_2026_07_12_18_48_17_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-12 18:48"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-14 16:18",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-14_16-18-28_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-14 16:18",
       "id": "raw_flowscape_resolved_2026_07_14_16_18_28_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-14 16:18"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-14 19:18",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-14_19-18-27_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-14 19:18",
       "id": "raw_flowscape_resolved_2026_07_14_19_18_27_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-14 19:18"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-14 19:53",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-14_19-53-28_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-14 19:53",
       "id": "raw_flowscape_resolved_2026_07_14_19_53_28_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-14 19:53"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-14 20:28",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-14_20-28-23_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-14 20:28",
       "id": "raw_flowscape_resolved_2026_07_14_20_28_23_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-14 20:28"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-16 09:53",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-16_09-53-30_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-16 09:53",
       "id": "raw_flowscape_resolved_2026_07_16_09_53_30_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-16 09:53"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-16 11:48",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-16_11-48-30_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-16 11:48",
       "id": "raw_flowscape_resolved_2026_07_16_11_48_30_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-16 11:48"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-17 18:08",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-17_18-08-28_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-17 18:08",
       "id": "raw_flowscape_resolved_2026_07_17_18_08_28_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-17 18:08"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-18 12:08",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-18_12-08-30_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-18 12:08",
       "id": "raw_flowscape_resolved_2026_07_18_12_08_30_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-18 12:08"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-18 14:58",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-18_14-58-25_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-18 14:58",
       "id": "raw_flowscape_resolved_2026_07_18_14_58_25_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-18 14:58"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-18 21:43",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-18_21-43-33_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-18 21:43",
       "id": "raw_flowscape_resolved_2026_07_18_21_43_33_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-18 21:43"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-20 02:44",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-20_02-44-16_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-20 02:44",
       "id": "raw_flowscape_resolved_2026_07_20_02_44_16_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-20 02:44"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-20 03:19",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-20_03-19-14_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-20 03:19",
       "id": "raw_flowscape_resolved_2026_07_20_03_19_14_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-20 03:19"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-20 06:04",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-20_06-04-16_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-20 06:04",
       "id": "raw_flowscape_resolved_2026_07_20_06_04_16_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-20 06:04"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-20 10:04",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-20_10-04-19_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-20 10:04",
       "id": "raw_flowscape_resolved_2026_07_20_10_04_19_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-20 10:04"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-20 10:43",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-20_10-43-23_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-20 10:43",
       "id": "raw_flowscape_resolved_2026_07_20_10_43_23_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-20 10:43"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-20 18:24",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-20_18-24-16_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-20 18:24",
       "id": "raw_flowscape_resolved_2026_07_20_18_24_16_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-20 18:24"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-20 19:09",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-20_19-09-20_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-20 19:09",
       "id": "raw_flowscape_resolved_2026_07_20_19_09_20_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-20 19:09"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-20 23:39",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-20_23-39-21_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-20 23:39",
       "id": "raw_flowscape_resolved_2026_07_20_23_39_21_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-20 23:39"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-21 17:49",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-21_17-49-14_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-21 17:49",
       "id": "raw_flowscape_resolved_2026_07_21_17_49_14_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-21 17:49"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-21 18:54",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-21_18-54-21_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-21 18:54",
       "id": "raw_flowscape_resolved_2026_07_21_18_54_21_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-21 18:54"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-21 19:39",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-21_19-39-16_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-21 19:39",
       "id": "raw_flowscape_resolved_2026_07_21_19_39_16_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-21 19:39"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-21 20:44",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-21_20-44-16_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-21 20:44",
       "id": "raw_flowscape_resolved_2026_07_21_20_44_16_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-21 20:44"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-21 21:59",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-21_21-59-16_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-21 21:59",
       "id": "raw_flowscape_resolved_2026_07_21_21_59_16_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-21 21:59"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-21 22:29",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-21_22-29-20_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-21 22:29",
       "id": "raw_flowscape_resolved_2026_07_21_22_29_20_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-21 22:29"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-21 23:09",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-21_23-09-22_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-21 23:09",
       "id": "raw_flowscape_resolved_2026_07_21_23_09_22_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-21 23:09"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-22 01:49",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-22_01-49-18_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-22 01:49",
       "id": "raw_flowscape_resolved_2026_07_22_01_49_18_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-22 01:49"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-22 22:01",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-22_22-01-11_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-22 22:01",
       "id": "raw_flowscape_resolved_2026_07_22_22_01_11_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-22 22:01"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-23 13:26",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-23_13-26-10_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-23 13:26",
       "id": "raw_flowscape_resolved_2026_07_23_13_26_10_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-23 13:26"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-23 19:36",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-23_19-36-22_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-23 19:36",
       "id": "raw_flowscape_resolved_2026_07_23_19_36_22_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-23 19:36"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-23 23:31",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-23_23-31-15_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-23 23:31",
       "id": "raw_flowscape_resolved_2026_07_23_23_31_15_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-23 23:31"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-24 01:16",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-24_01-16-19_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-24 01:16",
       "id": "raw_flowscape_resolved_2026_07_24_01_16_19_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-24 01:16"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-24 01:46",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-24_01-46-20_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-24 01:46",
       "id": "raw_flowscape_resolved_2026_07_24_01_46_20_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-24 01:46"
     },
     {
       "label": "FlowScape Blocking Resolution \u2014 2026-07-24 15:10",
       "file_type": "document",
       "source_file": "raw/flowscape_resolved_2026-07-24_15-10-54_done.md",
-      "community": 7,
-      "norm_label": "flowscape blocking resolution \u2014 2026-07-24 15:10",
       "id": "raw_flowscape_resolved_2026_07_24_15_10_54_done_md",
-      "community_name": "ClaudeSecondBrain \u2014 Monthly Health Check 2026-07-23"
+      "community": 7,
+      "norm_label": "flowscape blocking resolution \u2014 2026-07-24 15:10"
     },
     {
       "label": "Ingestion Pipeline Live Test \u2014 2026-07-18",
       "file_type": "document",
       "source_file": "pipeline-test-2026-07-18_done.md",
-      "community": 52,
-      "norm_label": "ingestion pipeline live test \u2014 2026-07-18",
       "id": "pipeline_test_2026_07_18_done_md",
-      "community_name": "Ingestion Pipeline Live Test \u2014 2026-07-18"
+      "community": 52,
+      "norm_label": "ingestion pipeline live test \u2014 2026-07-18"
     },
     {
       "label": "Chapter 4 \u2014 The Apartment",
@@ -9732,10 +9675,9 @@
       "captured_at": "2026-07-24T09:56:21.391Z",
       "author": "Gabriel McPherson",
       "contributor": null,
-      "community": 37,
-      "norm_label": "chapter 4 \u2014 the apartment",
       "id": "craft_fiction_string_theory_chapter_04_the_apartment",
-      "community_name": "Chapter 4 \u2014 The Apartment"
+      "community": 37,
+      "norm_label": "chapter 4 \u2014 the apartment"
     },
     {
       "label": "Theory Consciousness Domain",
@@ -9746,10 +9688,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 37,
-      "norm_label": "theory consciousness domain",
       "id": "theory_consciousness",
-      "community_name": "Chapter 4 \u2014 The Apartment"
+      "community": 37,
+      "norm_label": "theory consciousness domain"
     },
     {
       "label": "Ops Playbook 01: Accounts and Access",
@@ -9760,10 +9701,9 @@
       "captured_at": null,
       "author": "Gabriel",
       "contributor": "Gabriel",
-      "community": 33,
-      "norm_label": "ops playbook 01: accounts and access",
       "id": "wiki_dev_projects_shakespearience_ops_playbooks_01_accounts_and_access_md",
-      "community_name": "Ops Playbook 01: Accounts and Access"
+      "community": 33,
+      "norm_label": "ops playbook 01: accounts and access"
     },
     {
       "label": "Ops Playbook 04: Domain, DNS & Email",
@@ -9774,10 +9714,9 @@
       "captured_at": null,
       "author": "Gabriel",
       "contributor": "Gabriel",
-      "community": 33,
-      "norm_label": "ops playbook 04: domain, dns & email",
       "id": "wiki_dev_projects_shakespearience_ops_playbooks_04_domain_dns_email_md",
-      "community_name": "Ops Playbook 01: Accounts and Access"
+      "community": 33,
+      "norm_label": "ops playbook 04: domain, dns & email"
     },
     {
       "label": "Ops Playbook 03: Business Banking & Bookkeeping",
@@ -9788,10 +9727,9 @@
       "captured_at": null,
       "author": "Gabriel",
       "contributor": "Gabriel",
-      "community": 34,
-      "norm_label": "ops playbook 03: business banking & bookkeeping",
       "id": "wiki_dev_projects_shakespearience_ops_playbooks_03_business_banking_bookkeeping_md",
-      "community_name": "Ops Playbook 06: Payments & Tax / Stripe"
+      "community": 34,
+      "norm_label": "ops playbook 03: business banking & bookkeeping"
     },
     {
       "label": "Ops Playbook 06: Payments & Tax / Stripe",
@@ -9802,10 +9740,9 @@
       "captured_at": null,
       "author": "Gabriel",
       "contributor": "Gabriel",
-      "community": 34,
-      "norm_label": "ops playbook 06: payments & tax / stripe",
       "id": "wiki_dev_projects_shakespearience_ops_playbooks_06_payments_tax_stripe_md",
-      "community_name": "Ops Playbook 06: Payments & Tax / Stripe"
+      "community": 34,
+      "norm_label": "ops playbook 06: payments & tax / stripe"
     },
     {
       "label": "Ops Playbook 07: Security Hygiene & Backups",
@@ -9816,10 +9753,9 @@
       "captured_at": null,
       "author": "Gabriel",
       "contributor": "Gabriel",
-      "community": 34,
-      "norm_label": "ops playbook 07: security hygiene & backups",
       "id": "wiki_dev_projects_shakespearience_ops_playbooks_07_security_hygiene_backups_md",
-      "community_name": "Ops Playbook 06: Payments & Tax / Stripe"
+      "community": 34,
+      "norm_label": "ops playbook 07: security hygiene & backups"
     },
     {
       "label": "Ops Playbook 11: Vendor & Subscription Ledger",
@@ -9830,10 +9766,9 @@
       "captured_at": null,
       "author": "Gabriel",
       "contributor": "Gabriel",
-      "community": 134,
-      "norm_label": "ops playbook 11: vendor & subscription ledger",
       "id": "wiki_dev_projects_shakespearience_ops_playbooks_11_vendor_subscription_ledger_md",
-      "community_name": "Ops Playbook 11: Vendor & Subscription Ledger"
+      "community": 134,
+      "norm_label": "ops playbook 11: vendor & subscription ledger"
     },
     {
       "label": "Decision Registry",
@@ -9844,10 +9779,9 @@
       "captured_at": null,
       "author": "Gabriel",
       "contributor": "ChatGPT",
-      "community": 33,
-      "norm_label": "decision registry",
       "id": "wiki_meta_decision_registry_md",
-      "community_name": "Ops Playbook 01: Accounts and Access"
+      "community": 33,
+      "norm_label": "decision registry"
     },
     {
       "label": "Fiction Studio Orchestration v2",
@@ -9858,10 +9792,9 @@
       "captured_at": null,
       "author": "Gabriel",
       "contributor": "ChatGPT",
-      "community": 28,
-      "norm_label": "fiction studio orchestration v2",
       "id": "wiki_craft_fiction_fiction_studio_orchestration_v2_md",
-      "community_name": "Full Studio Review Protocol"
+      "community": 28,
+      "norm_label": "fiction studio orchestration v2"
     },
     {
       "label": "Fiction Studio Departments v2",
@@ -9872,10 +9805,9 @@
       "captured_at": null,
       "author": "Gabriel",
       "contributor": "ChatGPT",
-      "community": 28,
-      "norm_label": "fiction studio departments v2",
       "id": "wiki_craft_fiction_fiction_studio_departments_v2_md",
-      "community_name": "Full Studio Review Protocol"
+      "community": 28,
+      "norm_label": "fiction studio departments v2"
     },
     {
       "label": "Artistic Vision, Legacy, and Empty Chair",
@@ -9886,10 +9818,9 @@
       "captured_at": null,
       "author": "Gabriel",
       "contributor": "ChatGPT-Atlas",
-      "community": 28,
-      "norm_label": "artistic vision, legacy, and empty chair",
       "id": "wiki_craft_fiction_fiction_studio_artistic_vision_legacy_empty_chair_md",
-      "community_name": "Full Studio Review Protocol"
+      "community": 28,
+      "norm_label": "artistic vision, legacy, and empty chair"
     },
     {
       "label": "BURNThrough \u2014 The Aegis Cycle",
@@ -9900,10 +9831,9 @@
       "captured_at": null,
       "author": "Gabriel",
       "contributor": "Codex",
-      "community": 113,
-      "norm_label": "burnthrough \u2014 the aegis cycle",
       "id": "wiki_craft_fiction_aegis_cycle_burnthrough_md",
-      "community_name": "BURNThrough \u2014 The Aegis Cycle"
+      "community": 113,
+      "norm_label": "burnthrough \u2014 the aegis cycle"
     },
     {
       "label": "BURNThrough Current State",
@@ -9914,10 +9844,9 @@
       "captured_at": null,
       "author": "Gabriel",
       "contributor": "Codex",
-      "community": 27,
-      "norm_label": "burnthrough current state",
       "id": "wiki_craft_fiction_aegis_cycle_burnthrough_current_state_md",
-      "community_name": "BURNThrough Opening Department Review"
+      "community": 27,
+      "norm_label": "burnthrough current state"
     },
     {
       "label": "BURNThrough Opening Department Review",
@@ -9928,10 +9857,9 @@
       "captured_at": null,
       "author": "Codex",
       "contributor": "Gabriel",
-      "community": 27,
-      "norm_label": "burnthrough opening department review",
       "id": "wiki_craft_fiction_aegis_cycle_burnthrough_ch1_ch2_department_review_2026_07_20_md",
-      "community_name": "BURNThrough Opening Department Review"
+      "community": 27,
+      "norm_label": "burnthrough opening department review"
     },
     {
       "label": "BURNThrough Ch. 3-6 Transfer Board",
@@ -9942,10 +9870,9 @@
       "captured_at": null,
       "author": "Codex",
       "contributor": "Gabriel",
-      "community": 27,
-      "norm_label": "burnthrough ch. 3-6 transfer board",
       "id": "wiki_craft_fiction_aegis_cycle_burnthrough_ch3_ch6_transfer_board_2026_07_20_md",
-      "community_name": "BURNThrough Opening Department Review"
+      "community": 27,
+      "norm_label": "burnthrough ch. 3-6 transfer board"
     },
     {
       "label": "BURNThrough Ch. 7-13 Continuity Bridge",
@@ -9956,10 +9883,9 @@
       "captured_at": null,
       "author": "Codex",
       "contributor": "Gabriel",
-      "community": 27,
-      "norm_label": "burnthrough ch. 7-13 continuity bridge",
       "id": "wiki_craft_fiction_aegis_cycle_burnthrough_ch7_ch13_continuity_bridge_2026_07_20_md",
-      "community_name": "BURNThrough Opening Department Review"
+      "community": 27,
+      "norm_label": "burnthrough ch. 7-13 continuity bridge"
     },
     {
       "label": "BURNThrough Jalen / Soren Surgical Insertion Map",
@@ -9970,10 +9896,9 @@
       "captured_at": null,
       "author": "Codex",
       "contributor": "Gabriel",
-      "community": 27,
-      "norm_label": "burnthrough jalen / soren surgical insertion map",
       "id": "wiki_craft_fiction_aegis_cycle_burnthrough_jalen_soren_insertion_map_md",
-      "community_name": "BURNThrough Opening Department Review"
+      "community": 27,
+      "norm_label": "burnthrough jalen / soren surgical insertion map"
     },
     {
       "label": "BURNThrough Opening Name Ledger",
@@ -9984,10 +9909,9 @@
       "captured_at": null,
       "author": "Gabriel",
       "contributor": "Codex",
-      "community": 27,
-      "norm_label": "burnthrough opening name ledger",
       "id": "wiki_craft_fiction_aegis_cycle_burnthrough_opening_name_ledger_2026_07_20_md",
-      "community_name": "BURNThrough Opening Department Review"
+      "community": 27,
+      "norm_label": "burnthrough opening name ledger"
     },
     {
       "label": "BURNThrough Opening Pass R01",
@@ -9998,10 +9922,9 @@
       "captured_at": null,
       "author": "Codex",
       "contributor": "Gabriel",
-      "community": 27,
-      "norm_label": "burnthrough opening pass r01",
       "id": "wiki_craft_fiction_aegis_cycle_burnthrough_opening_pass_r01_2026_07_20_md",
-      "community_name": "BURNThrough Opening Department Review"
+      "community": 27,
+      "norm_label": "burnthrough opening pass r01"
     },
     {
       "label": "Artistic Vision",
@@ -10012,10 +9935,9 @@
       "captured_at": null,
       "author": "Gabriel McPherson",
       "contributor": "ChatGPT/Atlas",
-      "community": 28,
-      "norm_label": "artistic vision",
       "id": "wiki_craft_fiction_fiction_studio_artistic_vision_legacy_empty_chair_artistic_vision",
-      "community_name": "Full Studio Review Protocol"
+      "community": 28,
+      "norm_label": "artistic vision"
     },
     {
       "label": "Legacy",
@@ -10026,10 +9948,9 @@
       "captured_at": null,
       "author": "Gabriel McPherson",
       "contributor": "ChatGPT/Atlas",
-      "community": 28,
-      "norm_label": "legacy",
       "id": "wiki_craft_fiction_fiction_studio_artistic_vision_legacy_empty_chair_legacy",
-      "community_name": "Full Studio Review Protocol"
+      "community": 28,
+      "norm_label": "legacy"
     },
     {
       "label": "The Empty Chair",
@@ -10040,10 +9961,9 @@
       "captured_at": null,
       "author": "Gabriel McPherson",
       "contributor": "ChatGPT/Atlas",
-      "community": 28,
-      "norm_label": "the empty chair",
       "id": "wiki_craft_fiction_fiction_studio_artistic_vision_legacy_empty_chair_empty_chair",
-      "community_name": "Full Studio Review Protocol"
+      "community": 28,
+      "norm_label": "the empty chair"
     },
     {
       "label": "Gabriel McPherson Profile",
@@ -10054,10 +9974,9 @@
       "captured_at": null,
       "author": "Gabriel McPherson",
       "contributor": null,
-      "community": 22,
-      "norm_label": "gabriel mcpherson profile",
       "id": "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_gabriel_mcpherson",
-      "community_name": "Gabriel McPherson Profile"
+      "community": 22,
+      "norm_label": "gabriel mcpherson profile"
     },
     {
       "label": "Kazuo Ishiguro Profile",
@@ -10068,10 +9987,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
-      "norm_label": "kazuo ishiguro profile",
       "id": "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_kazuo_ishiguro",
-      "community_name": "Gabriel McPherson Profile"
+      "community": 22,
+      "norm_label": "kazuo ishiguro profile"
     },
     {
       "label": "Richard Powers Profile",
@@ -10082,10 +10000,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
-      "norm_label": "richard powers profile",
       "id": "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_richard_powers",
-      "community_name": "Gabriel McPherson Profile"
+      "community": 22,
+      "norm_label": "richard powers profile"
     },
     {
       "label": "Emily St. John Mandel Profile",
@@ -10096,10 +10013,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
-      "norm_label": "emily st. john mandel profile",
       "id": "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_emily_st_john_mandel",
-      "community_name": "Gabriel McPherson Profile"
+      "community": 22,
+      "norm_label": "emily st. john mandel profile"
     },
     {
       "label": "F. Scott Fitzgerald Profile",
@@ -10110,10 +10026,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
-      "norm_label": "f. scott fitzgerald profile",
       "id": "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_f_scott_fitzgerald",
-      "community_name": "Gabriel McPherson Profile"
+      "community": 22,
+      "norm_label": "f. scott fitzgerald profile"
     },
     {
       "label": "Thomas Mann Profile",
@@ -10124,10 +10039,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
-      "norm_label": "thomas mann profile",
       "id": "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_thomas_mann",
-      "community_name": "Gabriel McPherson Profile"
+      "community": 22,
+      "norm_label": "thomas mann profile"
     },
     {
       "label": "Olga Tokarczuk Profile",
@@ -10138,10 +10052,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
-      "norm_label": "olga tokarczuk profile",
       "id": "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_olga_tokarczuk",
-      "community_name": "Gabriel McPherson Profile"
+      "community": 22,
+      "norm_label": "olga tokarczuk profile"
     },
     {
       "label": "Michael Ondaatje Profile",
@@ -10152,10 +10065,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
-      "norm_label": "michael ondaatje profile",
       "id": "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_michael_ondaatje",
-      "community_name": "Gabriel McPherson Profile"
+      "community": 22,
+      "norm_label": "michael ondaatje profile"
     },
     {
       "label": "Joan Didion Profile",
@@ -10166,10 +10078,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
-      "norm_label": "joan didion profile",
       "id": "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_joan_didion",
-      "community_name": "Gabriel McPherson Profile"
+      "community": 22,
+      "norm_label": "joan didion profile"
     },
     {
       "label": "Alice Munro Profile",
@@ -10180,10 +10091,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
-      "norm_label": "alice munro profile",
       "id": "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_alice_munro",
-      "community_name": "Gabriel McPherson Profile"
+      "community": 22,
+      "norm_label": "alice munro profile"
     },
     {
       "label": "W. G. Sebald Profile",
@@ -10194,10 +10104,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 121,
-      "norm_label": "w. g. sebald profile",
       "id": "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_w_g_sebald",
-      "community_name": "W. G. Sebald Profile"
+      "community": 121,
+      "norm_label": "w. g. sebald profile"
     },
     {
       "label": "Erich Auerbach Concept",
@@ -10208,10 +10117,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 115,
-      "norm_label": "erich auerbach concept",
       "id": "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_erich_auerbach",
-      "community_name": "Erich Auerbach Concept"
+      "community": 115,
+      "norm_label": "erich auerbach concept"
     },
     {
       "label": "Mikhail Bakhtin Concept",
@@ -10222,10 +10130,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 118,
-      "norm_label": "mikhail bakhtin concept",
       "id": "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_mikhail_bakhtin",
-      "community_name": "Mikhail Bakhtin Concept"
+      "community": 118,
+      "norm_label": "mikhail bakhtin concept"
     },
     {
       "label": "Wayne C. Booth Concept",
@@ -10236,10 +10143,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 122,
-      "norm_label": "wayne c. booth concept",
       "id": "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_wayne_c_booth",
-      "community_name": "Wayne C. Booth Concept"
+      "community": 122,
+      "norm_label": "wayne c. booth concept"
     },
     {
       "label": "Gaston Bachelard Concept",
@@ -10250,10 +10156,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 116,
-      "norm_label": "gaston bachelard concept",
       "id": "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_gaston_bachelard",
-      "community_name": "Gaston Bachelard Concept"
+      "community": 116,
+      "norm_label": "gaston bachelard concept"
     },
     {
       "label": "Elaine Scarry Concept",
@@ -10264,10 +10169,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 114,
-      "norm_label": "elaine scarry concept",
       "id": "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_elaine_scarry",
-      "community_name": "Elaine Scarry Concept"
+      "community": 114,
+      "norm_label": "elaine scarry concept"
     },
     {
       "label": "Viktor Shklovsky Concept",
@@ -10278,10 +10182,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 120,
-      "norm_label": "viktor shklovsky concept",
       "id": "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_viktor_shklovsky",
-      "community_name": "Viktor Shklovsky Concept"
+      "community": 120,
+      "norm_label": "viktor shklovsky concept"
     },
     {
       "label": "Peter Brooks Concept",
@@ -10292,10 +10195,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 119,
-      "norm_label": "peter brooks concept",
       "id": "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_peter_brooks",
-      "community_name": "Peter Brooks Concept"
+      "community": 119,
+      "norm_label": "peter brooks concept"
     },
     {
       "label": "James Wood Concept",
@@ -10306,10 +10208,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 117,
-      "norm_label": "james wood concept",
       "id": "wiki_craft_fiction_fiction_studio_authorial_sensibility_council_v1_james_wood",
-      "community_name": "James Wood Concept"
+      "community": 117,
+      "norm_label": "james wood concept"
     },
     {
       "label": "Fiction Studio Departments 2.0",
@@ -10320,10 +10221,9 @@
       "captured_at": null,
       "author": "Gabriel McPherson",
       "contributor": null,
-      "community": 123,
-      "norm_label": "fiction studio departments 2.0",
       "id": "wiki_craft_fiction_fiction_studio_departments_v2",
-      "community_name": "Fiction Studio Departments 2.0"
+      "community": 123,
+      "norm_label": "fiction studio departments 2.0"
     },
     {
       "label": "Full Studio Review Protocol",
@@ -10334,10 +10234,9 @@
       "captured_at": null,
       "author": "Gabriel McPherson",
       "contributor": "ChatGPT/Atlas",
-      "community": 28,
-      "norm_label": "full studio review protocol",
       "id": "wiki_craft_fiction_fiction_studio_full_studio_review_protocol",
-      "community_name": "Full Studio Review Protocol"
+      "community": 28,
+      "norm_label": "full studio review protocol"
     },
     {
       "label": "Orchestrated Narrative Engine Assessment",
@@ -10348,10 +10247,9 @@
       "captured_at": null,
       "author": "Gabriel McPherson",
       "contributor": "ChatGPT/Atlas",
-      "community": 124,
-      "norm_label": "orchestrated narrative engine assessment",
       "id": "wiki_craft_fiction_fiction_studio_orchestrated_narrative_engine_assessment_2026_07_18",
-      "community_name": "Orchestrated Narrative Engine Assessment"
+      "community": 124,
+      "norm_label": "orchestrated narrative engine assessment"
     },
     {
       "label": "Fiction Studio Editorial Orchestration Architecture 2.0",
@@ -10362,10 +10260,9 @@
       "captured_at": null,
       "author": "Gabriel McPherson",
       "contributor": null,
-      "community": 125,
-      "norm_label": "fiction studio editorial orchestration architecture 2.0",
       "id": "wiki_craft_fiction_fiction_studio_orchestration_v2",
-      "community_name": "Fiction Studio Editorial Orchestration Architecture 2.0"
+      "community": 125,
+      "norm_label": "fiction studio editorial orchestration architecture 2.0"
     },
     {
       "label": "Fiction Studio Source Control Protocol",
@@ -10376,10 +10273,9 @@
       "captured_at": null,
       "author": "Gabriel McPherson",
       "contributor": null,
-      "community": 127,
-      "norm_label": "fiction studio source control protocol",
       "id": "wiki_craft_fiction_fiction_studio_source_control_protocol",
-      "community_name": "Fiction Studio Source Control Protocol"
+      "community": 127,
+      "norm_label": "fiction studio source control protocol"
     },
     {
       "label": "Chapter 9 Provisional Full Studio Review",
@@ -10390,10 +10286,9 @@
       "captured_at": null,
       "author": "Gabriel McPherson",
       "contributor": "ChatGPT/Atlas",
-      "community": 126,
-      "norm_label": "chapter 9 provisional full studio review",
       "id": "wiki_craft_fiction_fiction_studio_pilots_2026_07_18_chapter_9_provisional_full_studio_review",
-      "community_name": "Chapter 9 Provisional Full Studio Review"
+      "community": 126,
+      "norm_label": "chapter 9 provisional full studio review"
     },
     {
       "label": "Chapter 4 \u2014 The Apartment",
@@ -10404,10 +10299,9 @@
       "captured_at": null,
       "author": "Gabriel McPherson",
       "contributor": null,
-      "community": 128,
-      "norm_label": "chapter 4 \u2014 the apartment",
       "id": "wiki_craft_fiction_string_theory_chapter_04_the_apartment",
-      "community_name": "Chapter 4 \u2014 The Apartment"
+      "community": 128,
+      "norm_label": "chapter 4 \u2014 the apartment"
     },
     {
       "label": "String Theory \u2014 Current Manuscript State",
@@ -10418,10 +10312,9 @@
       "captured_at": null,
       "author": "Gabriel McPherson",
       "contributor": null,
-      "community": 2,
-      "norm_label": "string theory \u2014 current manuscript state",
       "id": "wiki_craft_fiction_string_theory_current_manuscript_state",
-      "community_name": "Knowledge Base \u2014 Master Index"
+      "community": 2,
+      "norm_label": "string theory \u2014 current manuscript state"
     },
     {
       "label": "Voice Doctrine \u2014 Celeste & Cassandra",
@@ -10432,10 +10325,9 @@
       "captured_at": null,
       "author": "Gabriel McPherson",
       "contributor": null,
-      "community": 129,
-      "norm_label": "voice doctrine \u2014 celeste & cassandra",
       "id": "wiki_craft_fiction_string_theory_voice_doctrine_celeste_cassandra_2026_07_20",
-      "community_name": "Voice Doctrine \u2014 Celeste & Cassandra"
+      "community": 129,
+      "norm_label": "voice doctrine \u2014 celeste & cassandra"
     },
     {
       "label": "ADR 0005 \u2014 Shakespearience Setup Runs on Two Parallel Dependency Chains",
@@ -10446,10 +10338,9 @@
       "captured_at": null,
       "author": "Claude",
       "contributor": "Gabriel McPherson",
-      "community": 2,
-      "norm_label": "adr 0005 \u2014 shakespearience setup runs on two parallel dependency chains",
       "id": "wiki_decision_records_0005_shakespearience_two_dependency_chains",
-      "community_name": "Knowledge Base \u2014 Master Index"
+      "community": 2,
+      "norm_label": "adr 0005 \u2014 shakespearience setup runs on two parallel dependency chains"
     },
     {
       "label": "ADR 0006 \u2014 Intellectual Lineage Tracking Demoted",
@@ -10460,10 +10351,9 @@
       "captured_at": null,
       "author": "Claude",
       "contributor": "Gabriel McPherson",
-      "community": 130,
-      "norm_label": "adr 0006 \u2014 intellectual lineage tracking demoted",
       "id": "wiki_decision_records_0006_intellectual_lineage_demoted",
-      "community_name": "ADR 0006 \u2014 Intellectual Lineage Tracking Demoted"
+      "community": 130,
+      "norm_label": "adr 0006 \u2014 intellectual lineage tracking demoted"
     },
     {
       "label": "FlowScape Ambient Session Log",
@@ -10474,10 +10364,9 @@
       "captured_at": null,
       "author": "Gabriel McPherson",
       "contributor": null,
-      "community": 3,
-      "norm_label": "flowscape ambient session log",
       "id": "wiki_dev_infrastructure_flowscape_ambient_sessions",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture"
+      "community": 3,
+      "norm_label": "flowscape ambient session log"
     },
     {
       "label": "Second Brain Command Center \u2014 Build Chronicle",
@@ -10488,10 +10377,9 @@
       "captured_at": null,
       "author": "Gabriel McPherson",
       "contributor": null,
-      "community": 131,
-      "norm_label": "second brain command center \u2014 build chronicle",
       "id": "wiki_dev_infrastructure_sbcc_build_2026_07_21",
-      "community_name": "Second Brain Command Center \u2014 Build Chronicle"
+      "community": 131,
+      "norm_label": "second brain command center \u2014 build chronicle"
     },
     {
       "label": "GeminiChatter \u2014 Architecture",
@@ -10502,10 +10390,9 @@
       "captured_at": null,
       "author": "Claude",
       "contributor": null,
-      "community": 132,
-      "norm_label": "geminichatter \u2014 architecture",
       "id": "wiki_dev_projects_geminichat_architecture",
-      "community_name": "GeminiChatter \u2014 Architecture"
+      "community": 132,
+      "norm_label": "geminichatter \u2014 architecture"
     },
     {
       "label": "NextStage OS \u2014 Capital and Concept Package",
@@ -10516,10 +10403,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 133,
-      "norm_label": "nextstage os \u2014 capital and concept package",
       "id": "wiki_dev_projects_nextstage_concept_and_capital_package",
-      "community_name": "NextStage OS \u2014 Capital and Concept Package"
+      "community": 133,
+      "norm_label": "nextstage os \u2014 capital and concept package"
     },
     {
       "label": "Shakespearience Architecture",
@@ -10530,10 +10416,9 @@
       "captured_at": null,
       "author": "Gabriel McPherson",
       "contributor": "Stephanie Carll",
-      "community": 3,
-      "norm_label": "shakespearience architecture",
       "id": "wiki_dev_projects_shakespearience_architecture",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture"
+      "community": 3,
+      "norm_label": "shakespearience architecture"
     },
     {
       "label": "The Shakespearience \u2014 Creative Bible",
@@ -10544,10 +10429,9 @@
       "captured_at": null,
       "author": "Gabriel McPherson",
       "contributor": "Stephanie Carll",
-      "community": 3,
-      "norm_label": "the shakespearience \u2014 creative bible",
       "id": "wiki_dev_projects_shakespearience_creative_bible",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture"
+      "community": 3,
+      "norm_label": "the shakespearience \u2014 creative bible"
     },
     {
       "label": "Playbook 01 Accounts & Access",
@@ -10558,10 +10442,9 @@
       "captured_at": null,
       "author": "Gabriel McPherson",
       "contributor": "Claude",
-      "community": 3,
-      "norm_label": "playbook 01 accounts & access",
       "id": "wiki_dev_projects_shakespearience_ops_playbooks_01_accounts_and_access",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture"
+      "community": 3,
+      "norm_label": "playbook 01 accounts & access"
     },
     {
       "label": "Playbook 04 Domain, DNS & Email Deliverability",
@@ -10572,10 +10455,9 @@
       "captured_at": null,
       "author": "Gabriel McPherson",
       "contributor": "Claude",
-      "community": 3,
-      "norm_label": "playbook 04 domain, dns & email deliverability",
       "id": "wiki_dev_projects_shakespearience_ops_playbooks_04_domain_dns_email",
-      "community_name": "Prestige Fiction Forge \u2014 Project Architecture"
+      "community": 3,
+      "norm_label": "playbook 04 domain, dns & email deliverability"
     },
     {
       "label": "Shakespearience \u2014 Ops Playbooks",
@@ -10586,10 +10468,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
-      "norm_label": "shakespearience \u2014 ops playbooks",
       "id": "wiki_dev_projects_shakespearience_ops_playbooks_index",
-      "community_name": "change-log.md"
+      "community": 0,
+      "norm_label": "shakespearience \u2014 ops playbooks"
     }
   ],
   "links": [
